@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemAnalyzer.AvaloniaApp", "FileSystemAnalyzer.AvaloniaApp\FileSystemAnalyzer.AvaloniaApp.csproj", "{F2652FE6-9CBC-4A0C-B6E9-CD7ABE03FE6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemAnalyzer.Tests", "FileSystemAnalyzer.Tests\FileSystemAnalyzer.Tests.csproj", "{5865AF3E-D327-4FA5-94A4-37CDD0318479}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2652FE6-9CBC-4A0C-B6E9-CD7ABE03FE6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2652FE6-9CBC-4A0C-B6E9-CD7ABE03FE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2652FE6-9CBC-4A0C-B6E9-CD7ABE03FE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2652FE6-9CBC-4A0C-B6E9-CD7ABE03FE6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5865AF3E-D327-4FA5-94A4-37CDD0318479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5865AF3E-D327-4FA5-94A4-37CDD0318479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5865AF3E-D327-4FA5-94A4-37CDD0318479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5865AF3E-D327-4FA5-94A4-37CDD0318479}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
