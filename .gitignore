@@ -4,3 +4,4 @@ obj/
 .vscode/
 .idea/
 *.user
+appsettings.*.json

@@ -1,3 +1,4 @@
+using System;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
@@ -8,7 +9,7 @@ using LightInject;
 namespace FileSystemAnalyzer.AvaloniaApp;
 
 // ReSharper disable once ClassNeverInstantiated.Global -- App is instantiated by Avalonia
-public sealed class App : Application
+public sealed class App : Application, IDisposable
 {
     public App() => Container = DependencyInjection.CreateContainer();
 
@@ -27,4 +28,6 @@ public sealed class App : Application
 
         base.OnFrameworkInitializationCompleted();
     }
+
+    public void Dispose() => Container.Dispose();
 }

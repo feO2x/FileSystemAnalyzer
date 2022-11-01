@@ -1,4 +1,5 @@
 ﻿using Avalonia.Controls;
+using FileSystemAnalyzer.AvaloniaApp.DataAccess;
 using FileSystemAnalyzer.AvaloniaApp.GettingStarted;
 using FileSystemAnalyzer.AvaloniaApp.Navigation;
 using FileSystemAnalyzer.AvaloniaApp.Shared;
@@ -13,7 +14,9 @@ public static class DependencyInjection
         new (new ContainerOptions { EnablePropertyInjection = false });
 
     public static void ConfigureServices(this ServiceContainer container) =>
-        container.RegisterSystemDialogs()
+        container.RegisterConfiguration(out var configuration)
+                 .RegisterRavenDb(configuration)
+                 .RegisterSystemDialogs()
                  .RegisterNavigation()
                  .RegisterGettingStarted()
                  .RegisterAppShell();
