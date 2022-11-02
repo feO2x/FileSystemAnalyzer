@@ -25,7 +25,7 @@ public static class RavenDbModule
     private static void StartEmbeddedServerAndRegisterDocumentStore(IServiceRegistry container, IConfiguration configuration, string databaseName)
     {
         var serverOptions = configuration.GetSection("database").Get<ServerOptions>();
-        Environment.ExpandEnvironmentVariables(serverOptions.DataDirectory);
+        serverOptions.DataDirectory = Environment.ExpandEnvironmentVariables(serverOptions.DataDirectory);
         var embeddedServer = EmbeddedServer.Instance;
         embeddedServer.StartServer(serverOptions);
         container.RegisterInstance(embeddedServer);

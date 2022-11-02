@@ -17,7 +17,7 @@ public sealed class InitialViewModel
     private IFolderDialog FolderDialog { get; }
     private ICreateNewAnalysisNavigationCommand CreateNewAnalysisNavigationCommand { get; }
     public DelegateCommand AnalyzeFolderCommand { get; }
-    
+
     private async void AnalyzeFolder()
     {
         var chosenFolder = await FolderDialog.ChooseFolderAsync();

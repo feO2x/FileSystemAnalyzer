@@ -15,6 +15,7 @@ public static class DependencyInjection
 
     public static void ConfigureServices(this ServiceContainer container) =>
         container.RegisterConfiguration(out var configuration)
+                 .RegisterLogger(configuration)
                  .RegisterRavenDb(configuration)
                  .RegisterSystemDialogs()
                  .RegisterNavigation()
