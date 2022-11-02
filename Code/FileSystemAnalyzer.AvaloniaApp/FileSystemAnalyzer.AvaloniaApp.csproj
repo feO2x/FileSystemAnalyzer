@@ -25,6 +25,7 @@
         <PackageReference Include="Light.GuardClauses" Version="10.0.0" />
         <PackageReference Include="RavenDB.Embedded" Version="5.4.4" />
         <PackageReference Include="Synnotech.RavenDB" Version="3.0.0" />
+        <PackageReference Include="Synnotech.Core" Version="0.3.0" />
         <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
         <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
     </ItemGroup>
