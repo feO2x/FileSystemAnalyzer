@@ -11,6 +11,7 @@ public sealed class InitialViewModel
     {
         FolderDialog = folderDialog;
         CreateNewAnalysisNavigationCommand = createNewAnalysisNavigationCommand;
+        
         AnalyzeFolderCommand = new (AnalyzeFolder);
     }
 

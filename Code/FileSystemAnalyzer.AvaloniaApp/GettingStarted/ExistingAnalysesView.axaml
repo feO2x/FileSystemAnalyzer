@@ -1,0 +1,84 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             xmlns:gettingStarted="clr-namespace:FileSystemAnalyzer.AvaloniaApp.GettingStarted"
+             mc:Ignorable="d"
+             x:Class="FileSystemAnalyzer.AvaloniaApp.GettingStarted.ExistingAnalysesView"
+             x:DataType="gettingStarted:ExistingAnalysesViewModel">
+    <UserControl.Styles>
+        <Style Selector="TextBlock.Info">
+            <Setter Property="FontStyle" Value="Italic" />
+            <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+        </Style>
+    </UserControl.Styles>
+    <Grid RowDefinitions="Auto, 8 Auto, 8, *">
+        <TextBlock Grid.Row="0"
+                   Classes="Headline6"
+                   Text="Existing Analyses" />
+        <TextBox Grid.Row="2"
+                 UseFloatingWatermark="False"
+                 Watermark="Search"
+                 IsVisible="{CompiledBinding !HasNoAnalyses}"
+                 Text="{CompiledBinding SearchTerm, Mode=TwoWay}">
+            <TextBox.InnerLeftContent>
+                <avalonia:MaterialIcon HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Kind="Magnify"
+                                       Width="20"
+                                       Height="20" />
+            </TextBox.InnerLeftContent>
+        </TextBox>
+
+        <TextBlock Grid.Row="2"
+                   FontStyle="Italic"
+                   TextWrapping="Wrap"
+                   IsVisible="{CompiledBinding HasNoAnalyses}"
+                   Text="You don't have any analyses yet. Create your first one by clicking on the left button and choose a folder." />
+
+        <ListBox Grid.Row="4"
+                 x:Name="ListBox"
+                 IsVisible="{CompiledBinding !HasNoAnalyses}"
+                 Items="{CompiledBinding Analyses}">
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="gettingStarted:AnalysisViewModel">
+                    <Grid ColumnDefinitions="40, *"
+                          RowDefinitions="Auto, Auto, Auto, Auto">
+                        <avalonia:MaterialIcon Grid.Row="0"
+                                               Grid.Column="0"
+                                               Grid.RowSpan="4"
+                                               Kind="FolderFile"
+                                               Width="24"
+                                               Height="24"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center" />
+
+                        <TextBlock Grid.Row="0"
+                                   Grid.Column="1"
+                                   Classes="ButtonText"
+                                   TextTrimming="CharacterEllipsis"
+                                   Foreground="{DynamicResource PrimaryHueMidBrush}"
+                                   Text="{CompiledBinding Name}" />
+
+                        <TextBlock Grid.Row="1"
+                                   Grid.Column="1"
+                                   Classes="Overline Info"
+                                   Text="{CompiledBinding DirectoryPath}" />
+
+                        <TextBlock Grid.Row="2"
+                                   Grid.Column="1"
+                                   Classes="Overline Info"
+                                   Text="{CompiledBinding CreatedAt}" />
+
+                        <TextBlock Grid.Row="3"
+                                   Grid.Column="1"
+                                   Classes="Overline Info"
+                                   Text="{CompiledBinding Size}" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+    </Grid>
+</UserControl>

@@ -3,13 +3,31 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:gettingStarted="clr-namespace:FileSystemAnalyzer.AvaloniaApp.GettingStarted"
+             xmlns:shared="clr-namespace:FileSystemAnalyzer.AvaloniaApp.Shared"
              mc:Ignorable="d"
              d:DesignWidth="800"
              d:DesignHeight="450"
+             x:CompileBindings="True"
              x:Class="FileSystemAnalyzer.AvaloniaApp.GettingStarted.InitialView"
              x:DataType="gettingStarted:InitialViewModel">
-    <Button Content="Analyzer Folder..."
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            Command="{CompiledBinding AnalyzeFolderCommand, Mode=OneTime}" />
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="4" />
+            <ColumnDefinition Width="300" MinWidth="240" />
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="0"
+                Content="Analyzer Folder..."
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Command="{CompiledBinding AnalyzeFolderCommand}" />
+
+        <GridSplitter Grid.Column="1"
+                      ResizeDirection="Columns" />
+
+        <gettingStarted:ExistingAnalysesView Grid.Column="2"
+                                             Margin="20"
+                                             DataContext="{shared:Resolve Type=gettingStarted:ExistingAnalysesViewModel}" />
+    </Grid>
 </UserControl>
