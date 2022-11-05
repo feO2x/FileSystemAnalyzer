@@ -4,6 +4,8 @@
              x:Class="FileSystemAnalyzer.AvaloniaApp.App">
     <Application.Resources>
         <themes:BundledTheme BaseTheme="Dark" PrimaryColor="Teal" SecondaryColor="Lime" />
+        <Color x:Key="ErrorColor">#FA0700</Color>
+        <SolidColorBrush x:Key="ErrorBrush" Color="{StaticResource ErrorColor}" />
     </Application.Resources>
     <Application.Styles>
         <FluentTheme Mode="Dark" />

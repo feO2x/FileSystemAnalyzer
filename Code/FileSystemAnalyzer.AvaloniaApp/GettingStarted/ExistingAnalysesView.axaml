@@ -12,6 +12,15 @@
             <Setter Property="FontStyle" Value="Italic" />
             <Setter Property="TextTrimming" Value="CharacterEllipsis" />
         </Style>
+        <Style Selector="TextBlock.Header">
+            <Setter Property="Foreground" Value="{DynamicResource PrimaryHueMidBrush}" />
+        </Style>
+        <Style Selector="TextBlock.Error">
+            <Setter Property="Foreground" Value="{StaticResource ErrorBrush}" />
+        </Style>
+        <Style Selector="avalonia|MaterialIcon.IconError">
+            <Setter Property="Foreground" Value="{StaticResource ErrorBrush}" />
+        </Style>
     </UserControl.Styles>
     <Grid RowDefinitions="Auto, 8 Auto, 8, *">
         <TextBlock Grid.Row="0"
@@ -52,7 +61,8 @@
                         <avalonia:MaterialIcon Grid.Row="0"
                                                Grid.Column="0"
                                                Grid.RowSpan="4"
-                                               Kind="FolderFile"
+                                               Kind="{CompiledBinding IconKind}"
+                                               Classes.IconError="{CompiledBinding IsErroneous}"
                                                Width="24"
                                                Height="24"
                                                HorizontalAlignment="Center"
@@ -60,9 +70,9 @@
 
                         <TextBlock Grid.Row="0"
                                    Grid.Column="1"
-                                   Classes="ButtonText"
+                                   Classes="ButtonText Header"
+                                   Classes.Error="{CompiledBinding IsErroneous}"
                                    TextTrimming="CharacterEllipsis"
-                                   Foreground="{DynamicResource PrimaryHueMidBrush}"
                                    Text="{CompiledBinding Name}" />
 
                         <TextBlock Grid.Row="1"

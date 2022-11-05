@@ -6,6 +6,7 @@ using FileSystemAnalyzer.AvaloniaApp.Navigation;
 using FileSystemAnalyzer.AvaloniaApp.Shared;
 using FileSystemAnalyzer.AvaloniaApp.SystemDialogs;
 using LightInject;
+using Synnotech.Time;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AppInfrastructure;
 
@@ -14,21 +15,18 @@ public static class DependencyInjection
     public static ServiceContainer CreateContainer() =>
         new (new ContainerOptions { EnablePropertyInjection = false });
 
-    public static void ConfigureServices(this ServiceContainer container)
-    {
-        ConfigureBogusRandomizer();
+    public static void ConfigureServices(this ServiceContainer container) =>
         container.RegisterConfiguration(out var configuration)
                  .RegisterLogger(configuration)
                  .RegisterRavenDb(configuration)
-                 .RegisterDebouncedValueFactory()
+                 .RegisterCoreServices()
                  .RegisterSystemDialogs()
                  .RegisterNavigation()
                  .RegisterGettingStarted(configuration)
                  .RegisterAppShell();
-    }
 
-    private static IServiceRegistry RegisterDebouncedValueFactory(this IServiceRegistry container) =>
-        container.RegisterInstance(DebouncedValueFactory.DefaultFactory);
+    private static IServiceRegistry RegisterCoreServices(this IServiceRegistry container) =>
+        container.RegisterInstance(DebouncedValueFactory.DefaultFactory)
+                 .RegisterInstance<IClock>(new UtcClock());
     
-    private static void ConfigureBogusRandomizer() => Randomizer.Seed = new (42);
 }

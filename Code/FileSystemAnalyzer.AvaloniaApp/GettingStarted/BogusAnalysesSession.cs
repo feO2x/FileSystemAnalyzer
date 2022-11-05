@@ -76,6 +76,7 @@ public sealed class BogusAnalysesSession : IAnalysesSession
                            .RuleFor(analysis => analysis.DirectoryPath, f => f.System.DirectoryPath())
                            .RuleFor(analysis => analysis.CreatedAtUtc, f => f.Date.Past(refDate: referenceDate).ToUniversalTime())
                            .RuleFor(analysis => analysis.SizeInBytes, f => f.Random.Number(0, int.MaxValue))
-                           .RuleFor(analysis => analysis.DirectoryPathForSearch, (_, a) => a.DirectoryPath.ReplaceSlashesWithSpacesInPath());
+                           .RuleFor(analysis => analysis.DirectoryPathForSearch, (_, a) => a.DirectoryPath.ReplaceSlashesWithSpacesInPath())
+                           .RuleFor(analysis => analysis.ErrorMessage, f => analysisIds % 20 == 19 ? f.System.Exception().ToString() : null);
     }
 }

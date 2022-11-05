@@ -12,9 +12,9 @@
              x:DataType="gettingStarted:InitialViewModel">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition />
+            <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="4" />
-            <ColumnDefinition Width="300" MinWidth="240" />
+            <ColumnDefinition Width="*" MinWidth="300" />
         </Grid.ColumnDefinitions>
 
         <Button Grid.Column="0"

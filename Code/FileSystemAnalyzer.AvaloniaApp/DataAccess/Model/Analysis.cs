@@ -12,6 +12,7 @@ public sealed class Analysis : StringEntity
     public DateTime CreatedAtUtc { get; init; }
     public string RootEntryId { get; set; } = string.Empty;
     public long SizeInBytes { get; set; }
+    public string? ErrorMessage { get; set; }
     
     public static Analysis CreateFromDirectoryPath(string directoryPath, DateTime createdAtUtc)
     {
