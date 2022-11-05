@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Threading;
 using FileSystemAnalyzer.AvaloniaApp.Shared;
 using Light.GuardClauses;
 using Light.ViewModels;
@@ -10,8 +11,8 @@ namespace FileSystemAnalyzer.AvaloniaApp.GettingStarted;
 // ReSharper disable once ClassNeverInstantiated.Global -- the view model is instantiated by the DI container
 public sealed class ExistingAnalysesViewModel : BaseNotifyPropertyChanged
 {
-    private bool _isLoading;
     private bool _hasNoAnalyses;
+    private CancellationTokenSource? _currentTokenSource;
 
     public ExistingAnalysesViewModel(Func<IAnalysesSession> createSession,
                                      DebouncedValueFactory debouncedValueFactory,
@@ -28,6 +29,7 @@ public sealed class ExistingAnalysesViewModel : BaseNotifyPropertyChanged
     {
         IsAtEnd = false;
         Analyses.Clear();
+        CurrentTokenSource?.Cancel();
         LoadAnalyses();
     }
 
@@ -46,12 +48,8 @@ public sealed class ExistingAnalysesViewModel : BaseNotifyPropertyChanged
         }
     }
 
-    public bool IsLoading
-    {
-        get => _isLoading;
-        private set => Set(out _isLoading, value);
-    }
-
+    public bool IsLoading => CurrentTokenSource is not null;
+    
     private bool IsAtEnd { get; set; }
 
     public bool HasNoAnalyses
@@ -60,17 +58,28 @@ public sealed class ExistingAnalysesViewModel : BaseNotifyPropertyChanged
         private set => Set(out _hasNoAnalyses, value);
     }
 
+    private CancellationTokenSource? CurrentTokenSource
+    {
+        get => _currentTokenSource;
+        set
+        {
+            _currentTokenSource = value;
+            OnPropertyChanged(nameof(IsLoading));
+        }
+    }
+
     public async void LoadAnalyses()
     {
-        if (IsAtEnd || IsLoading)
+        if (IsAtEnd || HasNoAnalyses)
             return;
         
         const int batchSize = 100;
+        var cancellationTokenSource = CurrentTokenSource = new ();
         try
         {
             await using var session = CreateSession();
-            IsLoading = true;
-            var loadedAnalyses = await session.GetAnalysesAsync(Analyses.Count, batchSize, SearchTerm);
+            
+            var loadedAnalyses = await session.GetAnalysesAsync(Analyses.Count, batchSize, SearchTerm, cancellationTokenSource.Token);
             if (loadedAnalyses.Count < batchSize)
                 IsAtEnd = true;
             if (SearchTerm.IsNullOrWhiteSpace() && Analyses.Count == 0 && loadedAnalyses.Count == 0)
@@ -84,7 +93,9 @@ public sealed class ExistingAnalysesViewModel : BaseNotifyPropertyChanged
         }
         finally
         {
-            IsLoading = false;
+            cancellationTokenSource.Dispose();
+            if (ReferenceEquals(CurrentTokenSource, cancellationTokenSource))
+                CurrentTokenSource = null;
         }
     }
 }

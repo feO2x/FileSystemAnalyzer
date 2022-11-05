@@ -36,6 +36,10 @@
                    TextWrapping="Wrap"
                    IsVisible="{CompiledBinding HasNoAnalyses}"
                    Text="You don't have any analyses yet. Create your first one by clicking on the left button and choose a folder." />
+        
+        <ProgressBar Grid.Row="3"
+                     IsIndeterminate="True"
+                     IsVisible="{CompiledBinding IsLoading}" />
 
         <ListBox Grid.Row="4"
                  x:Name="ListBox"

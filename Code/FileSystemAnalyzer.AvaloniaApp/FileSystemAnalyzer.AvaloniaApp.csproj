@@ -32,6 +32,7 @@
         <PackageReference Include="Material.Icons.Avalonia" Version="1.1.10" />
         <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
         <PackageReference Include="Bogus" Version="34.0.2" />
+        <PackageReference Include="FuzzySharp" Version="2.0.2" />
     </ItemGroup>
     <ItemGroup>
         <None Update="appsettings.json">

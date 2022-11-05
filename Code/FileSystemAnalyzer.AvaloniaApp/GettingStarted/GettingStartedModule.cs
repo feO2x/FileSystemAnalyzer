@@ -11,10 +11,11 @@ public static class GettingStartedModule
         container.RegisterViewAndViewModelWithTransientLifetimes<InitialView, InitialViewModel>()
                  .RegisterTransient<ExistingAnalysesViewModel>();
 
-        if (configuration.GetValue<bool>("useBogusAnalysesSession"))
+        if (configuration.GetValue<bool>("analysisSession:useFake"))
         {
-            container.RegisterTransient<IAnalysesSession, BogusAnalysesSession>();
-            container.RegisterInstance(BogusAnalysesSession.CreateFaker());
+            var numberOfItems = configuration.GetValue("analysisSession:numberOfItems", 300);
+            var delayInMilliseconds = configuration.GetValue("analysisSession:delayInMilliseconds", 50);
+            container.RegisterInstance<IAnalysesSession>(BogusAnalysesSession.Create(numberOfItems, delayInMilliseconds));
         }
         else
         {

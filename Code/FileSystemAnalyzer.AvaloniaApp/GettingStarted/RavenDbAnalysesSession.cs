@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 using Light.GuardClauses;
@@ -14,15 +15,18 @@ public sealed class RavenDbAnalysesSession : AsyncReadOnlySession, IAnalysesSess
 {
     public RavenDbAnalysesSession(IAsyncDocumentSession session) : base(session) { }
     
-    public Task<List<Analysis>> GetAnalysesAsync(int skip, int take, string? searchTerm)
+    public Task<List<Analysis>> GetAnalysesAsync(int skip,
+                                                 int take,
+                                                 string? searchTerm,
+                                                 CancellationToken cancellationToken)
     {
-        var query = Session.Query<Analysis>();
-        if (!searchTerm.IsNullOrWhiteSpace())
-            query.Search(analysis => analysis.DirectoryPathForSearch, searchTerm);
+        IQueryable<Analysis> query = Session.Query<Analysis>();
+        query = !searchTerm.IsNullOrWhiteSpace() ?
+            query.Search(analysis => analysis.DirectoryPathForSearch, searchTerm) :
+            query.OrderByDescending(analysis => analysis.CreatedAtUtc);  
 
-        return query.OrderByDescending(analysis => analysis.CreatedAtUtc)
-                    .Skip(skip)
+        return query.Skip(skip)
                     .Take(take)
-                    .ToListAsync();
+                    .ToListAsync(cancellationToken);
     }
 }
