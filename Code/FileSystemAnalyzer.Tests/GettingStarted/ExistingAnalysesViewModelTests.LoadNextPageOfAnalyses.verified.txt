@@ -1,0 +1,2807 @@
+﻿{
+  Analyses: [
+    {
+      Analysis: {
+        DirectoryPath: /usr/lib,
+        DirectoryPathForSearch:  usr lib,
+        CreatedAtUtc: DateTime_1,
+        RootEntryId: ,
+        SizeInBytes: 1454338905,
+        Id: Analyses-295-A
+      },
+      Name: lib,
+      DirectoryPath: /usr/lib,
+      CreatedAt: 2022-11-05 10:06,
+      Size: 1,354GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /dev,
+        DirectoryPathForSearch:  dev,
+        CreatedAtUtc: DateTime_2,
+        RootEntryId: ,
+        SizeInBytes: 2011956380,
+        Id: Analyses-253-A
+      },
+      Name: dev,
+      DirectoryPath: /dev,
+      CreatedAt: 2022-11-05 09:54,
+      Size: 1,874GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /sbin,
+        DirectoryPathForSearch:  sbin,
+        CreatedAtUtc: DateTime_3,
+        RootEntryId: ,
+        SizeInBytes: 471635421,
+        Id: Analyses-246-A
+      },
+      Name: sbin,
+      DirectoryPath: /sbin,
+      CreatedAt: 2022-11-04 13:43,
+      Size: 449,787MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/obj,
+        DirectoryPathForSearch:  usr obj,
+        CreatedAtUtc: DateTime_4,
+        RootEntryId: ,
+        SizeInBytes: 1648968963,
+        Id: Analyses-9-A
+      },
+      Name: obj,
+      DirectoryPath: /usr/obj,
+      CreatedAt: 2022-11-03 23:56,
+      Size: 1,536GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/defaults,
+        DirectoryPathForSearch:  etc defaults,
+        CreatedAtUtc: DateTime_5,
+        RootEntryId: ,
+        SizeInBytes: 1774754643,
+        Id: Analyses-93-A
+      },
+      Name: defaults,
+      DirectoryPath: /etc/defaults,
+      CreatedAt: 2022-11-03 14:10,
+      Size: 1,653GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /private/var,
+        DirectoryPathForSearch:  private var,
+        CreatedAtUtc: DateTime_6,
+        RootEntryId: ,
+        SizeInBytes: 1963699771,
+        Id: Analyses-18-A
+      },
+      Name: var,
+      DirectoryPath: /private/var,
+      CreatedAt: 2022-11-02 04:09,
+      Size: 1,829GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/obj,
+        DirectoryPathForSearch:  usr obj,
+        CreatedAtUtc: DateTime_7,
+        RootEntryId: ,
+        SizeInBytes: 1028554364,
+        Id: Analyses-34-A
+      },
+      Name: obj,
+      DirectoryPath: /usr/obj,
+      CreatedAt: 2022-11-02 03:22,
+      Size: 980,906MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user/dir,
+        DirectoryPathForSearch:  home user dir,
+        CreatedAtUtc: DateTime_8,
+        RootEntryId: ,
+        SizeInBytes: 681652621,
+        Id: Analyses-15-A
+      },
+      Name: dir,
+      DirectoryPath: /home/user/dir,
+      CreatedAt: 2022-10-31 14:29,
+      Size: 650,075MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/bin,
+        DirectoryPathForSearch:  usr bin,
+        CreatedAtUtc: DateTime_9,
+        RootEntryId: ,
+        SizeInBytes: 1465917470,
+        Id: Analyses-153-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/bin,
+      CreatedAt: 2022-10-30 21:43,
+      Size: 1,365GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/share,
+        DirectoryPathForSearch:  opt share,
+        CreatedAtUtc: DateTime_10,
+        RootEntryId: ,
+        SizeInBytes: 1708226091,
+        Id: Analyses-169-A
+      },
+      Name: share,
+      DirectoryPath: /opt/share,
+      CreatedAt: 2022-10-26 19:46,
+      Size: 1,591GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /rescue,
+        DirectoryPathForSearch:  rescue,
+        CreatedAtUtc: DateTime_11,
+        RootEntryId: ,
+        SizeInBytes: 1947915174,
+        Id: Analyses-4-A
+      },
+      Name: rescue,
+      DirectoryPath: /rescue,
+      CreatedAt: 2022-10-23 14:11,
+      Size: 1,814GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/lib,
+        DirectoryPathForSearch:  usr lib,
+        CreatedAtUtc: DateTime_12,
+        RootEntryId: ,
+        SizeInBytes: 1510061303,
+        Id: Analyses-220-A
+      },
+      Name: lib,
+      DirectoryPath: /usr/lib,
+      CreatedAt: 2022-10-23 09:33,
+      Size: 1,406GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Library,
+        DirectoryPathForSearch:  Library,
+        CreatedAtUtc: DateTime_13,
+        RootEntryId: ,
+        SizeInBytes: 841680763,
+        Id: Analyses-31-A
+      },
+      Name: Library,
+      DirectoryPath: /Library,
+      CreatedAt: 2022-10-22 10:30,
+      Size: 802,689MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt,
+        DirectoryPathForSearch:  opt,
+        CreatedAtUtc: DateTime_14,
+        RootEntryId: ,
+        SizeInBytes: 883035314,
+        Id: Analyses-152-A
+      },
+      Name: opt,
+      DirectoryPath: /opt,
+      CreatedAt: 2022-10-21 13:45,
+      Size: 842,128MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home,
+        DirectoryPathForSearch:  home,
+        CreatedAtUtc: DateTime_15,
+        RootEntryId: ,
+        SizeInBytes: 1404668691,
+        Id: Analyses-8-A
+      },
+      Name: home,
+      DirectoryPath: /home,
+      CreatedAt: 2022-10-21 07:57,
+      Size: 1,308GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /rescue,
+        DirectoryPathForSearch:  rescue,
+        CreatedAtUtc: DateTime_16,
+        RootEntryId: ,
+        SizeInBytes: 769448506,
+        Id: Analyses-113-A
+      },
+      Name: rescue,
+      DirectoryPath: /rescue,
+      CreatedAt: 2022-10-20 11:11,
+      Size: 733,803MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /dev,
+        DirectoryPathForSearch:  dev,
+        CreatedAtUtc: DateTime_17,
+        RootEntryId: ,
+        SizeInBytes: 826104168,
+        Id: Analyses-204-A
+      },
+      Name: dev,
+      DirectoryPath: /dev,
+      CreatedAt: 2022-10-20 06:43,
+      Size: 787,834MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /sys,
+        DirectoryPathForSearch:  sys,
+        CreatedAtUtc: DateTime_18,
+        RootEntryId: ,
+        SizeInBytes: 1473997588,
+        Id: Analyses-21-A
+      },
+      Name: sys,
+      DirectoryPath: /sys,
+      CreatedAt: 2022-10-20 06:15,
+      Size: 1,373GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/namedb,
+        DirectoryPathForSearch:  etc namedb,
+        CreatedAtUtc: DateTime_19,
+        RootEntryId: ,
+        SizeInBytes: 1722882412,
+        Id: Analyses-13-A
+      },
+      Name: namedb,
+      DirectoryPath: /etc/namedb,
+      CreatedAt: 2022-10-20 05:47,
+      Size: 1,605GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /srv,
+        DirectoryPathForSearch:  srv,
+        CreatedAtUtc: DateTime_20,
+        RootEntryId: ,
+        SizeInBytes: 158682477,
+        Id: Analyses-202-A
+      },
+      Name: srv,
+      DirectoryPath: /srv,
+      CreatedAt: 2022-10-19 15:00,
+      Size: 151,331MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_21,
+        RootEntryId: ,
+        SizeInBytes: 1326091840,
+        Id: Analyses-147-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-10-18 23:58,
+      Size: 1,235GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/mail,
+        DirectoryPathForSearch:  var mail,
+        CreatedAtUtc: DateTime_22,
+        RootEntryId: ,
+        SizeInBytes: 1013952776,
+        Id: Analyses-58-A
+      },
+      Name: mail,
+      DirectoryPath: /var/mail,
+      CreatedAt: 2022-10-17 09:26,
+      Size: 966,981MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Applications,
+        DirectoryPathForSearch:  Applications,
+        CreatedAtUtc: DateTime_23,
+        RootEntryId: ,
+        SizeInBytes: 1776122651,
+        Id: Analyses-19-A
+      },
+      Name: Applications,
+      DirectoryPath: /Applications,
+      CreatedAt: 2022-10-13 04:56,
+      Size: 1,654GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr,
+        DirectoryPathForSearch:  usr,
+        CreatedAtUtc: DateTime_24,
+        RootEntryId: ,
+        SizeInBytes: 152136125,
+        Id: Analyses-215-A
+      },
+      Name: usr,
+      DirectoryPath: /usr,
+      CreatedAt: 2022-10-13 02:37,
+      Size: 145,088MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /media,
+        DirectoryPathForSearch:  media,
+        CreatedAtUtc: DateTime_25,
+        RootEntryId: ,
+        SizeInBytes: 1622117422,
+        Id: Analyses-225-A
+      },
+      Name: media,
+      DirectoryPath: /media,
+      CreatedAt: 2022-10-10 19:44,
+      Size: 1,511GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /srv,
+        DirectoryPathForSearch:  srv,
+        CreatedAtUtc: DateTime_26,
+        RootEntryId: ,
+        SizeInBytes: 1200665547,
+        Id: Analyses-228-A
+      },
+      Name: srv,
+      DirectoryPath: /srv,
+      CreatedAt: 2022-10-09 23:03,
+      Size: 1,118GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/sbin,
+        DirectoryPathForSearch:  opt sbin,
+        CreatedAtUtc: DateTime_27,
+        RootEntryId: ,
+        SizeInBytes: 1942297371,
+        Id: Analyses-174-A
+      },
+      Name: sbin,
+      DirectoryPath: /opt/sbin,
+      CreatedAt: 2022-10-08 10:15,
+      Size: 1,809GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Users,
+        DirectoryPathForSearch:  Users,
+        CreatedAtUtc: DateTime_28,
+        RootEntryId: ,
+        SizeInBytes: 1930288699,
+        Id: Analyses-101-A
+      },
+      Name: Users,
+      DirectoryPath: /Users,
+      CreatedAt: 2022-10-03 21:56,
+      Size: 1,798GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/sbin,
+        DirectoryPathForSearch:  opt sbin,
+        CreatedAtUtc: DateTime_29,
+        RootEntryId: ,
+        SizeInBytes: 2140487850,
+        Id: Analyses-32-A
+      },
+      Name: sbin,
+      DirectoryPath: /opt/sbin,
+      CreatedAt: 2022-10-02 06:29,
+      Size: 1,993GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Users,
+        DirectoryPathForSearch:  Users,
+        CreatedAtUtc: DateTime_30,
+        RootEntryId: ,
+        SizeInBytes: 1643244861,
+        Id: Analyses-97-A
+      },
+      Name: Users,
+      DirectoryPath: /Users,
+      CreatedAt: 2022-10-02 03:05,
+      Size: 1,530GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /sys,
+        DirectoryPathForSearch:  sys,
+        CreatedAtUtc: DateTime_31,
+        RootEntryId: ,
+        SizeInBytes: 1945917830,
+        Id: Analyses-148-A
+      },
+      Name: sys,
+      DirectoryPath: /sys,
+      CreatedAt: 2022-10-01 13:33,
+      Size: 1,812GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libdata,
+        DirectoryPathForSearch:  usr libdata,
+        CreatedAtUtc: DateTime_32,
+        RootEntryId: ,
+        SizeInBytes: 1637806816,
+        Id: Analyses-261-A
+      },
+      Name: libdata,
+      DirectoryPath: /usr/libdata,
+      CreatedAt: 2022-09-30 05:54,
+      Size: 1,525GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/sbin,
+        DirectoryPathForSearch:  opt sbin,
+        CreatedAtUtc: DateTime_33,
+        RootEntryId: ,
+        SizeInBytes: 1184698488,
+        Id: Analyses-171-A
+      },
+      Name: sbin,
+      DirectoryPath: /opt/sbin,
+      CreatedAt: 2022-09-30 03:28,
+      Size: 1,103GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Users,
+        DirectoryPathForSearch:  Users,
+        CreatedAtUtc: DateTime_34,
+        RootEntryId: ,
+        SizeInBytes: 927806277,
+        Id: Analyses-72-A
+      },
+      Name: Users,
+      DirectoryPath: /Users,
+      CreatedAt: 2022-09-30 03:26,
+      Size: 884,825MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_35,
+        RootEntryId: ,
+        SizeInBytes: 919546936,
+        Id: Analyses-286-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-09-29 19:12,
+      Size: 876,948MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_36,
+        RootEntryId: ,
+        SizeInBytes: 1118091650,
+        Id: Analyses-187-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-09-28 07:25,
+      Size: 1,041GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /tmp,
+        DirectoryPathForSearch:  tmp,
+        CreatedAtUtc: DateTime_37,
+        RootEntryId: ,
+        SizeInBytes: 2088214468,
+        Id: Analyses-75-A
+      },
+      Name: tmp,
+      DirectoryPath: /tmp,
+      CreatedAt: 2022-09-26 20:46,
+      Size: 1,945GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home,
+        DirectoryPathForSearch:  home,
+        CreatedAtUtc: DateTime_38,
+        RootEntryId: ,
+        SizeInBytes: 1738215702,
+        Id: Analyses-166-A
+      },
+      Name: home,
+      DirectoryPath: /home,
+      CreatedAt: 2022-09-24 20:20,
+      Size: 1,619GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/lib,
+        DirectoryPathForSearch:  usr lib,
+        CreatedAtUtc: DateTime_39,
+        RootEntryId: ,
+        SizeInBytes: 909288972,
+        Id: Analyses-110-A
+      },
+      Name: lib,
+      DirectoryPath: /usr/lib,
+      CreatedAt: 2022-09-24 06:42,
+      Size: 867,166MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot/defaults,
+        DirectoryPathForSearch:  boot defaults,
+        CreatedAtUtc: DateTime_40,
+        RootEntryId: ,
+        SizeInBytes: 19389110,
+        Id: Analyses-287-A
+      },
+      Name: defaults,
+      DirectoryPath: /boot/defaults,
+      CreatedAt: 2022-09-23 22:28,
+      Size: 18,491MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_41,
+        RootEntryId: ,
+        SizeInBytes: 1259058601,
+        Id: Analyses-133-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-09-21 06:16,
+      Size: 1,173GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/bin,
+        DirectoryPathForSearch:  opt bin,
+        CreatedAtUtc: DateTime_42,
+        RootEntryId: ,
+        SizeInBytes: 783217648,
+        Id: Analyses-283-A
+      },
+      Name: bin,
+      DirectoryPath: /opt/bin,
+      CreatedAt: 2022-09-20 05:30,
+      Size: 746,935MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/ppp,
+        DirectoryPathForSearch:  etc ppp,
+        CreatedAtUtc: DateTime_43,
+        RootEntryId: ,
+        SizeInBytes: 567715480,
+        Id: Analyses-299-A
+      },
+      Name: ppp,
+      DirectoryPath: /etc/ppp,
+      CreatedAt: 2022-09-18 14:50,
+      Size: 541,416MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /private/var,
+        DirectoryPathForSearch:  private var,
+        CreatedAtUtc: DateTime_44,
+        RootEntryId: ,
+        SizeInBytes: 1488173499,
+        Id: Analyses-292-A
+      },
+      Name: var,
+      DirectoryPath: /private/var,
+      CreatedAt: 2022-09-18 00:32,
+      Size: 1,386GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/X11R6,
+        DirectoryPathForSearch:  usr X11R6,
+        CreatedAtUtc: DateTime_45,
+        RootEntryId: ,
+        SizeInBytes: 428504142,
+        Id: Analyses-212-A
+      },
+      Name: X11R6,
+      DirectoryPath: /usr/X11R6,
+      CreatedAt: 2022-09-16 20:48,
+      Size: 408,653MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var,
+        DirectoryPathForSearch:  var,
+        CreatedAtUtc: DateTime_46,
+        RootEntryId: ,
+        SizeInBytes: 1275284489,
+        Id: Analyses-230-A
+      },
+      Name: var,
+      DirectoryPath: /var,
+      CreatedAt: 2022-09-16 14:37,
+      Size: 1,188GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/bin,
+        DirectoryPathForSearch:  opt bin,
+        CreatedAtUtc: DateTime_47,
+        RootEntryId: ,
+        SizeInBytes: 951854597,
+        Id: Analyses-120-A
+      },
+      Name: bin,
+      DirectoryPath: /opt/bin,
+      CreatedAt: 2022-09-15 06:42,
+      Size: 907,759MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr,
+        DirectoryPathForSearch:  usr,
+        CreatedAtUtc: DateTime_48,
+        RootEntryId: ,
+        SizeInBytes: 938967586,
+        Id: Analyses-0-A
+      },
+      Name: usr,
+      DirectoryPath: /usr,
+      CreatedAt: 2022-09-15 01:14,
+      Size: 895,469MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/defaults,
+        DirectoryPathForSearch:  etc defaults,
+        CreatedAtUtc: DateTime_49,
+        RootEntryId: ,
+        SizeInBytes: 79052818,
+        Id: Analyses-125-A
+      },
+      Name: defaults,
+      DirectoryPath: /etc/defaults,
+      CreatedAt: 2022-09-14 11:19,
+      Size: 75,391MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_50,
+        RootEntryId: ,
+        SizeInBytes: 2000221927,
+        Id: Analyses-219-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-09-14 03:09,
+      Size: 1,863GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /dev,
+        DirectoryPathForSearch:  dev,
+        CreatedAtUtc: DateTime_51,
+        RootEntryId: ,
+        SizeInBytes: 1340977351,
+        Id: Analyses-140-A
+      },
+      Name: dev,
+      DirectoryPath: /dev,
+      CreatedAt: 2022-09-11 09:28,
+      Size: 1,249GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/include,
+        DirectoryPathForSearch:  opt include,
+        CreatedAtUtc: DateTime_52,
+        RootEntryId: ,
+        SizeInBytes: 976984145,
+        Id: Analyses-5-A
+      },
+      Name: include,
+      DirectoryPath: /opt/include,
+      CreatedAt: 2022-09-10 22:22,
+      Size: 931,725MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/X11R6,
+        DirectoryPathForSearch:  usr X11R6,
+        CreatedAtUtc: DateTime_53,
+        RootEntryId: ,
+        SizeInBytes: 1747204228,
+        Id: Analyses-122-A
+      },
+      Name: X11R6,
+      DirectoryPath: /usr/X11R6,
+      CreatedAt: 2022-09-10 07:14,
+      Size: 1,627GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_54,
+        RootEntryId: ,
+        SizeInBytes: 460703840,
+        Id: Analyses-136-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-09-10 05:02,
+      Size: 439,361MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr,
+        DirectoryPathForSearch:  usr,
+        CreatedAtUtc: DateTime_55,
+        RootEntryId: ,
+        SizeInBytes: 1845649297,
+        Id: Analyses-192-A
+      },
+      Name: usr,
+      DirectoryPath: /usr,
+      CreatedAt: 2022-09-09 18:11,
+      Size: 1,719GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/bin,
+        DirectoryPathForSearch:  usr bin,
+        CreatedAtUtc: DateTime_56,
+        RootEntryId: ,
+        SizeInBytes: 1184490612,
+        Id: Analyses-25-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/bin,
+      CreatedAt: 2022-09-07 05:17,
+      Size: 1,103GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/sbin,
+        DirectoryPathForSearch:  opt sbin,
+        CreatedAtUtc: DateTime_57,
+        RootEntryId: ,
+        SizeInBytes: 1677954961,
+        Id: Analyses-84-A
+      },
+      Name: sbin,
+      DirectoryPath: /opt/sbin,
+      CreatedAt: 2022-09-06 18:03,
+      Size: 1,563GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/lib,
+        DirectoryPathForSearch:  opt lib,
+        CreatedAtUtc: DateTime_58,
+        RootEntryId: ,
+        SizeInBytes: 1949499159,
+        Id: Analyses-160-A
+      },
+      Name: lib,
+      DirectoryPath: /opt/lib,
+      CreatedAt: 2022-09-05 23:06,
+      Size: 1,816GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /System,
+        DirectoryPathForSearch:  System,
+        CreatedAtUtc: DateTime_59,
+        RootEntryId: ,
+        SizeInBytes: 1753998920,
+        Id: Analyses-168-A
+      },
+      Name: System,
+      DirectoryPath: /System,
+      CreatedAt: 2022-09-05 01:19,
+      Size: 1,634GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /mnt,
+        DirectoryPathForSearch:  mnt,
+        CreatedAtUtc: DateTime_60,
+        RootEntryId: ,
+        SizeInBytes: 760925920,
+        Id: Analyses-59-A
+      },
+      Name: mnt,
+      DirectoryPath: /mnt,
+      CreatedAt: 2022-09-03 21:05,
+      Size: 725,676MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /dev,
+        DirectoryPathForSearch:  dev,
+        CreatedAtUtc: DateTime_61,
+        RootEntryId: ,
+        SizeInBytes: 662483747,
+        Id: Analyses-158-A
+      },
+      Name: dev,
+      DirectoryPath: /dev,
+      CreatedAt: 2022-09-03 20:12,
+      Size: 631,794MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/spool,
+        DirectoryPathForSearch:  var spool,
+        CreatedAtUtc: DateTime_62,
+        RootEntryId: ,
+        SizeInBytes: 676732274,
+        Id: Analyses-163-A
+      },
+      Name: spool,
+      DirectoryPath: /var/spool,
+      CreatedAt: 2022-09-02 16:07,
+      Size: 645,382MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/log,
+        DirectoryPathForSearch:  var log,
+        CreatedAtUtc: DateTime_63,
+        RootEntryId: ,
+        SizeInBytes: 1561983285,
+        Id: Analyses-182-A
+      },
+      Name: log,
+      DirectoryPath: /var/log,
+      CreatedAt: 2022-09-02 06:00,
+      Size: 1,455GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Applications,
+        DirectoryPathForSearch:  Applications,
+        CreatedAtUtc: DateTime_64,
+        RootEntryId: ,
+        SizeInBytes: 2083381633,
+        Id: Analyses-44-A
+      },
+      Name: Applications,
+      DirectoryPath: /Applications,
+      CreatedAt: 2022-08-31 02:32,
+      Size: 1,940GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/ports,
+        DirectoryPathForSearch:  usr ports,
+        CreatedAtUtc: DateTime_65,
+        RootEntryId: ,
+        SizeInBytes: 309435067,
+        Id: Analyses-102-A
+      },
+      Name: ports,
+      DirectoryPath: /usr/ports,
+      CreatedAt: 2022-08-29 08:03,
+      Size: 295,100MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/tmp,
+        DirectoryPathForSearch:  var tmp,
+        CreatedAtUtc: DateTime_66,
+        RootEntryId: ,
+        SizeInBytes: 925112714,
+        Id: Analyses-288-A
+      },
+      Name: tmp,
+      DirectoryPath: /var/tmp,
+      CreatedAt: 2022-08-28 09:01,
+      Size: 882,256MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Users,
+        DirectoryPathForSearch:  Users,
+        CreatedAtUtc: DateTime_67,
+        RootEntryId: ,
+        SizeInBytes: 776181113,
+        Id: Analyses-50-A
+      },
+      Name: Users,
+      DirectoryPath: /Users,
+      CreatedAt: 2022-08-28 07:01,
+      Size: 740,224MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/sbin,
+        DirectoryPathForSearch:  opt sbin,
+        CreatedAtUtc: DateTime_68,
+        RootEntryId: ,
+        SizeInBytes: 224921730,
+        Id: Analyses-78-A
+      },
+      Name: sbin,
+      DirectoryPath: /opt/sbin,
+      CreatedAt: 2022-08-26 04:22,
+      Size: 214,502MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/obj,
+        DirectoryPathForSearch:  usr obj,
+        CreatedAtUtc: DateTime_69,
+        RootEntryId: ,
+        SizeInBytes: 712601550,
+        Id: Analyses-264-A
+      },
+      Name: obj,
+      DirectoryPath: /usr/obj,
+      CreatedAt: 2022-08-25 05:44,
+      Size: 679,590MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Users,
+        DirectoryPathForSearch:  Users,
+        CreatedAtUtc: DateTime_70,
+        RootEntryId: ,
+        SizeInBytes: 1762941289,
+        Id: Analyses-76-A
+      },
+      Name: Users,
+      DirectoryPath: /Users,
+      CreatedAt: 2022-08-24 21:45,
+      Size: 1,642GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Applications,
+        DirectoryPathForSearch:  Applications,
+        CreatedAtUtc: DateTime_71,
+        RootEntryId: ,
+        SizeInBytes: 1976981687,
+        Id: Analyses-244-A
+      },
+      Name: Applications,
+      DirectoryPath: /Applications,
+      CreatedAt: 2022-08-23 23:53,
+      Size: 1,841GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user/dir,
+        DirectoryPathForSearch:  home user dir,
+        CreatedAtUtc: DateTime_72,
+        RootEntryId: ,
+        SizeInBytes: 55883261,
+        Id: Analyses-291-A
+      },
+      Name: dir,
+      DirectoryPath: /home/user/dir,
+      CreatedAt: 2022-08-22 16:45,
+      Size: 53,294MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/yp,
+        DirectoryPathForSearch:  var yp,
+        CreatedAtUtc: DateTime_73,
+        RootEntryId: ,
+        SizeInBytes: 1415728268,
+        Id: Analyses-250-A
+      },
+      Name: yp,
+      DirectoryPath: /var/yp,
+      CreatedAt: 2022-08-17 11:25,
+      Size: 1,318GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/log,
+        DirectoryPathForSearch:  var log,
+        CreatedAtUtc: DateTime_74,
+        RootEntryId: ,
+        SizeInBytes: 1913684258,
+        Id: Analyses-189-A
+      },
+      Name: log,
+      DirectoryPath: /var/log,
+      CreatedAt: 2022-08-12 02:36,
+      Size: 1,782GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/src,
+        DirectoryPathForSearch:  usr src,
+        CreatedAtUtc: DateTime_75,
+        RootEntryId: ,
+        SizeInBytes: 2068262620,
+        Id: Analyses-35-A
+      },
+      Name: src,
+      DirectoryPath: /usr/src,
+      CreatedAt: 2022-08-10 14:03,
+      Size: 1,926GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_76,
+        RootEntryId: ,
+        SizeInBytes: 1109084084,
+        Id: Analyses-155-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-08-05 11:12,
+      Size: 1,033GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Applications,
+        DirectoryPathForSearch:  Applications,
+        CreatedAtUtc: DateTime_77,
+        RootEntryId: ,
+        SizeInBytes: 1483336811,
+        Id: Analyses-293-A
+      },
+      Name: Applications,
+      DirectoryPath: /Applications,
+      CreatedAt: 2022-08-05 08:15,
+      Size: 1,381GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/ppp,
+        DirectoryPathForSearch:  etc ppp,
+        CreatedAtUtc: DateTime_78,
+        RootEntryId: ,
+        SizeInBytes: 1851569382,
+        Id: Analyses-1-A
+      },
+      Name: ppp,
+      DirectoryPath: /etc/ppp,
+      CreatedAt: 2022-08-01 15:16,
+      Size: 1,724GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home,
+        DirectoryPathForSearch:  home,
+        CreatedAtUtc: DateTime_79,
+        RootEntryId: ,
+        SizeInBytes: 192617855,
+        Id: Analyses-104-A
+      },
+      Name: home,
+      DirectoryPath: /home,
+      CreatedAt: 2022-07-29 14:44,
+      Size: 183,695MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Users,
+        DirectoryPathForSearch:  Users,
+        CreatedAtUtc: DateTime_80,
+        RootEntryId: ,
+        SizeInBytes: 886040512,
+        Id: Analyses-132-A
+      },
+      Name: Users,
+      DirectoryPath: /Users,
+      CreatedAt: 2022-07-27 23:58,
+      Size: 844,994MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lost+found,
+        DirectoryPathForSearch:  lost+found,
+        CreatedAtUtc: DateTime_81,
+        RootEntryId: ,
+        SizeInBytes: 434177369,
+        Id: Analyses-268-A
+      },
+      Name: lost+found,
+      DirectoryPath: /lost+found,
+      CreatedAt: 2022-07-26 22:21,
+      Size: 414,064MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /media,
+        DirectoryPathForSearch:  media,
+        CreatedAtUtc: DateTime_82,
+        RootEntryId: ,
+        SizeInBytes: 634048501,
+        Id: Analyses-124-A
+      },
+      Name: media,
+      DirectoryPath: /media,
+      CreatedAt: 2022-07-25 22:39,
+      Size: 604,676MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/mail,
+        DirectoryPathForSearch:  var mail,
+        CreatedAtUtc: DateTime_83,
+        RootEntryId: ,
+        SizeInBytes: 443451643,
+        Id: Analyses-144-A
+      },
+      Name: mail,
+      DirectoryPath: /var/mail,
+      CreatedAt: 2022-07-22 01:14,
+      Size: 422,908MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot/defaults,
+        DirectoryPathForSearch:  boot defaults,
+        CreatedAtUtc: DateTime_84,
+        RootEntryId: ,
+        SizeInBytes: 939667109,
+        Id: Analyses-235-A
+      },
+      Name: defaults,
+      DirectoryPath: /boot/defaults,
+      CreatedAt: 2022-07-21 19:52,
+      Size: 896,136MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/yp,
+        DirectoryPathForSearch:  var yp,
+        CreatedAtUtc: DateTime_85,
+        RootEntryId: ,
+        SizeInBytes: 1206463680,
+        Id: Analyses-139-A
+      },
+      Name: yp,
+      DirectoryPath: /var/yp,
+      CreatedAt: 2022-07-20 02:48,
+      Size: 1,124GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home,
+        DirectoryPathForSearch:  home,
+        CreatedAtUtc: DateTime_86,
+        RootEntryId: ,
+        SizeInBytes: 1270285044,
+        Id: Analyses-37-A
+      },
+      Name: home,
+      DirectoryPath: /home,
+      CreatedAt: 2022-07-19 23:33,
+      Size: 1,183GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/defaults,
+        DirectoryPathForSearch:  etc defaults,
+        CreatedAtUtc: DateTime_87,
+        RootEntryId: ,
+        SizeInBytes: 914953316,
+        Id: Analyses-274-A
+      },
+      Name: defaults,
+      DirectoryPath: /etc/defaults,
+      CreatedAt: 2022-07-15 19:38,
+      Size: 872,567MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/defaults,
+        DirectoryPathForSearch:  etc defaults,
+        CreatedAtUtc: DateTime_88,
+        RootEntryId: ,
+        SizeInBytes: 144034300,
+        Id: Analyses-190-A
+      },
+      Name: defaults,
+      DirectoryPath: /etc/defaults,
+      CreatedAt: 2022-07-15 07:13,
+      Size: 137,362MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/include,
+        DirectoryPathForSearch:  opt include,
+        CreatedAtUtc: DateTime_89,
+        RootEntryId: ,
+        SizeInBytes: 168823532,
+        Id: Analyses-203-A
+      },
+      Name: include,
+      DirectoryPath: /opt/include,
+      CreatedAt: 2022-07-15 06:23,
+      Size: 161,003MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /private,
+        DirectoryPathForSearch:  private,
+        CreatedAtUtc: DateTime_90,
+        RootEntryId: ,
+        SizeInBytes: 1682526091,
+        Id: Analyses-238-A
+      },
+      Name: private,
+      DirectoryPath: /private,
+      CreatedAt: 2022-07-15 02:11,
+      Size: 1,567GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/sbin,
+        DirectoryPathForSearch:  usr sbin,
+        CreatedAtUtc: DateTime_91,
+        RootEntryId: ,
+        SizeInBytes: 1270776457,
+        Id: Analyses-62-A
+      },
+      Name: sbin,
+      DirectoryPath: /usr/sbin,
+      CreatedAt: 2022-07-14 20:27,
+      Size: 1,184GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/tmp,
+        DirectoryPathForSearch:  var tmp,
+        CreatedAtUtc: DateTime_92,
+        RootEntryId: ,
+        SizeInBytes: 683923588,
+        Id: Analyses-185-A
+      },
+      Name: tmp,
+      DirectoryPath: /var/tmp,
+      CreatedAt: 2022-07-14 19:28,
+      Size: 652,240MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/X11R6,
+        DirectoryPathForSearch:  usr X11R6,
+        CreatedAtUtc: DateTime_93,
+        RootEntryId: ,
+        SizeInBytes: 1958495574,
+        Id: Analyses-159-A
+      },
+      Name: X11R6,
+      DirectoryPath: /usr/X11R6,
+      CreatedAt: 2022-07-12 14:14,
+      Size: 1,824GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Users,
+        DirectoryPathForSearch:  Users,
+        CreatedAtUtc: DateTime_94,
+        RootEntryId: ,
+        SizeInBytes: 934544411,
+        Id: Analyses-109-A
+      },
+      Name: Users,
+      DirectoryPath: /Users,
+      CreatedAt: 2022-07-12 12:59,
+      Size: 891,251MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /proc,
+        DirectoryPathForSearch:  proc,
+        CreatedAtUtc: DateTime_95,
+        RootEntryId: ,
+        SizeInBytes: 664678815,
+        Id: Analyses-3-A
+      },
+      Name: proc,
+      DirectoryPath: /proc,
+      CreatedAt: 2022-07-11 14:20,
+      Size: 633,887MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /mnt,
+        DirectoryPathForSearch:  mnt,
+        CreatedAtUtc: DateTime_96,
+        RootEntryId: ,
+        SizeInBytes: 1625034140,
+        Id: Analyses-275-A
+      },
+      Name: mnt,
+      DirectoryPath: /mnt,
+      CreatedAt: 2022-07-11 13:02,
+      Size: 1,513GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/defaults,
+        DirectoryPathForSearch:  etc defaults,
+        CreatedAtUtc: DateTime_97,
+        RootEntryId: ,
+        SizeInBytes: 726022282,
+        Id: Analyses-33-A
+      },
+      Name: defaults,
+      DirectoryPath: /etc/defaults,
+      CreatedAt: 2022-07-11 04:55,
+      Size: 692,389MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /proc,
+        DirectoryPathForSearch:  proc,
+        CreatedAtUtc: DateTime_98,
+        RootEntryId: ,
+        SizeInBytes: 1141611528,
+        Id: Analyses-90-A
+      },
+      Name: proc,
+      DirectoryPath: /proc,
+      CreatedAt: 2022-07-10 00:06,
+      Size: 1,063GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/ports,
+        DirectoryPathForSearch:  usr ports,
+        CreatedAtUtc: DateTime_99,
+        RootEntryId: ,
+        SizeInBytes: 1986491792,
+        Id: Analyses-106-A
+      },
+      Name: ports,
+      DirectoryPath: /usr/ports,
+      CreatedAt: 2022-07-01 15:22,
+      Size: 1,850GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_100,
+        RootEntryId: ,
+        SizeInBytes: 906843547,
+        Id: Analyses-74-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-06-30 08:53,
+      Size: 864,833MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/src,
+        DirectoryPathForSearch:  usr src,
+        CreatedAtUtc: DateTime_101,
+        RootEntryId: ,
+        SizeInBytes: 1507805493,
+        Id: Analyses-99-A
+      },
+      Name: src,
+      DirectoryPath: /usr/src,
+      CreatedAt: 2022-06-29 22:00,
+      Size: 1,404GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/sbin,
+        DirectoryPathForSearch:  usr sbin,
+        CreatedAtUtc: DateTime_102,
+        RootEntryId: ,
+        SizeInBytes: 1734438167,
+        Id: Analyses-77-A
+      },
+      Name: sbin,
+      DirectoryPath: /usr/sbin,
+      CreatedAt: 2022-06-28 10:59,
+      Size: 1,615GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lib,
+        DirectoryPathForSearch:  lib,
+        CreatedAtUtc: DateTime_103,
+        RootEntryId: ,
+        SizeInBytes: 222734318,
+        Id: Analyses-226-A
+      },
+      Name: lib,
+      DirectoryPath: /lib,
+      CreatedAt: 2022-06-27 10:33,
+      Size: 212,416MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/include,
+        DirectoryPathForSearch:  opt include,
+        CreatedAtUtc: DateTime_104,
+        RootEntryId: ,
+        SizeInBytes: 123983797,
+        Id: Analyses-232-A
+      },
+      Name: include,
+      DirectoryPath: /opt/include,
+      CreatedAt: 2022-06-26 13:43,
+      Size: 118,240MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /rescue,
+        DirectoryPathForSearch:  rescue,
+        CreatedAtUtc: DateTime_105,
+        RootEntryId: ,
+        SizeInBytes: 704506923,
+        Id: Analyses-70-A
+      },
+      Name: rescue,
+      DirectoryPath: /rescue,
+      CreatedAt: 2022-06-25 06:34,
+      Size: 671,870MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/lib,
+        DirectoryPathForSearch:  usr lib,
+        CreatedAtUtc: DateTime_106,
+        RootEntryId: ,
+        SizeInBytes: 620186766,
+        Id: Analyses-236-A
+      },
+      Name: lib,
+      DirectoryPath: /usr/lib,
+      CreatedAt: 2022-06-23 05:45,
+      Size: 591,456MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libdata,
+        DirectoryPathForSearch:  usr libdata,
+        CreatedAtUtc: DateTime_107,
+        RootEntryId: ,
+        SizeInBytes: 1643102141,
+        Id: Analyses-170-A
+      },
+      Name: libdata,
+      DirectoryPath: /usr/libdata,
+      CreatedAt: 2022-06-21 13:24,
+      Size: 1,530GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/include,
+        DirectoryPathForSearch:  opt include,
+        CreatedAtUtc: DateTime_108,
+        RootEntryId: ,
+        SizeInBytes: 907676329,
+        Id: Analyses-201-A
+      },
+      Name: include,
+      DirectoryPath: /opt/include,
+      CreatedAt: 2022-06-20 23:15,
+      Size: 865,628MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/periodic,
+        DirectoryPathForSearch:  etc periodic,
+        CreatedAtUtc: DateTime_109,
+        RootEntryId: ,
+        SizeInBytes: 929611594,
+        Id: Analyses-92-A
+      },
+      Name: periodic,
+      DirectoryPath: /etc/periodic,
+      CreatedAt: 2022-06-20 19:24,
+      Size: 886,547MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt,
+        DirectoryPathForSearch:  opt,
+        CreatedAtUtc: DateTime_110,
+        RootEntryId: ,
+        SizeInBytes: 434689568,
+        Id: Analyses-294-A
+      },
+      Name: opt,
+      DirectoryPath: /opt,
+      CreatedAt: 2022-06-20 05:24,
+      Size: 414,552MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/src,
+        DirectoryPathForSearch:  usr src,
+        CreatedAtUtc: DateTime_111,
+        RootEntryId: ,
+        SizeInBytes: 1130957344,
+        Id: Analyses-233-A
+      },
+      Name: src,
+      DirectoryPath: /usr/src,
+      CreatedAt: 2022-06-18 07:48,
+      Size: 1,053GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/lib,
+        DirectoryPathForSearch:  usr lib,
+        CreatedAtUtc: DateTime_112,
+        RootEntryId: ,
+        SizeInBytes: 913626439,
+        Id: Analyses-10-A
+      },
+      Name: lib,
+      DirectoryPath: /usr/lib,
+      CreatedAt: 2022-06-18 02:43,
+      Size: 871,302MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/include,
+        DirectoryPathForSearch:  opt include,
+        CreatedAtUtc: DateTime_113,
+        RootEntryId: ,
+        SizeInBytes: 735851447,
+        Id: Analyses-249-A
+      },
+      Name: include,
+      DirectoryPath: /opt/include,
+      CreatedAt: 2022-06-17 01:52,
+      Size: 701,763MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /srv,
+        DirectoryPathForSearch:  srv,
+        CreatedAtUtc: DateTime_114,
+        RootEntryId: ,
+        SizeInBytes: 2019630174,
+        Id: Analyses-41-A
+      },
+      Name: srv,
+      DirectoryPath: /srv,
+      CreatedAt: 2022-06-15 14:31,
+      Size: 1,881GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lib,
+        DirectoryPathForSearch:  lib,
+        CreatedAtUtc: DateTime_115,
+        RootEntryId: ,
+        SizeInBytes: 181752491,
+        Id: Analyses-115-A
+      },
+      Name: lib,
+      DirectoryPath: /lib,
+      CreatedAt: 2022-06-09 12:03,
+      Size: 173,333MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot/defaults,
+        DirectoryPathForSearch:  boot defaults,
+        CreatedAtUtc: DateTime_116,
+        RootEntryId: ,
+        SizeInBytes: 315054827,
+        Id: Analyses-14-A
+      },
+      Name: defaults,
+      DirectoryPath: /boot/defaults,
+      CreatedAt: 2022-06-05 01:11,
+      Size: 300,460MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot/defaults,
+        DirectoryPathForSearch:  boot defaults,
+        CreatedAtUtc: DateTime_117,
+        RootEntryId: ,
+        SizeInBytes: 873803622,
+        Id: Analyses-276-A
+      },
+      Name: defaults,
+      DirectoryPath: /boot/defaults,
+      CreatedAt: 2022-06-04 22:12,
+      Size: 833,324MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt,
+        DirectoryPathForSearch:  opt,
+        CreatedAtUtc: DateTime_118,
+        RootEntryId: ,
+        SizeInBytes: 1986017747,
+        Id: Analyses-194-A
+      },
+      Name: opt,
+      DirectoryPath: /opt,
+      CreatedAt: 2022-06-03 13:34,
+      Size: 1,850GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /private,
+        DirectoryPathForSearch:  private,
+        CreatedAtUtc: DateTime_119,
+        RootEntryId: ,
+        SizeInBytes: 208299846,
+        Id: Analyses-237-A
+      },
+      Name: private,
+      DirectoryPath: /private,
+      CreatedAt: 2022-06-01 08:28,
+      Size: 198,650MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_120,
+        RootEntryId: ,
+        SizeInBytes: 1657340053,
+        Id: Analyses-277-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-05-31 22:30,
+      Size: 1,544GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_121,
+        RootEntryId: ,
+        SizeInBytes: 1114938513,
+        Id: Analyses-135-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-05-28 09:33,
+      Size: 1,038GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user,
+        DirectoryPathForSearch:  home user,
+        CreatedAtUtc: DateTime_122,
+        RootEntryId: ,
+        SizeInBytes: 1346186607,
+        Id: Analyses-207-A
+      },
+      Name: user,
+      DirectoryPath: /home/user,
+      CreatedAt: 2022-05-26 07:38,
+      Size: 1,254GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/X11R6,
+        DirectoryPathForSearch:  usr X11R6,
+        CreatedAtUtc: DateTime_123,
+        RootEntryId: ,
+        SizeInBytes: 2065165264,
+        Id: Analyses-154-A
+      },
+      Name: X11R6,
+      DirectoryPath: /usr/X11R6,
+      CreatedAt: 2022-05-25 16:57,
+      Size: 1,923GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/sbin,
+        DirectoryPathForSearch:  opt sbin,
+        CreatedAtUtc: DateTime_124,
+        RootEntryId: ,
+        SizeInBytes: 625915633,
+        Id: Analyses-214-A
+      },
+      Name: sbin,
+      DirectoryPath: /opt/sbin,
+      CreatedAt: 2022-05-25 05:07,
+      Size: 596,920MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libdata,
+        DirectoryPathForSearch:  usr libdata,
+        CreatedAtUtc: DateTime_125,
+        RootEntryId: ,
+        SizeInBytes: 1801271393,
+        Id: Analyses-119-A
+      },
+      Name: libdata,
+      DirectoryPath: /usr/libdata,
+      CreatedAt: 2022-05-23 20:24,
+      Size: 1,678GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /bin,
+        DirectoryPathForSearch:  bin,
+        CreatedAtUtc: DateTime_126,
+        RootEntryId: ,
+        SizeInBytes: 1203298792,
+        Id: Analyses-242-A
+      },
+      Name: bin,
+      DirectoryPath: /bin,
+      CreatedAt: 2022-05-23 09:16,
+      Size: 1,121GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/mail,
+        DirectoryPathForSearch:  var mail,
+        CreatedAtUtc: DateTime_127,
+        RootEntryId: ,
+        SizeInBytes: 117291460,
+        Id: Analyses-53-A
+      },
+      Name: mail,
+      DirectoryPath: /var/mail,
+      CreatedAt: 2022-05-19 04:06,
+      Size: 111,858MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lib,
+        DirectoryPathForSearch:  lib,
+        CreatedAtUtc: DateTime_128,
+        RootEntryId: ,
+        SizeInBytes: 215423103,
+        Id: Analyses-265-A
+      },
+      Name: lib,
+      DirectoryPath: /lib,
+      CreatedAt: 2022-05-18 21:20,
+      Size: 205,443MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/share,
+        DirectoryPathForSearch:  usr share,
+        CreatedAtUtc: DateTime_129,
+        RootEntryId: ,
+        SizeInBytes: 679148771,
+        Id: Analyses-60-A
+      },
+      Name: share,
+      DirectoryPath: /usr/share,
+      CreatedAt: 2022-05-17 22:05,
+      Size: 647,687MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /dev,
+        DirectoryPathForSearch:  dev,
+        CreatedAtUtc: DateTime_130,
+        RootEntryId: ,
+        SizeInBytes: 128157195,
+        Id: Analyses-64-A
+      },
+      Name: dev,
+      DirectoryPath: /dev,
+      CreatedAt: 2022-05-17 12:33,
+      Size: 122,220MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /sys,
+        DirectoryPathForSearch:  sys,
+        CreatedAtUtc: DateTime_131,
+        RootEntryId: ,
+        SizeInBytes: 187809040,
+        Id: Analyses-218-A
+      },
+      Name: sys,
+      DirectoryPath: /sys,
+      CreatedAt: 2022-05-16 22:41,
+      Size: 179,109MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Library,
+        DirectoryPathForSearch:  Library,
+        CreatedAtUtc: DateTime_132,
+        RootEntryId: ,
+        SizeInBytes: 1637303696,
+        Id: Analyses-131-A
+      },
+      Name: Library,
+      DirectoryPath: /Library,
+      CreatedAt: 2022-05-16 02:18,
+      Size: 1,525GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/tmp,
+        DirectoryPathForSearch:  var tmp,
+        CreatedAtUtc: DateTime_133,
+        RootEntryId: ,
+        SizeInBytes: 851267705,
+        Id: Analyses-151-A
+      },
+      Name: tmp,
+      DirectoryPath: /var/tmp,
+      CreatedAt: 2022-05-15 13:51,
+      Size: 811,832MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt,
+        DirectoryPathForSearch:  opt,
+        CreatedAtUtc: DateTime_134,
+        RootEntryId: ,
+        SizeInBytes: 1617707362,
+        Id: Analyses-143-A
+      },
+      Name: opt,
+      DirectoryPath: /opt,
+      CreatedAt: 2022-05-11 15:22,
+      Size: 1,507GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /root,
+        DirectoryPathForSearch:  root,
+        CreatedAtUtc: DateTime_135,
+        RootEntryId: ,
+        SizeInBytes: 1034182707,
+        Id: Analyses-177-A
+      },
+      Name: root,
+      DirectoryPath: /root,
+      CreatedAt: 2022-05-10 15:57,
+      Size: 986,273MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/include,
+        DirectoryPathForSearch:  usr include,
+        CreatedAtUtc: DateTime_136,
+        RootEntryId: ,
+        SizeInBytes: 1248152847,
+        Id: Analyses-150-A
+      },
+      Name: include,
+      DirectoryPath: /usr/include,
+      CreatedAt: 2022-05-10 08:51,
+      Size: 1,162GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_137,
+        RootEntryId: ,
+        SizeInBytes: 868100110,
+        Id: Analyses-285-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-05-09 22:39,
+      Size: 827,885MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/lib,
+        DirectoryPathForSearch:  usr lib,
+        CreatedAtUtc: DateTime_138,
+        RootEntryId: ,
+        SizeInBytes: 2103912009,
+        Id: Analyses-248-A
+      },
+      Name: lib,
+      DirectoryPath: /usr/lib,
+      CreatedAt: 2022-05-09 20:58,
+      Size: 1,959GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /private/tmp,
+        DirectoryPathForSearch:  private tmp,
+        CreatedAtUtc: DateTime_139,
+        RootEntryId: ,
+        SizeInBytes: 473964231,
+        Id: Analyses-245-A
+      },
+      Name: tmp,
+      DirectoryPath: /private/tmp,
+      CreatedAt: 2022-05-09 08:39,
+      Size: 452,008MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_140,
+        RootEntryId: ,
+        SizeInBytes: 1460679320,
+        Id: Analyses-216-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-05-07 12:46,
+      Size: 1,360GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/mail,
+        DirectoryPathForSearch:  var mail,
+        CreatedAtUtc: DateTime_141,
+        RootEntryId: ,
+        SizeInBytes: 849950908,
+        Id: Analyses-88-A
+      },
+      Name: mail,
+      DirectoryPath: /var/mail,
+      CreatedAt: 2022-05-06 16:56,
+      Size: 810,576MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /rescue,
+        DirectoryPathForSearch:  rescue,
+        CreatedAtUtc: DateTime_142,
+        RootEntryId: ,
+        SizeInBytes: 1970429613,
+        Id: Analyses-234-A
+      },
+      Name: rescue,
+      DirectoryPath: /rescue,
+      CreatedAt: 2022-05-05 19:16,
+      Size: 1,835GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /private/var,
+        DirectoryPathForSearch:  private var,
+        CreatedAtUtc: DateTime_143,
+        RootEntryId: ,
+        SizeInBytes: 696259729,
+        Id: Analyses-121-A
+      },
+      Name: var,
+      DirectoryPath: /private/var,
+      CreatedAt: 2022-05-02 06:06,
+      Size: 664,005MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr,
+        DirectoryPathForSearch:  usr,
+        CreatedAtUtc: DateTime_144,
+        RootEntryId: ,
+        SizeInBytes: 1522085192,
+        Id: Analyses-256-A
+      },
+      Name: usr,
+      DirectoryPath: /usr,
+      CreatedAt: 2022-05-01 03:08,
+      Size: 1,418GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /tmp,
+        DirectoryPathForSearch:  tmp,
+        CreatedAtUtc: DateTime_145,
+        RootEntryId: ,
+        SizeInBytes: 682390266,
+        Id: Analyses-269-A
+      },
+      Name: tmp,
+      DirectoryPath: /tmp,
+      CreatedAt: 2022-04-30 23:19,
+      Size: 650,778MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/include,
+        DirectoryPathForSearch:  usr include,
+        CreatedAtUtc: DateTime_146,
+        RootEntryId: ,
+        SizeInBytes: 1926954514,
+        Id: Analyses-266-A
+      },
+      Name: include,
+      DirectoryPath: /usr/include,
+      CreatedAt: 2022-04-30 06:53,
+      Size: 1,795GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/yp,
+        DirectoryPathForSearch:  var yp,
+        CreatedAtUtc: DateTime_147,
+        RootEntryId: ,
+        SizeInBytes: 616333546,
+        Id: Analyses-297-A
+      },
+      Name: yp,
+      DirectoryPath: /var/yp,
+      CreatedAt: 2022-04-29 22:51,
+      Size: 587,781MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Network,
+        DirectoryPathForSearch:  Network,
+        CreatedAtUtc: DateTime_148,
+        RootEntryId: ,
+        SizeInBytes: 299914059,
+        Id: Analyses-56-A
+      },
+      Name: Network,
+      DirectoryPath: /Network,
+      CreatedAt: 2022-04-29 05:45,
+      Size: 286,020MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/share,
+        DirectoryPathForSearch:  usr share,
+        CreatedAtUtc: DateTime_149,
+        RootEntryId: ,
+        SizeInBytes: 2017921625,
+        Id: Analyses-186-A
+      },
+      Name: share,
+      DirectoryPath: /usr/share,
+      CreatedAt: 2022-04-28 03:23,
+      Size: 1,879GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/tmp,
+        DirectoryPathForSearch:  var tmp,
+        CreatedAtUtc: DateTime_150,
+        RootEntryId: ,
+        SizeInBytes: 540248971,
+        Id: Analyses-198-A
+      },
+      Name: tmp,
+      DirectoryPath: /var/tmp,
+      CreatedAt: 2022-04-27 02:43,
+      Size: 515,222MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /rescue,
+        DirectoryPathForSearch:  rescue,
+        CreatedAtUtc: DateTime_151,
+        RootEntryId: ,
+        SizeInBytes: 93213357,
+        Id: Analyses-210-A
+      },
+      Name: rescue,
+      DirectoryPath: /rescue,
+      CreatedAt: 2022-04-26 09:37,
+      Size: 88,895MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/yp,
+        DirectoryPathForSearch:  var yp,
+        CreatedAtUtc: DateTime_152,
+        RootEntryId: ,
+        SizeInBytes: 327373580,
+        Id: Analyses-206-A
+      },
+      Name: yp,
+      DirectoryPath: /var/yp,
+      CreatedAt: 2022-04-24 13:27,
+      Size: 312,208MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/share,
+        DirectoryPathForSearch:  usr share,
+        CreatedAtUtc: DateTime_153,
+        RootEntryId: ,
+        SizeInBytes: 1296141061,
+        Id: Analyses-161-A
+      },
+      Name: share,
+      DirectoryPath: /usr/share,
+      CreatedAt: 2022-04-23 11:16,
+      Size: 1,207GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/src,
+        DirectoryPathForSearch:  usr local src,
+        CreatedAtUtc: DateTime_154,
+        RootEntryId: ,
+        SizeInBytes: 1026339195,
+        Id: Analyses-6-A
+      },
+      Name: src,
+      DirectoryPath: /usr/local/src,
+      CreatedAt: 2022-04-22 09:26,
+      Size: 978,793MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Network,
+        DirectoryPathForSearch:  Network,
+        CreatedAtUtc: DateTime_155,
+        RootEntryId: ,
+        SizeInBytes: 412390431,
+        Id: Analyses-47-A
+      },
+      Name: Network,
+      DirectoryPath: /Network,
+      CreatedAt: 2022-04-21 13:54,
+      Size: 393,286MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /media,
+        DirectoryPathForSearch:  media,
+        CreatedAtUtc: DateTime_156,
+        RootEntryId: ,
+        SizeInBytes: 1127624101,
+        Id: Analyses-96-A
+      },
+      Name: media,
+      DirectoryPath: /media,
+      CreatedAt: 2022-04-20 19:09,
+      Size: 1,050GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/yp,
+        DirectoryPathForSearch:  var yp,
+        CreatedAtUtc: DateTime_157,
+        RootEntryId: ,
+        SizeInBytes: 1836049356,
+        Id: Analyses-181-A
+      },
+      Name: yp,
+      DirectoryPath: /var/yp,
+      CreatedAt: 2022-04-20 16:22,
+      Size: 1,710GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lost+found,
+        DirectoryPathForSearch:  lost+found,
+        CreatedAtUtc: DateTime_158,
+        RootEntryId: ,
+        SizeInBytes: 392478455,
+        Id: Analyses-36-A
+      },
+      Name: lost+found,
+      DirectoryPath: /lost+found,
+      CreatedAt: 2022-04-20 10:22,
+      Size: 374,297MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/ppp,
+        DirectoryPathForSearch:  etc ppp,
+        CreatedAtUtc: DateTime_159,
+        RootEntryId: ,
+        SizeInBytes: 369264078,
+        Id: Analyses-259-A
+      },
+      Name: ppp,
+      DirectoryPath: /etc/ppp,
+      CreatedAt: 2022-04-19 13:26,
+      Size: 352,158MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc,
+        DirectoryPathForSearch:  etc,
+        CreatedAtUtc: DateTime_160,
+        RootEntryId: ,
+        SizeInBytes: 992082417,
+        Id: Analyses-280-A
+      },
+      Name: etc,
+      DirectoryPath: /etc,
+      CreatedAt: 2022-04-17 12:13,
+      Size: 946,124MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /sbin,
+        DirectoryPathForSearch:  sbin,
+        CreatedAtUtc: DateTime_161,
+        RootEntryId: ,
+        SizeInBytes: 308722682,
+        Id: Analyses-40-A
+      },
+      Name: sbin,
+      DirectoryPath: /sbin,
+      CreatedAt: 2022-04-16 11:11,
+      Size: 294,421MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc,
+        DirectoryPathForSearch:  etc,
+        CreatedAtUtc: DateTime_162,
+        RootEntryId: ,
+        SizeInBytes: 204719416,
+        Id: Analyses-227-A
+      },
+      Name: etc,
+      DirectoryPath: /etc,
+      CreatedAt: 2022-04-16 11:10,
+      Size: 195,236MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /root,
+        DirectoryPathForSearch:  root,
+        CreatedAtUtc: DateTime_163,
+        RootEntryId: ,
+        SizeInBytes: 1765619681,
+        Id: Analyses-222-A
+      },
+      Name: root,
+      DirectoryPath: /root,
+      CreatedAt: 2022-04-15 16:32,
+      Size: 1,644GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/bin,
+        DirectoryPathForSearch:  opt bin,
+        CreatedAtUtc: DateTime_164,
+        RootEntryId: ,
+        SizeInBytes: 2126446917,
+        Id: Analyses-111-A
+      },
+      Name: bin,
+      DirectoryPath: /opt/bin,
+      CreatedAt: 2022-04-13 14:17,
+      Size: 1,980GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /media,
+        DirectoryPathForSearch:  media,
+        CreatedAtUtc: DateTime_165,
+        RootEntryId: ,
+        SizeInBytes: 1093735943,
+        Id: Analyses-66-A
+      },
+      Name: media,
+      DirectoryPath: /media,
+      CreatedAt: 2022-04-07 16:39,
+      Size: 1,019GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/lib,
+        DirectoryPathForSearch:  opt lib,
+        CreatedAtUtc: DateTime_166,
+        RootEntryId: ,
+        SizeInBytes: 1155651842,
+        Id: Analyses-223-A
+      },
+      Name: lib,
+      DirectoryPath: /opt/lib,
+      CreatedAt: 2022-04-06 06:42,
+      Size: 1,076GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/mail,
+        DirectoryPathForSearch:  etc mail,
+        CreatedAtUtc: DateTime_167,
+        RootEntryId: ,
+        SizeInBytes: 625948235,
+        Id: Analyses-272-A
+      },
+      Name: mail,
+      DirectoryPath: /etc/mail,
+      CreatedAt: 2022-04-05 15:21,
+      Size: 596,951MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/include,
+        DirectoryPathForSearch:  usr include,
+        CreatedAtUtc: DateTime_168,
+        RootEntryId: ,
+        SizeInBytes: 865647592,
+        Id: Analyses-162-A
+      },
+      Name: include,
+      DirectoryPath: /usr/include,
+      CreatedAt: 2022-04-05 04:50,
+      Size: 825,546MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/periodic,
+        DirectoryPathForSearch:  etc periodic,
+        CreatedAtUtc: DateTime_169,
+        RootEntryId: ,
+        SizeInBytes: 846924580,
+        Id: Analyses-54-A
+      },
+      Name: periodic,
+      DirectoryPath: /etc/periodic,
+      CreatedAt: 2022-04-05 00:49,
+      Size: 807,690MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/sbin,
+        DirectoryPathForSearch:  usr sbin,
+        CreatedAtUtc: DateTime_170,
+        RootEntryId: ,
+        SizeInBytes: 1315824264,
+        Id: Analyses-257-A
+      },
+      Name: sbin,
+      DirectoryPath: /usr/sbin,
+      CreatedAt: 2022-04-04 20:55,
+      Size: 1,225GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/lib,
+        DirectoryPathForSearch:  opt lib,
+        CreatedAtUtc: DateTime_171,
+        RootEntryId: ,
+        SizeInBytes: 1503270211,
+        Id: Analyses-45-A
+      },
+      Name: lib,
+      DirectoryPath: /opt/lib,
+      CreatedAt: 2022-04-03 20:13,
+      Size: 1,400GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user,
+        DirectoryPathForSearch:  home user,
+        CreatedAtUtc: DateTime_172,
+        RootEntryId: ,
+        SizeInBytes: 523084735,
+        Id: Analyses-27-A
+      },
+      Name: user,
+      DirectoryPath: /home/user,
+      CreatedAt: 2022-04-03 12:37,
+      Size: 498,852MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/include,
+        DirectoryPathForSearch:  opt include,
+        CreatedAtUtc: DateTime_173,
+        RootEntryId: ,
+        SizeInBytes: 935376116,
+        Id: Analyses-95-A
+      },
+      Name: include,
+      DirectoryPath: /opt/include,
+      CreatedAt: 2022-04-01 02:51,
+      Size: 892,044MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/lib,
+        DirectoryPathForSearch:  usr lib,
+        CreatedAtUtc: DateTime_174,
+        RootEntryId: ,
+        SizeInBytes: 560806267,
+        Id: Analyses-126-A
+      },
+      Name: lib,
+      DirectoryPath: /usr/lib,
+      CreatedAt: 2022-03-30 05:56,
+      Size: 534,827MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /mnt,
+        DirectoryPathForSearch:  mnt,
+        CreatedAtUtc: DateTime_175,
+        RootEntryId: ,
+        SizeInBytes: 1385405157,
+        Id: Analyses-200-A
+      },
+      Name: mnt,
+      DirectoryPath: /mnt,
+      CreatedAt: 2022-03-30 03:10,
+      Size: 1,290GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user/dir,
+        DirectoryPathForSearch:  home user dir,
+        CreatedAtUtc: DateTime_176,
+        RootEntryId: ,
+        SizeInBytes: 449407228,
+        Id: Analyses-146-A
+      },
+      Name: dir,
+      DirectoryPath: /home/user/dir,
+      CreatedAt: 2022-03-27 08:53,
+      Size: 428,588MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /srv,
+        DirectoryPathForSearch:  srv,
+        CreatedAtUtc: DateTime_177,
+        RootEntryId: ,
+        SizeInBytes: 658096515,
+        Id: Analyses-63-A
+      },
+      Name: srv,
+      DirectoryPath: /srv,
+      CreatedAt: 2022-03-26 18:10,
+      Size: 627,610MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/namedb,
+        DirectoryPathForSearch:  etc namedb,
+        CreatedAtUtc: DateTime_178,
+        RootEntryId: ,
+        SizeInBytes: 1732754018,
+        Id: Analyses-118-A
+      },
+      Name: namedb,
+      DirectoryPath: /etc/namedb,
+      CreatedAt: 2022-03-23 15:09,
+      Size: 1,614GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr,
+        DirectoryPathForSearch:  usr,
+        CreatedAtUtc: DateTime_179,
+        RootEntryId: ,
+        SizeInBytes: 1979230121,
+        Id: Analyses-157-A
+      },
+      Name: usr,
+      DirectoryPath: /usr,
+      CreatedAt: 2022-03-23 07:21,
+      Size: 1,843GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user/dir,
+        DirectoryPathForSearch:  home user dir,
+        CreatedAtUtc: DateTime_180,
+        RootEntryId: ,
+        SizeInBytes: 151195851,
+        Id: Analyses-267-A
+      },
+      Name: dir,
+      DirectoryPath: /home/user/dir,
+      CreatedAt: 2022-03-22 18:41,
+      Size: 144,192MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var,
+        DirectoryPathForSearch:  var,
+        CreatedAtUtc: DateTime_181,
+        RootEntryId: ,
+        SizeInBytes: 2061026075,
+        Id: Analyses-91-A
+      },
+      Name: var,
+      DirectoryPath: /var,
+      CreatedAt: 2022-03-22 03:05,
+      Size: 1,919GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /tmp,
+        DirectoryPathForSearch:  tmp,
+        CreatedAtUtc: DateTime_182,
+        RootEntryId: ,
+        SizeInBytes: 1534104929,
+        Id: Analyses-141-A
+      },
+      Name: tmp,
+      DirectoryPath: /tmp,
+      CreatedAt: 2022-03-21 13:13,
+      Size: 1,429GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/share,
+        DirectoryPathForSearch:  usr share,
+        CreatedAtUtc: DateTime_183,
+        RootEntryId: ,
+        SizeInBytes: 1760746436,
+        Id: Analyses-89-A
+      },
+      Name: share,
+      DirectoryPath: /usr/share,
+      CreatedAt: 2022-03-19 05:41,
+      Size: 1,640GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/ports,
+        DirectoryPathForSearch:  usr ports,
+        CreatedAtUtc: DateTime_184,
+        RootEntryId: ,
+        SizeInBytes: 1161615888,
+        Id: Analyses-51-A
+      },
+      Name: ports,
+      DirectoryPath: /usr/ports,
+      CreatedAt: 2022-03-16 19:57,
+      Size: 1,082GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /sys,
+        DirectoryPathForSearch:  sys,
+        CreatedAtUtc: DateTime_185,
+        RootEntryId: ,
+        SizeInBytes: 1723891601,
+        Id: Analyses-71-A
+      },
+      Name: sys,
+      DirectoryPath: /sys,
+      CreatedAt: 2022-03-15 11:59,
+      Size: 1,605GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user,
+        DirectoryPathForSearch:  home user,
+        CreatedAtUtc: DateTime_186,
+        RootEntryId: ,
+        SizeInBytes: 1874174831,
+        Id: Analyses-263-A
+      },
+      Name: user,
+      DirectoryPath: /home/user,
+      CreatedAt: 2022-03-14 21:00,
+      Size: 1,745GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/tmp,
+        DirectoryPathForSearch:  var tmp,
+        CreatedAtUtc: DateTime_187,
+        RootEntryId: ,
+        SizeInBytes: 1933360625,
+        Id: Analyses-211-A
+      },
+      Name: tmp,
+      DirectoryPath: /var/tmp,
+      CreatedAt: 2022-03-12 15:34,
+      Size: 1,801GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /mnt,
+        DirectoryPathForSearch:  mnt,
+        CreatedAtUtc: DateTime_188,
+        RootEntryId: ,
+        SizeInBytes: 2070952002,
+        Id: Analyses-251-A
+      },
+      Name: mnt,
+      DirectoryPath: /mnt,
+      CreatedAt: 2022-03-12 14:57,
+      Size: 1,929GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/lib,
+        DirectoryPathForSearch:  opt lib,
+        CreatedAtUtc: DateTime_189,
+        RootEntryId: ,
+        SizeInBytes: 1406884731,
+        Id: Analyses-179-A
+      },
+      Name: lib,
+      DirectoryPath: /opt/lib,
+      CreatedAt: 2022-03-12 04:05,
+      Size: 1,310GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/namedb,
+        DirectoryPathForSearch:  etc namedb,
+        CreatedAtUtc: DateTime_190,
+        RootEntryId: ,
+        SizeInBytes: 900187094,
+        Id: Analyses-208-A
+      },
+      Name: namedb,
+      DirectoryPath: /etc/namedb,
+      CreatedAt: 2022-03-11 17:32,
+      Size: 858,485MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Network,
+        DirectoryPathForSearch:  Network,
+        CreatedAtUtc: DateTime_191,
+        RootEntryId: ,
+        SizeInBytes: 1119477150,
+        Id: Analyses-69-A
+      },
+      Name: Network,
+      DirectoryPath: /Network,
+      CreatedAt: 2022-03-10 13:08,
+      Size: 1,043GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libdata,
+        DirectoryPathForSearch:  usr libdata,
+        CreatedAtUtc: DateTime_192,
+        RootEntryId: ,
+        SizeInBytes: 2146771829,
+        Id: Analyses-61-A
+      },
+      Name: libdata,
+      DirectoryPath: /usr/libdata,
+      CreatedAt: 2022-03-08 14:30,
+      Size: 1,999GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/log,
+        DirectoryPathForSearch:  var log,
+        CreatedAtUtc: DateTime_193,
+        RootEntryId: ,
+        SizeInBytes: 46847153,
+        Id: Analyses-175-A
+      },
+      Name: log,
+      DirectoryPath: /var/log,
+      CreatedAt: 2022-03-06 07:24,
+      Size: 44,677MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libdata,
+        DirectoryPathForSearch:  usr libdata,
+        CreatedAtUtc: DateTime_194,
+        RootEntryId: ,
+        SizeInBytes: 306070703,
+        Id: Analyses-28-A
+      },
+      Name: libdata,
+      DirectoryPath: /usr/libdata,
+      CreatedAt: 2022-03-05 03:29,
+      Size: 291,892MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /root,
+        DirectoryPathForSearch:  root,
+        CreatedAtUtc: DateTime_195,
+        RootEntryId: ,
+        SizeInBytes: 1515442207,
+        Id: Analyses-79-A
+      },
+      Name: root,
+      DirectoryPath: /root,
+      CreatedAt: 2022-03-05 02:21,
+      Size: 1,411GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/lib,
+        DirectoryPathForSearch:  opt lib,
+        CreatedAtUtc: DateTime_196,
+        RootEntryId: ,
+        SizeInBytes: 369879559,
+        Id: Analyses-67-A
+      },
+      Name: lib,
+      DirectoryPath: /opt/lib,
+      CreatedAt: 2022-03-03 14:01,
+      Size: 352,745MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_197,
+        RootEntryId: ,
+        SizeInBytes: 1303291735,
+        Id: Analyses-191-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-03-03 06:08,
+      Size: 1,214GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot/defaults,
+        DirectoryPathForSearch:  boot defaults,
+        CreatedAtUtc: DateTime_198,
+        RootEntryId: ,
+        SizeInBytes: 950840241,
+        Id: Analyses-298-A
+      },
+      Name: defaults,
+      DirectoryPath: /boot/defaults,
+      CreatedAt: 2022-03-02 18:09,
+      Size: 906,792MB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/yp,
+        DirectoryPathForSearch:  var yp,
+        CreatedAtUtc: DateTime_199,
+        RootEntryId: ,
+        SizeInBytes: 1978954066,
+        Id: Analyses-270-A
+      },
+      Name: yp,
+      DirectoryPath: /var/yp,
+      CreatedAt: 2022-03-01 23:22,
+      Size: 1,843GB
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user,
+        DirectoryPathForSearch:  home user,
+        CreatedAtUtc: DateTime_200,
+        RootEntryId: ,
+        SizeInBytes: 2091734529,
+        Id: Analyses-128-A
+      },
+      Name: user,
+      DirectoryPath: /home/user,
+      CreatedAt: 2022-03-01 14:57,
+      Size: 1,948GB
+    }
+  ],
+  SearchTerm: ,
+  IsLoading: false,
+  HasNoAnalyses: false
+}

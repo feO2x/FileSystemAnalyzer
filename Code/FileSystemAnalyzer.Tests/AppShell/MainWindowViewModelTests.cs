@@ -1,3 +1,4 @@
+using System;
 using FileSystemAnalyzer.AvaloniaApp.AppShell;
 using FileSystemAnalyzer.AvaloniaApp.Navigation;
 using FluentAssertions;

@@ -1,4 +1,5 @@
-﻿using FileSystemAnalyzer.AvaloniaApp.SystemDialogs;
+﻿using System.Threading.Tasks;
+using FileSystemAnalyzer.AvaloniaApp.SystemDialogs;
 
 namespace FileSystemAnalyzer.Tests.SystemDialogs;
 

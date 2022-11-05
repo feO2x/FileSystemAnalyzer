@@ -1,4 +1,5 @@
-﻿using FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+﻿using System.Collections.Generic;
+using FileSystemAnalyzer.AvaloniaApp.GettingStarted;
 using FileSystemAnalyzer.Tests.SystemDialogs;
 using FluentAssertions;
 using Xunit;

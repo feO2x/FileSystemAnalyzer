@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Bogus;
+using FileSystemAnalyzer.AvaloniaApp.AppInfrastructure;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 using FileSystemAnalyzer.AvaloniaApp.Shared;
 using FuzzySharp;
@@ -35,9 +37,6 @@ public sealed class BogusAnalysesSession : IAnalysesSession
 
     public ValueTask DisposeAsync() => default;
 
-    public static BogusAnalysesSession Create(int numberOfItems, int delay = 0) =>
-        new (CreateFaker(), numberOfItems, delay);
-
     public async Task<List<Analysis>> GetAnalysesAsync(int skip, int take, string searchTerm, CancellationToken cancellationToken)
     {
         if (DelayInMilliseconds > 0)
@@ -66,13 +65,17 @@ public sealed class BogusAnalysesSession : IAnalysesSession
         return result;
     }
 
-    public static Faker<Analysis> CreateFaker()
+    public static BogusAnalysesSession Create(int numberOfItems, int delay = 0) =>
+        new (CreateFaker(), numberOfItems, delay);
+
+    public static Faker<Analysis> CreateFaker(DateTime? referenceDate = null)
     {
         var analysisIds = 0;
-        return new Faker<Analysis>().RuleFor(analysis => analysis.Id, _ => $"Analyses-{analysisIds++}-A")
-                                    .RuleFor(analysis => analysis.DirectoryPath, f => f.System.DirectoryPath())
-                                    .RuleFor(analysis => analysis.CreatedAtUtc, f => f.Date.Past().ToUniversalTime())
-                                    .RuleFor(analysis => analysis.SizeInBytes, f => f.Random.Number(0, int.MaxValue))
-                                    .RuleFor(analysis => analysis.DirectoryPathForSearch, (_, a) => a.DirectoryPath.ReplaceSlashesWithSpacesInPath());
+        return BogusFactory.CreateFaker<Analysis>()
+                           .RuleFor(analysis => analysis.Id, _ => $"Analyses-{analysisIds++}-A")
+                           .RuleFor(analysis => analysis.DirectoryPath, f => f.System.DirectoryPath())
+                           .RuleFor(analysis => analysis.CreatedAtUtc, f => f.Date.Past(refDate: referenceDate).ToUniversalTime())
+                           .RuleFor(analysis => analysis.SizeInBytes, f => f.Random.Number(0, int.MaxValue))
+                           .RuleFor(analysis => analysis.DirectoryPathForSearch, (_, a) => a.DirectoryPath.ReplaceSlashesWithSpacesInPath());
     }
 }
