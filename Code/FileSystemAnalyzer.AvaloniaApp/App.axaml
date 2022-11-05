@@ -6,7 +6,7 @@
         <themes:BundledTheme BaseTheme="Dark" PrimaryColor="Teal" SecondaryColor="Lime" />
     </Application.Resources>
     <Application.Styles>
-        <StyleInclude Source="avares://Avalonia.Themes.Default/DefaultTheme.xaml" />
+        <FluentTheme Mode="Dark" />
         <StyleInclude Source="avares://Material.Avalonia/Material.Avalonia.Templates.xaml" />
         <StyleInclude Source="avares://Material.Icons.Avalonia/App.xaml" />
     </Application.Styles>

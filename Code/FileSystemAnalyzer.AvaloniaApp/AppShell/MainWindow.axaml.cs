@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace FileSystemAnalyzer.AvaloniaApp.AppInfrastructure;
+namespace FileSystemAnalyzer.AvaloniaApp.AppShell;
 
 public sealed partial class MainWindow : Window
 {

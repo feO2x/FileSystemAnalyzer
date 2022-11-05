@@ -1,0 +1,24 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:appShell="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AppShell"
+             mc:Ignorable="d"
+             x:Class="FileSystemAnalyzer.AvaloniaApp.AppShell.TitleBar"
+             x:DataType="appShell:MainWindowViewModel">
+    <Border Background="{DynamicResource PrimaryHueMidBrush}"
+            IsHitTestVisible="False">
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="{CompiledBinding TitleAlignment}">
+            <Image Source="../Assets/file-system-analyzer-icon-256x256.png"
+                   Width="24"
+                   Height="24"
+                   IsVisible="{CompiledBinding IsAppIconVisible}"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   Margin="8 3 8 0" />
+            <TextBlock Text="File System Analyzer"
+                       VerticalAlignment="Center" />
+        </StackPanel>
+    </Border>
+</UserControl>

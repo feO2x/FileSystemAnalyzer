@@ -41,5 +41,6 @@
         <None Update="appsettings.Development.json" Condition="Exists('appsettings.Development.json')">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
+        <AvaloniaResource Include="Assets\**" />
     </ItemGroup>
 </Project>

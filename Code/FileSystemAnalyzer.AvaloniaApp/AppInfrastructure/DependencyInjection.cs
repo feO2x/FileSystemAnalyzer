@@ -1,5 +1,5 @@
-﻿using Avalonia.Controls;
-using Bogus;
+﻿using Bogus;
+using FileSystemAnalyzer.AvaloniaApp.AppShell;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess;
 using FileSystemAnalyzer.AvaloniaApp.GettingStarted;
 using FileSystemAnalyzer.AvaloniaApp.Navigation;
@@ -27,11 +27,6 @@ public static class DependencyInjection
                  .RegisterAppShell();
     }
 
-    private static void RegisterAppShell(this IServiceRegistry container) =>
-        container.RegisterViewAndViewModelAsSingletons<MainWindow, MainWindowViewModel>()
-                 .RegisterSingleton<INavigator>(f => f.GetInstance<MainWindowViewModel>())
-                 .RegisterSingleton<Window>(f => f.GetInstance<MainWindow>());
-    
     private static IServiceRegistry RegisterDebouncedValueFactory(this IServiceRegistry container) =>
         container.RegisterInstance(DebouncedValueFactory.DefaultFactory);
     

@@ -5,6 +5,7 @@ using Avalonia.Markup.Xaml;
 using FileSystemAnalyzer.AvaloniaApp.AppInfrastructure;
 using FileSystemAnalyzer.AvaloniaApp.Navigation;
 using LightInject;
+using MainWindow = FileSystemAnalyzer.AvaloniaApp.AppShell.MainWindow;
 
 namespace FileSystemAnalyzer.AvaloniaApp;
 
