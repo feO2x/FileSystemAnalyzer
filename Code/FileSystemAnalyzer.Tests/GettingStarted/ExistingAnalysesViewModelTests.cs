@@ -19,7 +19,11 @@ public sealed class ExistingAnalysesViewModelTests
 
     private static DateTime ReferenceDate { get; } = new (2022, 11, 5, 9, 35, 30, DateTimeKind.Utc);
     private ILogger Logger { get; }
-    private Faker<Analysis> AnalysisFaker { get; } = BogusAnalysesSession.CreateFaker(ReferenceDate);
+    
+    // TODO: report to Bogus that the filepath in a generated FileNotFoundException does not respect the seed.
+    // During my tests, I found out that when Bogus creates a FileNotFoundException with a filePath, the
+    // this path is not generated according to the initial seed. Verify picked this up. 
+    private Faker<Analysis> AnalysisFaker { get; } = BogusAnalysesSession.CreateFaker(ReferenceDate, false);
 
     [Fact]
     public async Task LoadAnalysesAfterInstantiation()

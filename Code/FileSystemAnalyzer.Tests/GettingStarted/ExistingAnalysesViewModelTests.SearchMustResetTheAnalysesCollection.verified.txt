@@ -12,7 +12,9 @@
       Name: lib,
       DirectoryPath: /lib,
       CreatedAt: 2022-06-27 10:33,
-      Size: 212,416MB
+      Size: 212,416MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -26,7 +28,9 @@
       Name: lib,
       DirectoryPath: /lib,
       CreatedAt: 2022-06-09 12:03,
-      Size: 173,333MB
+      Size: 173,333MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -40,7 +44,9 @@
       Name: lib,
       DirectoryPath: /lib,
       CreatedAt: 2022-05-18 21:20,
-      Size: 205,443MB
+      Size: 205,443MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -54,7 +60,9 @@
       Name: lib,
       DirectoryPath: /lib,
       CreatedAt: 2022-01-27 12:07,
-      Size: 1,290GB
+      Size: 1,290GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -68,7 +76,9 @@
       Name: lib,
       DirectoryPath: /lib,
       CreatedAt: 2021-12-20 17:35,
-      Size: 217,217MB
+      Size: 217,217MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -82,7 +92,9 @@
       Name: lib,
       DirectoryPath: /lib,
       CreatedAt: 2021-12-05 20:55,
-      Size: 177,023MB
+      Size: 177,023MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -96,7 +108,9 @@
       Name: lib,
       DirectoryPath: /usr/lib,
       CreatedAt: 2022-11-05 10:06,
-      Size: 1,354GB
+      Size: 1,354GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -110,7 +124,9 @@
       Name: lib,
       DirectoryPath: /usr/lib,
       CreatedAt: 2022-10-23 09:33,
-      Size: 1,406GB
+      Size: 1,406GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -124,7 +140,9 @@
       Name: libdata,
       DirectoryPath: /usr/libdata,
       CreatedAt: 2022-09-30 05:54,
-      Size: 1,525GB
+      Size: 1,525GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -138,7 +156,9 @@
       Name: lib,
       DirectoryPath: /usr/lib,
       CreatedAt: 2022-09-24 06:42,
-      Size: 867,166MB
+      Size: 867,166MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -152,7 +172,9 @@
       Name: lib,
       DirectoryPath: /opt/lib,
       CreatedAt: 2022-09-05 23:06,
-      Size: 1,816GB
+      Size: 1,816GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -166,7 +188,9 @@
       Name: lib,
       DirectoryPath: /usr/lib,
       CreatedAt: 2022-06-23 05:45,
-      Size: 591,456MB
+      Size: 591,456MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -180,7 +204,9 @@
       Name: libdata,
       DirectoryPath: /usr/libdata,
       CreatedAt: 2022-06-21 13:24,
-      Size: 1,530GB
+      Size: 1,530GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -194,7 +220,9 @@
       Name: lib,
       DirectoryPath: /usr/lib,
       CreatedAt: 2022-06-18 02:43,
-      Size: 871,302MB
+      Size: 871,302MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -208,7 +236,9 @@
       Name: libdata,
       DirectoryPath: /usr/libdata,
       CreatedAt: 2022-05-23 20:24,
-      Size: 1,678GB
+      Size: 1,678GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -222,7 +252,9 @@
       Name: lib,
       DirectoryPath: /usr/lib,
       CreatedAt: 2022-05-09 20:58,
-      Size: 1,959GB
+      Size: 1,959GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -236,7 +268,9 @@
       Name: lib,
       DirectoryPath: /opt/lib,
       CreatedAt: 2022-04-06 06:42,
-      Size: 1,076GB
+      Size: 1,076GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -250,7 +284,9 @@
       Name: lib,
       DirectoryPath: /opt/lib,
       CreatedAt: 2022-04-03 20:13,
-      Size: 1,400GB
+      Size: 1,400GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -264,7 +300,9 @@
       Name: lib,
       DirectoryPath: /usr/lib,
       CreatedAt: 2022-03-30 05:56,
-      Size: 534,827MB
+      Size: 534,827MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -278,7 +316,9 @@
       Name: lib,
       DirectoryPath: /opt/lib,
       CreatedAt: 2022-03-12 04:05,
-      Size: 1,310GB
+      Size: 1,310GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -292,7 +332,9 @@
       Name: libdata,
       DirectoryPath: /usr/libdata,
       CreatedAt: 2022-03-08 14:30,
-      Size: 1,999GB
+      Size: 1,999GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -306,7 +348,9 @@
       Name: libdata,
       DirectoryPath: /usr/libdata,
       CreatedAt: 2022-03-05 03:29,
-      Size: 291,892MB
+      Size: 291,892MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -320,7 +364,9 @@
       Name: lib,
       DirectoryPath: /opt/lib,
       CreatedAt: 2022-03-03 14:01,
-      Size: 352,745MB
+      Size: 352,745MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -334,7 +380,9 @@
       Name: libdata,
       DirectoryPath: /usr/libdata,
       CreatedAt: 2022-02-18 22:57,
-      Size: 1,745GB
+      Size: 1,745GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -348,7 +396,9 @@
       Name: libexec,
       DirectoryPath: /usr/libexec,
       CreatedAt: 2021-12-03 04:49,
-      Size: 909,904MB
+      Size: 909,904MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -362,7 +412,9 @@
       Name: Library,
       DirectoryPath: /Library,
       CreatedAt: 2022-10-22 10:30,
-      Size: 802,689MB
+      Size: 802,689MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -376,7 +428,9 @@
       Name: Applications,
       DirectoryPath: /Applications,
       CreatedAt: 2022-10-13 04:56,
-      Size: 1,654GB
+      Size: 1,654GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -390,7 +444,9 @@
       Name: selinux,
       DirectoryPath: /selinux,
       CreatedAt: 2022-09-28 07:25,
-      Size: 1,041GB
+      Size: 1,041GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -404,7 +460,9 @@
       Name: bin,
       DirectoryPath: /usr/local/bin,
       CreatedAt: 2022-09-14 03:09,
-      Size: 1,863GB
+      Size: 1,863GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -418,7 +476,9 @@
       Name: Applications,
       DirectoryPath: /Applications,
       CreatedAt: 2022-08-31 02:32,
-      Size: 1,940GB
+      Size: 1,940GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -432,7 +492,9 @@
       Name: Applications,
       DirectoryPath: /Applications,
       CreatedAt: 2022-08-23 23:53,
-      Size: 1,841GB
+      Size: 1,841GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -446,7 +508,9 @@
       Name: Applications,
       DirectoryPath: /Applications,
       CreatedAt: 2022-08-05 08:15,
-      Size: 1,381GB
+      Size: 1,381GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -460,7 +524,9 @@
       Name: selinux,
       DirectoryPath: /selinux,
       CreatedAt: 2022-06-30 08:53,
-      Size: 864,833MB
+      Size: 864,833MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -474,7 +540,9 @@
       Name: Library,
       DirectoryPath: /Library,
       CreatedAt: 2022-05-16 02:18,
-      Size: 1,525GB
+      Size: 1,525GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -488,7 +556,9 @@
       Name: selinux,
       DirectoryPath: /selinux,
       CreatedAt: 2022-05-09 22:39,
-      Size: 827,885MB
+      Size: 827,885MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -502,7 +572,9 @@
       Name: bin,
       DirectoryPath: /usr/local/bin,
       CreatedAt: 2022-05-07 12:46,
-      Size: 1,360GB
+      Size: 1,360GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -516,7 +588,9 @@
       Name: Applications,
       DirectoryPath: /Applications,
       CreatedAt: 2022-02-17 15:30,
-      Size: 269,933MB
+      Size: 269,933MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -530,7 +604,9 @@
       Name: Applications,
       DirectoryPath: /Applications,
       CreatedAt: 2022-01-18 05:46,
-      Size: 574,280MB
+      Size: 574,280MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -544,7 +620,9 @@
       Name: bin,
       DirectoryPath: /usr/local/bin,
       CreatedAt: 2022-01-01 01:05,
-      Size: 59,862MB
+      Size: 59,862MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -558,7 +636,9 @@
       Name: bin,
       DirectoryPath: /usr/local/bin,
       CreatedAt: 2021-12-15 15:45,
-      Size: 767,921MB
+      Size: 767,921MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -572,7 +652,9 @@
       Name: selinux,
       DirectoryPath: /selinux,
       CreatedAt: 2021-12-05 05:07,
-      Size: 83,874MB
+      Size: 83,874MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -586,7 +668,9 @@
       Name: Applications,
       DirectoryPath: /Applications,
       CreatedAt: 2021-11-22 14:04,
-      Size: 1,461GB
+      Size: 1,461GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -600,7 +684,9 @@
       Name: Applications,
       DirectoryPath: /Applications,
       CreatedAt: 2021-11-17 00:44,
-      Size: 647,973MB
+      Size: 647,973MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     }
   ],
   SearchTerm: lib,

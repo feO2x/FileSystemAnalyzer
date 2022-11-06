@@ -68,15 +68,18 @@ public sealed class BogusAnalysesSession : IAnalysesSession
     public static BogusAnalysesSession Create(int numberOfItems, int delay = 0) =>
         new (CreateFaker(), numberOfItems, delay);
 
-    public static Faker<Analysis> CreateFaker(DateTime? referenceDate = null)
+    public static Faker<Analysis> CreateFaker(DateTime? referenceDate = null, bool includeErrorMessages = true)
     {
         var analysisIds = 0;
-        return BogusFactory.CreateFaker<Analysis>()
-                           .RuleFor(analysis => analysis.Id, _ => $"Analyses-{analysisIds++}-A")
-                           .RuleFor(analysis => analysis.DirectoryPath, f => f.System.DirectoryPath())
-                           .RuleFor(analysis => analysis.CreatedAtUtc, f => f.Date.Past(refDate: referenceDate).ToUniversalTime())
-                           .RuleFor(analysis => analysis.SizeInBytes, f => f.Random.Number(0, int.MaxValue))
-                           .RuleFor(analysis => analysis.DirectoryPathForSearch, (_, a) => a.DirectoryPath.ReplaceSlashesWithSpacesInPath())
-                           .RuleFor(analysis => analysis.ErrorMessage, f => analysisIds % 20 == 19 ? f.System.Exception().ToString() : null);
+        var faker = BogusFactory.CreateFaker<Analysis>()
+                                .RuleFor(analysis => analysis.Id, _ => $"Analyses-{analysisIds++}-A")
+                                .RuleFor(analysis => analysis.DirectoryPath, f => f.System.DirectoryPath())
+                                .RuleFor(analysis => analysis.CreatedAtUtc, f => f.Date.Past(refDate: referenceDate).ToUniversalTime())
+                                .RuleFor(analysis => analysis.SizeInBytes, f => f.Random.Number(0, int.MaxValue))
+                                .RuleFor(analysis => analysis.DirectoryPathForSearch, (_, a) => a.DirectoryPath.ReplaceSlashesWithSpacesInPath());
+        if (includeErrorMessages)
+            faker.RuleFor(analysis => analysis.ErrorMessage, f => analysisIds % 20 == 19 ? f.System.Exception().ToString() : null);
+
+        return faker;
     }
 }

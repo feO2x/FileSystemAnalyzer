@@ -12,7 +12,9 @@
       Name: lib,
       DirectoryPath: /usr/lib,
       CreatedAt: 2022-11-05 10:06,
-      Size: 1,354GB
+      Size: 1,354GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -26,7 +28,9 @@
       Name: dev,
       DirectoryPath: /dev,
       CreatedAt: 2022-11-05 09:54,
-      Size: 1,874GB
+      Size: 1,874GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -40,7 +44,9 @@
       Name: sbin,
       DirectoryPath: /sbin,
       CreatedAt: 2022-11-04 13:43,
-      Size: 449,787MB
+      Size: 449,787MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -54,7 +60,9 @@
       Name: obj,
       DirectoryPath: /usr/obj,
       CreatedAt: 2022-11-03 23:56,
-      Size: 1,536GB
+      Size: 1,536GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -68,7 +76,9 @@
       Name: defaults,
       DirectoryPath: /etc/defaults,
       CreatedAt: 2022-11-03 14:10,
-      Size: 1,653GB
+      Size: 1,653GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -82,7 +92,9 @@
       Name: var,
       DirectoryPath: /private/var,
       CreatedAt: 2022-11-02 04:09,
-      Size: 1,829GB
+      Size: 1,829GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -96,7 +108,9 @@
       Name: obj,
       DirectoryPath: /usr/obj,
       CreatedAt: 2022-11-02 03:22,
-      Size: 980,906MB
+      Size: 980,906MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -110,7 +124,9 @@
       Name: dir,
       DirectoryPath: /home/user/dir,
       CreatedAt: 2022-10-31 14:29,
-      Size: 650,075MB
+      Size: 650,075MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -124,7 +140,9 @@
       Name: bin,
       DirectoryPath: /usr/bin,
       CreatedAt: 2022-10-30 21:43,
-      Size: 1,365GB
+      Size: 1,365GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -138,7 +156,9 @@
       Name: share,
       DirectoryPath: /opt/share,
       CreatedAt: 2022-10-26 19:46,
-      Size: 1,591GB
+      Size: 1,591GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -152,7 +172,9 @@
       Name: rescue,
       DirectoryPath: /rescue,
       CreatedAt: 2022-10-23 14:11,
-      Size: 1,814GB
+      Size: 1,814GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -166,7 +188,9 @@
       Name: lib,
       DirectoryPath: /usr/lib,
       CreatedAt: 2022-10-23 09:33,
-      Size: 1,406GB
+      Size: 1,406GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -180,7 +204,9 @@
       Name: Library,
       DirectoryPath: /Library,
       CreatedAt: 2022-10-22 10:30,
-      Size: 802,689MB
+      Size: 802,689MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -194,7 +220,9 @@
       Name: opt,
       DirectoryPath: /opt,
       CreatedAt: 2022-10-21 13:45,
-      Size: 842,128MB
+      Size: 842,128MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -208,7 +236,9 @@
       Name: home,
       DirectoryPath: /home,
       CreatedAt: 2022-10-21 07:57,
-      Size: 1,308GB
+      Size: 1,308GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -222,7 +252,9 @@
       Name: rescue,
       DirectoryPath: /rescue,
       CreatedAt: 2022-10-20 11:11,
-      Size: 733,803MB
+      Size: 733,803MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -236,7 +268,9 @@
       Name: dev,
       DirectoryPath: /dev,
       CreatedAt: 2022-10-20 06:43,
-      Size: 787,834MB
+      Size: 787,834MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -250,7 +284,9 @@
       Name: sys,
       DirectoryPath: /sys,
       CreatedAt: 2022-10-20 06:15,
-      Size: 1,373GB
+      Size: 1,373GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -264,7 +300,9 @@
       Name: namedb,
       DirectoryPath: /etc/namedb,
       CreatedAt: 2022-10-20 05:47,
-      Size: 1,605GB
+      Size: 1,605GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -278,7 +316,9 @@
       Name: srv,
       DirectoryPath: /srv,
       CreatedAt: 2022-10-19 15:00,
-      Size: 151,331MB
+      Size: 151,331MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -292,7 +332,9 @@
       Name: boot,
       DirectoryPath: /boot,
       CreatedAt: 2022-10-18 23:58,
-      Size: 1,235GB
+      Size: 1,235GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -306,7 +348,9 @@
       Name: mail,
       DirectoryPath: /var/mail,
       CreatedAt: 2022-10-17 09:26,
-      Size: 966,981MB
+      Size: 966,981MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -320,7 +364,9 @@
       Name: Applications,
       DirectoryPath: /Applications,
       CreatedAt: 2022-10-13 04:56,
-      Size: 1,654GB
+      Size: 1,654GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -334,7 +380,9 @@
       Name: usr,
       DirectoryPath: /usr,
       CreatedAt: 2022-10-13 02:37,
-      Size: 145,088MB
+      Size: 145,088MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -348,7 +396,9 @@
       Name: media,
       DirectoryPath: /media,
       CreatedAt: 2022-10-10 19:44,
-      Size: 1,511GB
+      Size: 1,511GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -362,7 +412,9 @@
       Name: srv,
       DirectoryPath: /srv,
       CreatedAt: 2022-10-09 23:03,
-      Size: 1,118GB
+      Size: 1,118GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -376,7 +428,9 @@
       Name: sbin,
       DirectoryPath: /opt/sbin,
       CreatedAt: 2022-10-08 10:15,
-      Size: 1,809GB
+      Size: 1,809GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -390,7 +444,9 @@
       Name: Users,
       DirectoryPath: /Users,
       CreatedAt: 2022-10-03 21:56,
-      Size: 1,798GB
+      Size: 1,798GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -404,7 +460,9 @@
       Name: sbin,
       DirectoryPath: /opt/sbin,
       CreatedAt: 2022-10-02 06:29,
-      Size: 1,993GB
+      Size: 1,993GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -418,7 +476,9 @@
       Name: Users,
       DirectoryPath: /Users,
       CreatedAt: 2022-10-02 03:05,
-      Size: 1,530GB
+      Size: 1,530GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -432,7 +492,9 @@
       Name: sys,
       DirectoryPath: /sys,
       CreatedAt: 2022-10-01 13:33,
-      Size: 1,812GB
+      Size: 1,812GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -446,7 +508,9 @@
       Name: libdata,
       DirectoryPath: /usr/libdata,
       CreatedAt: 2022-09-30 05:54,
-      Size: 1,525GB
+      Size: 1,525GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -460,7 +524,9 @@
       Name: sbin,
       DirectoryPath: /opt/sbin,
       CreatedAt: 2022-09-30 03:28,
-      Size: 1,103GB
+      Size: 1,103GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -474,7 +540,9 @@
       Name: Users,
       DirectoryPath: /Users,
       CreatedAt: 2022-09-30 03:26,
-      Size: 884,825MB
+      Size: 884,825MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -488,7 +556,9 @@
       Name: boot,
       DirectoryPath: /boot,
       CreatedAt: 2022-09-29 19:12,
-      Size: 876,948MB
+      Size: 876,948MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -502,7 +572,9 @@
       Name: selinux,
       DirectoryPath: /selinux,
       CreatedAt: 2022-09-28 07:25,
-      Size: 1,041GB
+      Size: 1,041GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -516,7 +588,9 @@
       Name: tmp,
       DirectoryPath: /tmp,
       CreatedAt: 2022-09-26 20:46,
-      Size: 1,945GB
+      Size: 1,945GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -530,7 +604,9 @@
       Name: home,
       DirectoryPath: /home,
       CreatedAt: 2022-09-24 20:20,
-      Size: 1,619GB
+      Size: 1,619GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -544,7 +620,9 @@
       Name: lib,
       DirectoryPath: /usr/lib,
       CreatedAt: 2022-09-24 06:42,
-      Size: 867,166MB
+      Size: 867,166MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -558,7 +636,9 @@
       Name: defaults,
       DirectoryPath: /boot/defaults,
       CreatedAt: 2022-09-23 22:28,
-      Size: 18,491MB
+      Size: 18,491MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -572,7 +652,9 @@
       Name: boot,
       DirectoryPath: /boot,
       CreatedAt: 2022-09-21 06:16,
-      Size: 1,173GB
+      Size: 1,173GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -586,7 +668,9 @@
       Name: bin,
       DirectoryPath: /opt/bin,
       CreatedAt: 2022-09-20 05:30,
-      Size: 746,935MB
+      Size: 746,935MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -600,7 +684,9 @@
       Name: ppp,
       DirectoryPath: /etc/ppp,
       CreatedAt: 2022-09-18 14:50,
-      Size: 541,416MB
+      Size: 541,416MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -614,7 +700,9 @@
       Name: var,
       DirectoryPath: /private/var,
       CreatedAt: 2022-09-18 00:32,
-      Size: 1,386GB
+      Size: 1,386GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -628,7 +716,9 @@
       Name: X11R6,
       DirectoryPath: /usr/X11R6,
       CreatedAt: 2022-09-16 20:48,
-      Size: 408,653MB
+      Size: 408,653MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -642,7 +732,9 @@
       Name: var,
       DirectoryPath: /var,
       CreatedAt: 2022-09-16 14:37,
-      Size: 1,188GB
+      Size: 1,188GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -656,7 +748,9 @@
       Name: bin,
       DirectoryPath: /opt/bin,
       CreatedAt: 2022-09-15 06:42,
-      Size: 907,759MB
+      Size: 907,759MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -670,7 +764,9 @@
       Name: usr,
       DirectoryPath: /usr,
       CreatedAt: 2022-09-15 01:14,
-      Size: 895,469MB
+      Size: 895,469MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -684,7 +780,9 @@
       Name: defaults,
       DirectoryPath: /etc/defaults,
       CreatedAt: 2022-09-14 11:19,
-      Size: 75,391MB
+      Size: 75,391MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -698,7 +796,9 @@
       Name: bin,
       DirectoryPath: /usr/local/bin,
       CreatedAt: 2022-09-14 03:09,
-      Size: 1,863GB
+      Size: 1,863GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -712,7 +812,9 @@
       Name: dev,
       DirectoryPath: /dev,
       CreatedAt: 2022-09-11 09:28,
-      Size: 1,249GB
+      Size: 1,249GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -726,7 +828,9 @@
       Name: include,
       DirectoryPath: /opt/include,
       CreatedAt: 2022-09-10 22:22,
-      Size: 931,725MB
+      Size: 931,725MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -740,7 +844,9 @@
       Name: X11R6,
       DirectoryPath: /usr/X11R6,
       CreatedAt: 2022-09-10 07:14,
-      Size: 1,627GB
+      Size: 1,627GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -754,7 +860,9 @@
       Name: boot,
       DirectoryPath: /boot,
       CreatedAt: 2022-09-10 05:02,
-      Size: 439,361MB
+      Size: 439,361MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -768,7 +876,9 @@
       Name: usr,
       DirectoryPath: /usr,
       CreatedAt: 2022-09-09 18:11,
-      Size: 1,719GB
+      Size: 1,719GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -782,7 +892,9 @@
       Name: bin,
       DirectoryPath: /usr/bin,
       CreatedAt: 2022-09-07 05:17,
-      Size: 1,103GB
+      Size: 1,103GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -796,7 +908,9 @@
       Name: sbin,
       DirectoryPath: /opt/sbin,
       CreatedAt: 2022-09-06 18:03,
-      Size: 1,563GB
+      Size: 1,563GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -810,7 +924,9 @@
       Name: lib,
       DirectoryPath: /opt/lib,
       CreatedAt: 2022-09-05 23:06,
-      Size: 1,816GB
+      Size: 1,816GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -824,7 +940,9 @@
       Name: System,
       DirectoryPath: /System,
       CreatedAt: 2022-09-05 01:19,
-      Size: 1,634GB
+      Size: 1,634GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -838,7 +956,9 @@
       Name: mnt,
       DirectoryPath: /mnt,
       CreatedAt: 2022-09-03 21:05,
-      Size: 725,676MB
+      Size: 725,676MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -852,7 +972,9 @@
       Name: dev,
       DirectoryPath: /dev,
       CreatedAt: 2022-09-03 20:12,
-      Size: 631,794MB
+      Size: 631,794MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -866,7 +988,9 @@
       Name: spool,
       DirectoryPath: /var/spool,
       CreatedAt: 2022-09-02 16:07,
-      Size: 645,382MB
+      Size: 645,382MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -880,7 +1004,9 @@
       Name: log,
       DirectoryPath: /var/log,
       CreatedAt: 2022-09-02 06:00,
-      Size: 1,455GB
+      Size: 1,455GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -894,7 +1020,9 @@
       Name: Applications,
       DirectoryPath: /Applications,
       CreatedAt: 2022-08-31 02:32,
-      Size: 1,940GB
+      Size: 1,940GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -908,7 +1036,9 @@
       Name: ports,
       DirectoryPath: /usr/ports,
       CreatedAt: 2022-08-29 08:03,
-      Size: 295,100MB
+      Size: 295,100MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -922,7 +1052,9 @@
       Name: tmp,
       DirectoryPath: /var/tmp,
       CreatedAt: 2022-08-28 09:01,
-      Size: 882,256MB
+      Size: 882,256MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -936,7 +1068,9 @@
       Name: Users,
       DirectoryPath: /Users,
       CreatedAt: 2022-08-28 07:01,
-      Size: 740,224MB
+      Size: 740,224MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -950,7 +1084,9 @@
       Name: sbin,
       DirectoryPath: /opt/sbin,
       CreatedAt: 2022-08-26 04:22,
-      Size: 214,502MB
+      Size: 214,502MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -964,7 +1100,9 @@
       Name: obj,
       DirectoryPath: /usr/obj,
       CreatedAt: 2022-08-25 05:44,
-      Size: 679,590MB
+      Size: 679,590MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -978,7 +1116,9 @@
       Name: Users,
       DirectoryPath: /Users,
       CreatedAt: 2022-08-24 21:45,
-      Size: 1,642GB
+      Size: 1,642GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -992,7 +1132,9 @@
       Name: Applications,
       DirectoryPath: /Applications,
       CreatedAt: 2022-08-23 23:53,
-      Size: 1,841GB
+      Size: 1,841GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1006,7 +1148,9 @@
       Name: dir,
       DirectoryPath: /home/user/dir,
       CreatedAt: 2022-08-22 16:45,
-      Size: 53,294MB
+      Size: 53,294MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1020,7 +1164,9 @@
       Name: yp,
       DirectoryPath: /var/yp,
       CreatedAt: 2022-08-17 11:25,
-      Size: 1,318GB
+      Size: 1,318GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1034,7 +1180,9 @@
       Name: log,
       DirectoryPath: /var/log,
       CreatedAt: 2022-08-12 02:36,
-      Size: 1,782GB
+      Size: 1,782GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1048,7 +1196,9 @@
       Name: src,
       DirectoryPath: /usr/src,
       CreatedAt: 2022-08-10 14:03,
-      Size: 1,926GB
+      Size: 1,926GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1062,7 +1212,9 @@
       Name: boot,
       DirectoryPath: /boot,
       CreatedAt: 2022-08-05 11:12,
-      Size: 1,033GB
+      Size: 1,033GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1076,7 +1228,9 @@
       Name: Applications,
       DirectoryPath: /Applications,
       CreatedAt: 2022-08-05 08:15,
-      Size: 1,381GB
+      Size: 1,381GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1090,7 +1244,9 @@
       Name: ppp,
       DirectoryPath: /etc/ppp,
       CreatedAt: 2022-08-01 15:16,
-      Size: 1,724GB
+      Size: 1,724GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1104,7 +1260,9 @@
       Name: home,
       DirectoryPath: /home,
       CreatedAt: 2022-07-29 14:44,
-      Size: 183,695MB
+      Size: 183,695MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1118,7 +1276,9 @@
       Name: Users,
       DirectoryPath: /Users,
       CreatedAt: 2022-07-27 23:58,
-      Size: 844,994MB
+      Size: 844,994MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1132,7 +1292,9 @@
       Name: lost+found,
       DirectoryPath: /lost+found,
       CreatedAt: 2022-07-26 22:21,
-      Size: 414,064MB
+      Size: 414,064MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1146,7 +1308,9 @@
       Name: media,
       DirectoryPath: /media,
       CreatedAt: 2022-07-25 22:39,
-      Size: 604,676MB
+      Size: 604,676MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1160,7 +1324,9 @@
       Name: mail,
       DirectoryPath: /var/mail,
       CreatedAt: 2022-07-22 01:14,
-      Size: 422,908MB
+      Size: 422,908MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1174,7 +1340,9 @@
       Name: defaults,
       DirectoryPath: /boot/defaults,
       CreatedAt: 2022-07-21 19:52,
-      Size: 896,136MB
+      Size: 896,136MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1188,7 +1356,9 @@
       Name: yp,
       DirectoryPath: /var/yp,
       CreatedAt: 2022-07-20 02:48,
-      Size: 1,124GB
+      Size: 1,124GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1202,7 +1372,9 @@
       Name: home,
       DirectoryPath: /home,
       CreatedAt: 2022-07-19 23:33,
-      Size: 1,183GB
+      Size: 1,183GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1216,7 +1388,9 @@
       Name: defaults,
       DirectoryPath: /etc/defaults,
       CreatedAt: 2022-07-15 19:38,
-      Size: 872,567MB
+      Size: 872,567MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1230,7 +1404,9 @@
       Name: defaults,
       DirectoryPath: /etc/defaults,
       CreatedAt: 2022-07-15 07:13,
-      Size: 137,362MB
+      Size: 137,362MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1244,7 +1420,9 @@
       Name: include,
       DirectoryPath: /opt/include,
       CreatedAt: 2022-07-15 06:23,
-      Size: 161,003MB
+      Size: 161,003MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1258,7 +1436,9 @@
       Name: private,
       DirectoryPath: /private,
       CreatedAt: 2022-07-15 02:11,
-      Size: 1,567GB
+      Size: 1,567GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1272,7 +1452,9 @@
       Name: sbin,
       DirectoryPath: /usr/sbin,
       CreatedAt: 2022-07-14 20:27,
-      Size: 1,184GB
+      Size: 1,184GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1286,7 +1468,9 @@
       Name: tmp,
       DirectoryPath: /var/tmp,
       CreatedAt: 2022-07-14 19:28,
-      Size: 652,240MB
+      Size: 652,240MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1300,7 +1484,9 @@
       Name: X11R6,
       DirectoryPath: /usr/X11R6,
       CreatedAt: 2022-07-12 14:14,
-      Size: 1,824GB
+      Size: 1,824GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1314,7 +1500,9 @@
       Name: Users,
       DirectoryPath: /Users,
       CreatedAt: 2022-07-12 12:59,
-      Size: 891,251MB
+      Size: 891,251MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1328,7 +1516,9 @@
       Name: proc,
       DirectoryPath: /proc,
       CreatedAt: 2022-07-11 14:20,
-      Size: 633,887MB
+      Size: 633,887MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1342,7 +1532,9 @@
       Name: mnt,
       DirectoryPath: /mnt,
       CreatedAt: 2022-07-11 13:02,
-      Size: 1,513GB
+      Size: 1,513GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1356,7 +1548,9 @@
       Name: defaults,
       DirectoryPath: /etc/defaults,
       CreatedAt: 2022-07-11 04:55,
-      Size: 692,389MB
+      Size: 692,389MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1370,7 +1564,9 @@
       Name: proc,
       DirectoryPath: /proc,
       CreatedAt: 2022-07-10 00:06,
-      Size: 1,063GB
+      Size: 1,063GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1384,7 +1580,9 @@
       Name: ports,
       DirectoryPath: /usr/ports,
       CreatedAt: 2022-07-01 15:22,
-      Size: 1,850GB
+      Size: 1,850GB,
+      IsErroneous: false,
+      IconKind: FolderFile
     },
     {
       Analysis: {
@@ -1398,7 +1596,9 @@
       Name: selinux,
       DirectoryPath: /selinux,
       CreatedAt: 2022-06-30 08:53,
-      Size: 864,833MB
+      Size: 864,833MB,
+      IsErroneous: false,
+      IconKind: FolderFile
     }
   ],
   SearchTerm: ,
