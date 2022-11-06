@@ -25,10 +25,13 @@ public sealed class FileSystemAnalyzerTests
     {
         Session = new ();
         var clock = new TestClock(new DateTime(2022, 11, 6, 11, 43, 42, DateTimeKind.Utc));
-        Analyzer = new (() => Session, clock, output.CreateTestLogger(levelSwitch: new (LogEventLevel.Debug)));
+        var logger = output.CreateTestLogger(levelSwitch: new (LogEventLevel.Debug));
+        Progress = new (logger);
+        Analyzer = new (() => Session, clock, logger);
     }
-    
+
     private AnalysisSessionMock Session { get; }
+    private ProgressSpy Progress { get; }
     private Analyzer Analyzer { get; }
 
     [Fact]
@@ -37,7 +40,7 @@ public sealed class FileSystemAnalyzerTests
         var targetDirectory = SetupDirectory();
 
         var analysis = await Analyzer.CreateAnalysisAsync(targetDirectory);
-        await Analyzer.AnalyzeFileSystemAsync(analysis);
+        await Analyzer.AnalyzeFileSystemAsync(analysis, Progress);
 
         var verifySettings = new VerifySettings();
         verifySettings.IgnoreMember<FileSystemEntry>(e => e.FullPathForSearch);
@@ -61,9 +64,9 @@ public sealed class FileSystemAnalyzerTests
          *     - h.bin (8192)
          *   - d.json (40)
          */
-        
+
         var parentDirectory = Path.GetDirectoryName(typeof(FileSystemAnalyzerTests).Assembly.Location)!;
-        
+
         var random = new Random(42);
         var buffer = new byte[8_192];
         var a = Path.Combine(parentDirectory, "A");
@@ -77,28 +80,28 @@ public sealed class FileSystemAnalyzerTests
         var i = Path.Combine(c, "I");
         var j = Path.Combine(i, "j.txt");
         var k = Path.Combine(i, "k.bin");
-        
+
         if (Directory.Exists(a))
             Directory.Delete(a, true);
 
         Directory.CreateDirectory(b);
         Directory.CreateDirectory(i);
-        
+
         File.WriteAllText(d, "{ \"value\": \"This is a small JSON file\" }");
-        
+
         var oneKbSpan = new Span<byte>(buffer, 0, 1024);
         random.NextBytes(oneKbSpan);
         using var stream1 = new FileStream(e, FileMode.Create);
         stream1.Write(oneKbSpan);
-        
+
         File.WriteAllText(f, "Hello");
-        
+
         File.WriteAllText(g, "wait = for it");
-        
+
         random.NextBytes(buffer);
         using var stream2 = new FileStream(h, FileMode.Create);
         stream2.Write(buffer);
-        
+
         File.WriteAllText(j, "So deep down");
 
         var twoKbSpan = new Span<byte>(buffer, 0, 2048);
@@ -113,6 +116,7 @@ public sealed class FileSystemAnalyzerTests
     {
         // ReSharper disable MemberCanBePrivate.Local -- these properties need to be public because of Verify serialization
         public List<Analysis> CapturedAnalyses { get; } = new ();
+
         public List<FileSystemEntry> CapturedEntries { get; } = new ();
         // ReSharper restore MemberCanBePrivate.Local
 
@@ -131,7 +135,7 @@ public sealed class FileSystemAnalyzerTests
                         if (ReferenceEquals(analysis, CapturedAnalyses[i]))
                             return Task.CompletedTask;
                     }
-                    
+
                     CapturedAnalyses.Add(analysis);
                     analysis.ToMutable().SetId($"Analysis-{CapturedAnalyses.Count}-A");
                     break;
@@ -158,5 +162,18 @@ public sealed class FileSystemAnalyzerTests
 
             throw new ArgumentException($"Cannot find entry with ID \"{id}\".", nameof(id));
         }
+    }
+
+    private sealed class ProgressSpy : IProgress<ProgressState>
+    {
+        public ProgressSpy(ILogger logger)
+        {
+            Logger = logger;
+        }
+
+        private ILogger Logger { get; }
+
+        public void Report(ProgressState value) =>
+            Logger.Information("{@ProgressState}", value);
     }
 }

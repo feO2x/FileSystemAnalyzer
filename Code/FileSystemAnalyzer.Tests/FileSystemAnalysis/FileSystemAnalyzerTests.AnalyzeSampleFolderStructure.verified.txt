@@ -5,6 +5,8 @@
       CreatedAtUtc: DateTime_1,
       RootEntryId: FileSystemEntry-1-A,
       SizeInBytes: 11334,
+      NumberOfFolders: 4,
+      NumberOfFiles: 7,
       Id: Analysis-1-A
     }
   ],
