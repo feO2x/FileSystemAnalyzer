@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 using Light.GuardClauses;
 using Raven.Client.Documents;
+using Raven.Client.Documents.Operations;
 using Raven.Client.Documents.Session;
 using Synnotech.RavenDB;
 
@@ -14,7 +15,7 @@ namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 public sealed class RavenDbAnalysesSession : AsyncReadOnlySession, IAnalysesSession
 {
     public RavenDbAnalysesSession(IAsyncDocumentSession session) : base(session) { }
-    
+
     public Task<List<Analysis>> GetAnalysesAsync(int skip,
                                                  int take,
                                                  string? searchTerm,
@@ -23,10 +24,20 @@ public sealed class RavenDbAnalysesSession : AsyncReadOnlySession, IAnalysesSess
         IQueryable<Analysis> query = Session.Query<Analysis>();
         query = !searchTerm.IsNullOrWhiteSpace() ?
             query.Search(analysis => analysis.DirectoryPathForSearch, searchTerm) :
-            query.OrderByDescending(analysis => analysis.CreatedAtUtc);  
+            query.OrderByDescending(analysis => analysis.CreatedAtUtc);
 
         return query.Skip(skip)
                     .Take(take)
                     .ToListAsync(cancellationToken);
+    }
+
+    public async Task RemoveAnalysisAsync(Analysis analysis)
+    {
+        Session.Delete(analysis.Id);
+        await Session.SaveChangesAsync();
+        await Session.Advanced
+                     .DocumentStore
+                     .Operations
+                     .SendAsync(new DeleteByQueryOperation($"from FileSystemEntries where AnalysisId = '{analysis.Id}'"));
     }
 }

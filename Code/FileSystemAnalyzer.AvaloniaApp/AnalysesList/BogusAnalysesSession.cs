@@ -65,6 +65,23 @@ public sealed class BogusAnalysesSession : IAnalysesSession
         return result;
     }
 
+    public async Task RemoveAnalysisAsync(Analysis analysis)
+    {
+        if (DelayInMilliseconds > 0)
+            await Task.Delay(DelayInMilliseconds);
+
+        for (var i = 0; i < Analyses.Count; i++)
+        {
+            if (!analysis.Equals(Analyses[i]))
+                continue;
+
+            Analyses.RemoveAt(i);
+            return;
+        }
+
+        throw new ArgumentException($"Analysis \"{analysis.Id}\" cannot be deleted because it is not in store");
+    }
+
     public static BogusAnalysesSession Create(int numberOfItems, int delay = 0) =>
         new (CreateFaker(), numberOfItems, delay);
 
@@ -76,7 +93,9 @@ public sealed class BogusAnalysesSession : IAnalysesSession
                                 .RuleFor(analysis => analysis.DirectoryPath, f => f.System.DirectoryPath())
                                 .RuleFor(analysis => analysis.CreatedAtUtc, f => f.Date.Past(refDate: referenceDate).ToUniversalTime())
                                 .RuleFor(analysis => analysis.SizeInBytes, f => f.Random.Number(0, int.MaxValue))
-                                .RuleFor(analysis => analysis.DirectoryPathForSearch, (_, a) => a.DirectoryPath.ReplaceSlashesWithSpacesInPath());
+                                .RuleFor(analysis => analysis.DirectoryPathForSearch, (_, a) => a.DirectoryPath.ReplaceSlashesWithSpacesInPath())
+                                .RuleFor(analysis => analysis.NumberOfFiles, f => f.Random.Number(1, 1000))
+                                .RuleFor(analysis => analysis.NumberOfFolders, f => f.Random.Number(1, 1000));
         if (includeErrorMessages)
             faker.RuleFor(analysis => analysis.ErrorMessage, f => analysisIds % 20 == 19 ? f.System.Exception().ToString() : null);
 

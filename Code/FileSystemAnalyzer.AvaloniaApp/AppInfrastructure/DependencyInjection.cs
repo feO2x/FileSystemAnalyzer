@@ -22,7 +22,7 @@ public static class DependencyInjection
                  .RegisterCoreServices()
                  .RegisterSystemDialogs()
                  .RegisterNavigation()
-                 .RegisterGettingStarted(configuration)
+                 .RegisterAnalysisList(configuration)
                  .RegisterFileSystemAnalysis()
                  .RegisterAppShell();
 

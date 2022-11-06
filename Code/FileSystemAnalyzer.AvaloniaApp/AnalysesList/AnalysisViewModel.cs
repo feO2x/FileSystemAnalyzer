@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using System.IO;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
-using FileSystemAnalyzer.AvaloniaApp.Shared;
+using Humanizer;
 using Light.GuardClauses;
 using Material.Icons;
 
@@ -15,7 +15,9 @@ public sealed class AnalysisViewModel
         Analysis = analysis;
         Name = Path.GetFileName(analysis.DirectoryPath);
         CreatedAt = analysis.CreatedAtUtc.ToLocalTime().ToString("yyyy-MM-dd HH:mm");
-        Size = analysis.SizeInBytes.FormatSize();
+        Size = analysis.SizeInBytes.Bytes().Humanize("#.##");
+        NumberOfFolders = "folder".ToQuantity(analysis.NumberOfFolders);
+        NumberOfFiles = "file".ToQuantity(analysis.NumberOfFiles);
     }
     
     public Analysis Analysis { get; }
@@ -23,6 +25,8 @@ public sealed class AnalysisViewModel
     public string DirectoryPath => Analysis.DirectoryPath;
     public string CreatedAt { get; }
     public string Size { get; }
+    public string NumberOfFolders { get; }
+    public string NumberOfFiles { get; }
     public bool IsErroneous => !Analysis.ErrorMessage.IsNullOrWhiteSpace();
     public MaterialIconKind IconKind =>
         IsErroneous ? MaterialIconKind.FolderCancel : MaterialIconKind.FolderFile;

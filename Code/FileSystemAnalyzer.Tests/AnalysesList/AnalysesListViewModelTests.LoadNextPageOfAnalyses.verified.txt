@@ -1,0 +1,4007 @@
+﻿{
+  Analyses: [
+    {
+      Analysis: {
+        DirectoryPath: /lost+found,
+        DirectoryPathForSearch:  lost+found,
+        CreatedAtUtc: DateTime_1,
+        RootEntryId: ,
+        SizeInBytes: 230228855,
+        NumberOfFolders: 158,
+        NumberOfFiles: 473,
+        Id: Analyses-299-A
+      },
+      Name: lost+found,
+      DirectoryPath: /lost+found,
+      CreatedAt: 2022-11-05 07:12,
+      Size: 219,56 MB,
+      NumberOfFolders: 158 folders,
+      NumberOfFiles: 473 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt,
+        DirectoryPathForSearch:  opt,
+        CreatedAtUtc: DateTime_2,
+        RootEntryId: ,
+        SizeInBytes: 1695813632,
+        NumberOfFolders: 184,
+        NumberOfFiles: 156,
+        Id: Analyses-49-A
+      },
+      Name: opt,
+      DirectoryPath: /opt,
+      CreatedAt: 2022-11-05 04:53,
+      Size: 1,58 GB,
+      NumberOfFolders: 184 folders,
+      NumberOfFiles: 156 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /sbin,
+        DirectoryPathForSearch:  sbin,
+        CreatedAtUtc: DateTime_3,
+        RootEntryId: ,
+        SizeInBytes: 471635421,
+        NumberOfFolders: 899,
+        NumberOfFiles: 818,
+        Id: Analyses-164-A
+      },
+      Name: sbin,
+      DirectoryPath: /sbin,
+      CreatedAt: 2022-11-04 13:43,
+      Size: 449,79 MB,
+      NumberOfFolders: 899 folders,
+      NumberOfFiles: 818 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/obj,
+        DirectoryPathForSearch:  usr obj,
+        CreatedAtUtc: DateTime_4,
+        RootEntryId: ,
+        SizeInBytes: 1648968963,
+        NumberOfFolders: 385,
+        NumberOfFiles: 749,
+        Id: Analyses-6-A
+      },
+      Name: obj,
+      DirectoryPath: /usr/obj,
+      CreatedAt: 2022-11-03 23:56,
+      Size: 1,54 GB,
+      NumberOfFolders: 385 folders,
+      NumberOfFiles: 749 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/defaults,
+        DirectoryPathForSearch:  etc defaults,
+        CreatedAtUtc: DateTime_5,
+        RootEntryId: ,
+        SizeInBytes: 1774754643,
+        NumberOfFolders: 917,
+        NumberOfFiles: 236,
+        Id: Analyses-62-A
+      },
+      Name: defaults,
+      DirectoryPath: /etc/defaults,
+      CreatedAt: 2022-11-03 14:10,
+      Size: 1,65 GB,
+      NumberOfFolders: 917 folders,
+      NumberOfFiles: 236 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/src,
+        DirectoryPathForSearch:  usr local src,
+        CreatedAtUtc: DateTime_6,
+        RootEntryId: ,
+        SizeInBytes: 139272248,
+        NumberOfFolders: 589,
+        NumberOfFiles: 208,
+        Id: Analyses-107-A
+      },
+      Name: src,
+      DirectoryPath: /usr/local/src,
+      CreatedAt: 2022-11-03 02:04,
+      Size: 132,82 MB,
+      NumberOfFolders: 589 folders,
+      NumberOfFiles: 208 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /private/var,
+        DirectoryPathForSearch:  private var,
+        CreatedAtUtc: DateTime_7,
+        RootEntryId: ,
+        SizeInBytes: 1963699771,
+        NumberOfFolders: 64,
+        NumberOfFiles: 4,
+        Id: Analyses-12-A
+      },
+      Name: var,
+      DirectoryPath: /private/var,
+      CreatedAt: 2022-11-02 04:09,
+      Size: 1,83 GB,
+      NumberOfFolders: 64 folders,
+      NumberOfFiles: 4 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_8,
+        RootEntryId: ,
+        SizeInBytes: 243822349,
+        NumberOfFolders: 399,
+        NumberOfFiles: 598,
+        Id: Analyses-292-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-11-01 21:41,
+      Size: 232,53 MB,
+      NumberOfFolders: 399 folders,
+      NumberOfFiles: 598 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /net,
+        DirectoryPathForSearch:  net,
+        CreatedAtUtc: DateTime_9,
+        RootEntryId: ,
+        SizeInBytes: 1406422043,
+        NumberOfFolders: 654,
+        NumberOfFiles: 929,
+        Id: Analyses-167-A
+      },
+      Name: net,
+      DirectoryPath: /net,
+      CreatedAt: 2022-11-01 11:31,
+      Size: 1,31 GB,
+      NumberOfFolders: 654 folders,
+      NumberOfFiles: 929 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user/dir,
+        DirectoryPathForSearch:  home user dir,
+        CreatedAtUtc: DateTime_10,
+        RootEntryId: ,
+        SizeInBytes: 681652621,
+        NumberOfFolders: 719,
+        NumberOfFiles: 69,
+        Id: Analyses-10-A
+      },
+      Name: dir,
+      DirectoryPath: /home/user/dir,
+      CreatedAt: 2022-10-31 14:29,
+      Size: 650,07 MB,
+      NumberOfFolders: 719 folders,
+      NumberOfFiles: 69 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/bin,
+        DirectoryPathForSearch:  usr bin,
+        CreatedAtUtc: DateTime_11,
+        RootEntryId: ,
+        SizeInBytes: 1465917470,
+        NumberOfFolders: 449,
+        NumberOfFiles: 691,
+        Id: Analyses-102-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/bin,
+      CreatedAt: 2022-10-30 21:43,
+      Size: 1,37 GB,
+      NumberOfFolders: 449 folders,
+      NumberOfFiles: 691 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/src,
+        DirectoryPathForSearch:  usr src,
+        CreatedAtUtc: DateTime_12,
+        RootEntryId: ,
+        SizeInBytes: 1812625057,
+        NumberOfFolders: 277,
+        NumberOfFiles: 557,
+        Id: Analyses-227-A
+      },
+      Name: src,
+      DirectoryPath: /usr/src,
+      CreatedAt: 2022-10-30 14:12,
+      Size: 1,69 GB,
+      NumberOfFolders: 277 folders,
+      NumberOfFiles: 557 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Library,
+        DirectoryPathForSearch:  Library,
+        CreatedAtUtc: DateTime_13,
+        RootEntryId: ,
+        SizeInBytes: 921909012,
+        NumberOfFolders: 319,
+        NumberOfFiles: 260,
+        Id: Analyses-260-A
+      },
+      Name: Library,
+      DirectoryPath: /Library,
+      CreatedAt: 2022-10-27 22:58,
+      Size: 879,2 MB,
+      NumberOfFolders: 319 folders,
+      NumberOfFiles: 260 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/namedb,
+        DirectoryPathForSearch:  etc namedb,
+        CreatedAtUtc: DateTime_14,
+        RootEntryId: ,
+        SizeInBytes: 1128512330,
+        NumberOfFolders: 116,
+        NumberOfFiles: 627,
+        Id: Analyses-7-A
+      },
+      Name: namedb,
+      DirectoryPath: /etc/namedb,
+      CreatedAt: 2022-10-26 20:51,
+      Size: 1,05 GB,
+      NumberOfFolders: 116 folders,
+      NumberOfFiles: 627 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/src,
+        DirectoryPathForSearch:  usr src,
+        CreatedAtUtc: DateTime_15,
+        RootEntryId: ,
+        SizeInBytes: 2032455067,
+        NumberOfFolders: 664,
+        NumberOfFiles: 54,
+        Id: Analyses-155-A
+      },
+      Name: src,
+      DirectoryPath: /usr/src,
+      CreatedAt: 2022-10-26 13:22,
+      Size: 1,89 GB,
+      NumberOfFolders: 664 folders,
+      NumberOfFiles: 54 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/ppp,
+        DirectoryPathForSearch:  etc ppp,
+        CreatedAtUtc: DateTime_16,
+        RootEntryId: ,
+        SizeInBytes: 825870316,
+        NumberOfFolders: 782,
+        NumberOfFiles: 988,
+        Id: Analyses-25-A
+      },
+      Name: ppp,
+      DirectoryPath: /etc/ppp,
+      CreatedAt: 2022-10-25 16:26,
+      Size: 787,61 MB,
+      NumberOfFolders: 782 folders,
+      NumberOfFiles: 988 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/share,
+        DirectoryPathForSearch:  usr share,
+        CreatedAtUtc: DateTime_17,
+        RootEntryId: ,
+        SizeInBytes: 848816286,
+        NumberOfFolders: 670,
+        NumberOfFiles: 183,
+        Id: Analyses-169-A
+      },
+      Name: share,
+      DirectoryPath: /usr/share,
+      CreatedAt: 2022-10-24 00:13,
+      Size: 809,49 MB,
+      NumberOfFolders: 670 folders,
+      NumberOfFiles: 183 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Users,
+        DirectoryPathForSearch:  Users,
+        CreatedAtUtc: DateTime_18,
+        RootEntryId: ,
+        SizeInBytes: 92863422,
+        NumberOfFolders: 376,
+        NumberOfFiles: 462,
+        Id: Analyses-13-A
+      },
+      Name: Users,
+      DirectoryPath: /Users,
+      CreatedAt: 2022-10-23 21:01,
+      Size: 88,56 MB,
+      NumberOfFolders: 376 folders,
+      NumberOfFiles: 462 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /proc,
+        DirectoryPathForSearch:  proc,
+        CreatedAtUtc: DateTime_19,
+        RootEntryId: ,
+        SizeInBytes: 1932113027,
+        NumberOfFolders: 684,
+        NumberOfFiles: 884,
+        Id: Analyses-289-A
+      },
+      Name: proc,
+      DirectoryPath: /proc,
+      CreatedAt: 2022-10-23 18:26,
+      Size: 1,8 GB,
+      NumberOfFolders: 684 folders,
+      NumberOfFiles: 884 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/log,
+        DirectoryPathForSearch:  var log,
+        CreatedAtUtc: DateTime_20,
+        RootEntryId: ,
+        SizeInBytes: 1024736388,
+        NumberOfFolders: 462,
+        NumberOfFiles: 33,
+        Id: Analyses-103-A
+      },
+      Name: log,
+      DirectoryPath: /var/log,
+      CreatedAt: 2022-10-22 18:07,
+      Size: 977,26 MB,
+      NumberOfFolders: 462 folders,
+      NumberOfFiles: 33 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /dev,
+        DirectoryPathForSearch:  dev,
+        CreatedAtUtc: DateTime_21,
+        RootEntryId: ,
+        SizeInBytes: 826104168,
+        NumberOfFolders: 708,
+        NumberOfFiles: 85,
+        Id: Analyses-136-A
+      },
+      Name: dev,
+      DirectoryPath: /dev,
+      CreatedAt: 2022-10-20 06:43,
+      Size: 787,83 MB,
+      NumberOfFolders: 708 folders,
+      NumberOfFiles: 85 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /sys,
+        DirectoryPathForSearch:  sys,
+        CreatedAtUtc: DateTime_22,
+        RootEntryId: ,
+        SizeInBytes: 1473997588,
+        NumberOfFolders: 793,
+        NumberOfFiles: 437,
+        Id: Analyses-14-A
+      },
+      Name: sys,
+      DirectoryPath: /sys,
+      CreatedAt: 2022-10-20 06:15,
+      Size: 1,37 GB,
+      NumberOfFolders: 793 folders,
+      NumberOfFiles: 437 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /System,
+        DirectoryPathForSearch:  System,
+        CreatedAtUtc: DateTime_23,
+        RootEntryId: ,
+        SizeInBytes: 14475717,
+        NumberOfFolders: 93,
+        NumberOfFiles: 941,
+        Id: Analyses-269-A
+      },
+      Name: System,
+      DirectoryPath: /System,
+      CreatedAt: 2022-10-19 12:16,
+      Size: 13,81 MB,
+      NumberOfFolders: 93 folders,
+      NumberOfFiles: 941 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_24,
+        RootEntryId: ,
+        SizeInBytes: 1326091840,
+        NumberOfFolders: 96,
+        NumberOfFiles: 604,
+        Id: Analyses-98-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-10-18 23:58,
+      Size: 1,24 GB,
+      NumberOfFolders: 96 folders,
+      NumberOfFiles: 604 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_25,
+        RootEntryId: ,
+        SizeInBytes: 1297464801,
+        NumberOfFolders: 840,
+        NumberOfFiles: 311,
+        Id: Analyses-215-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-10-17 13:48,
+      Size: 1,21 GB,
+      NumberOfFolders: 840 folders,
+      NumberOfFiles: 311 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/periodic,
+        DirectoryPathForSearch:  etc periodic,
+        CreatedAtUtc: DateTime_26,
+        RootEntryId: ,
+        SizeInBytes: 1567298437,
+        NumberOfFolders: 758,
+        NumberOfFiles: 436,
+        Id: Analyses-139-A
+      },
+      Name: periodic,
+      DirectoryPath: /etc/periodic,
+      CreatedAt: 2022-10-13 23:46,
+      Size: 1,46 GB,
+      NumberOfFolders: 758 folders,
+      NumberOfFiles: 436 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/ports,
+        DirectoryPathForSearch:  usr ports,
+        CreatedAtUtc: DateTime_27,
+        RootEntryId: ,
+        SizeInBytes: 1158735833,
+        NumberOfFolders: 414,
+        NumberOfFiles: 384,
+        Id: Analyses-105-A
+      },
+      Name: ports,
+      DirectoryPath: /usr/ports,
+      CreatedAt: 2022-10-13 06:58,
+      Size: 1,08 GB,
+      NumberOfFolders: 414 folders,
+      NumberOfFiles: 384 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/lib,
+        DirectoryPathForSearch:  opt lib,
+        CreatedAtUtc: DateTime_28,
+        RootEntryId: ,
+        SizeInBytes: 165246396,
+        NumberOfFolders: 224,
+        NumberOfFiles: 587,
+        Id: Analyses-147-A
+      },
+      Name: lib,
+      DirectoryPath: /opt/lib,
+      CreatedAt: 2022-10-11 00:17,
+      Size: 157,59 MB,
+      NumberOfFolders: 224 folders,
+      NumberOfFiles: 587 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /media,
+        DirectoryPathForSearch:  media,
+        CreatedAtUtc: DateTime_29,
+        RootEntryId: ,
+        SizeInBytes: 1622117422,
+        NumberOfFolders: 360,
+        NumberOfFiles: 235,
+        Id: Analyses-150-A
+      },
+      Name: media,
+      DirectoryPath: /media,
+      CreatedAt: 2022-10-10 19:44,
+      Size: 1,51 GB,
+      NumberOfFolders: 360 folders,
+      NumberOfFiles: 235 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /srv,
+        DirectoryPathForSearch:  srv,
+        CreatedAtUtc: DateTime_30,
+        RootEntryId: ,
+        SizeInBytes: 1200665547,
+        NumberOfFolders: 789,
+        NumberOfFiles: 658,
+        Id: Analyses-152-A
+      },
+      Name: srv,
+      DirectoryPath: /srv,
+      CreatedAt: 2022-10-09 23:03,
+      Size: 1,12 GB,
+      NumberOfFolders: 789 folders,
+      NumberOfFiles: 658 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/sbin,
+        DirectoryPathForSearch:  opt sbin,
+        CreatedAtUtc: DateTime_31,
+        RootEntryId: ,
+        SizeInBytes: 1942297371,
+        NumberOfFolders: 669,
+        NumberOfFiles: 919,
+        Id: Analyses-116-A
+      },
+      Name: sbin,
+      DirectoryPath: /opt/sbin,
+      CreatedAt: 2022-10-08 10:15,
+      Size: 1,81 GB,
+      NumberOfFolders: 669 folders,
+      NumberOfFiles: 919 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /System,
+        DirectoryPathForSearch:  System,
+        CreatedAtUtc: DateTime_32,
+        RootEntryId: ,
+        SizeInBytes: 906825899,
+        NumberOfFolders: 273,
+        NumberOfFiles: 285,
+        Id: Analyses-250-A
+      },
+      Name: System,
+      DirectoryPath: /System,
+      CreatedAt: 2022-10-07 18:19,
+      Size: 864,82 MB,
+      NumberOfFolders: 273 folders,
+      NumberOfFiles: 285 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libdata,
+        DirectoryPathForSearch:  usr libdata,
+        CreatedAtUtc: DateTime_33,
+        RootEntryId: ,
+        SizeInBytes: 2128763539,
+        NumberOfFolders: 561,
+        NumberOfFiles: 246,
+        Id: Analyses-281-A
+      },
+      Name: libdata,
+      DirectoryPath: /usr/libdata,
+      CreatedAt: 2022-10-07 05:53,
+      Size: 1,98 GB,
+      NumberOfFolders: 561 folders,
+      NumberOfFiles: 246 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home,
+        DirectoryPathForSearch:  home,
+        CreatedAtUtc: DateTime_34,
+        RootEntryId: ,
+        SizeInBytes: 909971739,
+        NumberOfFolders: 570,
+        NumberOfFiles: 758,
+        Id: Analyses-214-A
+      },
+      Name: home,
+      DirectoryPath: /home,
+      CreatedAt: 2022-10-04 08:03,
+      Size: 867,82 MB,
+      NumberOfFolders: 570 folders,
+      NumberOfFiles: 758 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Users,
+        DirectoryPathForSearch:  Users,
+        CreatedAtUtc: DateTime_35,
+        RootEntryId: ,
+        SizeInBytes: 843805006,
+        NumberOfFolders: 827,
+        NumberOfFiles: 281,
+        Id: Analyses-217-A
+      },
+      Name: Users,
+      DirectoryPath: /Users,
+      CreatedAt: 2022-10-03 20:12,
+      Size: 804,72 MB,
+      NumberOfFolders: 827 folders,
+      NumberOfFiles: 281 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/bin,
+        DirectoryPathForSearch:  usr bin,
+        CreatedAtUtc: DateTime_36,
+        RootEntryId: ,
+        SizeInBytes: 1841740157,
+        NumberOfFolders: 577,
+        NumberOfFiles: 138,
+        Id: Analyses-204-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/bin,
+      CreatedAt: 2022-10-01 23:03,
+      Size: 1,72 GB,
+      NumberOfFolders: 577 folders,
+      NumberOfFiles: 138 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libdata,
+        DirectoryPathForSearch:  usr libdata,
+        CreatedAtUtc: DateTime_37,
+        RootEntryId: ,
+        SizeInBytes: 1637806816,
+        NumberOfFolders: 926,
+        NumberOfFiles: 619,
+        Id: Analyses-174-A
+      },
+      Name: libdata,
+      DirectoryPath: /usr/libdata,
+      CreatedAt: 2022-09-30 05:54,
+      Size: 1,53 GB,
+      NumberOfFolders: 926 folders,
+      NumberOfFiles: 619 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/sbin,
+        DirectoryPathForSearch:  opt sbin,
+        CreatedAtUtc: DateTime_38,
+        RootEntryId: ,
+        SizeInBytes: 1184698488,
+        NumberOfFolders: 910,
+        NumberOfFiles: 802,
+        Id: Analyses-114-A
+      },
+      Name: sbin,
+      DirectoryPath: /opt/sbin,
+      CreatedAt: 2022-09-30 03:28,
+      Size: 1,1 GB,
+      NumberOfFolders: 910 folders,
+      NumberOfFiles: 802 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Users,
+        DirectoryPathForSearch:  Users,
+        CreatedAtUtc: DateTime_39,
+        RootEntryId: ,
+        SizeInBytes: 927806277,
+        NumberOfFolders: 979,
+        NumberOfFiles: 291,
+        Id: Analyses-48-A
+      },
+      Name: Users,
+      DirectoryPath: /Users,
+      CreatedAt: 2022-09-30 03:26,
+      Size: 884,83 MB,
+      NumberOfFolders: 979 folders,
+      NumberOfFiles: 291 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/tmp,
+        DirectoryPathForSearch:  var tmp,
+        CreatedAtUtc: DateTime_40,
+        RootEntryId: ,
+        SizeInBytes: 1475233292,
+        NumberOfFolders: 9,
+        NumberOfFiles: 573,
+        Id: Analyses-236-A
+      },
+      Name: tmp,
+      DirectoryPath: /var/tmp,
+      CreatedAt: 2022-09-29 20:51,
+      Size: 1,37 GB,
+      NumberOfFolders: 9 folders,
+      NumberOfFiles: 573 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/mail,
+        DirectoryPathForSearch:  etc mail,
+        CreatedAtUtc: DateTime_41,
+        RootEntryId: ,
+        SizeInBytes: 1076794657,
+        NumberOfFolders: 721,
+        NumberOfFiles: 941,
+        Id: Analyses-29-A
+      },
+      Name: mail,
+      DirectoryPath: /etc/mail,
+      CreatedAt: 2022-09-27 07:20,
+      Size: 1 GB,
+      NumberOfFolders: 721 folders,
+      NumberOfFiles: 941 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /tmp,
+        DirectoryPathForSearch:  tmp,
+        CreatedAtUtc: DateTime_42,
+        RootEntryId: ,
+        SizeInBytes: 2088214468,
+        NumberOfFolders: 199,
+        NumberOfFiles: 656,
+        Id: Analyses-50-A
+      },
+      Name: tmp,
+      DirectoryPath: /tmp,
+      CreatedAt: 2022-09-26 20:46,
+      Size: 1,94 GB,
+      NumberOfFolders: 199 folders,
+      NumberOfFiles: 656 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Network,
+        DirectoryPathForSearch:  Network,
+        CreatedAtUtc: DateTime_43,
+        RootEntryId: ,
+        SizeInBytes: 1985400865,
+        NumberOfFolders: 93,
+        NumberOfFiles: 160,
+        Id: Analyses-282-A
+      },
+      Name: Network,
+      DirectoryPath: /Network,
+      CreatedAt: 2022-09-23 03:17,
+      Size: 1,85 GB,
+      NumberOfFolders: 93 folders,
+      NumberOfFiles: 160 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/bin,
+        DirectoryPathForSearch:  usr bin,
+        CreatedAtUtc: DateTime_44,
+        RootEntryId: ,
+        SizeInBytes: 1716030352,
+        NumberOfFolders: 445,
+        NumberOfFiles: 881,
+        Id: Analyses-27-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/bin,
+      CreatedAt: 2022-09-21 23:30,
+      Size: 1,6 GB,
+      NumberOfFolders: 445 folders,
+      NumberOfFiles: 881 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_45,
+        RootEntryId: ,
+        SizeInBytes: 2045262911,
+        NumberOfFolders: 157,
+        NumberOfFiles: 574,
+        Id: Analyses-224-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-09-20 12:56,
+      Size: 1,9 GB,
+      NumberOfFolders: 157 folders,
+      NumberOfFiles: 574 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lib,
+        DirectoryPathForSearch:  lib,
+        CreatedAtUtc: DateTime_46,
+        RootEntryId: ,
+        SizeInBytes: 626791220,
+        NumberOfFolders: 98,
+        NumberOfFiles: 311,
+        Id: Analyses-119-A
+      },
+      Name: lib,
+      DirectoryPath: /lib,
+      CreatedAt: 2022-09-16 05:41,
+      Size: 597,75 MB,
+      NumberOfFolders: 98 folders,
+      NumberOfFiles: 311 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/ports,
+        DirectoryPathForSearch:  usr ports,
+        CreatedAtUtc: DateTime_47,
+        RootEntryId: ,
+        SizeInBytes: 187017019,
+        NumberOfFolders: 784,
+        NumberOfFiles: 665,
+        Id: Analyses-268-A
+      },
+      Name: ports,
+      DirectoryPath: /usr/ports,
+      CreatedAt: 2022-09-15 09:22,
+      Size: 178,35 MB,
+      NumberOfFolders: 784 folders,
+      NumberOfFiles: 665 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/bin,
+        DirectoryPathForSearch:  opt bin,
+        CreatedAtUtc: DateTime_48,
+        RootEntryId: ,
+        SizeInBytes: 951854597,
+        NumberOfFolders: 513,
+        NumberOfFiles: 495,
+        Id: Analyses-80-A
+      },
+      Name: bin,
+      DirectoryPath: /opt/bin,
+      CreatedAt: 2022-09-15 06:42,
+      Size: 907,76 MB,
+      NumberOfFolders: 513 folders,
+      NumberOfFiles: 495 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /dev,
+        DirectoryPathForSearch:  dev,
+        CreatedAtUtc: DateTime_49,
+        RootEntryId: ,
+        SizeInBytes: 1460981735,
+        NumberOfFolders: 488,
+        NumberOfFiles: 603,
+        Id: Analyses-216-A
+      },
+      Name: dev,
+      DirectoryPath: /dev,
+      CreatedAt: 2022-09-15 05:22,
+      Size: 1,36 GB,
+      NumberOfFolders: 488 folders,
+      NumberOfFiles: 603 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr,
+        DirectoryPathForSearch:  usr,
+        CreatedAtUtc: DateTime_50,
+        RootEntryId: ,
+        SizeInBytes: 938967586,
+        NumberOfFolders: 263,
+        NumberOfFiles: 169,
+        Id: Analyses-0-A
+      },
+      Name: usr,
+      DirectoryPath: /usr,
+      CreatedAt: 2022-09-15 01:14,
+      Size: 895,47 MB,
+      NumberOfFolders: 263 folders,
+      NumberOfFiles: 169 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_51,
+        RootEntryId: ,
+        SizeInBytes: 2000221927,
+        NumberOfFolders: 36,
+        NumberOfFiles: 734,
+        Id: Analyses-146-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-09-14 03:09,
+      Size: 1,86 GB,
+      NumberOfFolders: 36 folders,
+      NumberOfFiles: 734 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user/dir,
+        DirectoryPathForSearch:  home user dir,
+        CreatedAtUtc: DateTime_52,
+        RootEntryId: ,
+        SizeInBytes: 658790290,
+        NumberOfFolders: 214,
+        NumberOfFiles: 79,
+        Id: Analyses-208-A
+      },
+      Name: dir,
+      DirectoryPath: /home/user/dir,
+      CreatedAt: 2022-09-13 20:46,
+      Size: 628,27 MB,
+      NumberOfFolders: 214 folders,
+      NumberOfFiles: 79 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/ppp,
+        DirectoryPathForSearch:  etc ppp,
+        CreatedAtUtc: DateTime_53,
+        RootEntryId: ,
+        SizeInBytes: 1201086951,
+        NumberOfFolders: 924,
+        NumberOfFiles: 757,
+        Id: Analyses-253-A
+      },
+      Name: ppp,
+      DirectoryPath: /etc/ppp,
+      CreatedAt: 2022-09-13 11:22,
+      Size: 1,12 GB,
+      NumberOfFolders: 924 folders,
+      NumberOfFiles: 757 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/ports,
+        DirectoryPathForSearch:  usr ports,
+        CreatedAtUtc: DateTime_54,
+        RootEntryId: ,
+        SizeInBytes: 983607427,
+        NumberOfFolders: 994,
+        NumberOfFiles: 97,
+        Id: Analyses-213-A
+      },
+      Name: ports,
+      DirectoryPath: /usr/ports,
+      CreatedAt: 2022-09-13 01:49,
+      Size: 938,04 MB,
+      NumberOfFolders: 994 folders,
+      NumberOfFiles: 97 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_55,
+        RootEntryId: ,
+        SizeInBytes: 2021428202,
+        NumberOfFolders: 344,
+        NumberOfFiles: 767,
+        Id: Analyses-159-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-09-10 02:20,
+      Size: 1,88 GB,
+      NumberOfFolders: 344 folders,
+      NumberOfFiles: 767 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /sbin,
+        DirectoryPathForSearch:  sbin,
+        CreatedAtUtc: DateTime_56,
+        RootEntryId: ,
+        SizeInBytes: 211617645,
+        NumberOfFolders: 9,
+        NumberOfFiles: 41,
+        Id: Analyses-219-A
+      },
+      Name: sbin,
+      DirectoryPath: /sbin,
+      CreatedAt: 2022-09-10 02:11,
+      Size: 201,81 MB,
+      NumberOfFolders: 9 folders,
+      NumberOfFiles: 41 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr,
+        DirectoryPathForSearch:  usr,
+        CreatedAtUtc: DateTime_57,
+        RootEntryId: ,
+        SizeInBytes: 1845649297,
+        NumberOfFolders: 703,
+        NumberOfFiles: 618,
+        Id: Analyses-128-A
+      },
+      Name: usr,
+      DirectoryPath: /usr,
+      CreatedAt: 2022-09-09 18:11,
+      Size: 1,72 GB,
+      NumberOfFolders: 703 folders,
+      NumberOfFiles: 618 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/sbin,
+        DirectoryPathForSearch:  opt sbin,
+        CreatedAtUtc: DateTime_58,
+        RootEntryId: ,
+        SizeInBytes: 1677954961,
+        NumberOfFolders: 954,
+        NumberOfFiles: 2,
+        Id: Analyses-56-A
+      },
+      Name: sbin,
+      DirectoryPath: /opt/sbin,
+      CreatedAt: 2022-09-06 18:03,
+      Size: 1,56 GB,
+      NumberOfFolders: 954 folders,
+      NumberOfFiles: 2 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libexec,
+        DirectoryPathForSearch:  usr libexec,
+        CreatedAtUtc: DateTime_59,
+        RootEntryId: ,
+        SizeInBytes: 1964604486,
+        NumberOfFolders: 871,
+        NumberOfFiles: 630,
+        Id: Analyses-264-A
+      },
+      Name: libexec,
+      DirectoryPath: /usr/libexec,
+      CreatedAt: 2022-09-05 14:21,
+      Size: 1,83 GB,
+      NumberOfFolders: 871 folders,
+      NumberOfFiles: 630 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/log,
+        DirectoryPathForSearch:  var log,
+        CreatedAtUtc: DateTime_60,
+        RootEntryId: ,
+        SizeInBytes: 1064627875,
+        NumberOfFolders: 416,
+        NumberOfFiles: 495,
+        Id: Analyses-254-A
+      },
+      Name: log,
+      DirectoryPath: /var/log,
+      CreatedAt: 2022-09-05 09:20,
+      Size: 1015,31 MB,
+      NumberOfFolders: 416 folders,
+      NumberOfFiles: 495 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /System,
+        DirectoryPathForSearch:  System,
+        CreatedAtUtc: DateTime_61,
+        RootEntryId: ,
+        SizeInBytes: 1753998920,
+        NumberOfFolders: 27,
+        NumberOfFiles: 437,
+        Id: Analyses-112-A
+      },
+      Name: System,
+      DirectoryPath: /System,
+      CreatedAt: 2022-09-05 01:19,
+      Size: 1,63 GB,
+      NumberOfFolders: 27 folders,
+      NumberOfFiles: 437 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/src,
+        DirectoryPathForSearch:  usr src,
+        CreatedAtUtc: DateTime_62,
+        RootEntryId: ,
+        SizeInBytes: 1432245005,
+        NumberOfFolders: 943,
+        NumberOfFiles: 616,
+        Id: Analyses-31-A
+      },
+      Name: src,
+      DirectoryPath: /usr/src,
+      CreatedAt: 2022-09-03 11:19,
+      Size: 1,33 GB,
+      NumberOfFolders: 943 folders,
+      NumberOfFiles: 616 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_63,
+        RootEntryId: ,
+        SizeInBytes: 31827023,
+        NumberOfFolders: 61,
+        NumberOfFiles: 319,
+        Id: Analyses-193-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-08-30 08:22,
+      Size: 30,35 MB,
+      NumberOfFolders: 61 folders,
+      NumberOfFiles: 319 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/ports,
+        DirectoryPathForSearch:  usr ports,
+        CreatedAtUtc: DateTime_64,
+        RootEntryId: ,
+        SizeInBytes: 309435067,
+        NumberOfFolders: 815,
+        NumberOfFiles: 807,
+        Id: Analyses-68-A
+      },
+      Name: ports,
+      DirectoryPath: /usr/ports,
+      CreatedAt: 2022-08-29 08:03,
+      Size: 295,1 MB,
+      NumberOfFolders: 815 folders,
+      NumberOfFiles: 807 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/tmp,
+        DirectoryPathForSearch:  var tmp,
+        CreatedAtUtc: DateTime_65,
+        RootEntryId: ,
+        SizeInBytes: 925112714,
+        NumberOfFolders: 876,
+        NumberOfFiles: 245,
+        Id: Analyses-192-A
+      },
+      Name: tmp,
+      DirectoryPath: /var/tmp,
+      CreatedAt: 2022-08-28 09:01,
+      Size: 882,26 MB,
+      NumberOfFolders: 876 folders,
+      NumberOfFiles: 245 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/sbin,
+        DirectoryPathForSearch:  opt sbin,
+        CreatedAtUtc: DateTime_66,
+        RootEntryId: ,
+        SizeInBytes: 224921730,
+        NumberOfFolders: 673,
+        NumberOfFiles: 538,
+        Id: Analyses-52-A
+      },
+      Name: sbin,
+      DirectoryPath: /opt/sbin,
+      CreatedAt: 2022-08-26 04:22,
+      Size: 214,5 MB,
+      NumberOfFolders: 673 folders,
+      NumberOfFiles: 538 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lost+found,
+        DirectoryPathForSearch:  lost+found,
+        CreatedAtUtc: DateTime_67,
+        RootEntryId: ,
+        SizeInBytes: 740410033,
+        NumberOfFolders: 413,
+        NumberOfFiles: 291,
+        Id: Analyses-133-A
+      },
+      Name: lost+found,
+      DirectoryPath: /lost+found,
+      CreatedAt: 2022-08-26 01:56,
+      Size: 706,11 MB,
+      NumberOfFolders: 413 folders,
+      NumberOfFiles: 291 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/obj,
+        DirectoryPathForSearch:  usr obj,
+        CreatedAtUtc: DateTime_68,
+        RootEntryId: ,
+        SizeInBytes: 712601550,
+        NumberOfFolders: 468,
+        NumberOfFiles: 235,
+        Id: Analyses-176-A
+      },
+      Name: obj,
+      DirectoryPath: /usr/obj,
+      CreatedAt: 2022-08-25 05:44,
+      Size: 679,59 MB,
+      NumberOfFolders: 468 folders,
+      NumberOfFiles: 235 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/mail,
+        DirectoryPathForSearch:  etc mail,
+        CreatedAtUtc: DateTime_69,
+        RootEntryId: ,
+        SizeInBytes: 1875418798,
+        NumberOfFolders: 465,
+        NumberOfFiles: 154,
+        Id: Analyses-73-A
+      },
+      Name: mail,
+      DirectoryPath: /etc/mail,
+      CreatedAt: 2022-08-24 18:28,
+      Size: 1,75 GB,
+      NumberOfFolders: 465 folders,
+      NumberOfFiles: 154 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/bin,
+        DirectoryPathForSearch:  opt bin,
+        CreatedAtUtc: DateTime_70,
+        RootEntryId: ,
+        SizeInBytes: 1094547804,
+        NumberOfFolders: 155,
+        NumberOfFiles: 121,
+        Id: Analyses-161-A
+      },
+      Name: bin,
+      DirectoryPath: /opt/bin,
+      CreatedAt: 2022-08-23 07:29,
+      Size: 1,02 GB,
+      NumberOfFolders: 155 folders,
+      NumberOfFiles: 121 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user/dir,
+        DirectoryPathForSearch:  home user dir,
+        CreatedAtUtc: DateTime_71,
+        RootEntryId: ,
+        SizeInBytes: 55883261,
+        NumberOfFolders: 133,
+        NumberOfFiles: 491,
+        Id: Analyses-194-A
+      },
+      Name: dir,
+      DirectoryPath: /home/user/dir,
+      CreatedAt: 2022-08-22 16:45,
+      Size: 53,29 MB,
+      NumberOfFolders: 133 folders,
+      NumberOfFiles: 491 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /dev,
+        DirectoryPathForSearch:  dev,
+        CreatedAtUtc: DateTime_72,
+        RootEntryId: ,
+        SizeInBytes: 1238913962,
+        NumberOfFolders: 545,
+        NumberOfFiles: 503,
+        Id: Analyses-290-A
+      },
+      Name: dev,
+      DirectoryPath: /dev,
+      CreatedAt: 2022-08-22 12:50,
+      Size: 1,15 GB,
+      NumberOfFolders: 545 folders,
+      NumberOfFiles: 503 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt,
+        DirectoryPathForSearch:  opt,
+        CreatedAtUtc: DateTime_73,
+        RootEntryId: ,
+        SizeInBytes: 1700601826,
+        NumberOfFolders: 328,
+        NumberOfFiles: 795,
+        Id: Analyses-262-A
+      },
+      Name: opt,
+      DirectoryPath: /opt,
+      CreatedAt: 2022-08-20 02:57,
+      Size: 1,58 GB,
+      NumberOfFolders: 328 folders,
+      NumberOfFiles: 795 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /sys,
+        DirectoryPathForSearch:  sys,
+        CreatedAtUtc: DateTime_74,
+        RootEntryId: ,
+        SizeInBytes: 772070075,
+        NumberOfFolders: 282,
+        NumberOfFiles: 258,
+        Id: Analyses-242-A
+      },
+      Name: sys,
+      DirectoryPath: /sys,
+      CreatedAt: 2022-08-19 13:46,
+      Size: 736,3 MB,
+      NumberOfFolders: 282 folders,
+      NumberOfFiles: 258 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot/defaults,
+        DirectoryPathForSearch:  boot defaults,
+        CreatedAtUtc: DateTime_75,
+        RootEntryId: ,
+        SizeInBytes: 736941809,
+        NumberOfFolders: 271,
+        NumberOfFiles: 292,
+        Id: Analyses-39-A
+      },
+      Name: defaults,
+      DirectoryPath: /boot/defaults,
+      CreatedAt: 2022-08-19 05:04,
+      Size: 702,8 MB,
+      NumberOfFolders: 271 folders,
+      NumberOfFiles: 292 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Network,
+        DirectoryPathForSearch:  Network,
+        CreatedAtUtc: DateTime_76,
+        RootEntryId: ,
+        SizeInBytes: 1723501120,
+        NumberOfFolders: 322,
+        NumberOfFiles: 606,
+        Id: Analyses-47-A
+      },
+      Name: Network,
+      DirectoryPath: /Network,
+      CreatedAt: 2022-08-17 17:26,
+      Size: 1,61 GB,
+      NumberOfFolders: 322 folders,
+      NumberOfFiles: 606 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libexec,
+        DirectoryPathForSearch:  usr libexec,
+        CreatedAtUtc: DateTime_77,
+        RootEntryId: ,
+        SizeInBytes: 1686911327,
+        NumberOfFolders: 37,
+        NumberOfFiles: 562,
+        Id: Analyses-256-A
+      },
+      Name: libexec,
+      DirectoryPath: /usr/libexec,
+      CreatedAt: 2022-08-17 15:16,
+      Size: 1,57 GB,
+      NumberOfFolders: 37 folders,
+      NumberOfFiles: 562 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/log,
+        DirectoryPathForSearch:  var log,
+        CreatedAtUtc: DateTime_78,
+        RootEntryId: ,
+        SizeInBytes: 1071423415,
+        NumberOfFolders: 270,
+        NumberOfFiles: 77,
+        Id: Analyses-245-A
+      },
+      Name: log,
+      DirectoryPath: /var/log,
+      CreatedAt: 2022-08-16 04:00,
+      Size: 1021,79 MB,
+      NumberOfFolders: 270 folders,
+      NumberOfFiles: 77 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/periodic,
+        DirectoryPathForSearch:  etc periodic,
+        CreatedAtUtc: DateTime_79,
+        RootEntryId: ,
+        SizeInBytes: 743827690,
+        NumberOfFolders: 286,
+        NumberOfFiles: 398,
+        Id: Analyses-287-A
+      },
+      Name: periodic,
+      DirectoryPath: /etc/periodic,
+      CreatedAt: 2022-08-15 17:28,
+      Size: 709,37 MB,
+      NumberOfFolders: 286 folders,
+      NumberOfFiles: 398 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/ppp,
+        DirectoryPathForSearch:  etc ppp,
+        CreatedAtUtc: DateTime_80,
+        RootEntryId: ,
+        SizeInBytes: 1303422150,
+        NumberOfFolders: 891,
+        NumberOfFiles: 366,
+        Id: Analyses-89-A
+      },
+      Name: ppp,
+      DirectoryPath: /etc/ppp,
+      CreatedAt: 2022-08-15 12:01,
+      Size: 1,21 GB,
+      NumberOfFolders: 891 folders,
+      NumberOfFiles: 366 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lib,
+        DirectoryPathForSearch:  lib,
+        CreatedAtUtc: DateTime_81,
+        RootEntryId: ,
+        SizeInBytes: 1403983817,
+        NumberOfFolders: 758,
+        NumberOfFiles: 755,
+        Id: Analyses-286-A
+      },
+      Name: lib,
+      DirectoryPath: /lib,
+      CreatedAt: 2022-08-14 01:01,
+      Size: 1,31 GB,
+      NumberOfFolders: 758 folders,
+      NumberOfFiles: 755 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/share,
+        DirectoryPathForSearch:  opt share,
+        CreatedAtUtc: DateTime_82,
+        RootEntryId: ,
+        SizeInBytes: 2048178206,
+        NumberOfFolders: 302,
+        NumberOfFiles: 954,
+        Id: Analyses-205-A
+      },
+      Name: share,
+      DirectoryPath: /opt/share,
+      CreatedAt: 2022-08-13 06:41,
+      Size: 1,91 GB,
+      NumberOfFolders: 302 folders,
+      NumberOfFiles: 954 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/log,
+        DirectoryPathForSearch:  var log,
+        CreatedAtUtc: DateTime_83,
+        RootEntryId: ,
+        SizeInBytes: 1913684258,
+        NumberOfFolders: 311,
+        NumberOfFiles: 111,
+        Id: Analyses-126-A
+      },
+      Name: log,
+      DirectoryPath: /var/log,
+      CreatedAt: 2022-08-12 02:36,
+      Size: 1,78 GB,
+      NumberOfFolders: 311 folders,
+      NumberOfFiles: 111 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/namedb,
+        DirectoryPathForSearch:  etc namedb,
+        CreatedAtUtc: DateTime_84,
+        RootEntryId: ,
+        SizeInBytes: 1400871160,
+        NumberOfFolders: 995,
+        NumberOfFiles: 514,
+        Id: Analyses-183-A
+      },
+      Name: namedb,
+      DirectoryPath: /etc/namedb,
+      CreatedAt: 2022-08-10 16:52,
+      Size: 1,3 GB,
+      NumberOfFolders: 995 folders,
+      NumberOfFiles: 514 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Network,
+        DirectoryPathForSearch:  Network,
+        CreatedAtUtc: DateTime_85,
+        RootEntryId: ,
+        SizeInBytes: 2074855050,
+        NumberOfFolders: 808,
+        NumberOfFiles: 212,
+        Id: Analyses-261-A
+      },
+      Name: Network,
+      DirectoryPath: /Network,
+      CreatedAt: 2022-08-10 08:35,
+      Size: 1,93 GB,
+      NumberOfFolders: 808 folders,
+      NumberOfFiles: 212 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/X11R6,
+        DirectoryPathForSearch:  usr X11R6,
+        CreatedAtUtc: DateTime_86,
+        RootEntryId: ,
+        SizeInBytes: 351612770,
+        NumberOfFolders: 285,
+        NumberOfFiles: 151,
+        Id: Analyses-234-A
+      },
+      Name: X11R6,
+      DirectoryPath: /usr/X11R6,
+      CreatedAt: 2022-08-09 12:48,
+      Size: 335,32 MB,
+      NumberOfFolders: 285 folders,
+      NumberOfFiles: 151 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/sbin,
+        DirectoryPathForSearch:  opt sbin,
+        CreatedAtUtc: DateTime_87,
+        RootEntryId: ,
+        SizeInBytes: 1212140192,
+        NumberOfFolders: 978,
+        NumberOfFiles: 418,
+        Id: Analyses-181-A
+      },
+      Name: sbin,
+      DirectoryPath: /opt/sbin,
+      CreatedAt: 2022-08-09 10:07,
+      Size: 1,13 GB,
+      NumberOfFolders: 978 folders,
+      NumberOfFiles: 418 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var,
+        DirectoryPathForSearch:  var,
+        CreatedAtUtc: DateTime_88,
+        RootEntryId: ,
+        SizeInBytes: 1727238531,
+        NumberOfFolders: 556,
+        NumberOfFiles: 826,
+        Id: Analyses-145-A
+      },
+      Name: var,
+      DirectoryPath: /var,
+      CreatedAt: 2022-08-09 04:31,
+      Size: 1,61 GB,
+      NumberOfFolders: 556 folders,
+      NumberOfFiles: 826 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/periodic,
+        DirectoryPathForSearch:  etc periodic,
+        CreatedAtUtc: DateTime_89,
+        RootEntryId: ,
+        SizeInBytes: 1824577850,
+        NumberOfFolders: 283,
+        NumberOfFiles: 18,
+        Id: Analyses-279-A
+      },
+      Name: periodic,
+      DirectoryPath: /etc/periodic,
+      CreatedAt: 2022-08-06 18:17,
+      Size: 1,7 GB,
+      NumberOfFolders: 283 folders,
+      NumberOfFiles: 18 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot/defaults,
+        DirectoryPathForSearch:  boot defaults,
+        CreatedAtUtc: DateTime_90,
+        RootEntryId: ,
+        SizeInBytes: 1630593326,
+        NumberOfFolders: 262,
+        NumberOfFiles: 398,
+        Id: Analyses-212-A
+      },
+      Name: defaults,
+      DirectoryPath: /boot/defaults,
+      CreatedAt: 2022-08-05 15:20,
+      Size: 1,52 GB,
+      NumberOfFolders: 262 folders,
+      NumberOfFiles: 398 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot/defaults,
+        DirectoryPathForSearch:  boot defaults,
+        CreatedAtUtc: DateTime_91,
+        RootEntryId: ,
+        SizeInBytes: 174294145,
+        NumberOfFolders: 972,
+        NumberOfFiles: 719,
+        Id: Analyses-203-A
+      },
+      Name: defaults,
+      DirectoryPath: /boot/defaults,
+      CreatedAt: 2022-08-03 09:46,
+      Size: 166,22 MB,
+      NumberOfFolders: 972 folders,
+      NumberOfFiles: 719 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Applications,
+        DirectoryPathForSearch:  Applications,
+        CreatedAtUtc: DateTime_92,
+        RootEntryId: ,
+        SizeInBytes: 252181555,
+        NumberOfFolders: 879,
+        NumberOfFiles: 561,
+        Id: Analyses-220-A
+      },
+      Name: Applications,
+      DirectoryPath: /Applications,
+      CreatedAt: 2022-08-01 02:33,
+      Size: 240,5 MB,
+      NumberOfFolders: 879 folders,
+      NumberOfFiles: 561 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/mail,
+        DirectoryPathForSearch:  etc mail,
+        CreatedAtUtc: DateTime_93,
+        RootEntryId: ,
+        SizeInBytes: 989424991,
+        NumberOfFolders: 155,
+        NumberOfFiles: 249,
+        Id: Analyses-93-A
+      },
+      Name: mail,
+      DirectoryPath: /etc/mail,
+      CreatedAt: 2022-07-30 04:10,
+      Size: 943,59 MB,
+      NumberOfFolders: 155 folders,
+      NumberOfFiles: 249 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Users,
+        DirectoryPathForSearch:  Users,
+        CreatedAtUtc: DateTime_94,
+        RootEntryId: ,
+        SizeInBytes: 886040512,
+        NumberOfFolders: 124,
+        NumberOfFiles: 45,
+        Id: Analyses-88-A
+      },
+      Name: Users,
+      DirectoryPath: /Users,
+      CreatedAt: 2022-07-27 23:58,
+      Size: 844,99 MB,
+      NumberOfFolders: 124 folders,
+      NumberOfFiles: 45 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/bin,
+        DirectoryPathForSearch:  usr bin,
+        CreatedAtUtc: DateTime_95,
+        RootEntryId: ,
+        SizeInBytes: 480971897,
+        NumberOfFolders: 25,
+        NumberOfFiles: 651,
+        Id: Analyses-19-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/bin,
+      CreatedAt: 2022-07-22 19:47,
+      Size: 458,69 MB,
+      NumberOfFolders: 25 folders,
+      NumberOfFiles: 651 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/mail,
+        DirectoryPathForSearch:  var mail,
+        CreatedAtUtc: DateTime_96,
+        RootEntryId: ,
+        SizeInBytes: 443451643,
+        NumberOfFolders: 854,
+        NumberOfFiles: 905,
+        Id: Analyses-96-A
+      },
+      Name: mail,
+      DirectoryPath: /var/mail,
+      CreatedAt: 2022-07-22 01:14,
+      Size: 422,91 MB,
+      NumberOfFolders: 854 folders,
+      NumberOfFiles: 905 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_97,
+        RootEntryId: ,
+        SizeInBytes: 1179888207,
+        NumberOfFolders: 274,
+        NumberOfFiles: 810,
+        Id: Analyses-151-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-07-21 00:36,
+      Size: 1,1 GB,
+      NumberOfFolders: 274 folders,
+      NumberOfFiles: 810 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/tmp,
+        DirectoryPathForSearch:  var tmp,
+        CreatedAtUtc: DateTime_98,
+        RootEntryId: ,
+        SizeInBytes: 1500485439,
+        NumberOfFolders: 970,
+        NumberOfFiles: 133,
+        Id: Analyses-240-A
+      },
+      Name: tmp,
+      DirectoryPath: /var/tmp,
+      CreatedAt: 2022-07-17 18:14,
+      Size: 1,4 GB,
+      NumberOfFolders: 970 folders,
+      NumberOfFiles: 133 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/share,
+        DirectoryPathForSearch:  opt share,
+        CreatedAtUtc: DateTime_99,
+        RootEntryId: ,
+        SizeInBytes: 1167831385,
+        NumberOfFolders: 688,
+        NumberOfFiles: 215,
+        Id: Analyses-248-A
+      },
+      Name: share,
+      DirectoryPath: /opt/share,
+      CreatedAt: 2022-07-17 02:44,
+      Size: 1,09 GB,
+      NumberOfFolders: 688 folders,
+      NumberOfFiles: 215 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /private,
+        DirectoryPathForSearch:  private,
+        CreatedAtUtc: DateTime_100,
+        RootEntryId: ,
+        SizeInBytes: 1593689547,
+        NumberOfFolders: 96,
+        NumberOfFiles: 415,
+        Id: Analyses-57-A
+      },
+      Name: private,
+      DirectoryPath: /private,
+      CreatedAt: 2022-07-15 17:02,
+      Size: 1,48 GB,
+      NumberOfFolders: 96 folders,
+      NumberOfFiles: 415 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/share,
+        DirectoryPathForSearch:  usr share,
+        CreatedAtUtc: DateTime_101,
+        RootEntryId: ,
+        SizeInBytes: 2060880055,
+        NumberOfFolders: 17,
+        NumberOfFiles: 891,
+        Id: Analyses-43-A
+      },
+      Name: share,
+      DirectoryPath: /usr/share,
+      CreatedAt: 2022-07-14 10:56,
+      Size: 1,92 GB,
+      NumberOfFolders: 17 folders,
+      NumberOfFiles: 891 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /srv,
+        DirectoryPathForSearch:  srv,
+        CreatedAtUtc: DateTime_102,
+        RootEntryId: ,
+        SizeInBytes: 1768773711,
+        NumberOfFolders: 576,
+        NumberOfFiles: 365,
+        Id: Analyses-179-A
+      },
+      Name: srv,
+      DirectoryPath: /srv,
+      CreatedAt: 2022-07-13 22:26,
+      Size: 1,65 GB,
+      NumberOfFolders: 576 folders,
+      NumberOfFiles: 365 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /root,
+        DirectoryPathForSearch:  root,
+        CreatedAtUtc: DateTime_103,
+        RootEntryId: ,
+        SizeInBytes: 1968655308,
+        NumberOfFolders: 554,
+        NumberOfFiles: 804,
+        Id: Analyses-185-A
+      },
+      Name: root,
+      DirectoryPath: /root,
+      CreatedAt: 2022-07-12 22:42,
+      Size: 1,83 GB,
+      NumberOfFolders: 554 folders,
+      NumberOfFiles: 804 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/X11R6,
+        DirectoryPathForSearch:  usr X11R6,
+        CreatedAtUtc: DateTime_104,
+        RootEntryId: ,
+        SizeInBytes: 1958495574,
+        NumberOfFolders: 166,
+        NumberOfFiles: 405,
+        Id: Analyses-106-A
+      },
+      Name: X11R6,
+      DirectoryPath: /usr/X11R6,
+      CreatedAt: 2022-07-12 14:14,
+      Size: 1,82 GB,
+      NumberOfFolders: 166 folders,
+      NumberOfFiles: 405 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /proc,
+        DirectoryPathForSearch:  proc,
+        CreatedAtUtc: DateTime_105,
+        RootEntryId: ,
+        SizeInBytes: 664678815,
+        NumberOfFolders: 36,
+        NumberOfFiles: 518,
+        Id: Analyses-2-A
+      },
+      Name: proc,
+      DirectoryPath: /proc,
+      CreatedAt: 2022-07-11 14:20,
+      Size: 633,89 MB,
+      NumberOfFolders: 36 folders,
+      NumberOfFiles: 518 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/defaults,
+        DirectoryPathForSearch:  etc defaults,
+        CreatedAtUtc: DateTime_106,
+        RootEntryId: ,
+        SizeInBytes: 726022282,
+        NumberOfFolders: 10,
+        NumberOfFiles: 826,
+        Id: Analyses-22-A
+      },
+      Name: defaults,
+      DirectoryPath: /etc/defaults,
+      CreatedAt: 2022-07-11 04:55,
+      Size: 692,39 MB,
+      NumberOfFolders: 10 folders,
+      NumberOfFiles: 826 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/bin,
+        DirectoryPathForSearch:  opt bin,
+        CreatedAtUtc: DateTime_107,
+        RootEntryId: ,
+        SizeInBytes: 985901774,
+        NumberOfFolders: 364,
+        NumberOfFiles: 318,
+        Id: Analyses-237-A
+      },
+      Name: bin,
+      DirectoryPath: /opt/bin,
+      CreatedAt: 2022-07-10 05:56,
+      Size: 940,23 MB,
+      NumberOfFolders: 364 folders,
+      NumberOfFiles: 318 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /proc,
+        DirectoryPathForSearch:  proc,
+        CreatedAtUtc: DateTime_108,
+        RootEntryId: ,
+        SizeInBytes: 1141611528,
+        NumberOfFolders: 626,
+        NumberOfFiles: 905,
+        Id: Analyses-60-A
+      },
+      Name: proc,
+      DirectoryPath: /proc,
+      CreatedAt: 2022-07-10 00:06,
+      Size: 1,06 GB,
+      NumberOfFolders: 626 folders,
+      NumberOfFiles: 905 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user,
+        DirectoryPathForSearch:  home user,
+        CreatedAtUtc: DateTime_109,
+        RootEntryId: ,
+        SizeInBytes: 948965457,
+        NumberOfFolders: 794,
+        NumberOfFiles: 106,
+        Id: Analyses-294-A
+      },
+      Name: user,
+      DirectoryPath: /home/user,
+      CreatedAt: 2022-07-02 13:15,
+      Size: 905 MB,
+      NumberOfFolders: 794 folders,
+      NumberOfFiles: 106 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/sbin,
+        DirectoryPathForSearch:  usr sbin,
+        CreatedAtUtc: DateTime_110,
+        RootEntryId: ,
+        SizeInBytes: 1029585104,
+        NumberOfFolders: 402,
+        NumberOfFiles: 99,
+        Id: Analyses-239-A
+      },
+      Name: sbin,
+      DirectoryPath: /usr/sbin,
+      CreatedAt: 2022-07-02 12:15,
+      Size: 981,89 MB,
+      NumberOfFolders: 402 folders,
+      NumberOfFiles: 99 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_111,
+        RootEntryId: ,
+        SizeInBytes: 1608156866,
+        NumberOfFolders: 7,
+        NumberOfFiles: 37,
+        Id: Analyses-263-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-06-30 16:21,
+      Size: 1,5 GB,
+      NumberOfFolders: 7 folders,
+      NumberOfFiles: 37 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/src,
+        DirectoryPathForSearch:  usr src,
+        CreatedAtUtc: DateTime_112,
+        RootEntryId: ,
+        SizeInBytes: 1507805493,
+        NumberOfFolders: 845,
+        NumberOfFiles: 796,
+        Id: Analyses-66-A
+      },
+      Name: src,
+      DirectoryPath: /usr/src,
+      CreatedAt: 2022-06-29 22:00,
+      Size: 1,4 GB,
+      NumberOfFolders: 845 folders,
+      NumberOfFiles: 796 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/yp,
+        DirectoryPathForSearch:  var yp,
+        CreatedAtUtc: DateTime_113,
+        RootEntryId: ,
+        SizeInBytes: 154026186,
+        NumberOfFolders: 939,
+        NumberOfFiles: 184,
+        Id: Analyses-41-A
+      },
+      Name: yp,
+      DirectoryPath: /var/yp,
+      CreatedAt: 2022-06-28 15:25,
+      Size: 146,89 MB,
+      NumberOfFolders: 939 folders,
+      NumberOfFiles: 184 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/sbin,
+        DirectoryPathForSearch:  usr sbin,
+        CreatedAtUtc: DateTime_114,
+        RootEntryId: ,
+        SizeInBytes: 1111539832,
+        NumberOfFolders: 276,
+        NumberOfFiles: 214,
+        Id: Analyses-127-A
+      },
+      Name: sbin,
+      DirectoryPath: /usr/sbin,
+      CreatedAt: 2022-06-25 03:30,
+      Size: 1,04 GB,
+      NumberOfFolders: 276 folders,
+      NumberOfFiles: 214 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/include,
+        DirectoryPathForSearch:  opt include,
+        CreatedAtUtc: DateTime_115,
+        RootEntryId: ,
+        SizeInBytes: 907676329,
+        NumberOfFolders: 47,
+        NumberOfFiles: 594,
+        Id: Analyses-134-A
+      },
+      Name: include,
+      DirectoryPath: /opt/include,
+      CreatedAt: 2022-06-20 23:15,
+      Size: 865,63 MB,
+      NumberOfFolders: 47 folders,
+      NumberOfFiles: 594 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt,
+        DirectoryPathForSearch:  opt,
+        CreatedAtUtc: DateTime_116,
+        RootEntryId: ,
+        SizeInBytes: 434689568,
+        NumberOfFolders: 1,
+        NumberOfFiles: 739,
+        Id: Analyses-196-A
+      },
+      Name: opt,
+      DirectoryPath: /opt,
+      CreatedAt: 2022-06-20 05:24,
+      Size: 414,55 MB,
+      NumberOfFolders: 1 folder,
+      NumberOfFiles: 739 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/yp,
+        DirectoryPathForSearch:  var yp,
+        CreatedAtUtc: DateTime_117,
+        RootEntryId: ,
+        SizeInBytes: 302319928,
+        NumberOfFolders: 637,
+        NumberOfFiles: 220,
+        Id: Analyses-209-A
+      },
+      Name: yp,
+      DirectoryPath: /var/yp,
+      CreatedAt: 2022-06-18 09:08,
+      Size: 288,31 MB,
+      NumberOfFolders: 637 folders,
+      NumberOfFiles: 220 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lost+found,
+        DirectoryPathForSearch:  lost+found,
+        CreatedAtUtc: DateTime_118,
+        RootEntryId: ,
+        SizeInBytes: 986544595,
+        NumberOfFolders: 341,
+        NumberOfFiles: 495,
+        Id: Analyses-241-A
+      },
+      Name: lost+found,
+      DirectoryPath: /lost+found,
+      CreatedAt: 2022-06-18 07:50,
+      Size: 940,84 MB,
+      NumberOfFolders: 341 folders,
+      NumberOfFiles: 495 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/include,
+        DirectoryPathForSearch:  opt include,
+        CreatedAtUtc: DateTime_119,
+        RootEntryId: ,
+        SizeInBytes: 735851447,
+        NumberOfFolders: 220,
+        NumberOfFiles: 990,
+        Id: Analyses-166-A
+      },
+      Name: include,
+      DirectoryPath: /opt/include,
+      CreatedAt: 2022-06-17 01:52,
+      Size: 701,76 MB,
+      NumberOfFolders: 220 folders,
+      NumberOfFiles: 990 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/sbin,
+        DirectoryPathForSearch:  usr sbin,
+        CreatedAtUtc: DateTime_120,
+        RootEntryId: ,
+        SizeInBytes: 1185225006,
+        NumberOfFolders: 884,
+        NumberOfFiles: 132,
+        Id: Analyses-71-A
+      },
+      Name: sbin,
+      DirectoryPath: /usr/sbin,
+      CreatedAt: 2022-06-16 07:04,
+      Size: 1,1 GB,
+      NumberOfFolders: 884 folders,
+      NumberOfFiles: 132 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /rescue,
+        DirectoryPathForSearch:  rescue,
+        CreatedAtUtc: DateTime_121,
+        RootEntryId: ,
+        SizeInBytes: 754440496,
+        NumberOfFolders: 736,
+        NumberOfFiles: 587,
+        Id: Analyses-15-A
+      },
+      Name: rescue,
+      DirectoryPath: /rescue,
+      CreatedAt: 2022-06-12 05:28,
+      Size: 719,49 MB,
+      NumberOfFolders: 736 folders,
+      NumberOfFiles: 587 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /root,
+        DirectoryPathForSearch:  root,
+        CreatedAtUtc: DateTime_122,
+        RootEntryId: ,
+        SizeInBytes: 82333871,
+        NumberOfFolders: 418,
+        NumberOfFiles: 787,
+        Id: Analyses-243-A
+      },
+      Name: root,
+      DirectoryPath: /root,
+      CreatedAt: 2022-06-08 13:44,
+      Size: 78,52 MB,
+      NumberOfFolders: 418 folders,
+      NumberOfFiles: 787 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user,
+        DirectoryPathForSearch:  home user,
+        CreatedAtUtc: DateTime_123,
+        RootEntryId: ,
+        SizeInBytes: 686082129,
+        NumberOfFolders: 698,
+        NumberOfFiles: 178,
+        Id: Analyses-101-A
+      },
+      Name: user,
+      DirectoryPath: /home/user,
+      CreatedAt: 2022-06-06 18:30,
+      Size: 654,3 MB,
+      NumberOfFolders: 698 folders,
+      NumberOfFiles: 178 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot/defaults,
+        DirectoryPathForSearch:  boot defaults,
+        CreatedAtUtc: DateTime_124,
+        RootEntryId: ,
+        SizeInBytes: 873803622,
+        NumberOfFolders: 432,
+        NumberOfFiles: 50,
+        Id: Analyses-184-A
+      },
+      Name: defaults,
+      DirectoryPath: /boot/defaults,
+      CreatedAt: 2022-06-04 22:12,
+      Size: 833,32 MB,
+      NumberOfFolders: 432 folders,
+      NumberOfFiles: 50 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_125,
+        RootEntryId: ,
+        SizeInBytes: 996905567,
+        NumberOfFolders: 427,
+        NumberOfFiles: 495,
+        Id: Analyses-280-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-06-04 11:47,
+      Size: 950,72 MB,
+      NumberOfFolders: 427 folders,
+      NumberOfFiles: 495 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc,
+        DirectoryPathForSearch:  etc,
+        CreatedAtUtc: DateTime_126,
+        RootEntryId: ,
+        SizeInBytes: 1513505815,
+        NumberOfFolders: 931,
+        NumberOfFiles: 27,
+        Id: Analyses-252-A
+      },
+      Name: etc,
+      DirectoryPath: /etc,
+      CreatedAt: 2022-06-04 03:30,
+      Size: 1,41 GB,
+      NumberOfFolders: 931 folders,
+      NumberOfFiles: 27 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_127,
+        RootEntryId: ,
+        SizeInBytes: 1891100636,
+        NumberOfFolders: 649,
+        NumberOfFiles: 740,
+        Id: Analyses-206-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-06-02 06:07,
+      Size: 1,76 GB,
+      NumberOfFolders: 649 folders,
+      NumberOfFiles: 740 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user,
+        DirectoryPathForSearch:  home user,
+        CreatedAtUtc: DateTime_128,
+        RootEntryId: ,
+        SizeInBytes: 691936172,
+        NumberOfFolders: 792,
+        NumberOfFiles: 670,
+        Id: Analyses-257-A
+      },
+      Name: user,
+      DirectoryPath: /home/user,
+      CreatedAt: 2022-06-01 23:51,
+      Size: 659,88 MB,
+      NumberOfFolders: 792 folders,
+      NumberOfFiles: 670 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /private,
+        DirectoryPathForSearch:  private,
+        CreatedAtUtc: DateTime_129,
+        RootEntryId: ,
+        SizeInBytes: 208299846,
+        NumberOfFolders: 311,
+        NumberOfFiles: 467,
+        Id: Analyses-158-A
+      },
+      Name: private,
+      DirectoryPath: /private,
+      CreatedAt: 2022-06-01 08:28,
+      Size: 198,65 MB,
+      NumberOfFolders: 311 folders,
+      NumberOfFiles: 467 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/periodic,
+        DirectoryPathForSearch:  etc periodic,
+        CreatedAtUtc: DateTime_130,
+        RootEntryId: ,
+        SizeInBytes: 2104277630,
+        NumberOfFolders: 207,
+        NumberOfFiles: 731,
+        Id: Analyses-200-A
+      },
+      Name: periodic,
+      DirectoryPath: /etc/periodic,
+      CreatedAt: 2022-05-30 00:34,
+      Size: 1,96 GB,
+      NumberOfFolders: 207 folders,
+      NumberOfFiles: 731 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_131,
+        RootEntryId: ,
+        SizeInBytes: 1114938513,
+        NumberOfFolders: 155,
+        NumberOfFiles: 43,
+        Id: Analyses-90-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-05-28 09:33,
+      Size: 1,04 GB,
+      NumberOfFolders: 155 folders,
+      NumberOfFiles: 43 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /private/tmp,
+        DirectoryPathForSearch:  private tmp,
+        CreatedAtUtc: DateTime_132,
+        RootEntryId: ,
+        SizeInBytes: 1266367746,
+        NumberOfFolders: 984,
+        NumberOfFiles: 441,
+        Id: Analyses-232-A
+      },
+      Name: tmp,
+      DirectoryPath: /private/tmp,
+      CreatedAt: 2022-05-27 12:27,
+      Size: 1,18 GB,
+      NumberOfFolders: 984 folders,
+      NumberOfFiles: 441 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user,
+        DirectoryPathForSearch:  home user,
+        CreatedAtUtc: DateTime_133,
+        RootEntryId: ,
+        SizeInBytes: 1346186607,
+        NumberOfFolders: 655,
+        NumberOfFiles: 148,
+        Id: Analyses-138-A
+      },
+      Name: user,
+      DirectoryPath: /home/user,
+      CreatedAt: 2022-05-26 07:38,
+      Size: 1,25 GB,
+      NumberOfFolders: 655 folders,
+      NumberOfFiles: 148 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/namedb,
+        DirectoryPathForSearch:  etc namedb,
+        CreatedAtUtc: DateTime_134,
+        RootEntryId: ,
+        SizeInBytes: 1137311735,
+        NumberOfFolders: 238,
+        NumberOfFiles: 982,
+        Id: Analyses-191-A
+      },
+      Name: namedb,
+      DirectoryPath: /etc/namedb,
+      CreatedAt: 2022-05-25 03:01,
+      Size: 1,06 GB,
+      NumberOfFolders: 238 folders,
+      NumberOfFiles: 982 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/defaults,
+        DirectoryPathForSearch:  etc defaults,
+        CreatedAtUtc: DateTime_135,
+        RootEntryId: ,
+        SizeInBytes: 715918605,
+        NumberOfFolders: 135,
+        NumberOfFiles: 149,
+        Id: Analyses-17-A
+      },
+      Name: defaults,
+      DirectoryPath: /etc/defaults,
+      CreatedAt: 2022-05-24 10:44,
+      Size: 682,75 MB,
+      NumberOfFolders: 135 folders,
+      NumberOfFiles: 149 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/bin,
+        DirectoryPathForSearch:  opt bin,
+        CreatedAtUtc: DateTime_136,
+        RootEntryId: ,
+        SizeInBytes: 1213095752,
+        NumberOfFolders: 379,
+        NumberOfFiles: 11,
+        Id: Analyses-207-A
+      },
+      Name: bin,
+      DirectoryPath: /opt/bin,
+      CreatedAt: 2022-05-22 13:26,
+      Size: 1,13 GB,
+      NumberOfFolders: 379 folders,
+      NumberOfFiles: 11 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/share,
+        DirectoryPathForSearch:  usr share,
+        CreatedAtUtc: DateTime_137,
+        RootEntryId: ,
+        SizeInBytes: 1443875076,
+        NumberOfFolders: 549,
+        NumberOfFiles: 456,
+        Id: Analyses-295-A
+      },
+      Name: share,
+      DirectoryPath: /usr/share,
+      CreatedAt: 2022-05-22 03:21,
+      Size: 1,34 GB,
+      NumberOfFolders: 549 folders,
+      NumberOfFiles: 456 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /sys,
+        DirectoryPathForSearch:  sys,
+        CreatedAtUtc: DateTime_138,
+        RootEntryId: ,
+        SizeInBytes: 252035873,
+        NumberOfFolders: 283,
+        NumberOfFiles: 678,
+        Id: Analyses-79-A
+      },
+      Name: sys,
+      DirectoryPath: /sys,
+      CreatedAt: 2022-05-21 16:34,
+      Size: 240,36 MB,
+      NumberOfFolders: 283 folders,
+      NumberOfFiles: 678 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/sbin,
+        DirectoryPathForSearch:  opt sbin,
+        CreatedAtUtc: DateTime_139,
+        RootEntryId: ,
+        SizeInBytes: 1990527168,
+        NumberOfFolders: 625,
+        NumberOfFiles: 226,
+        Id: Analyses-171-A
+      },
+      Name: sbin,
+      DirectoryPath: /opt/sbin,
+      CreatedAt: 2022-05-21 02:12,
+      Size: 1,85 GB,
+      NumberOfFolders: 625 folders,
+      NumberOfFiles: 226 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /dev,
+        DirectoryPathForSearch:  dev,
+        CreatedAtUtc: DateTime_140,
+        RootEntryId: ,
+        SizeInBytes: 853249785,
+        NumberOfFolders: 191,
+        NumberOfFiles: 746,
+        Id: Analyses-175-A
+      },
+      Name: dev,
+      DirectoryPath: /dev,
+      CreatedAt: 2022-05-20 19:00,
+      Size: 813,72 MB,
+      NumberOfFolders: 191 folders,
+      NumberOfFiles: 746 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /dev,
+        DirectoryPathForSearch:  dev,
+        CreatedAtUtc: DateTime_141,
+        RootEntryId: ,
+        SizeInBytes: 353605965,
+        NumberOfFolders: 479,
+        NumberOfFiles: 251,
+        Id: Analyses-149-A
+      },
+      Name: dev,
+      DirectoryPath: /dev,
+      CreatedAt: 2022-05-20 05:40,
+      Size: 337,22 MB,
+      NumberOfFolders: 479 folders,
+      NumberOfFiles: 251 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /dev,
+        DirectoryPathForSearch:  dev,
+        CreatedAtUtc: DateTime_142,
+        RootEntryId: ,
+        SizeInBytes: 1086662722,
+        NumberOfFolders: 514,
+        NumberOfFiles: 440,
+        Id: Analyses-11-A
+      },
+      Name: dev,
+      DirectoryPath: /dev,
+      CreatedAt: 2022-05-20 02:07,
+      Size: 1,01 GB,
+      NumberOfFolders: 514 folders,
+      NumberOfFiles: 440 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /sys,
+        DirectoryPathForSearch:  sys,
+        CreatedAtUtc: DateTime_143,
+        RootEntryId: ,
+        SizeInBytes: 1848492548,
+        NumberOfFolders: 677,
+        NumberOfFiles: 346,
+        Id: Analyses-296-A
+      },
+      Name: sys,
+      DirectoryPath: /sys,
+      CreatedAt: 2022-05-18 16:17,
+      Size: 1,72 GB,
+      NumberOfFolders: 677 folders,
+      NumberOfFiles: 346 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt,
+        DirectoryPathForSearch:  opt,
+        CreatedAtUtc: DateTime_144,
+        RootEntryId: ,
+        SizeInBytes: 1809259425,
+        NumberOfFolders: 776,
+        NumberOfFiles: 628,
+        Id: Analyses-81-A
+      },
+      Name: opt,
+      DirectoryPath: /opt,
+      CreatedAt: 2022-05-18 11:34,
+      Size: 1,69 GB,
+      NumberOfFolders: 776 folders,
+      NumberOfFiles: 628 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/share,
+        DirectoryPathForSearch:  usr share,
+        CreatedAtUtc: DateTime_145,
+        RootEntryId: ,
+        SizeInBytes: 679148771,
+        NumberOfFolders: 663,
+        NumberOfFiles: 764,
+        Id: Analyses-40-A
+      },
+      Name: share,
+      DirectoryPath: /usr/share,
+      CreatedAt: 2022-05-17 22:05,
+      Size: 647,69 MB,
+      NumberOfFolders: 663 folders,
+      NumberOfFiles: 764 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/defaults,
+        DirectoryPathForSearch:  etc defaults,
+        CreatedAtUtc: DateTime_146,
+        RootEntryId: ,
+        SizeInBytes: 1292901020,
+        NumberOfFolders: 99,
+        NumberOfFiles: 949,
+        Id: Analyses-85-A
+      },
+      Name: defaults,
+      DirectoryPath: /etc/defaults,
+      CreatedAt: 2022-05-16 19:46,
+      Size: 1,2 GB,
+      NumberOfFolders: 99 folders,
+      NumberOfFiles: 949 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/bin,
+        DirectoryPathForSearch:  opt bin,
+        CreatedAtUtc: DateTime_147,
+        RootEntryId: ,
+        SizeInBytes: 582175171,
+        NumberOfFolders: 9,
+        NumberOfFiles: 655,
+        Id: Analyses-109-A
+      },
+      Name: bin,
+      DirectoryPath: /opt/bin,
+      CreatedAt: 2022-05-16 17:14,
+      Size: 555,21 MB,
+      NumberOfFolders: 9 folders,
+      NumberOfFiles: 655 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_148,
+        RootEntryId: ,
+        SizeInBytes: 966405927,
+        NumberOfFolders: 339,
+        NumberOfFiles: 965,
+        Id: Analyses-225-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-05-14 06:22,
+      Size: 921,64 MB,
+      NumberOfFolders: 339 folders,
+      NumberOfFiles: 965 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/src,
+        DirectoryPathForSearch:  usr src,
+        CreatedAtUtc: DateTime_149,
+        RootEntryId: ,
+        SizeInBytes: 1255980621,
+        NumberOfFolders: 431,
+        NumberOfFiles: 245,
+        Id: Analyses-266-A
+      },
+      Name: src,
+      DirectoryPath: /usr/src,
+      CreatedAt: 2022-05-12 02:23,
+      Size: 1,17 GB,
+      NumberOfFolders: 431 folders,
+      NumberOfFiles: 245 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lost+found,
+        DirectoryPathForSearch:  lost+found,
+        CreatedAtUtc: DateTime_150,
+        RootEntryId: ,
+        SizeInBytes: 392265627,
+        NumberOfFolders: 432,
+        NumberOfFiles: 802,
+        Id: Analyses-258-A
+      },
+      Name: lost+found,
+      DirectoryPath: /lost+found,
+      CreatedAt: 2022-05-11 07:21,
+      Size: 374,09 MB,
+      NumberOfFolders: 432 folders,
+      NumberOfFiles: 802 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /root,
+        DirectoryPathForSearch:  root,
+        CreatedAtUtc: DateTime_151,
+        RootEntryId: ,
+        SizeInBytes: 1034182707,
+        NumberOfFolders: 704,
+        NumberOfFiles: 111,
+        Id: Analyses-118-A
+      },
+      Name: root,
+      DirectoryPath: /root,
+      CreatedAt: 2022-05-10 15:57,
+      Size: 986,27 MB,
+      NumberOfFolders: 704 folders,
+      NumberOfFiles: 111 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/include,
+        DirectoryPathForSearch:  usr include,
+        CreatedAtUtc: DateTime_152,
+        RootEntryId: ,
+        SizeInBytes: 1248152847,
+        NumberOfFolders: 477,
+        NumberOfFiles: 977,
+        Id: Analyses-100-A
+      },
+      Name: include,
+      DirectoryPath: /usr/include,
+      CreatedAt: 2022-05-10 08:51,
+      Size: 1,16 GB,
+      NumberOfFolders: 477 folders,
+      NumberOfFiles: 977 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt,
+        DirectoryPathForSearch:  opt,
+        CreatedAtUtc: DateTime_153,
+        RootEntryId: ,
+        SizeInBytes: 1065774224,
+        NumberOfFolders: 180,
+        NumberOfFiles: 368,
+        Id: Analyses-197-A
+      },
+      Name: opt,
+      DirectoryPath: /opt,
+      CreatedAt: 2022-05-09 23:14,
+      Size: 1016,4 MB,
+      NumberOfFolders: 180 folders,
+      NumberOfFiles: 368 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_154,
+        RootEntryId: ,
+        SizeInBytes: 868100110,
+        NumberOfFolders: 101,
+        NumberOfFiles: 43,
+        Id: Analyses-190-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-05-09 22:39,
+      Size: 827,88 MB,
+      NumberOfFolders: 101 folders,
+      NumberOfFiles: 43 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/include,
+        DirectoryPathForSearch:  usr include,
+        CreatedAtUtc: DateTime_155,
+        RootEntryId: ,
+        SizeInBytes: 505859465,
+        NumberOfFolders: 341,
+        NumberOfFiles: 615,
+        Id: Analyses-226-A
+      },
+      Name: include,
+      DirectoryPath: /usr/include,
+      CreatedAt: 2022-05-09 15:58,
+      Size: 482,43 MB,
+      NumberOfFolders: 341 folders,
+      NumberOfFiles: 615 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_156,
+        RootEntryId: ,
+        SizeInBytes: 1460679320,
+        NumberOfFolders: 782,
+        NumberOfFiles: 149,
+        Id: Analyses-144-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-05-07 12:46,
+      Size: 1,36 GB,
+      NumberOfFolders: 782 folders,
+      NumberOfFiles: 149 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /rescue,
+        DirectoryPathForSearch:  rescue,
+        CreatedAtUtc: DateTime_157,
+        RootEntryId: ,
+        SizeInBytes: 1970429613,
+        NumberOfFolders: 293,
+        NumberOfFiles: 60,
+        Id: Analyses-156-A
+      },
+      Name: rescue,
+      DirectoryPath: /rescue,
+      CreatedAt: 2022-05-05 19:16,
+      Size: 1,84 GB,
+      NumberOfFolders: 293 folders,
+      NumberOfFiles: 60 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/include,
+        DirectoryPathForSearch:  usr include,
+        CreatedAtUtc: DateTime_158,
+        RootEntryId: ,
+        SizeInBytes: 1543145125,
+        NumberOfFolders: 44,
+        NumberOfFiles: 816,
+        Id: Analyses-298-A
+      },
+      Name: include,
+      DirectoryPath: /usr/include,
+      CreatedAt: 2022-05-04 17:03,
+      Size: 1,44 GB,
+      NumberOfFolders: 44 folders,
+      NumberOfFiles: 816 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /srv,
+        DirectoryPathForSearch:  srv,
+        CreatedAtUtc: DateTime_159,
+        RootEntryId: ,
+        SizeInBytes: 1169515047,
+        NumberOfFolders: 185,
+        NumberOfFiles: 160,
+        Id: Analyses-131-A
+      },
+      Name: srv,
+      DirectoryPath: /srv,
+      CreatedAt: 2022-05-04 13:24,
+      Size: 1,09 GB,
+      NumberOfFolders: 185 folders,
+      NumberOfFiles: 160 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/sbin,
+        DirectoryPathForSearch:  usr sbin,
+        CreatedAtUtc: DateTime_160,
+        RootEntryId: ,
+        SizeInBytes: 1486359017,
+        NumberOfFolders: 361,
+        NumberOfFiles: 843,
+        Id: Analyses-135-A
+      },
+      Name: sbin,
+      DirectoryPath: /usr/sbin,
+      CreatedAt: 2022-05-04 01:13,
+      Size: 1,38 GB,
+      NumberOfFolders: 361 folders,
+      NumberOfFiles: 843 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/include,
+        DirectoryPathForSearch:  usr include,
+        CreatedAtUtc: DateTime_161,
+        RootEntryId: ,
+        SizeInBytes: 887285299,
+        NumberOfFolders: 258,
+        NumberOfFiles: 235,
+        Id: Analyses-1-A
+      },
+      Name: include,
+      DirectoryPath: /usr/include,
+      CreatedAt: 2022-05-02 06:23,
+      Size: 846,18 MB,
+      NumberOfFolders: 258 folders,
+      NumberOfFiles: 235 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /sys,
+        DirectoryPathForSearch:  sys,
+        CreatedAtUtc: DateTime_162,
+        RootEntryId: ,
+        SizeInBytes: 1128282204,
+        NumberOfFolders: 629,
+        NumberOfFiles: 707,
+        Id: Analyses-9-A
+      },
+      Name: sys,
+      DirectoryPath: /sys,
+      CreatedAt: 2022-05-01 04:11,
+      Size: 1,05 GB,
+      NumberOfFolders: 629 folders,
+      NumberOfFiles: 707 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/X11R6,
+        DirectoryPathForSearch:  usr X11R6,
+        CreatedAtUtc: DateTime_163,
+        RootEntryId: ,
+        SizeInBytes: 873619480,
+        NumberOfFolders: 584,
+        NumberOfFiles: 309,
+        Id: Analyses-5-A
+      },
+      Name: X11R6,
+      DirectoryPath: /usr/X11R6,
+      CreatedAt: 2022-04-30 23:48,
+      Size: 833,15 MB,
+      NumberOfFolders: 584 folders,
+      NumberOfFiles: 309 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/yp,
+        DirectoryPathForSearch:  var yp,
+        CreatedAtUtc: DateTime_164,
+        RootEntryId: ,
+        SizeInBytes: 616333546,
+        NumberOfFolders: 679,
+        NumberOfFiles: 61,
+        Id: Analyses-198-A
+      },
+      Name: yp,
+      DirectoryPath: /var/yp,
+      CreatedAt: 2022-04-29 22:51,
+      Size: 587,78 MB,
+      NumberOfFolders: 679 folders,
+      NumberOfFiles: 61 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/spool,
+        DirectoryPathForSearch:  var spool,
+        CreatedAtUtc: DateTime_165,
+        RootEntryId: ,
+        SizeInBytes: 1855465989,
+        NumberOfFolders: 991,
+        NumberOfFiles: 931,
+        Id: Analyses-211-A
+      },
+      Name: spool,
+      DirectoryPath: /var/spool,
+      CreatedAt: 2022-04-28 13:40,
+      Size: 1,73 GB,
+      NumberOfFolders: 991 folders,
+      NumberOfFiles: 931 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/share,
+        DirectoryPathForSearch:  usr share,
+        CreatedAtUtc: DateTime_166,
+        RootEntryId: ,
+        SizeInBytes: 2017921625,
+        NumberOfFolders: 105,
+        NumberOfFiles: 569,
+        Id: Analyses-124-A
+      },
+      Name: share,
+      DirectoryPath: /usr/share,
+      CreatedAt: 2022-04-28 03:23,
+      Size: 1,88 GB,
+      NumberOfFolders: 105 folders,
+      NumberOfFiles: 569 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /root,
+        DirectoryPathForSearch:  root,
+        CreatedAtUtc: DateTime_167,
+        RootEntryId: ,
+        SizeInBytes: 250217074,
+        NumberOfFolders: 282,
+        NumberOfFiles: 623,
+        Id: Analyses-283-A
+      },
+      Name: root,
+      DirectoryPath: /root,
+      CreatedAt: 2022-04-27 02:54,
+      Size: 238,63 MB,
+      NumberOfFolders: 282 folders,
+      NumberOfFiles: 623 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/tmp,
+        DirectoryPathForSearch:  var tmp,
+        CreatedAtUtc: DateTime_168,
+        RootEntryId: ,
+        SizeInBytes: 540248971,
+        NumberOfFolders: 998,
+        NumberOfFiles: 446,
+        Id: Analyses-132-A
+      },
+      Name: tmp,
+      DirectoryPath: /var/tmp,
+      CreatedAt: 2022-04-27 02:43,
+      Size: 515,22 MB,
+      NumberOfFolders: 998 folders,
+      NumberOfFiles: 446 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /rescue,
+        DirectoryPathForSearch:  rescue,
+        CreatedAtUtc: DateTime_169,
+        RootEntryId: ,
+        SizeInBytes: 93213357,
+        NumberOfFolders: 652,
+        NumberOfFiles: 978,
+        Id: Analyses-140-A
+      },
+      Name: rescue,
+      DirectoryPath: /rescue,
+      CreatedAt: 2022-04-26 09:37,
+      Size: 88,9 MB,
+      NumberOfFolders: 652 folders,
+      NumberOfFiles: 978 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/namedb,
+        DirectoryPathForSearch:  etc namedb,
+        CreatedAtUtc: DateTime_170,
+        RootEntryId: ,
+        SizeInBytes: 1169192090,
+        NumberOfFolders: 491,
+        NumberOfFiles: 585,
+        Id: Analyses-288-A
+      },
+      Name: namedb,
+      DirectoryPath: /etc/namedb,
+      CreatedAt: 2022-04-25 23:52,
+      Size: 1,09 GB,
+      NumberOfFolders: 491 folders,
+      NumberOfFiles: 585 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/periodic,
+        DirectoryPathForSearch:  etc periodic,
+        CreatedAtUtc: DateTime_171,
+        RootEntryId: ,
+        SizeInBytes: 1187075570,
+        NumberOfFolders: 247,
+        NumberOfFiles: 358,
+        Id: Analyses-272-A
+      },
+      Name: periodic,
+      DirectoryPath: /etc/periodic,
+      CreatedAt: 2022-04-25 17:59,
+      Size: 1,11 GB,
+      NumberOfFolders: 247 folders,
+      NumberOfFiles: 358 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /System,
+        DirectoryPathForSearch:  System,
+        CreatedAtUtc: DateTime_172,
+        RootEntryId: ,
+        SizeInBytes: 394971875,
+        NumberOfFolders: 374,
+        NumberOfFiles: 535,
+        Id: Analyses-111-A
+      },
+      Name: System,
+      DirectoryPath: /System,
+      CreatedAt: 2022-04-23 00:21,
+      Size: 376,67 MB,
+      NumberOfFolders: 374 folders,
+      NumberOfFiles: 535 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/src,
+        DirectoryPathForSearch:  usr local src,
+        CreatedAtUtc: DateTime_173,
+        RootEntryId: ,
+        SizeInBytes: 1026339195,
+        NumberOfFolders: 907,
+        NumberOfFiles: 148,
+        Id: Analyses-4-A
+      },
+      Name: src,
+      DirectoryPath: /usr/local/src,
+      CreatedAt: 2022-04-22 09:26,
+      Size: 978,79 MB,
+      NumberOfFolders: 907 folders,
+      NumberOfFiles: 148 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /media,
+        DirectoryPathForSearch:  media,
+        CreatedAtUtc: DateTime_174,
+        RootEntryId: ,
+        SizeInBytes: 1127624101,
+        NumberOfFolders: 95,
+        NumberOfFiles: 652,
+        Id: Analyses-64-A
+      },
+      Name: media,
+      DirectoryPath: /media,
+      CreatedAt: 2022-04-20 19:09,
+      Size: 1,05 GB,
+      NumberOfFolders: 95 folders,
+      NumberOfFiles: 652 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lost+found,
+        DirectoryPathForSearch:  lost+found,
+        CreatedAtUtc: DateTime_175,
+        RootEntryId: ,
+        SizeInBytes: 392478455,
+        NumberOfFolders: 298,
+        NumberOfFiles: 193,
+        Id: Analyses-24-A
+      },
+      Name: lost+found,
+      DirectoryPath: /lost+found,
+      CreatedAt: 2022-04-20 10:22,
+      Size: 374,3 MB,
+      NumberOfFolders: 298 folders,
+      NumberOfFiles: 193 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /srv,
+        DirectoryPathForSearch:  srv,
+        CreatedAtUtc: DateTime_176,
+        RootEntryId: ,
+        SizeInBytes: 982775362,
+        NumberOfFolders: 539,
+        NumberOfFiles: 704,
+        Id: Analyses-265-A
+      },
+      Name: srv,
+      DirectoryPath: /srv,
+      CreatedAt: 2022-04-20 03:14,
+      Size: 937,25 MB,
+      NumberOfFolders: 539 folders,
+      NumberOfFiles: 704 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/periodic,
+        DirectoryPathForSearch:  etc periodic,
+        CreatedAtUtc: DateTime_177,
+        RootEntryId: ,
+        SizeInBytes: 2046271530,
+        NumberOfFolders: 193,
+        NumberOfFiles: 874,
+        Id: Analyses-231-A
+      },
+      Name: periodic,
+      DirectoryPath: /etc/periodic,
+      CreatedAt: 2022-04-19 07:25,
+      Size: 1,91 GB,
+      NumberOfFolders: 193 folders,
+      NumberOfFiles: 874 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr,
+        DirectoryPathForSearch:  usr,
+        CreatedAtUtc: DateTime_178,
+        RootEntryId: ,
+        SizeInBytes: 334407800,
+        NumberOfFolders: 988,
+        NumberOfFiles: 405,
+        Id: Analyses-278-A
+      },
+      Name: usr,
+      DirectoryPath: /usr,
+      CreatedAt: 2022-04-17 17:59,
+      Size: 318,92 MB,
+      NumberOfFolders: 988 folders,
+      NumberOfFiles: 405 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/lib,
+        DirectoryPathForSearch:  opt lib,
+        CreatedAtUtc: DateTime_179,
+        RootEntryId: ,
+        SizeInBytes: 1191997037,
+        NumberOfFolders: 387,
+        NumberOfFiles: 927,
+        Id: Analyses-83-A
+      },
+      Name: lib,
+      DirectoryPath: /opt/lib,
+      CreatedAt: 2022-04-17 09:26,
+      Size: 1,11 GB,
+      NumberOfFolders: 387 folders,
+      NumberOfFiles: 927 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /root,
+        DirectoryPathForSearch:  root,
+        CreatedAtUtc: DateTime_180,
+        RootEntryId: ,
+        SizeInBytes: 1765619681,
+        NumberOfFolders: 585,
+        NumberOfFiles: 411,
+        Id: Analyses-148-A
+      },
+      Name: root,
+      DirectoryPath: /root,
+      CreatedAt: 2022-04-15 16:32,
+      Size: 1,64 GB,
+      NumberOfFolders: 585 folders,
+      NumberOfFiles: 411 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/bin,
+        DirectoryPathForSearch:  opt bin,
+        CreatedAtUtc: DateTime_181,
+        RootEntryId: ,
+        SizeInBytes: 2126446917,
+        NumberOfFolders: 995,
+        NumberOfFiles: 277,
+        Id: Analyses-74-A
+      },
+      Name: bin,
+      DirectoryPath: /opt/bin,
+      CreatedAt: 2022-04-13 14:17,
+      Size: 1,98 GB,
+      NumberOfFolders: 995 folders,
+      NumberOfFiles: 277 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/src,
+        DirectoryPathForSearch:  usr src,
+        CreatedAtUtc: DateTime_182,
+        RootEntryId: ,
+        SizeInBytes: 1456367197,
+        NumberOfFolders: 36,
+        NumberOfFiles: 507,
+        Id: Analyses-95-A
+      },
+      Name: src,
+      DirectoryPath: /usr/src,
+      CreatedAt: 2022-04-12 09:35,
+      Size: 1,36 GB,
+      NumberOfFolders: 36 folders,
+      NumberOfFiles: 507 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /var/log,
+        DirectoryPathForSearch:  var log,
+        CreatedAtUtc: DateTime_183,
+        RootEntryId: ,
+        SizeInBytes: 1239086180,
+        NumberOfFolders: 374,
+        NumberOfFiles: 135,
+        Id: Analyses-61-A
+      },
+      Name: log,
+      DirectoryPath: /var/log,
+      CreatedAt: 2022-04-11 18:16,
+      Size: 1,15 GB,
+      NumberOfFolders: 374 folders,
+      NumberOfFiles: 135 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/src,
+        DirectoryPathForSearch:  usr local src,
+        CreatedAtUtc: DateTime_184,
+        RootEntryId: ,
+        SizeInBytes: 1500522538,
+        NumberOfFolders: 706,
+        NumberOfFiles: 91,
+        Id: Analyses-3-A
+      },
+      Name: src,
+      DirectoryPath: /usr/local/src,
+      CreatedAt: 2022-04-08 19:20,
+      Size: 1,4 GB,
+      NumberOfFolders: 706 folders,
+      NumberOfFiles: 91 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /media,
+        DirectoryPathForSearch:  media,
+        CreatedAtUtc: DateTime_185,
+        RootEntryId: ,
+        SizeInBytes: 1093735943,
+        NumberOfFolders: 677,
+        NumberOfFiles: 411,
+        Id: Analyses-44-A
+      },
+      Name: media,
+      DirectoryPath: /media,
+      CreatedAt: 2022-04-07 16:39,
+      Size: 1,02 GB,
+      NumberOfFolders: 677 folders,
+      NumberOfFiles: 411 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/include,
+        DirectoryPathForSearch:  usr include,
+        CreatedAtUtc: DateTime_186,
+        RootEntryId: ,
+        SizeInBytes: 865647592,
+        NumberOfFolders: 175,
+        NumberOfFiles: 961,
+        Id: Analyses-108-A
+      },
+      Name: include,
+      DirectoryPath: /usr/include,
+      CreatedAt: 2022-04-05 04:50,
+      Size: 825,55 MB,
+      NumberOfFolders: 175 folders,
+      NumberOfFiles: 961 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /etc/periodic,
+        DirectoryPathForSearch:  etc periodic,
+        CreatedAtUtc: DateTime_187,
+        RootEntryId: ,
+        SizeInBytes: 846924580,
+        NumberOfFolders: 709,
+        NumberOfFiles: 501,
+        Id: Analyses-36-A
+      },
+      Name: periodic,
+      DirectoryPath: /etc/periodic,
+      CreatedAt: 2022-04-05 00:49,
+      Size: 807,69 MB,
+      NumberOfFolders: 709 folders,
+      NumberOfFiles: 501 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/lib,
+        DirectoryPathForSearch:  opt lib,
+        CreatedAtUtc: DateTime_188,
+        RootEntryId: ,
+        SizeInBytes: 1503270211,
+        NumberOfFolders: 964,
+        NumberOfFiles: 911,
+        Id: Analyses-30-A
+      },
+      Name: lib,
+      DirectoryPath: /opt/lib,
+      CreatedAt: 2022-04-03 20:13,
+      Size: 1,4 GB,
+      NumberOfFolders: 964 folders,
+      NumberOfFiles: 911 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user,
+        DirectoryPathForSearch:  home user,
+        CreatedAtUtc: DateTime_189,
+        RootEntryId: ,
+        SizeInBytes: 523084735,
+        NumberOfFolders: 673,
+        NumberOfFiles: 767,
+        Id: Analyses-18-A
+      },
+      Name: user,
+      DirectoryPath: /home/user,
+      CreatedAt: 2022-04-03 12:37,
+      Size: 498,85 MB,
+      NumberOfFolders: 673 folders,
+      NumberOfFiles: 767 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user,
+        DirectoryPathForSearch:  home user,
+        CreatedAtUtc: DateTime_190,
+        RootEntryId: ,
+        SizeInBytes: 1527090632,
+        NumberOfFolders: 122,
+        NumberOfFiles: 994,
+        Id: Analyses-21-A
+      },
+      Name: user,
+      DirectoryPath: /home/user,
+      CreatedAt: 2022-04-03 06:42,
+      Size: 1,42 GB,
+      NumberOfFolders: 122 folders,
+      NumberOfFiles: 994 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /private/var,
+        DirectoryPathForSearch:  private var,
+        CreatedAtUtc: DateTime_191,
+        RootEntryId: ,
+        SizeInBytes: 419123985,
+        NumberOfFolders: 666,
+        NumberOfFiles: 888,
+        Id: Analyses-270-A
+      },
+      Name: var,
+      DirectoryPath: /private/var,
+      CreatedAt: 2022-04-02 21:23,
+      Size: 399,71 MB,
+      NumberOfFolders: 666 folders,
+      NumberOfFiles: 888 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/lib,
+        DirectoryPathForSearch:  usr lib,
+        CreatedAtUtc: DateTime_192,
+        RootEntryId: ,
+        SizeInBytes: 560806267,
+        NumberOfFolders: 824,
+        NumberOfFiles: 431,
+        Id: Analyses-84-A
+      },
+      Name: lib,
+      DirectoryPath: /usr/lib,
+      CreatedAt: 2022-03-30 05:56,
+      Size: 534,83 MB,
+      NumberOfFolders: 824 folders,
+      NumberOfFiles: 431 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_193,
+        RootEntryId: ,
+        SizeInBytes: 2020735241,
+        NumberOfFolders: 657,
+        NumberOfFiles: 835,
+        Id: Analyses-274-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-03-29 19:14,
+      Size: 1,88 GB,
+      NumberOfFolders: 657 folders,
+      NumberOfFiles: 835 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libexec,
+        DirectoryPathForSearch:  usr libexec,
+        CreatedAtUtc: DateTime_194,
+        RootEntryId: ,
+        SizeInBytes: 282503670,
+        NumberOfFolders: 292,
+        NumberOfFiles: 960,
+        Id: Analyses-165-A
+      },
+      Name: libexec,
+      DirectoryPath: /usr/libexec,
+      CreatedAt: 2022-03-29 19:04,
+      Size: 269,42 MB,
+      NumberOfFolders: 292 folders,
+      NumberOfFiles: 960 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /boot,
+        DirectoryPathForSearch:  boot,
+        CreatedAtUtc: DateTime_195,
+        RootEntryId: ,
+        SizeInBytes: 2126571586,
+        NumberOfFolders: 312,
+        NumberOfFiles: 364,
+        Id: Analyses-123-A
+      },
+      Name: boot,
+      DirectoryPath: /boot,
+      CreatedAt: 2022-03-28 16:12,
+      Size: 1,98 GB,
+      NumberOfFolders: 312 folders,
+      NumberOfFiles: 364 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /srv,
+        DirectoryPathForSearch:  srv,
+        CreatedAtUtc: DateTime_196,
+        RootEntryId: ,
+        SizeInBytes: 658096515,
+        NumberOfFolders: 472,
+        NumberOfFiles: 79,
+        Id: Analyses-42-A
+      },
+      Name: srv,
+      DirectoryPath: /srv,
+      CreatedAt: 2022-03-26 18:10,
+      Size: 627,61 MB,
+      NumberOfFolders: 472 folders,
+      NumberOfFiles: 79 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /private/tmp,
+        DirectoryPathForSearch:  private tmp,
+        CreatedAtUtc: DateTime_197,
+        RootEntryId: ,
+        SizeInBytes: 502913557,
+        NumberOfFolders: 877,
+        NumberOfFiles: 284,
+        Id: Analyses-75-A
+      },
+      Name: tmp,
+      DirectoryPath: /private/tmp,
+      CreatedAt: 2022-03-24 12:38,
+      Size: 479,62 MB,
+      NumberOfFolders: 877 folders,
+      NumberOfFiles: 284 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user/dir,
+        DirectoryPathForSearch:  home user dir,
+        CreatedAtUtc: DateTime_198,
+        RootEntryId: ,
+        SizeInBytes: 727349599,
+        NumberOfFolders: 118,
+        NumberOfFiles: 135,
+        Id: Analyses-259-A
+      },
+      Name: dir,
+      DirectoryPath: /home/user/dir,
+      CreatedAt: 2022-03-24 01:05,
+      Size: 693,65 MB,
+      NumberOfFolders: 118 folders,
+      NumberOfFiles: 135 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /home/user/dir,
+        DirectoryPathForSearch:  home user dir,
+        CreatedAtUtc: DateTime_199,
+        RootEntryId: ,
+        SizeInBytes: 151195851,
+        NumberOfFolders: 279,
+        NumberOfFiles: 276,
+        Id: Analyses-178-A
+      },
+      Name: dir,
+      DirectoryPath: /home/user/dir,
+      CreatedAt: 2022-03-22 18:41,
+      Size: 144,19 MB,
+      NumberOfFolders: 279 folders,
+      NumberOfFiles: 276 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /tmp,
+        DirectoryPathForSearch:  tmp,
+        CreatedAtUtc: DateTime_200,
+        RootEntryId: ,
+        SizeInBytes: 1534104929,
+        NumberOfFolders: 724,
+        NumberOfFiles: 510,
+        Id: Analyses-94-A
+      },
+      Name: tmp,
+      DirectoryPath: /tmp,
+      CreatedAt: 2022-03-21 13:13,
+      Size: 1,43 GB,
+      NumberOfFolders: 724 folders,
+      NumberOfFiles: 510 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    }
+  ],
+  SearchTerm: ,
+  IsLoading: false,
+  HasNoAnalyses: false
+}

@@ -17,4 +17,19 @@
         <PackageReference Include="Verify.Xunit" Version="18.3.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="AnalysesList\AnalysesListViewModelTests.HasNoAnalyses.verified.txt">
+        <DependentUpon>AnalysesListViewModelTests.cs</DependentUpon>
+      </None>
+      <None Update="AnalysesList\AnalysesListViewModelTests.LoadAnalysesAfterInstantiation.verified.txt">
+        <DependentUpon>AnalysesListViewModelTests.cs</DependentUpon>
+      </None>
+      <None Update="AnalysesList\AnalysesListViewModelTests.LoadNextPageOfAnalyses.verified.txt">
+        <DependentUpon>AnalysesListViewModelTests.cs</DependentUpon>
+      </None>
+      <None Update="AnalysesList\AnalysesListViewModelTests.SearchMustResetTheAnalysesCollection.verified.txt">
+        <DependentUpon>AnalysesListViewModelTests.cs</DependentUpon>
+      </None>
+    </ItemGroup>
+
 </Project>

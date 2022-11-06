@@ -1,0 +1,787 @@
+﻿{
+  Analyses: [
+    {
+      Analysis: {
+        DirectoryPath: /lib,
+        DirectoryPathForSearch:  lib,
+        CreatedAtUtc: DateTime_1,
+        RootEntryId: ,
+        SizeInBytes: 626791220,
+        NumberOfFolders: 98,
+        NumberOfFiles: 311,
+        Id: Analyses-119-A
+      },
+      Name: lib,
+      DirectoryPath: /lib,
+      CreatedAt: 2022-09-16 05:41,
+      Size: 597,75 MB,
+      NumberOfFolders: 98 folders,
+      NumberOfFiles: 311 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lib,
+        DirectoryPathForSearch:  lib,
+        CreatedAtUtc: DateTime_2,
+        RootEntryId: ,
+        SizeInBytes: 1403983817,
+        NumberOfFolders: 758,
+        NumberOfFiles: 755,
+        Id: Analyses-286-A
+      },
+      Name: lib,
+      DirectoryPath: /lib,
+      CreatedAt: 2022-08-14 01:01,
+      Size: 1,31 GB,
+      NumberOfFolders: 758 folders,
+      NumberOfFiles: 755 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lib,
+        DirectoryPathForSearch:  lib,
+        CreatedAtUtc: DateTime_3,
+        RootEntryId: ,
+        SizeInBytes: 1384704627,
+        NumberOfFolders: 45,
+        NumberOfFiles: 144,
+        Id: Analyses-8-A
+      },
+      Name: lib,
+      DirectoryPath: /lib,
+      CreatedAt: 2022-01-27 12:07,
+      Size: 1,29 GB,
+      NumberOfFolders: 45 folders,
+      NumberOfFiles: 144 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /lib,
+        DirectoryPathForSearch:  lib,
+        CreatedAtUtc: DateTime_4,
+        RootEntryId: ,
+        SizeInBytes: 1787153965,
+        NumberOfFolders: 229,
+        NumberOfFiles: 278,
+        Id: Analyses-33-A
+      },
+      Name: lib,
+      DirectoryPath: /lib,
+      CreatedAt: 2021-12-16 07:42,
+      Size: 1,66 GB,
+      NumberOfFolders: 229 folders,
+      NumberOfFiles: 278 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/lib,
+        DirectoryPathForSearch:  opt lib,
+        CreatedAtUtc: DateTime_5,
+        RootEntryId: ,
+        SizeInBytes: 165246396,
+        NumberOfFolders: 224,
+        NumberOfFiles: 587,
+        Id: Analyses-147-A
+      },
+      Name: lib,
+      DirectoryPath: /opt/lib,
+      CreatedAt: 2022-10-11 00:17,
+      Size: 157,59 MB,
+      NumberOfFolders: 224 folders,
+      NumberOfFiles: 587 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libdata,
+        DirectoryPathForSearch:  usr libdata,
+        CreatedAtUtc: DateTime_6,
+        RootEntryId: ,
+        SizeInBytes: 2128763539,
+        NumberOfFolders: 561,
+        NumberOfFiles: 246,
+        Id: Analyses-281-A
+      },
+      Name: libdata,
+      DirectoryPath: /usr/libdata,
+      CreatedAt: 2022-10-07 05:53,
+      Size: 1,98 GB,
+      NumberOfFolders: 561 folders,
+      NumberOfFiles: 246 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libdata,
+        DirectoryPathForSearch:  usr libdata,
+        CreatedAtUtc: DateTime_7,
+        RootEntryId: ,
+        SizeInBytes: 1637806816,
+        NumberOfFolders: 926,
+        NumberOfFiles: 619,
+        Id: Analyses-174-A
+      },
+      Name: libdata,
+      DirectoryPath: /usr/libdata,
+      CreatedAt: 2022-09-30 05:54,
+      Size: 1,53 GB,
+      NumberOfFolders: 926 folders,
+      NumberOfFiles: 619 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libexec,
+        DirectoryPathForSearch:  usr libexec,
+        CreatedAtUtc: DateTime_8,
+        RootEntryId: ,
+        SizeInBytes: 1964604486,
+        NumberOfFolders: 871,
+        NumberOfFiles: 630,
+        Id: Analyses-264-A
+      },
+      Name: libexec,
+      DirectoryPath: /usr/libexec,
+      CreatedAt: 2022-09-05 14:21,
+      Size: 1,83 GB,
+      NumberOfFolders: 871 folders,
+      NumberOfFiles: 630 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libexec,
+        DirectoryPathForSearch:  usr libexec,
+        CreatedAtUtc: DateTime_9,
+        RootEntryId: ,
+        SizeInBytes: 1686911327,
+        NumberOfFolders: 37,
+        NumberOfFiles: 562,
+        Id: Analyses-256-A
+      },
+      Name: libexec,
+      DirectoryPath: /usr/libexec,
+      CreatedAt: 2022-08-17 15:16,
+      Size: 1,57 GB,
+      NumberOfFolders: 37 folders,
+      NumberOfFiles: 562 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/lib,
+        DirectoryPathForSearch:  opt lib,
+        CreatedAtUtc: DateTime_10,
+        RootEntryId: ,
+        SizeInBytes: 1191997037,
+        NumberOfFolders: 387,
+        NumberOfFiles: 927,
+        Id: Analyses-83-A
+      },
+      Name: lib,
+      DirectoryPath: /opt/lib,
+      CreatedAt: 2022-04-17 09:26,
+      Size: 1,11 GB,
+      NumberOfFolders: 387 folders,
+      NumberOfFiles: 927 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/lib,
+        DirectoryPathForSearch:  opt lib,
+        CreatedAtUtc: DateTime_11,
+        RootEntryId: ,
+        SizeInBytes: 1503270211,
+        NumberOfFolders: 964,
+        NumberOfFiles: 911,
+        Id: Analyses-30-A
+      },
+      Name: lib,
+      DirectoryPath: /opt/lib,
+      CreatedAt: 2022-04-03 20:13,
+      Size: 1,4 GB,
+      NumberOfFolders: 964 folders,
+      NumberOfFiles: 911 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/lib,
+        DirectoryPathForSearch:  usr lib,
+        CreatedAtUtc: DateTime_12,
+        RootEntryId: ,
+        SizeInBytes: 560806267,
+        NumberOfFolders: 824,
+        NumberOfFiles: 431,
+        Id: Analyses-84-A
+      },
+      Name: lib,
+      DirectoryPath: /usr/lib,
+      CreatedAt: 2022-03-30 05:56,
+      Size: 534,83 MB,
+      NumberOfFolders: 824 folders,
+      NumberOfFiles: 431 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libexec,
+        DirectoryPathForSearch:  usr libexec,
+        CreatedAtUtc: DateTime_13,
+        RootEntryId: ,
+        SizeInBytes: 282503670,
+        NumberOfFolders: 292,
+        NumberOfFiles: 960,
+        Id: Analyses-165-A
+      },
+      Name: libexec,
+      DirectoryPath: /usr/libexec,
+      CreatedAt: 2022-03-29 19:04,
+      Size: 269,42 MB,
+      NumberOfFolders: 292 folders,
+      NumberOfFiles: 960 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libdata,
+        DirectoryPathForSearch:  usr libdata,
+        CreatedAtUtc: DateTime_14,
+        RootEntryId: ,
+        SizeInBytes: 888031409,
+        NumberOfFolders: 923,
+        NumberOfFiles: 491,
+        Id: Analyses-255-A
+      },
+      Name: libdata,
+      DirectoryPath: /usr/libdata,
+      CreatedAt: 2022-03-20 02:57,
+      Size: 846,89 MB,
+      NumberOfFolders: 923 folders,
+      NumberOfFiles: 491 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /opt/lib,
+        DirectoryPathForSearch:  opt lib,
+        CreatedAtUtc: DateTime_15,
+        RootEntryId: ,
+        SizeInBytes: 2120364832,
+        NumberOfFolders: 312,
+        NumberOfFiles: 226,
+        Id: Analyses-53-A
+      },
+      Name: lib,
+      DirectoryPath: /opt/lib,
+      CreatedAt: 2022-03-11 11:36,
+      Size: 1,97 GB,
+      NumberOfFolders: 312 folders,
+      NumberOfFiles: 226 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libexec,
+        DirectoryPathForSearch:  usr libexec,
+        CreatedAtUtc: DateTime_16,
+        RootEntryId: ,
+        SizeInBytes: 761537210,
+        NumberOfFolders: 932,
+        NumberOfFiles: 373,
+        Id: Analyses-291-A
+      },
+      Name: libexec,
+      DirectoryPath: /usr/libexec,
+      CreatedAt: 2022-02-15 01:40,
+      Size: 726,26 MB,
+      NumberOfFolders: 932 folders,
+      NumberOfFiles: 373 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libexec,
+        DirectoryPathForSearch:  usr libexec,
+        CreatedAtUtc: DateTime_17,
+        RootEntryId: ,
+        SizeInBytes: 206645977,
+        NumberOfFolders: 948,
+        NumberOfFiles: 1000,
+        Id: Analyses-223-A
+      },
+      Name: libexec,
+      DirectoryPath: /usr/libexec,
+      CreatedAt: 2022-01-19 14:26,
+      Size: 197,07 MB,
+      NumberOfFolders: 948 folders,
+      NumberOfFiles: 1000 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libexec,
+        DirectoryPathForSearch:  usr libexec,
+        CreatedAtUtc: DateTime_18,
+        RootEntryId: ,
+        SizeInBytes: 954103304,
+        NumberOfFolders: 451,
+        NumberOfFiles: 418,
+        Id: Analyses-142-A
+      },
+      Name: libexec,
+      DirectoryPath: /usr/libexec,
+      CreatedAt: 2021-12-03 04:49,
+      Size: 909,9 MB,
+      NumberOfFolders: 451 folders,
+      NumberOfFiles: 418 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libexec,
+        DirectoryPathForSearch:  usr libexec,
+        CreatedAtUtc: DateTime_19,
+        RootEntryId: ,
+        SizeInBytes: 63220373,
+        NumberOfFolders: 257,
+        NumberOfFiles: 123,
+        Id: Analyses-221-A
+      },
+      Name: libexec,
+      DirectoryPath: /usr/libexec,
+      CreatedAt: 2021-11-27 03:56,
+      Size: 60,29 MB,
+      NumberOfFolders: 257 folders,
+      NumberOfFiles: 123 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/libexec,
+        DirectoryPathForSearch:  usr libexec,
+        CreatedAtUtc: DateTime_20,
+        RootEntryId: ,
+        SizeInBytes: 2086382640,
+        NumberOfFolders: 970,
+        NumberOfFiles: 891,
+        Id: Analyses-35-A
+      },
+      Name: libexec,
+      DirectoryPath: /usr/libexec,
+      CreatedAt: 2021-11-22 11:06,
+      Size: 1,94 GB,
+      NumberOfFolders: 970 folders,
+      NumberOfFiles: 891 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_21,
+        RootEntryId: ,
+        SizeInBytes: 243822349,
+        NumberOfFolders: 399,
+        NumberOfFiles: 598,
+        Id: Analyses-292-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-11-01 21:41,
+      Size: 232,53 MB,
+      NumberOfFolders: 399 folders,
+      NumberOfFiles: 598 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Library,
+        DirectoryPathForSearch:  Library,
+        CreatedAtUtc: DateTime_22,
+        RootEntryId: ,
+        SizeInBytes: 921909012,
+        NumberOfFolders: 319,
+        NumberOfFiles: 260,
+        Id: Analyses-260-A
+      },
+      Name: Library,
+      DirectoryPath: /Library,
+      CreatedAt: 2022-10-27 22:58,
+      Size: 879,2 MB,
+      NumberOfFolders: 319 folders,
+      NumberOfFiles: 260 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_23,
+        RootEntryId: ,
+        SizeInBytes: 1297464801,
+        NumberOfFolders: 840,
+        NumberOfFiles: 311,
+        Id: Analyses-215-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-10-17 13:48,
+      Size: 1,21 GB,
+      NumberOfFolders: 840 folders,
+      NumberOfFiles: 311 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_24,
+        RootEntryId: ,
+        SizeInBytes: 2045262911,
+        NumberOfFolders: 157,
+        NumberOfFiles: 574,
+        Id: Analyses-224-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-09-20 12:56,
+      Size: 1,9 GB,
+      NumberOfFolders: 157 folders,
+      NumberOfFiles: 574 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_25,
+        RootEntryId: ,
+        SizeInBytes: 2000221927,
+        NumberOfFolders: 36,
+        NumberOfFiles: 734,
+        Id: Analyses-146-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-09-14 03:09,
+      Size: 1,86 GB,
+      NumberOfFolders: 36 folders,
+      NumberOfFiles: 734 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_26,
+        RootEntryId: ,
+        SizeInBytes: 2021428202,
+        NumberOfFolders: 344,
+        NumberOfFiles: 767,
+        Id: Analyses-159-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-09-10 02:20,
+      Size: 1,88 GB,
+      NumberOfFolders: 344 folders,
+      NumberOfFiles: 767 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_27,
+        RootEntryId: ,
+        SizeInBytes: 31827023,
+        NumberOfFolders: 61,
+        NumberOfFiles: 319,
+        Id: Analyses-193-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-08-30 08:22,
+      Size: 30,35 MB,
+      NumberOfFolders: 61 folders,
+      NumberOfFiles: 319 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Applications,
+        DirectoryPathForSearch:  Applications,
+        CreatedAtUtc: DateTime_28,
+        RootEntryId: ,
+        SizeInBytes: 252181555,
+        NumberOfFolders: 879,
+        NumberOfFiles: 561,
+        Id: Analyses-220-A
+      },
+      Name: Applications,
+      DirectoryPath: /Applications,
+      CreatedAt: 2022-08-01 02:33,
+      Size: 240,5 MB,
+      NumberOfFolders: 879 folders,
+      NumberOfFiles: 561 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_29,
+        RootEntryId: ,
+        SizeInBytes: 1179888207,
+        NumberOfFolders: 274,
+        NumberOfFiles: 810,
+        Id: Analyses-151-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-07-21 00:36,
+      Size: 1,1 GB,
+      NumberOfFolders: 274 folders,
+      NumberOfFiles: 810 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_30,
+        RootEntryId: ,
+        SizeInBytes: 1608156866,
+        NumberOfFolders: 7,
+        NumberOfFiles: 37,
+        Id: Analyses-263-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-06-30 16:21,
+      Size: 1,5 GB,
+      NumberOfFolders: 7 folders,
+      NumberOfFiles: 37 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_31,
+        RootEntryId: ,
+        SizeInBytes: 996905567,
+        NumberOfFolders: 427,
+        NumberOfFiles: 495,
+        Id: Analyses-280-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-06-04 11:47,
+      Size: 950,72 MB,
+      NumberOfFolders: 427 folders,
+      NumberOfFiles: 495 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_32,
+        RootEntryId: ,
+        SizeInBytes: 868100110,
+        NumberOfFolders: 101,
+        NumberOfFiles: 43,
+        Id: Analyses-190-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-05-09 22:39,
+      Size: 827,88 MB,
+      NumberOfFolders: 101 folders,
+      NumberOfFiles: 43 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_33,
+        RootEntryId: ,
+        SizeInBytes: 1460679320,
+        NumberOfFolders: 782,
+        NumberOfFiles: 149,
+        Id: Analyses-144-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-05-07 12:46,
+      Size: 1,36 GB,
+      NumberOfFolders: 782 folders,
+      NumberOfFiles: 149 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_34,
+        RootEntryId: ,
+        SizeInBytes: 143480073,
+        NumberOfFolders: 564,
+        NumberOfFiles: 44,
+        Id: Analyses-91-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2022-03-05 07:55,
+      Size: 136,83 MB,
+      NumberOfFolders: 564 folders,
+      NumberOfFiles: 44 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Applications,
+        DirectoryPathForSearch:  Applications,
+        CreatedAtUtc: DateTime_35,
+        RootEntryId: ,
+        SizeInBytes: 283045389,
+        NumberOfFolders: 545,
+        NumberOfFiles: 997,
+        Id: Analyses-120-A
+      },
+      Name: Applications,
+      DirectoryPath: /Applications,
+      CreatedAt: 2022-02-17 15:30,
+      Size: 269,93 MB,
+      NumberOfFolders: 545 folders,
+      NumberOfFiles: 997 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_36,
+        RootEntryId: ,
+        SizeInBytes: 1848810574,
+        NumberOfFolders: 205,
+        NumberOfFiles: 795,
+        Id: Analyses-177-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2022-01-01 19:49,
+      Size: 1,72 GB,
+      NumberOfFolders: 205 folders,
+      NumberOfFiles: 795 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /Library,
+        DirectoryPathForSearch:  Library,
+        CreatedAtUtc: DateTime_37,
+        RootEntryId: ,
+        SizeInBytes: 1684702866,
+        NumberOfFolders: 618,
+        NumberOfFiles: 606,
+        Id: Analyses-233-A
+      },
+      Name: Library,
+      DirectoryPath: /Library,
+      CreatedAt: 2021-12-28 20:32,
+      Size: 1,57 GB,
+      NumberOfFolders: 618 folders,
+      NumberOfFiles: 606 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /usr/local/bin,
+        DirectoryPathForSearch:  usr local bin,
+        CreatedAtUtc: DateTime_38,
+        RootEntryId: ,
+        SizeInBytes: 805223445,
+        NumberOfFolders: 622,
+        NumberOfFiles: 142,
+        Id: Analyses-78-A
+      },
+      Name: bin,
+      DirectoryPath: /usr/local/bin,
+      CreatedAt: 2021-12-15 15:45,
+      Size: 767,92 MB,
+      NumberOfFolders: 622 folders,
+      NumberOfFiles: 142 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    },
+    {
+      Analysis: {
+        DirectoryPath: /selinux,
+        DirectoryPathForSearch:  selinux,
+        CreatedAtUtc: DateTime_39,
+        RootEntryId: ,
+        SizeInBytes: 87948544,
+        NumberOfFolders: 348,
+        NumberOfFiles: 847,
+        Id: Analyses-70-A
+      },
+      Name: selinux,
+      DirectoryPath: /selinux,
+      CreatedAt: 2021-12-05 05:07,
+      Size: 83,87 MB,
+      NumberOfFolders: 348 folders,
+      NumberOfFiles: 847 files,
+      IsErroneous: false,
+      IconKind: FolderFile
+    }
+  ],
+  SearchTerm: lib,
+  IsLoading: false,
+  HasNoAnalyses: false
+}

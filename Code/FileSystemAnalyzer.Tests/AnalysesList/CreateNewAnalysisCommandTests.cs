@@ -6,25 +6,25 @@ using Xunit;
 
 namespace FileSystemAnalyzer.Tests.AnalysesList;
 
-public sealed class InitialViewModelTests
+public sealed class CreateNewAnalysisCommandTests
 {
-    public InitialViewModelTests()
+    public CreateNewAnalysisCommandTests()
     {
         FolderDialog = new ();
         NavigationCommand = new ();
-        InitialViewModel = new (FolderDialog, NavigationCommand);
+        Command = new (FolderDialog, NavigationCommand);
     }
     
     private FolderDialogStub FolderDialog { get; }
     private NavigationCommandSpy NavigationCommand { get; }
-    private InitialViewModel InitialViewModel { get; }
+    private CreateNewAnalysisCommand Command { get; }
 
     [Fact]
     public void NavigateAfterTargetDirectoryWasChosen()
     {
         FolderDialog.ReturnValue = @"C:\SomeDirectory";
         
-        InitialViewModel.AnalyzeFolderCommand.Execute();
+        Command.Execute();
 
         NavigationCommand.GetTargetDirectoryPath().Should().BeSameAs(FolderDialog.ReturnValue);
     }
@@ -36,7 +36,7 @@ public sealed class InitialViewModelTests
     {
         FolderDialog.ReturnValue = dialogReturnValue;
         
-        InitialViewModel.AnalyzeFolderCommand.Execute();
+        Command.Execute();
         
         NavigationCommand.NavigateMustNotHaveBeenCalled();
     }

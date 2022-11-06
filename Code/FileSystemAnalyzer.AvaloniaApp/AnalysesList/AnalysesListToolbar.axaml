@@ -1,0 +1,47 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:analysesList="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysesList"
+             xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             xmlns:shared="clr-namespace:FileSystemAnalyzer.AvaloniaApp.Shared"
+             mc:Ignorable="d"
+             d:DesignWidth="800"
+             d:DesignHeight="40"
+             x:Class="FileSystemAnalyzer.AvaloniaApp.AnalysesList.AnalysesListToolbar"
+             x:DataType="analysesList:AnalysesListViewModel">
+    <Panel>
+        <StackPanel Orientation="Horizontal">
+            <Button Classes="Flat"
+                    Command="{shared:Resolve Type=analysesList:CreateNewAnalysisCommand}">
+                <StackPanel Orientation="Horizontal">
+                    <avalonia:MaterialIcon Kind="Plus" />
+                    <TextBlock Margin="8 0 0 0" Text="Create new analysis..." />
+                </StackPanel>
+            </Button>
+            
+            <Button Classes="Flat Accent"
+                    Command="{CompiledBinding DeleteSelectedAnalysisCommand}">
+                <StackPanel Orientation="Horizontal">
+                    <avalonia:MaterialIcon Kind="Trash" />
+                    <TextBlock Margin="8 0 0 0" Text="Delete analysis..." />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        
+        <TextBox UseFloatingWatermark="False"
+                 Watermark="Search"
+                 HorizontalAlignment="Right"
+                 Width="280"
+                 IsVisible="{CompiledBinding !HasNoAnalyses}"
+                 Text="{CompiledBinding SearchTerm}">
+            <TextBox.InnerLeftContent>
+                <avalonia:MaterialIcon HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Kind="Magnify"
+                                       Width="20"
+                                       Height="20" />
+            </TextBox.InnerLeftContent>
+        </TextBox>
+    </Panel>
+</UserControl>

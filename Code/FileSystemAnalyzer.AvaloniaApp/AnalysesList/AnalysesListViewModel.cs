@@ -8,23 +8,25 @@ using Serilog;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
-// ReSharper disable once ClassNeverInstantiated.Global -- the view model is instantiated by the DI container
-public sealed class ExistingAnalysesViewModel : BaseNotifyPropertyChanged
+public sealed class AnalysesListViewModel : BaseNotifyPropertyChanged
 {
     private bool _hasNoAnalyses;
     private CancellationTokenSource? _currentTokenSource;
+    private AnalysisViewModel? _selectedAnalysis;
 
-    public ExistingAnalysesViewModel(Func<IAnalysesSession> createSession,
-                                     DebouncedValueFactory debouncedValueFactory,
-                                     ILogger logger)
+    public AnalysesListViewModel(Func<IAnalysesSession> createSession,
+                                 DebouncedValueFactory debouncedValueFactory,
+                                 ILogger logger)
     {
         CreateSession = createSession;
         DebouncedSearchTerm = debouncedValueFactory.CreateDebouncedValue(string.Empty, OnDebouncedSearchTermChanged);
         Logger = logger;
+
+        DeleteSelectedAnalysisCommand = new (DeleteSelectedAnalysis, () => SelectedAnalysis is not null);
         
         LoadAnalyses();
     }
-
+    
     private void OnDebouncedSearchTermChanged()
     {
         IsAtEnd = false;
@@ -37,6 +39,16 @@ public sealed class ExistingAnalysesViewModel : BaseNotifyPropertyChanged
     private DebouncedValue<string> DebouncedSearchTerm { get; }
     private ILogger Logger { get; }
     public ObservableCollection<AnalysisViewModel> Analyses { get; } = new ();
+
+    public AnalysisViewModel? SelectedAnalysis
+    {
+        get => _selectedAnalysis;
+        set
+        {
+            if (SetIfDifferent(ref _selectedAnalysis, value))
+                DeleteSelectedAnalysisCommand.RaiseCanExecuteChanged();
+        }
+    }
 
     public string SearchTerm
     {
@@ -57,6 +69,8 @@ public sealed class ExistingAnalysesViewModel : BaseNotifyPropertyChanged
         get => _hasNoAnalyses;
         private set => Set(out _hasNoAnalyses, value);
     }
+    
+    public DelegateCommand DeleteSelectedAnalysisCommand { get; }
 
     private CancellationTokenSource? CurrentTokenSource
     {
@@ -97,5 +111,16 @@ public sealed class ExistingAnalysesViewModel : BaseNotifyPropertyChanged
             if (ReferenceEquals(CurrentTokenSource, cancellationTokenSource))
                 CurrentTokenSource = null;
         }
+    }
+
+    private async void DeleteSelectedAnalysis()
+    {
+        if (SelectedAnalysis is null)
+            return;
+
+        await using var session = CreateSession();
+        await session.RemoveAnalysisAsync(SelectedAnalysis.Analysis);
+        Analyses.Remove(SelectedAnalysis);
+        SelectedAnalysis = null;
     }
 }

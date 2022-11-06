@@ -4,12 +4,12 @@ using Microsoft.Extensions.Configuration;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
-public static class GettingStartedModule
+public static class AnalysisListModule
 {
-    public static IServiceRegistry RegisterGettingStarted(this IServiceRegistry container, IConfiguration configuration)
+    public static IServiceRegistry RegisterAnalysisList(this IServiceRegistry container, IConfiguration configuration)
     {
-        container.RegisterViewAndViewModelWithTransientLifetimes<InitialView, InitialViewModel>()
-                 .RegisterTransient<ExistingAnalysesViewModel>();
+        container.RegisterViewAndViewModelWithTransientLifetimes<AnalysesListView, AnalysesListViewModel>()
+                 .RegisterSingleton<CreateNewAnalysisCommand>();
 
         if (configuration.GetValue<bool>("analysisSession:useFake"))
         {
