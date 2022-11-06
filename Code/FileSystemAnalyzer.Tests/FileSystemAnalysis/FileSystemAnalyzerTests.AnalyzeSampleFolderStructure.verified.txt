@@ -1,0 +1,134 @@
+﻿{
+  CapturedAnalyses: [
+    {
+      DirectoryPath: {CurrentDirectory}A,
+      CreatedAtUtc: DateTime_1,
+      RootEntryId: FileSystemEntry-1-A,
+      SizeInBytes: 11334,
+      Id: Analysis-1-A
+    }
+  ],
+  CapturedEntries: [
+    {
+      FullPath: {CurrentDirectory}A,
+      Name: A,
+      SizeInBytes: 11334,
+      AnalysisId: Analysis-1-A,
+      ChildIds: [
+        FileSystemEntry-2-A,
+        FileSystemEntry-3-A,
+        FileSystemEntry-9-A
+      ],
+      Id: FileSystemEntry-1-A
+    },
+    {
+      FullPath: {CurrentDirectory}A\d.json,
+      Name: d.json,
+      FileExtension: .json,
+      Type: File,
+      SizeInBytes: 40,
+      AnalysisId: Analysis-1-A,
+      ParentId: FileSystemEntry-1-A,
+      Id: FileSystemEntry-2-A
+    },
+    {
+      FullPath: {CurrentDirectory}A\C,
+      Name: C,
+      SizeInBytes: 10265,
+      AnalysisId: Analysis-1-A,
+      ParentId: FileSystemEntry-1-A,
+      ChildIds: [
+        FileSystemEntry-4-A,
+        FileSystemEntry-5-A,
+        FileSystemEntry-6-A
+      ],
+      Id: FileSystemEntry-3-A
+    },
+    {
+      FullPath: {CurrentDirectory}A\C\g.ini,
+      Name: g.ini,
+      FileExtension: .ini,
+      Type: File,
+      SizeInBytes: 13,
+      AnalysisId: Analysis-1-A,
+      ParentId: FileSystemEntry-3-A,
+      Id: FileSystemEntry-4-A
+    },
+    {
+      FullPath: {CurrentDirectory}A\C\h.bin,
+      Name: h.bin,
+      FileExtension: .bin,
+      Type: File,
+      SizeInBytes: 8192,
+      AnalysisId: Analysis-1-A,
+      ParentId: FileSystemEntry-3-A,
+      Id: FileSystemEntry-5-A
+    },
+    {
+      FullPath: {CurrentDirectory}A\C\I,
+      Name: I,
+      SizeInBytes: 2060,
+      AnalysisId: Analysis-1-A,
+      ParentId: FileSystemEntry-3-A,
+      ChildIds: [
+        FileSystemEntry-7-A,
+        FileSystemEntry-8-A
+      ],
+      Id: FileSystemEntry-6-A
+    },
+    {
+      FullPath: {CurrentDirectory}A\C\I\j.txt,
+      Name: j.txt,
+      FileExtension: .txt,
+      Type: File,
+      SizeInBytes: 12,
+      AnalysisId: Analysis-1-A,
+      ParentId: FileSystemEntry-6-A,
+      Id: FileSystemEntry-7-A
+    },
+    {
+      FullPath: {CurrentDirectory}A\C\I\k.bin,
+      Name: k.bin,
+      FileExtension: .bin,
+      Type: File,
+      SizeInBytes: 2048,
+      AnalysisId: Analysis-1-A,
+      ParentId: FileSystemEntry-6-A,
+      Id: FileSystemEntry-8-A
+    },
+    {
+      FullPath: {CurrentDirectory}A\B,
+      Name: B,
+      SizeInBytes: 1029,
+      AnalysisId: Analysis-1-A,
+      ParentId: FileSystemEntry-1-A,
+      ChildIds: [
+        FileSystemEntry-10-A,
+        FileSystemEntry-11-A
+      ],
+      Id: FileSystemEntry-9-A
+    },
+    {
+      FullPath: {CurrentDirectory}A\B\e.bin,
+      Name: e.bin,
+      FileExtension: .bin,
+      Type: File,
+      SizeInBytes: 1024,
+      AnalysisId: Analysis-1-A,
+      ParentId: FileSystemEntry-9-A,
+      Id: FileSystemEntry-10-A
+    },
+    {
+      FullPath: {CurrentDirectory}A\B\f.txt,
+      Name: f.txt,
+      FileExtension: .txt,
+      Type: File,
+      SizeInBytes: 5,
+      AnalysisId: Analysis-1-A,
+      ParentId: FileSystemEntry-9-A,
+      Id: FileSystemEntry-11-A
+    }
+  ],
+  SaveChangesCallCount: 9,
+  DisposeCallCount: 9
+}
