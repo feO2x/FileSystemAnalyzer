@@ -1,4 +1,4 @@
-﻿using FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+﻿using FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 using LightInject;
 
 namespace FileSystemAnalyzer.AvaloniaApp.Navigation;

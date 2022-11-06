@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
 public sealed partial class InitialView : UserControl
 {

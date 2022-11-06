@@ -1,5 +1,5 @@
 ﻿using System;
-using FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+using InitialView = FileSystemAnalyzer.AvaloniaApp.AnalysesList.InitialView;
 
 namespace FileSystemAnalyzer.AvaloniaApp.Navigation;
 

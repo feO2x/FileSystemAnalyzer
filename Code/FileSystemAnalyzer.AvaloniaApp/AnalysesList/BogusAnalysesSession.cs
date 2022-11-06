@@ -10,7 +10,7 @@ using FileSystemAnalyzer.AvaloniaApp.Shared;
 using FuzzySharp;
 using Light.GuardClauses;
 
-namespace FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
 // ReSharper disable once ClassNeverInstantiated.Global -- instantiated by the DI container
 public sealed class BogusAnalysesSession : IAnalysesSession

@@ -3,12 +3,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
-             xmlns:gettingStarted="clr-namespace:FileSystemAnalyzer.AvaloniaApp.GettingStarted"
+             xmlns:analysesList="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysesList"
              mc:Ignorable="d"
              d:DesignWidth="400"
              d:DesignHeight="600"
-             x:Class="FileSystemAnalyzer.AvaloniaApp.GettingStarted.ExistingAnalysesView"
-             x:DataType="gettingStarted:ExistingAnalysesViewModel">
+             x:Class="FileSystemAnalyzer.AvaloniaApp.AnalysesList.ExistingAnalysesView"
+             x:DataType="analysesList:ExistingAnalysesViewModel">
     <UserControl.Styles>
         <Style Selector="TextBlock.Info">
             <Setter Property="FontStyle" Value="Italic" />
@@ -57,7 +57,7 @@
                  IsVisible="{CompiledBinding !HasNoAnalyses}"
                  Items="{CompiledBinding Analyses}">
             <ListBox.ItemTemplate>
-                <DataTemplate DataType="gettingStarted:AnalysisViewModel">
+                <DataTemplate DataType="analysesList:AnalysisViewModel">
                     <Grid ColumnDefinitions="40, *"
                           RowDefinitions="Auto, Auto, Auto, Auto">
                         <avalonia:MaterialIcon Grid.Row="0"

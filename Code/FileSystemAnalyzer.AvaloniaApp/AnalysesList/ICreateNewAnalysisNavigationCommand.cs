@@ -1,4 +1,4 @@
-﻿namespace FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+﻿namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
 public interface ICreateNewAnalysisNavigationCommand
 {

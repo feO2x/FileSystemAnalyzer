@@ -1,5 +1,5 @@
-﻿using FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
-using FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+﻿using FileSystemAnalyzer.AvaloniaApp.AnalysesList;
+using FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
 
 namespace FileSystemAnalyzer.AvaloniaApp.Navigation;
 

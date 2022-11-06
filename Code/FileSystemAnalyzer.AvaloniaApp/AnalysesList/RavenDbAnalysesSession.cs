@@ -8,7 +8,7 @@ using Raven.Client.Documents;
 using Raven.Client.Documents.Session;
 using Synnotech.RavenDB;
 
-namespace FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
 // ReSharper disable once ClassNeverInstantiated.Global -- instantiated by DI container
 public sealed class RavenDbAnalysesSession : AsyncReadOnlySession, IAnalysesSession

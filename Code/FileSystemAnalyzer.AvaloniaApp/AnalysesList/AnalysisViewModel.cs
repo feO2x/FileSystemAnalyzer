@@ -6,7 +6,7 @@ using FileSystemAnalyzer.AvaloniaApp.Shared;
 using Light.GuardClauses;
 using Material.Icons;
 
-namespace FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
 public sealed class AnalysisViewModel
 {

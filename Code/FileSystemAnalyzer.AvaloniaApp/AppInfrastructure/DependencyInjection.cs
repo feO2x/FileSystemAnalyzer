@@ -1,7 +1,7 @@
-﻿using FileSystemAnalyzer.AvaloniaApp.AppShell;
+﻿using FileSystemAnalyzer.AvaloniaApp.AnalysesList;
+using FileSystemAnalyzer.AvaloniaApp.AppShell;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess;
 using FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
-using FileSystemAnalyzer.AvaloniaApp.GettingStarted;
 using FileSystemAnalyzer.AvaloniaApp.Navigation;
 using FileSystemAnalyzer.AvaloniaApp.Shared;
 using FileSystemAnalyzer.AvaloniaApp.SystemDialogs;

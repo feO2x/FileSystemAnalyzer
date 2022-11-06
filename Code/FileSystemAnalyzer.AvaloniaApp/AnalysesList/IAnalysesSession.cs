@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 using Synnotech.DatabaseAbstractions;
 
-namespace FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
 public interface IAnalysesSession : IAsyncReadOnlySession
 {

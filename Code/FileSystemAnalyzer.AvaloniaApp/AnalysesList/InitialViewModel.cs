@@ -2,7 +2,7 @@
 using Light.GuardClauses;
 using Light.ViewModels;
 
-namespace FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
 public sealed class InitialViewModel
 {

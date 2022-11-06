@@ -2,7 +2,7 @@
 using LightInject;
 using Microsoft.Extensions.Configuration;
 
-namespace FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
 public static class GettingStartedModule
 {

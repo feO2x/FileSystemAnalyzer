@@ -6,7 +6,7 @@ using Light.GuardClauses;
 using Light.ViewModels;
 using Serilog;
 
-namespace FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
 // ReSharper disable once ClassNeverInstantiated.Global -- the view model is instantiated by the DI container
 public sealed class ExistingAnalysesViewModel : BaseNotifyPropertyChanged

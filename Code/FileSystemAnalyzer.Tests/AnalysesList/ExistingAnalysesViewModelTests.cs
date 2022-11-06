@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Bogus;
+using FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
-using FileSystemAnalyzer.AvaloniaApp.GettingStarted;
 using FileSystemAnalyzer.AvaloniaApp.Shared;
 using Serilog;
 using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace FileSystemAnalyzer.Tests.GettingStarted;
+namespace FileSystemAnalyzer.Tests.AnalysesList;
 
 [UsesVerify]
 public sealed class ExistingAnalysesViewModelTests

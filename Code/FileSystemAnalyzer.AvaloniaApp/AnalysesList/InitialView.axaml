@@ -2,14 +2,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:gettingStarted="clr-namespace:FileSystemAnalyzer.AvaloniaApp.GettingStarted"
              xmlns:shared="clr-namespace:FileSystemAnalyzer.AvaloniaApp.Shared"
+             xmlns:analysesList="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysesList"
              mc:Ignorable="d"
              d:DesignWidth="800"
              d:DesignHeight="450"
              x:CompileBindings="True"
-             x:Class="FileSystemAnalyzer.AvaloniaApp.GettingStarted.InitialView"
-             x:DataType="gettingStarted:InitialViewModel">
+             x:Class="FileSystemAnalyzer.AvaloniaApp.AnalysesList.InitialView"
+             x:DataType="analysesList:InitialViewModel">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*" />
@@ -26,8 +26,8 @@
         <GridSplitter Grid.Column="1"
                       ResizeDirection="Columns" />
 
-        <gettingStarted:ExistingAnalysesView Grid.Column="2"
+        <analysesList:ExistingAnalysesView Grid.Column="2"
                                              Margin="20"
-                                             DataContext="{shared:Resolve Type=gettingStarted:ExistingAnalysesViewModel}" />
+                                             DataContext="{shared:Resolve Type=analysesList:ExistingAnalysesViewModel}" />
     </Grid>
 </UserControl>

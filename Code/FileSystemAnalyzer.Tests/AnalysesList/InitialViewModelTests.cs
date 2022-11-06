@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using FileSystemAnalyzer.AvaloniaApp.GettingStarted;
+using FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 using FileSystemAnalyzer.Tests.SystemDialogs;
 using FluentAssertions;
 using Xunit;
 
-namespace FileSystemAnalyzer.Tests.GettingStarted;
+namespace FileSystemAnalyzer.Tests.AnalysesList;
 
 public sealed class InitialViewModelTests
 {
