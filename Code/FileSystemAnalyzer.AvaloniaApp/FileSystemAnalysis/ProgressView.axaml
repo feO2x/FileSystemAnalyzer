@@ -1,0 +1,25 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:fileSystemAnalysis="clr-namespace:FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis"
+             mc:Ignorable="d"
+             x:Class="FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis.ProgressView"
+             x:DataType="fileSystemAnalysis:AnalysisDetailViewModel">
+    <StackPanel>
+        <TextBlock Classes="Headline6"
+                   Margin="0 0 0 12"
+                   Foreground="{DynamicResource PrimaryHueMidBrush}"
+                   Text="Currently analysing" />
+        <TextBlock Classes="Body1"
+                   Margin="0 0 0 20"
+                   Text="We are currently analyzing the requested directory. The views will refresh during this operation." />
+        <TextBlock Classes="Caption"
+                   Text="142 folders / 276 files processed..." />
+        <ProgressBar IsIndeterminate="True"
+                     Margin="0 0 0 12" />
+        <Button Content="Cancel Analysis"
+                Command="{CompiledBinding CancelCommand}" />
+
+    </StackPanel>
+</UserControl>

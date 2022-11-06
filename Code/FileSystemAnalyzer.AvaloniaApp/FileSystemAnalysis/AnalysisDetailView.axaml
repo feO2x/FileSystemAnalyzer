@@ -1,0 +1,28 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:fileSystemAnalysis="clr-namespace:FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis"
+             mc:Ignorable="d"
+             d:DesignWidth="800"
+             d:DesignHeight="600"
+             x:Class="FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis.AnalysisDetailView"
+             x:DataType="fileSystemAnalysis:AnalysisDetailViewModel">
+    <Grid RowDefinitions="Auto, *">
+        
+        <fileSystemAnalysis:ProgressView Grid.Row="0"
+                                         IsVisible="{CompiledBinding !!CurrentProgressState}" />
+        
+        <TabControl Grid.Row="1">
+            <TabItem Header="Files">
+                
+            </TabItem>
+            <TabItem Header="Folders">
+                
+            </TabItem>
+            <TabItem Header="Explorer">
+                
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

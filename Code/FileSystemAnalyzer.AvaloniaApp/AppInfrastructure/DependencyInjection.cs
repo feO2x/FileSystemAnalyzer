@@ -1,6 +1,6 @@
-﻿using Bogus;
-using FileSystemAnalyzer.AvaloniaApp.AppShell;
+﻿using FileSystemAnalyzer.AvaloniaApp.AppShell;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess;
+using FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
 using FileSystemAnalyzer.AvaloniaApp.GettingStarted;
 using FileSystemAnalyzer.AvaloniaApp.Navigation;
 using FileSystemAnalyzer.AvaloniaApp.Shared;
@@ -23,6 +23,7 @@ public static class DependencyInjection
                  .RegisterSystemDialogs()
                  .RegisterNavigation()
                  .RegisterGettingStarted(configuration)
+                 .RegisterFileSystemAnalysis()
                  .RegisterAppShell();
 
     private static IServiceRegistry RegisterCoreServices(this IServiceRegistry container) =>

@@ -5,6 +5,8 @@
              xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
              xmlns:gettingStarted="clr-namespace:FileSystemAnalyzer.AvaloniaApp.GettingStarted"
              mc:Ignorable="d"
+             d:DesignWidth="400"
+             d:DesignHeight="600"
              x:Class="FileSystemAnalyzer.AvaloniaApp.GettingStarted.ExistingAnalysesView"
              x:DataType="gettingStarted:ExistingAnalysesViewModel">
     <UserControl.Styles>
@@ -30,7 +32,7 @@
                  UseFloatingWatermark="False"
                  Watermark="Search"
                  IsVisible="{CompiledBinding !HasNoAnalyses}"
-                 Text="{CompiledBinding SearchTerm, Mode=TwoWay}">
+                 Text="{CompiledBinding SearchTerm}">
             <TextBox.InnerLeftContent>
                 <avalonia:MaterialIcon HorizontalAlignment="Center"
                                        VerticalAlignment="Center"

@@ -4,6 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:appShell="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AppShell"
              mc:Ignorable="d"
+             d:DesignWidth="800"
+             d:DesignHeight="32"
              x:Class="FileSystemAnalyzer.AvaloniaApp.AppShell.TitleBar"
              x:DataType="appShell:MainWindowViewModel">
     <Border Background="{DynamicResource PrimaryHueMidBrush}"

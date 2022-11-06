@@ -10,7 +10,7 @@ using Synnotech.Time;
 
 namespace FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
 
-public sealed class FileSystemAnalyzer
+public sealed class FileSystemAnalyzer : IFileSystemAnalyzer
 {
     public FileSystemAnalyzer(Func<IFileSystemAnalysisSession> createSession, IClock clock, ILogger logger)
     {
@@ -73,7 +73,6 @@ public sealed class FileSystemAnalyzer
 
             // Once we ran through the whole tree, we will update the analysis with the complete size
             await UpdateAnalysisAsync(analysis, progressManager.NumberOfProcessedFolders, progressManager.NumberOfProcessedFiles, cancellationToken);
-            progressManager.ReportFinish();
         }
         catch (Exception exception)
         {
@@ -82,6 +81,10 @@ public sealed class FileSystemAnalyzer
             await using var session = CreateSession();
             await session.StoreAsync(analysis, cancellationToken);
             await session.SaveChangesAsync(cancellationToken);
+        }
+        finally
+        {
+            progressManager.ReportFinish();
         }
     }
 
