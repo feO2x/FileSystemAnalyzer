@@ -1,0 +1,73 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:files="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files"
+             xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             mc:Ignorable="d"
+             d:DesignWidth="800"
+             d:DesignHeight="460"
+             x:Class="FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files.FilesView"
+             x:DataType="files:FilesViewModel">
+    
+    <UserControl.Styles>
+        <Style Selector="TextBlock.GridText">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="16 0 0 0" />
+        </Style>
+        <Style Selector="TextBlock.Info">
+            <Setter Property="FontStyle" Value="Italic" />
+            <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+        </Style>
+    </UserControl.Styles>
+    
+    <Grid RowDefinitions="Auto, 4, *">
+        <files:FilesToolbar Margin="12 4" />
+        
+        <ProgressBar Grid.Row="1"
+                     IsIndeterminate="True"
+                     IsVisible="{CompiledBinding IsLoading}" />
+        
+        <ListBox Grid.Row="2"
+                 x:Name="ListBox"
+                 Items="{CompiledBinding Items}"
+                 Grid.IsSharedSizeScope="True">
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="files:FileViewModel">
+                    <Grid Height="50">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Name" />
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Size" />
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="FullPath" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <avalonia:MaterialIcon Grid.Column="0"
+                                               Kind="File"
+                                               Width="24"
+                                               Height="24"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center" />
+                        
+                        <TextBlock Grid.Column="1"
+                                   Classes="Body1"
+                                   FontWeight="Bold"
+                                   VerticalAlignment="Center"
+                                   Foreground="{DynamicResource PrimaryHueMidBrush}"
+                                   Text="{CompiledBinding Name}" />
+                        
+                        <TextBlock Grid.Column="2"
+                                   Classes="Body2 Info GridText"
+                                   HorizontalAlignment="Right"
+                                   Text="{CompiledBinding Size}" />
+                        
+                        <TextBlock Grid.Column="3"
+                                   Classes="Body2 Info GridText"
+                                   Text="{CompiledBinding FullPath}" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+    
+</UserControl>

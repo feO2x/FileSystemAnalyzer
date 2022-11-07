@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 using Light.ViewModels;
 using Serilog;
@@ -12,11 +13,13 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
     private string? _currentProgressState;
 
     public AnalysisDetailViewModel(Analysis analysis,
+                                   FilesViewModel filesViewModel,
                                    IFileSystemAnalyzer? analyzer,
                                    INavigateToAnalysesListCommand navigateCommand,
                                    ILogger logger)
     {
         Analysis = analysis;
+        FilesViewModel = filesViewModel;
         Analyzer = analyzer;
         NavigateCommand = navigateCommand;
         Logger = logger;
@@ -25,6 +28,7 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
     }
 
     public Analysis Analysis { get; }
+    public FilesViewModel FilesViewModel { get; }
     private IFileSystemAnalyzer? Analyzer { get; }
     private INavigateToAnalysesListCommand NavigateCommand { get; }
     private ILogger Logger { get; }

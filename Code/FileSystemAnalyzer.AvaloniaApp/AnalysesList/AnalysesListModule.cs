@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
-public static class AnalysisListModule
+public static class AnalysesListModule
 {
     public static IServiceRegistry RegisterAnalysisList(this IServiceRegistry container, IConfiguration configuration)
     {
