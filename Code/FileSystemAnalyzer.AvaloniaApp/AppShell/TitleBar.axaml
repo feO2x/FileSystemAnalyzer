@@ -5,7 +5,7 @@
              xmlns:appShell="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AppShell"
              mc:Ignorable="d"
              d:DesignWidth="800"
-             d:DesignHeight="32"
+             d:DesignHeight="30"
              x:Class="FileSystemAnalyzer.AvaloniaApp.AppShell.TitleBar"
              x:DataType="appShell:MainWindowViewModel">
     <Border Background="{DynamicResource PrimaryHueMidBrush}"
@@ -15,12 +15,13 @@
             <Image Source="../Assets/file-system-analyzer-icon-256x256.png"
                    Width="24"
                    Height="24"
-                   IsVisible="{CompiledBinding IsAppIconVisible}"
+                   IsVisible="{CompiledBinding IsWindowsOperatingSystem}"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
-                   Margin="8 3 8 0" />
+                   Margin="8 2 8 0" />
             <TextBlock Text="File System Analyzer"
-                       VerticalAlignment="Center" />
+                       VerticalAlignment="Center"
+                       Background="Transparent" />
         </StackPanel>
     </Border>
 </UserControl>

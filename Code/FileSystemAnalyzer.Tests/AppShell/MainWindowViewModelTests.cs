@@ -24,13 +24,13 @@ public sealed class MainWindowViewModelTests
     [Fact]
     public void SetNewViewToValidObject()
     {
-        var newView = new object();
+        var newView = new DummyView();
         using var eventMonitor = MainWindowViewModel.Monitor();
         
         MainWindowViewModel.NavigateTo(newView);
 
-        MainWindowViewModel.CurrentContent.Should().BeSameAs(newView);
-        eventMonitor.Should().RaisePropertyChangeFor(vm => vm.CurrentContent);
+        MainWindowViewModel.CurrentView.Should().BeSameAs(newView);
+        eventMonitor.Should().RaisePropertyChangeFor(vm => vm.CurrentView);
     }
 
     [Fact]
@@ -46,7 +46,7 @@ public sealed class MainWindowViewModelTests
     {
         OperatingSystem.IsWindowsReturnValue = true;
         
-        MainWindowViewModel.IsAppIconVisible.Should().BeTrue();
+        MainWindowViewModel.IsWindowsOperatingSystem.Should().BeTrue();
     }
 
     [Fact]
@@ -54,7 +54,7 @@ public sealed class MainWindowViewModelTests
     {
         OperatingSystem.IsWindowsReturnValue = false;
 
-        MainWindowViewModel.IsAppIconVisible.Should().BeFalse();
+        MainWindowViewModel.IsWindowsOperatingSystem.Should().BeFalse();
     }
     
     private sealed class OperatingSystemStub : IOperatingSystem
@@ -62,5 +62,10 @@ public sealed class MainWindowViewModelTests
         public bool IsWindowsReturnValue { get; set; }
         
         public bool IsWindows() => IsWindowsReturnValue;
+    }
+    
+    private sealed class DummyView : IView
+    {
+        public string Title => "Dummy View";
     }
 }

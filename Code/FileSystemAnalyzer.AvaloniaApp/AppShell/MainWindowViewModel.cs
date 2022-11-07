@@ -7,24 +7,41 @@ namespace FileSystemAnalyzer.AvaloniaApp.AppShell;
 
 public sealed class MainWindowViewModel : BaseNotifyPropertyChanged, INavigator
 {
-    private object? _currentContent;
+    private IView? _currentView;
 
-    public MainWindowViewModel(IOperatingSystem operatingSystem) =>
+    public MainWindowViewModel(IOperatingSystem operatingSystem)
+    {
         OperatingSystem = operatingSystem;
+        NavigateBackCommand = new (NavigateBack);
+    }
 
     private IOperatingSystem OperatingSystem { get; }
 
-    public object? CurrentContent
+    public IView? CurrentView
     {
-        get => _currentContent;
-        private set => Set(out _currentContent, value);
+        get => _currentView;
+        private set
+        {
+            Set(out _currentView, value);
+            OnPropertyChanged(nameof(CurrentTitle));
+            OnPropertyChanged(nameof(IsNavigateBackButtonVisible));
+        }
     }
 
-    public bool IsAppIconVisible => OperatingSystem.IsWindows();
+    public string? CurrentTitle => CurrentView?.Title;
+    public bool IsNavigateBackButtonVisible => CurrentView is INavigateBack;
+    public DelegateCommand NavigateBackCommand { get; }
+    public bool IsWindowsOperatingSystem => OperatingSystem.IsWindows();
 
     public HorizontalAlignment TitleAlignment =>
         OperatingSystem.IsWindows() ? HorizontalAlignment.Left : HorizontalAlignment.Center;
 
-    public void NavigateTo(object newView) =>
-        CurrentContent = newView.MustNotBeNull();
+    public void NavigateTo(IView newView) =>
+        CurrentView = newView.MustNotBeNull();
+
+    private void NavigateBack()
+    {
+        if (CurrentView is INavigateBack navigateBackView)
+            navigateBackView.NavigateBack();
+    }
 }

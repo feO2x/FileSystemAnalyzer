@@ -13,17 +13,20 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
 
     public AnalysisDetailViewModel(Analysis analysis,
                                    IFileSystemAnalyzer? analyzer,
+                                   INavigateToAnalysesListCommand navigateCommand,
                                    ILogger logger)
     {
         Analysis = analysis;
         Analyzer = analyzer;
+        NavigateCommand = navigateCommand;
         Logger = logger;
         CancelCommand = new (CancelAnalysis, () => CancellationTokenSource is not null);
         PerformAnalysis();
     }
 
-    private Analysis Analysis { get; }
+    public Analysis Analysis { get; }
     private IFileSystemAnalyzer? Analyzer { get; }
+    private INavigateToAnalysesListCommand NavigateCommand { get; }
     private ILogger Logger { get; }
 
     private CancellationTokenSource? CancellationTokenSource
@@ -74,4 +77,6 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
             null :
             $"{progressState.NumberOfProcessedFolders} folders / {progressState.NumberOfProcessedFiles} files processed...";
     }
+
+    public void NavigateBack() => NavigateCommand.Navigate();
 }

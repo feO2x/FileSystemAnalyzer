@@ -2,10 +2,10 @@ using System;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 using FileSystemAnalyzer.AvaloniaApp.AppInfrastructure;
-using FileSystemAnalyzer.AvaloniaApp.Navigation;
+using FileSystemAnalyzer.AvaloniaApp.AppShell;
 using LightInject;
-using MainWindow = FileSystemAnalyzer.AvaloniaApp.AppShell.MainWindow;
 
 namespace FileSystemAnalyzer.AvaloniaApp;
 
@@ -19,9 +19,11 @@ public sealed class App : Application, IDisposable
     }
 
     public new static App? Current { get; private set; }
-    
+
     public ServiceContainer Container { get; }
-    
+
+    public void Dispose() => Container.Dispose();
+
     public override void Initialize() => AvaloniaXamlLoader.Load(this);
 
     public override void OnFrameworkInitializationCompleted()
@@ -30,11 +32,9 @@ public sealed class App : Application, IDisposable
         {
             Container.ConfigureServices();
             desktop.MainWindow = Container.GetInstance<MainWindow>();
-            Container.GetInstance<InitialViewNavigationCommand>().Navigate();
+            Container.GetInstance<INavigateToAnalysesListCommand>().Navigate();
         }
 
         base.OnFrameworkInitializationCompleted();
     }
-
-    public void Dispose() => Container.Dispose();
 }

@@ -11,9 +11,10 @@
         Title="File System Analyzer"
         Icon="/Assets/favicon.ico"
         ExtendClientAreaToDecorationsHint="True">
-    <Grid RowDefinitions="32, *">
+    <Grid RowDefinitions="30, 56, *">
         <appShell:TitleBar Grid.Row="0" />
-        <TransitioningContentControl Grid.Row="1"
-                                     Content="{CompiledBinding CurrentContent}" />
+        <appShell:NavigationBar Grid.Row="1" />
+        <TransitioningContentControl Grid.Row="2"
+                                     Content="{CompiledBinding CurrentView}" />
     </Grid>
 </Window>

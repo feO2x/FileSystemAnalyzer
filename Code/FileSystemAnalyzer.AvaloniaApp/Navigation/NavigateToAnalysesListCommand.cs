@@ -1,11 +1,13 @@
 ﻿using System;
 using FileSystemAnalyzer.AvaloniaApp.AnalysesList;
+using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
 namespace FileSystemAnalyzer.AvaloniaApp.Navigation;
 
-public sealed class InitialViewNavigationCommand
+// ReSharper disable once ClassNeverInstantiated.Global -- instantiated by DI container
+public sealed class NavigateToAnalysesListCommand : INavigateToAnalysesListCommand
 {
-    public InitialViewNavigationCommand(INavigator navigator, Func<AnalysesListView> resolveInitialView)
+    public NavigateToAnalysesListCommand(INavigator navigator, Func<AnalysesListView> resolveInitialView)
     {
         Navigator = navigator;
         ResolveInitialView = resolveInitialView;

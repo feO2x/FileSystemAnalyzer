@@ -24,7 +24,7 @@ public static class DependencyInjection
                  .RegisterNavigation()
                  .RegisterAnalysisList(configuration)
                  .RegisterAnalysisDetails()
-                 .RegisterAppShell();
+                 .RegisterAppShell(configuration);
 
     private static IServiceRegistry RegisterCoreServices(this IServiceRegistry container) =>
         container.RegisterInstance(DebouncedValueFactory.DefaultFactory)

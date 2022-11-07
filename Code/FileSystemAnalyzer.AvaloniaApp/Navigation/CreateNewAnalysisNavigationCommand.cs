@@ -3,6 +3,7 @@ using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
 namespace FileSystemAnalyzer.AvaloniaApp.Navigation;
 
+// ReSharper disable once ClassNeverInstantiated.Global -- class is instantiated by the DI container
 public sealed class CreateNewAnalysisNavigationCommand : ICreateNewAnalysisNavigationCommand
 {
     public CreateNewAnalysisNavigationCommand(AnalysisDetailViewFactory analysisDetailViewFactory, INavigator navigator)

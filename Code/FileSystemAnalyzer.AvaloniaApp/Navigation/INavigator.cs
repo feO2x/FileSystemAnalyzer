@@ -1,6 +1,8 @@
-﻿namespace FileSystemAnalyzer.AvaloniaApp.Navigation;
+﻿using FileSystemAnalyzer.AvaloniaApp.AppShell;
+
+namespace FileSystemAnalyzer.AvaloniaApp.Navigation;
 
 public interface INavigator
 {
-    void NavigateTo(object newView);
+    void NavigateTo(IView newView);
 }

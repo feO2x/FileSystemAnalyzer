@@ -2,11 +2,12 @@ using System;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
+using FileSystemAnalyzer.AvaloniaApp.AppShell;
 using Light.GuardClauses;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
-public sealed partial class AnalysesListView : UserControl
+public sealed partial class AnalysesListView : UserControl, IView
 {
     public AnalysesListView()
     {
@@ -14,9 +15,11 @@ public sealed partial class AnalysesListView : UserControl
         Subscription = ListBox.GetObservable<IScrollable>(ListBox.ScrollProperty)
                               .Subscribe(OnListBoxScrollChanged);
     }
-    
+
     private IDisposable? Subscription { get; set; }
-    
+
+    public string Title => "Analyses";
+
     private void OnListBoxScrollChanged(IScrollable scrollable)
     {
         if (scrollable is not ScrollViewer scrollViewer)
@@ -26,7 +29,7 @@ public sealed partial class AnalysesListView : UserControl
         Subscription!.Dispose();
         Subscription = null;
     }
-    
+
     private void OnScrollChanged(object? sender, ScrollChangedEventArgs e)
     {
         if (e.OffsetDelta.Y.IsApproximately(0))
