@@ -21,6 +21,7 @@
                    Margin="8 2 8 0" />
             <TextBlock Text="File System Analyzer"
                        VerticalAlignment="Center"
+                       Foreground="{DynamicResource PrimaryHueMidForegroundBrush}"
                        Background="Transparent" />
         </StackPanel>
     </Border>

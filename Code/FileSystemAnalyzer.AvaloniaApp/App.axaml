@@ -3,7 +3,7 @@
              xmlns:themes="clr-namespace:Material.Styles.Themes;assembly=Material.Styles"
              x:Class="FileSystemAnalyzer.AvaloniaApp.App">
     <Application.Resources>
-        <themes:BundledTheme BaseTheme="Dark" PrimaryColor="Teal" SecondaryColor="Amber" />
+        <themes:BundledTheme BaseTheme="Dark" PrimaryColor="Cyan" SecondaryColor="Amber" />
         <Color x:Key="ErrorColor">#F23005</Color>
         <SolidColorBrush x:Key="ErrorBrush" Color="{StaticResource ErrorColor}" />
     </Application.Resources>
