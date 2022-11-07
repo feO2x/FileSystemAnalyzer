@@ -1,10 +1,10 @@
 ﻿using LightInject;
 
-namespace FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
-public static class FileSystemAnalysisModule
+public static class AnalysisDetailsModule
 {
-    public static IServiceRegistry RegisterFileSystemAnalysis(this IServiceRegistry container) =>
+    public static IServiceRegistry RegisterAnalysisDetails(this IServiceRegistry container) =>
         container.RegisterSingleton<AnalysisDetailViewFactory>()
                  .RegisterTransient<FileSystemAnalyzer>()
                  .RegisterTransient<IFileSystemAnalysisSession, RavenDbFileSystemAnalysisSession>();

@@ -8,7 +8,7 @@ using Light.GuardClauses;
 using Serilog;
 using Synnotech.Time;
 
-namespace FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
 public sealed class FileSystemAnalyzer : IFileSystemAnalyzer
 {

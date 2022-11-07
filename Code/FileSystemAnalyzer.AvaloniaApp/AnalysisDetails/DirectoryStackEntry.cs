@@ -1,5 +1,5 @@
 ﻿using System.IO;
 
-namespace FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
 public readonly record struct DirectoryStackEntry(DirectoryInfo DirectoryInfo, string? ParentId);

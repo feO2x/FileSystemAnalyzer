@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 using Serilog;
 
-namespace FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
 public sealed class AnalysisDetailViewFactory
 {

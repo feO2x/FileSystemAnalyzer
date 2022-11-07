@@ -4,7 +4,7 @@ using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 using Light.ViewModels;
 using Serilog;
 
-namespace FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
 public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
 {

@@ -4,7 +4,7 @@ using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 using Raven.Client.Documents.Session;
 using Synnotech.RavenDB;
 
-namespace FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
 public sealed class RavenDbFileSystemAnalysisSession : AsyncSession, IFileSystemAnalysisSession
 {

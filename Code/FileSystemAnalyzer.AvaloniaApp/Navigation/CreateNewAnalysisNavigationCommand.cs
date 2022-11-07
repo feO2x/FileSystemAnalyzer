@@ -1,5 +1,5 @@
 ﻿using FileSystemAnalyzer.AvaloniaApp.AnalysesList;
-using FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
+using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
 namespace FileSystemAnalyzer.AvaloniaApp.Navigation;
 

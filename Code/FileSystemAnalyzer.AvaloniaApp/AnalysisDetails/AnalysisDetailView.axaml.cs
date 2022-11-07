@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
 public sealed partial class AnalysisDetailView : UserControl
 {

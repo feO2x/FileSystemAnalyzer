@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
+using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
-using FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
 using Serilog;
 using Serilog.Events;
 using Synnotech.Core.Entities;
@@ -14,9 +14,9 @@ using VerifyTests;
 using VerifyXunit;
 using Xunit;
 using Xunit.Abstractions;
-using Analyzer = FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis.FileSystemAnalyzer;
+using Analyzer = FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.FileSystemAnalyzer;
 
-namespace FileSystemAnalyzer.Tests.FileSystemAnalysis;
+namespace FileSystemAnalyzer.Tests.AnalysisDetails;
 
 [UsesVerify]
 public sealed class FileSystemAnalyzerTests

@@ -1,7 +1,7 @@
 ﻿using FileSystemAnalyzer.AvaloniaApp.AnalysesList;
+using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 using FileSystemAnalyzer.AvaloniaApp.AppShell;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess;
-using FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
 using FileSystemAnalyzer.AvaloniaApp.Navigation;
 using FileSystemAnalyzer.AvaloniaApp.Shared;
 using FileSystemAnalyzer.AvaloniaApp.SystemDialogs;
@@ -23,7 +23,7 @@ public static class DependencyInjection
                  .RegisterSystemDialogs()
                  .RegisterNavigation()
                  .RegisterAnalysisList(configuration)
-                 .RegisterFileSystemAnalysis()
+                 .RegisterAnalysisDetails()
                  .RegisterAppShell();
 
     private static IServiceRegistry RegisterCoreServices(this IServiceRegistry container) =>

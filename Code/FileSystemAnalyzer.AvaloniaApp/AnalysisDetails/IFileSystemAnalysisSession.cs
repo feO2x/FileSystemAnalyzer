@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 using Synnotech.DatabaseAbstractions;
 
-namespace FileSystemAnalyzer.AvaloniaApp.FileSystemAnalysis;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
 public interface IFileSystemAnalysisSession : IAsyncSession
 {
