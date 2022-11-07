@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:analysesList="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysesList"
              xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             xmlns:shared="clr-namespace:FileSystemAnalyzer.AvaloniaApp.Shared"
              mc:Ignorable="d"
              d:DesignWidth="800"
              d:DesignHeight="450"
@@ -31,14 +32,14 @@
         </Style>
     </UserControl.Styles>
     <Grid RowDefinitions="Auto, 4, *">
-        
+
         <analysesList:AnalysesListToolbar Grid.Row="0"
                                           Margin="12 12 12 4" />
-        
+
         <ProgressBar Grid.Row="1"
                      IsIndeterminate="True"
                      IsVisible="{CompiledBinding IsLoading}" />
-        
+
         <ListBox Grid.Row="2"
                  x:Name="ListBox"
                  IsVisible="{CompiledBinding !HasNoAnalyses}"
@@ -57,7 +58,7 @@
                             <ColumnDefinition Width="Auto" SharedSizeGroup="NumberOfFiles" />
                             <ColumnDefinition Width="Auto" SharedSizeGroup="Path" />
                         </Grid.ColumnDefinitions>
-                        
+
                         <avalonia:MaterialIcon Grid.Column="0"
                                                Kind="{CompiledBinding IconKind}"
                                                Classes.IconError="{CompiledBinding IsErroneous}"
@@ -65,30 +66,32 @@
                                                Height="24"
                                                HorizontalAlignment="Center"
                                                VerticalAlignment="Center" />
-                        
+
                         <Button Grid.Column="1"
                                 Classes="Flat"
-                                Content="{CompiledBinding Name}" />
-                        
+                                Content="{CompiledBinding Name}"
+                                Command="{shared:Resolve Type=analysesList:OpenExistingAnalysisCommand}"
+                                CommandParameter="{CompiledBinding Analysis}" />
+
                         <TextBlock Grid.Column="2"
                                    Classes="Body2 Info GridText"
                                    Text="{CompiledBinding CreatedAt}" />
-                        
+
                         <TextBlock Grid.Column="3"
                                    Classes="Body2 Info GridText"
                                    HorizontalAlignment="Right"
                                    Text="{CompiledBinding Size}" />
-                        
+
                         <TextBlock Grid.Column="4"
                                    Classes="Body2 Info GridText"
                                    HorizontalAlignment="Right"
                                    Text="{CompiledBinding NumberOfFolders}" />
-                        
+
                         <TextBlock Grid.Column="5"
                                    Classes="Body2 Info GridText"
                                    HorizontalAlignment="Right"
                                    Text="{CompiledBinding NumberOfFiles}" />
-                        
+
                         <TextBlock Grid.Column="6"
                                    Classes="Body2 Info GridText"
                                    Text="{CompiledBinding DirectoryPath}" />

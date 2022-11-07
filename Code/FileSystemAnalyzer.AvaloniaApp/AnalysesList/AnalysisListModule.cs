@@ -9,7 +9,8 @@ public static class AnalysisListModule
     public static IServiceRegistry RegisterAnalysisList(this IServiceRegistry container, IConfiguration configuration)
     {
         container.RegisterViewAndViewModelWithTransientLifetimes<AnalysesListView, AnalysesListViewModel>()
-                 .RegisterSingleton<CreateNewAnalysisCommand>();
+                 .RegisterSingleton<CreateNewAnalysisCommand>()
+                 .RegisterSingleton<OpenExistingAnalysisCommand>();
 
         if (configuration.GetValue<bool>("analysisSession:useFake"))
         {
