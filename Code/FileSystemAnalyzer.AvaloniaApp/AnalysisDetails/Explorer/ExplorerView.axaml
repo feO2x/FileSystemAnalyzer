@@ -1,0 +1,35 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:explorer="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Explorer"
+             xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             mc:Ignorable="d"
+             d:DesignWidth="800"
+             d:DesignHeight="450"
+             x:Class="FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Explorer.ExplorerView"
+             x:DataType="explorer:ExplorerViewModel">
+    <Grid ColumnDefinitions="*, 4, 2*">
+        <TreeView Grid.Column="0"
+                  Items="{CompiledBinding Folders}"
+                  SelectedItem="{CompiledBinding SelectedFolderNode, Mode=TwoWay}">
+            <TreeView.ItemTemplate>
+                <TreeDataTemplate DataType="explorer:FolderNode"
+                                  ItemsSource="{CompiledBinding ChildNodes}">
+                    <StackPanel Orientation="Horizontal">
+                        <avalonia:MaterialIcon Kind="Folder" />
+                        <TextBlock Classes="ButtonText"
+                                   Text="{CompiledBinding Name}"
+                                   Margin="4 0 0 0" />
+                        <TextBlock Classes="Overline"
+                                   Text="{CompiledBinding Size}"
+                                   Margin="8 4 0 0" />
+                    </StackPanel>
+                </TreeDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+
+        <GridSplitter Grid.Column="1"
+                      ResizeDirection="Columns" />
+    </Grid>
+</UserControl>

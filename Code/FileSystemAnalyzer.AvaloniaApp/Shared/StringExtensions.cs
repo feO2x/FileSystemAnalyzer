@@ -1,4 +1,5 @@
 ﻿using System;
+using Humanizer;
 using Light.GuardClauses;
 
 namespace FileSystemAnalyzer.AvaloniaApp.Shared;
@@ -20,7 +21,10 @@ public static class StringExtensions
 
         return span.ToString();
     }
-    
+
     public static string NormalizeSearchTerm(this string? searchTerm) =>
         searchTerm.IsNullOrWhiteSpace() ? string.Empty : searchTerm.Trim();
+
+    public static string ConvertToDisplaySize(this long sizeInBytes) =>
+        sizeInBytes.Bytes().Humanize("#.##");
 }

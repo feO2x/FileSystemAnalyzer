@@ -1,4 +1,5 @@
-﻿using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files;
+﻿using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Explorer;
+using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files;
 using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Folders;
 using LightInject;
 
@@ -11,5 +12,6 @@ public static class AnalysisDetailsModule
                  .RegisterTransient<FileSystemAnalyzer>()
                  .RegisterTransient<IFileSystemAnalysisSession, RavenDbFileSystemAnalysisSession>()
                  .RegisterFilesModule()
-                 .RegisterFoldersModule();
+                 .RegisterFoldersModule()
+                 .RegisterExplorerModule();
 }

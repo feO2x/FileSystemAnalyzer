@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Explorer;
 using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files;
 using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Folders;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
@@ -17,12 +18,13 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
     public AnalysisDetailViewModel(Analysis analysis,
                                    FilesViewModel filesViewModel,
                                    FoldersViewModel foldersViewModel,
+                                   ExplorerViewModel explorerViewModel,
                                    IFileSystemAnalyzer? analyzer,
                                    INavigateToAnalysesListCommand navigateCommand,
                                    ILogger logger)
     {
         Analysis = analysis;
-        TabItemViewModels = new ITabItemViewModel[] { filesViewModel, foldersViewModel };
+        TabItemViewModels = new ITabItemViewModel[] { filesViewModel, foldersViewModel, explorerViewModel };
         _selectedTabItemViewModel = filesViewModel;
         Analyzer = analyzer;
         NavigateCommand = navigateCommand;

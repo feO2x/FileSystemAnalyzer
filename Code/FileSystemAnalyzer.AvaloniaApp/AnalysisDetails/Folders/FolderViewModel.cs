@@ -1,5 +1,5 @@
 ﻿using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
-using Humanizer;
+using FileSystemAnalyzer.AvaloniaApp.Shared;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Folders;
 
@@ -8,7 +8,7 @@ public sealed class FolderViewModel
     public FolderViewModel(FileSystemEntry folderEntry)
     {
         FolderEntry = folderEntry;
-        Size = folderEntry.SizeInBytes.Bytes().Humanize("#.##");
+        Size = folderEntry.SizeInBytes.ConvertToDisplaySize();
     }
 
     public FileSystemEntry FolderEntry { get; }

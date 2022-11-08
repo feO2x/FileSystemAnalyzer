@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
+using FileSystemAnalyzer.AvaloniaApp.Shared;
 using Humanizer;
 using Light.GuardClauses;
 using Material.Icons;
@@ -13,7 +14,7 @@ public sealed class AnalysisViewModel
         Analysis = analysis;
         Name = Path.GetFileName(analysis.DirectoryPath);
         CreatedAt = analysis.CreatedAtUtc.ToLocalTime().ToString("yyyy-MM-dd HH:mm");
-        Size = analysis.SizeInBytes.Bytes().Humanize("#.##");
+        Size = analysis.SizeInBytes.ConvertToDisplaySize();
         NumberOfFolders = "folder".ToQuantity(analysis.NumberOfFolders);
         NumberOfFiles = "file".ToQuantity(analysis.NumberOfFiles);
     }

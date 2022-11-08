@@ -5,6 +5,7 @@
              xmlns:analysisDetails="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysisDetails"
              xmlns:files="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files"
              xmlns:folders="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Folders"
+             xmlns:explorer="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Explorer"
              mc:Ignorable="d"
              d:DesignWidth="800"
              d:DesignHeight="600"
@@ -29,6 +30,9 @@
                 </DataTemplate>
                 <DataTemplate DataType="folders:FoldersViewModel">
                     <folders:FoldersView />
+                </DataTemplate>
+                <DataTemplate DataType="explorer:ExplorerViewModel">
+                    <explorer:ExplorerView />
                 </DataTemplate>
             </TabControl.DataTemplates>
         </TabControl>

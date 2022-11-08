@@ -1,5 +1,5 @@
 ﻿using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
-using Humanizer;
+using FileSystemAnalyzer.AvaloniaApp.Shared;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files;
 
@@ -8,7 +8,7 @@ public sealed class FileViewModel
     public FileViewModel(FileSystemEntry fileSystemEntry)
     {
         FileSystemEntry = fileSystemEntry;
-        Size = fileSystemEntry.SizeInBytes.Bytes().Humanize("#.##");
+        Size = fileSystemEntry.SizeInBytes.ConvertToDisplaySize();
     }
 
     public FileSystemEntry FileSystemEntry { get; }
