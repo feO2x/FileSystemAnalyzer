@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files;
+using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Folders;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 using FileSystemAnalyzer.AvaloniaApp.Shared;
 using Serilog;
@@ -12,12 +13,14 @@ public sealed class AnalysisDetailViewFactory
 {
     public AnalysisDetailViewFactory(Func<FileSystemAnalyzer> resolveFileSystemAnalyzer,
                                      Func<IFilesSession> createFilesSession,
+                                     Func<IFoldersSession> createFoldersSession,
                                      DebouncedValueFactory debouncedValueFactory,
                                      INavigateToAnalysesListCommand navigateCommand,
                                      ILogger logger)
     {
         ResolveFileSystemAnalyzer = resolveFileSystemAnalyzer;
         CreateFilesSession = createFilesSession;
+        CreateFoldersSession = createFoldersSession;
         DebouncedValueFactory = debouncedValueFactory;
         NavigateCommand = navigateCommand;
         Logger = logger;
@@ -25,6 +28,7 @@ public sealed class AnalysisDetailViewFactory
 
     private Func<FileSystemAnalyzer> ResolveFileSystemAnalyzer { get; }
     private Func<IFilesSession> CreateFilesSession { get; }
+    private Func<IFoldersSession> CreateFoldersSession { get; }
     private DebouncedValueFactory DebouncedValueFactory { get; }
     private INavigateToAnalysesListCommand NavigateCommand { get; }
     private ILogger Logger { get; }
@@ -41,7 +45,8 @@ public sealed class AnalysisDetailViewFactory
     private AnalysisDetailView CreateView(Analysis analysis, FileSystemAnalyzer? fileSystemAnalyzer = null)
     {
         var filesViewModel = new FilesViewModel(analysis.Id, CreateFilesSession, DebouncedValueFactory, Logger);
-        var analysisViewModel = new AnalysisDetailViewModel(analysis, filesViewModel, fileSystemAnalyzer, NavigateCommand, Logger);
+        var foldersViewModel = new FoldersViewModel(analysis.Id, CreateFoldersSession, DebouncedValueFactory, Logger);
+        var analysisViewModel = new AnalysisDetailViewModel(analysis, filesViewModel, foldersViewModel, fileSystemAnalyzer, NavigateCommand, Logger);
         return new () { DataContext = analysisViewModel };
     }
 }

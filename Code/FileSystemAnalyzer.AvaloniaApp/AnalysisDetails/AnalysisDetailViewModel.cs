@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files;
+using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Folders;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 using Light.ViewModels;
 using Serilog;
@@ -11,24 +12,35 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
 {
     private CancellationTokenSource? _cancellationTokenSource;
     private string? _currentProgressState;
+    private ITabItemViewModel _selectedTabItemViewModel;
 
     public AnalysisDetailViewModel(Analysis analysis,
                                    FilesViewModel filesViewModel,
+                                   FoldersViewModel foldersViewModel,
                                    IFileSystemAnalyzer? analyzer,
                                    INavigateToAnalysesListCommand navigateCommand,
                                    ILogger logger)
     {
         Analysis = analysis;
-        FilesViewModel = filesViewModel;
+        TabItemViewModels = new ITabItemViewModel[] { filesViewModel, foldersViewModel };
+        _selectedTabItemViewModel = filesViewModel;
         Analyzer = analyzer;
         NavigateCommand = navigateCommand;
         Logger = logger;
         CancelCommand = new (CancelAnalysis, () => CancellationTokenSource is not null);
+        
         PerformAnalysis();
     }
 
     public Analysis Analysis { get; }
-    public FilesViewModel FilesViewModel { get; }
+    public ITabItemViewModel[] TabItemViewModels { get; }
+
+    public ITabItemViewModel SelectedTabItemViewModel
+    {
+        get => _selectedTabItemViewModel;
+        set => SetIfDifferent(ref _selectedTabItemViewModel, value);
+    }
+
     private IFileSystemAnalyzer? Analyzer { get; }
     private INavigateToAnalysesListCommand NavigateCommand { get; }
     private ILogger Logger { get; }

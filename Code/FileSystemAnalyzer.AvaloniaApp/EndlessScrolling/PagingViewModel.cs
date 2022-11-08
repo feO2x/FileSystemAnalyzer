@@ -70,6 +70,10 @@ public sealed class PagingViewModel<TItem, TModel, TFilters> : BaseNotifyPropert
 
     public bool IsLoading => CurrentCancellationTokenSource is not null;
 
+#pragma warning disable CS4014 // This method is usually called within constructors which cannot be async and do not care about the result 
+    public void LoadFirstPage() => LoadNextPageAsync();
+#pragma warning restore CS4014
+
     public async Task LoadNextPageAsync()
     {
         if (IsAtEnd || HasNoItems)

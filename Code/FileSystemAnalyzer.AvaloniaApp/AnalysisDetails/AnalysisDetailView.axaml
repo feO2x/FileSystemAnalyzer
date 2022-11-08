@@ -4,26 +4,33 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:analysisDetails="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysisDetails"
              xmlns:files="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files"
+             xmlns:folders="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Folders"
              mc:Ignorable="d"
              d:DesignWidth="800"
              d:DesignHeight="600"
              x:Class="FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.AnalysisDetailView"
              x:DataType="analysisDetails:AnalysisDetailViewModel">
     <Grid RowDefinitions="Auto, *">
-        
+
         <analysisDetails:ProgressView Grid.Row="0"
-                                         IsVisible="{CompiledBinding !!CurrentProgressState}" />
-        
-        <TabControl Grid.Row="1">
-            <TabItem Header="Files">
-                <files:FilesView DataContext="{CompiledBinding FilesViewModel}" />
-            </TabItem>
-            <TabItem Header="Folders">
-                
-            </TabItem>
-            <TabItem Header="Explorer">
-                
-            </TabItem>
+                                      IsVisible="{CompiledBinding !!CurrentProgressState}" />
+
+        <TabControl Grid.Row="1"
+                    Items="{CompiledBinding TabItemViewModels}"
+                    SelectedItem="{CompiledBinding SelectedTabItemViewModel, Mode=TwoWay}">
+            <TabControl.ItemTemplate>
+                <DataTemplate DataType="analysisDetails:ITabItemViewModel">
+                    <TextBlock Text="{CompiledBinding Title}" />
+                </DataTemplate>
+            </TabControl.ItemTemplate>
+            <TabControl.DataTemplates>
+                <DataTemplate DataType="files:FilesViewModel">
+                    <files:FilesView />
+                </DataTemplate>
+                <DataTemplate DataType="folders:FoldersViewModel">
+                    <folders:FoldersView />
+                </DataTemplate>
+            </TabControl.DataTemplates>
         </TabControl>
     </Grid>
 </UserControl>

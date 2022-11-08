@@ -11,5 +11,14 @@
         <StyleInclude Source="avares://Avalonia.Themes.Default/DefaultTheme.xaml" />
         <StyleInclude Source="avares://Material.Avalonia/Material.Avalonia.Templates.xaml" />
         <StyleInclude Source="avares://Material.Icons.Avalonia/App.xaml" />
+        
+        <Style Selector="TextBlock.GridText">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="16 0 0 0" />
+        </Style>
+        <Style Selector="TextBlock.Info">
+            <Setter Property="FontStyle" Value="Italic" />
+            <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+        </Style>
     </Application.Styles>
 </Application>

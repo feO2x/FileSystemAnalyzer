@@ -5,24 +5,24 @@ using FileSystemAnalyzer.AvaloniaApp.Shared;
 using Light.ViewModels;
 using Serilog;
 
-namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files;
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Folders;
 
-public sealed class FilesViewModel : BaseNotifyPropertyChanged,
-                                     IHasPagingViewModel,
-                                     IConverter<FileSystemEntry, FileViewModel>,
-                                     ITabItemViewModel
+public sealed class FoldersViewModel : BaseNotifyPropertyChanged,
+                                       IHasPagingViewModel,
+                                       IConverter<FileSystemEntry, FolderViewModel>,
+                                       ITabItemViewModel
 {
-    public FilesViewModel(string analysisId,
-                          Func<IFilesSession> createSession,
-                          DebouncedValueFactory debouncedValueFactory,
-                          ILogger logger)
+    public FoldersViewModel(string analysisId,
+                            Func<IFoldersSession> createSession,
+                            DebouncedValueFactory debouncedValueFactory,
+                            ILogger logger)
     {
         PagingViewModel = new (createSession, 100, new (analysisId), this, logger);
         DebouncedSearchTerm = debouncedValueFactory.CreateDebouncedValue(string.Empty, OnDebouncedSearchTermChanged);
         PagingViewModel.LoadFirstPage();
     }
 
-    public PagingViewModel<FileViewModel, FileSystemEntry, FilesFilters> PagingViewModel { get; }
+    public PagingViewModel<FolderViewModel, FileSystemEntry, FolderFilters> PagingViewModel { get; }
     private DebouncedValue<string> DebouncedSearchTerm { get; }
 
     public string SearchTerm
@@ -35,12 +35,12 @@ public sealed class FilesViewModel : BaseNotifyPropertyChanged,
         }
     }
 
-    FileViewModel IConverter<FileSystemEntry, FileViewModel>.Convert(FileSystemEntry value) => new (value);
+    FolderViewModel IConverter<FileSystemEntry, FolderViewModel>.Convert(FileSystemEntry value) => new (value);
 
     IPagingViewModel IHasPagingViewModel.PagingViewModel => PagingViewModel;
 
+    public string Title => "Folders";
+
     private void OnDebouncedSearchTermChanged() =>
         PagingViewModel.Filters = PagingViewModel.Filters with { SearchTerm = DebouncedSearchTerm.CurrentValue };
-
-    public string Title => "Files";
 }

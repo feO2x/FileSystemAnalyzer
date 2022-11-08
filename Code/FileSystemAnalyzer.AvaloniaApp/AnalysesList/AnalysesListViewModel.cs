@@ -22,9 +22,7 @@ public sealed class AnalysesListViewModel : BaseNotifyPropertyChanged,
         PagingViewModel = new (createSession, 100, SearchTermFilters.Create(), this, logger);
         DeleteSelectedAnalysisCommand = new (DeleteSelectedAnalysis, () => SelectedAnalysis is not null);
 
-#pragma warning disable CS4014 // We do not care about the load result in the constructor
-        PagingViewModel.LoadNextPageAsync();
-#pragma warning restore CS4014
+        PagingViewModel.LoadFirstPage();
     }
 
     public PagingViewModel<AnalysisViewModel, Analysis, SearchTermFilters> PagingViewModel { get; }
