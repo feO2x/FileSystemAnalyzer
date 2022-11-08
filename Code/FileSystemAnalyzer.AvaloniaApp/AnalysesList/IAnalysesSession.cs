@@ -1,13 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
-using Synnotech.DatabaseAbstractions;
+using FileSystemAnalyzer.AvaloniaApp.EndlessScrolling;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
-public interface IAnalysesSession : IAsyncReadOnlySession
+public interface IAnalysesSession : IPagingSession<Analysis, SearchTermFilters>
 {
-    Task<List<Analysis>> GetAnalysesAsync(int skip, int take, string searchTerm, CancellationToken cancellationToken);
     Task RemoveAnalysisAsync(Analysis analysis);
 }

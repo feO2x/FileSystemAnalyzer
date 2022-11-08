@@ -40,7 +40,7 @@ public sealed class AnalysisDetailViewFactory
 
     private AnalysisDetailView CreateView(Analysis analysis, FileSystemAnalyzer? fileSystemAnalyzer = null)
     {
-        var filesViewModel = new FilesViewModel(analysis, CreateFilesSession, DebouncedValueFactory, Logger);
+        var filesViewModel = new FilesViewModel(analysis.Id, CreateFilesSession, DebouncedValueFactory, Logger);
         var analysisViewModel = new AnalysisDetailViewModel(analysis, filesViewModel, fileSystemAnalyzer, NavigateCommand, Logger);
         return new () { DataContext = analysisViewModel };
     }

@@ -1,5 +1,13 @@
 ﻿{
-  SearchTerm: ,
-  IsLoading: false,
-  HasNoAnalyses: true
+  PagingViewModel: {
+    PageSize: 100,
+    Filters: {
+      SearchTerm: ,
+      AreNoFiltersApplied: true
+    },
+    IsAtEnd: true,
+    HasNoItems: true,
+    IsLoading: false
+  },
+  SearchTerm: 
 }

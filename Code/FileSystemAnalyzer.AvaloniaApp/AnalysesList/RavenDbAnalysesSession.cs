@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
+using FileSystemAnalyzer.AvaloniaApp.EndlessScrolling;
 using Light.GuardClauses;
 using Raven.Client.Documents;
 using Raven.Client.Documents.Operations;
@@ -16,21 +17,6 @@ public sealed class RavenDbAnalysesSession : AsyncReadOnlySession, IAnalysesSess
 {
     public RavenDbAnalysesSession(IAsyncDocumentSession session) : base(session) { }
 
-    public Task<List<Analysis>> GetAnalysesAsync(int skip,
-                                                 int take,
-                                                 string? searchTerm,
-                                                 CancellationToken cancellationToken)
-    {
-        IQueryable<Analysis> query = Session.Query<Analysis>();
-        query = !searchTerm.IsNullOrWhiteSpace() ?
-            query.Search(analysis => analysis.DirectoryPathForSearch, searchTerm) :
-            query.OrderByDescending(analysis => analysis.CreatedAtUtc);
-
-        return query.Skip(skip)
-                    .Take(take)
-                    .ToListAsync(cancellationToken);
-    }
-
     public async Task RemoveAnalysisAsync(Analysis analysis)
     {
         Session.Delete(analysis.Id);
@@ -39,5 +25,21 @@ public sealed class RavenDbAnalysesSession : AsyncReadOnlySession, IAnalysesSess
                      .DocumentStore
                      .Operations
                      .SendAsync(new DeleteByQueryOperation($"from FileSystemEntries where AnalysisId = '{analysis.Id}'"));
+    }
+
+    public Task<List<Analysis>> GetItemsAsync(SearchTermFilters filters,
+                                              int skip,
+                                              int take,
+                                              CancellationToken cancellationToken)
+    {
+        IQueryable<Analysis> query = Session.Query<Analysis>();
+        var searchTerm = filters.SearchTerm;
+        query = !searchTerm.IsNullOrWhiteSpace() ?
+            query.Search(analysis => analysis.DirectoryPathForSearch, searchTerm) :
+            query.OrderByDescending(analysis => analysis.CreatedAtUtc);
+
+        return query.Skip(skip)
+                    .Take(take)
+                    .ToListAsync(cancellationToken);
     }
 }

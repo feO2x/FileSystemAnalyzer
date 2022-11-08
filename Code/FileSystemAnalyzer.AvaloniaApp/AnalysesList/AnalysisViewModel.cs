@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.IO;
+﻿using System.IO;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 using Humanizer;
 using Light.GuardClauses;
@@ -19,7 +17,7 @@ public sealed class AnalysisViewModel
         NumberOfFolders = "folder".ToQuantity(analysis.NumberOfFolders);
         NumberOfFiles = "file".ToQuantity(analysis.NumberOfFiles);
     }
-    
+
     public Analysis Analysis { get; }
     public string Name { get; }
     public string DirectoryPath => Analysis.DirectoryPath;
@@ -28,18 +26,7 @@ public sealed class AnalysisViewModel
     public string NumberOfFolders { get; }
     public string NumberOfFiles { get; }
     public bool IsErroneous => !Analysis.ErrorMessage.IsNullOrWhiteSpace();
+
     public MaterialIconKind IconKind =>
         IsErroneous ? MaterialIconKind.FolderCancel : MaterialIconKind.FolderFile;
-}
-
-public static class AnalysisViewModelExtensions
-{
-    public static void AppendAsViewModels(this ObservableCollection<AnalysisViewModel> viewModels, List<Analysis> entities)
-    {
-        for (var i = 0; i < entities.Count; i++)
-        {
-            var viewModel = new AnalysisViewModel(entities[i]);
-            viewModels.Add(viewModel);
-        }
-    }
 }

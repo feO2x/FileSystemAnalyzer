@@ -38,12 +38,12 @@
 
         <ProgressBar Grid.Row="1"
                      IsIndeterminate="True"
-                     IsVisible="{CompiledBinding IsLoading}" />
+                     IsVisible="{CompiledBinding PagingViewModel.IsLoading}" />
 
         <ListBox Grid.Row="2"
                  x:Name="ListBox"
-                 IsVisible="{CompiledBinding !HasNoAnalyses}"
-                 Items="{CompiledBinding Analyses}"
+                 IsVisible="{CompiledBinding !PagingViewModel.HasNoItems}"
+                 Items="{CompiledBinding PagingViewModel.Items}"
                  SelectedItem="{CompiledBinding SelectedAnalysis, Mode=TwoWay}"
                  Grid.IsSharedSizeScope="True">
             <ListBox.ItemTemplate>

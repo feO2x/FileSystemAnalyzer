@@ -33,7 +33,7 @@
                  Watermark="Search"
                  HorizontalAlignment="Right"
                  Width="280"
-                 IsVisible="{CompiledBinding !HasNoAnalyses}"
+                 IsVisible="{CompiledBinding !PagingViewModel.HasNoItems}"
                  Text="{CompiledBinding SearchTerm}"
                  ToolTip.Tip="Wildcards can be used: ? for any single character, * for any substring.">
             <TextBox.InnerLeftContent>

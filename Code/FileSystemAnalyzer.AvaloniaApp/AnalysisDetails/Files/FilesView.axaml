@@ -26,11 +26,11 @@
         
         <ProgressBar Grid.Row="1"
                      IsIndeterminate="True"
-                     IsVisible="{CompiledBinding IsLoading}" />
+                     IsVisible="{CompiledBinding PagingViewModel.IsLoading}" />
         
         <ListBox Grid.Row="2"
                  x:Name="ListBox"
-                 Items="{CompiledBinding Items}"
+                 Items="{CompiledBinding PagingViewModel.Items}"
                  Grid.IsSharedSizeScope="True">
             <ListBox.ItemTemplate>
                 <DataTemplate DataType="files:FileViewModel">

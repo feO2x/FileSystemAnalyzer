@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Collections.ObjectModel;
-using System.Threading;
+using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
+using FileSystemAnalyzer.AvaloniaApp.EndlessScrolling;
 using FileSystemAnalyzer.AvaloniaApp.Shared;
-using Light.GuardClauses;
 using Light.ViewModels;
 using Serilog;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
-public sealed class AnalysesListViewModel : BaseNotifyPropertyChanged
+public sealed class AnalysesListViewModel : BaseNotifyPropertyChanged,
+                                            IHasPagingViewModel,
+                                            IConverter<Analysis, AnalysisViewModel>
 {
-    private bool _hasNoAnalyses;
-    private CancellationTokenSource? _currentTokenSource;
     private AnalysisViewModel? _selectedAnalysis;
 
     public AnalysesListViewModel(Func<IAnalysesSession> createSession,
@@ -20,25 +19,18 @@ public sealed class AnalysesListViewModel : BaseNotifyPropertyChanged
     {
         CreateSession = createSession;
         DebouncedSearchTerm = debouncedValueFactory.CreateDebouncedValue(string.Empty, OnDebouncedSearchTermChanged);
-        Logger = logger;
-
+        PagingViewModel = new (createSession, 100, SearchTermFilters.Create(), this, logger);
         DeleteSelectedAnalysisCommand = new (DeleteSelectedAnalysis, () => SelectedAnalysis is not null);
-        
-        LoadAnalyses();
+
+#pragma warning disable CS4014 // We do not care about the load result in the constructor
+        PagingViewModel.LoadNextPageAsync();
+#pragma warning restore CS4014
     }
-    
-    private void OnDebouncedSearchTermChanged()
-    {
-        IsAtEnd = false;
-        Analyses.Clear();
-        CurrentTokenSource?.Cancel();
-        LoadAnalyses();
-    }
+
+    public PagingViewModel<AnalysisViewModel, Analysis, SearchTermFilters> PagingViewModel { get; }
 
     private Func<IAnalysesSession> CreateSession { get; }
     private DebouncedValue<string> DebouncedSearchTerm { get; }
-    private ILogger Logger { get; }
-    public ObservableCollection<AnalysisViewModel> Analyses { get; } = new ();
 
     public AnalysisViewModel? SelectedAnalysis
     {
@@ -60,58 +52,14 @@ public sealed class AnalysesListViewModel : BaseNotifyPropertyChanged
         }
     }
 
-    public bool IsLoading => CurrentTokenSource is not null;
-    
-    private bool IsAtEnd { get; set; }
-
-    public bool HasNoAnalyses
-    {
-        get => _hasNoAnalyses;
-        private set => Set(out _hasNoAnalyses, value);
-    }
-    
     public DelegateCommand DeleteSelectedAnalysisCommand { get; }
 
-    private CancellationTokenSource? CurrentTokenSource
-    {
-        get => _currentTokenSource;
-        set
-        {
-            _currentTokenSource = value;
-            OnPropertyChanged(nameof(IsLoading));
-        }
-    }
+    IPagingViewModel IHasPagingViewModel.PagingViewModel => PagingViewModel;
 
-    public async void LoadAnalyses()
-    {
-        if (IsAtEnd || HasNoAnalyses)
-            return;
-        
-        const int batchSize = 100;
-        var cancellationTokenSource = CurrentTokenSource = new ();
-        try
-        {
-            await using var session = CreateSession();
-            
-            var loadedAnalyses = await session.GetAnalysesAsync(Analyses.Count, batchSize, SearchTerm, cancellationTokenSource.Token);
-            if (loadedAnalyses.Count < batchSize)
-                IsAtEnd = true;
-            if (SearchTerm.IsNullOrWhiteSpace() && Analyses.Count == 0 && loadedAnalyses.Count == 0)
-                HasNoAnalyses = true;
+    AnalysisViewModel IConverter<Analysis, AnalysisViewModel>.Convert(Analysis model) => new (model);
 
-            Analyses.AppendAsViewModels(loadedAnalyses);
-        }
-        catch (Exception exception)
-        {
-            Logger.Error(exception, "Could not load existing analyses");
-        }
-        finally
-        {
-            cancellationTokenSource.Dispose();
-            if (ReferenceEquals(CurrentTokenSource, cancellationTokenSource))
-                CurrentTokenSource = null;
-        }
-    }
+    private void OnDebouncedSearchTermChanged() =>
+        PagingViewModel.Filters = new (DebouncedSearchTerm.CurrentValue);
 
     private async void DeleteSelectedAnalysis()
     {
@@ -120,7 +68,7 @@ public sealed class AnalysesListViewModel : BaseNotifyPropertyChanged
 
         await using var session = CreateSession();
         await session.RemoveAnalysisAsync(SelectedAnalysis.Analysis);
-        Analyses.Remove(SelectedAnalysis);
+        PagingViewModel.Items.Remove(SelectedAnalysis);
         SelectedAnalysis = null;
     }
 }

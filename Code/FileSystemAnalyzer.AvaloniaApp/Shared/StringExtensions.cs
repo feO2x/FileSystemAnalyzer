@@ -20,4 +20,7 @@ public static class StringExtensions
 
         return span.ToString();
     }
+    
+    public static string NormalizeSearchTerm(this string? searchTerm) =>
+        searchTerm.IsNullOrWhiteSpace() ? string.Empty : searchTerm.Trim();
 }

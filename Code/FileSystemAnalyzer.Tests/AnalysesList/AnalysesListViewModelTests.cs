@@ -50,7 +50,7 @@ public sealed class AnalysesListViewModelTests
     {
         var viewModel = CreateViewModel();
         
-        viewModel.LoadAnalyses();
+        await viewModel.PagingViewModel.LoadNextPageAsync();
 
         await Verifier.Verify(viewModel, VerifySettings);
     }
@@ -59,7 +59,7 @@ public sealed class AnalysesListViewModelTests
     public async Task SearchMustResetTheAnalysesCollection()
     {
         var viewModel = CreateViewModel();
-        viewModel.LoadAnalyses();
+        await viewModel.PagingViewModel.LoadNextPageAsync();
 
         viewModel.SearchTerm = "lib";
 

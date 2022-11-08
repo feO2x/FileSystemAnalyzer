@@ -10,16 +10,16 @@ using Synnotech.RavenDB;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files;
 
+// ReSharper disable once ClassNeverInstantiated.Global -- instantiated by DI container
 public sealed class RavenDbFilesSession : AsyncReadOnlySession, IFilesSession
 {
     public RavenDbFilesSession(IAsyncDocumentSession session) : base(session) { }
 
-    public Task<List<FileSystemEntry>> GetFilesAsync(string analysisId,
-                                                     int skip,
-                                                     int take,
-                                                     string searchTerm,
-                                                     CancellationToken cancellationToken)
+    public Task<List<FileSystemEntry>> GetItemsAsync(FilesFilters filters, int skip, int take, CancellationToken cancellationToken)
     {
+        var analysisId = filters.AnalysisId;
+        var searchTerm = filters.SearchTerm;
+        
         var query = Session.Query<FileSystemEntry>()
                            .Where(entry => entry.AnalysisId == analysisId &&
                                            entry.Type == FileSystemEntryType.File);

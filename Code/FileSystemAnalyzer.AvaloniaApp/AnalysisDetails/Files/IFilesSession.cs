@@ -1,16 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
-using Synnotech.DatabaseAbstractions;
+﻿using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
+using FileSystemAnalyzer.AvaloniaApp.EndlessScrolling;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files;
 
-public interface IFilesSession : IAsyncReadOnlySession
-{
-    Task<List<FileSystemEntry>> GetFilesAsync(string analysisId,
-                                              int skip,
-                                              int take,
-                                              string searchTerm,
-                                              CancellationToken cancellationToken);
-}
+public interface IFilesSession : IPagingSession<FileSystemEntry, FilesFilters> { }

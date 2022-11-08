@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Bogus;
 using FileSystemAnalyzer.AvaloniaApp.AppInfrastructure;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
+using FileSystemAnalyzer.AvaloniaApp.EndlessScrolling;
 using FileSystemAnalyzer.AvaloniaApp.Shared;
 using FuzzySharp;
 using Light.GuardClauses;
@@ -33,15 +34,15 @@ public sealed class BogusAnalysesSession : IAnalysesSession
     private int DelayInMilliseconds { get; }
     private List<Analysis> Analyses { get; }
 
-    public void Dispose() { }
-
-    public ValueTask DisposeAsync() => default;
-
-    public async Task<List<Analysis>> GetAnalysesAsync(int skip, int take, string searchTerm, CancellationToken cancellationToken)
+    public async Task<List<Analysis>> GetItemsAsync(SearchTermFilters filters,
+                                                    int skip,
+                                                    int take,
+                                                    CancellationToken cancellationToken)
     {
         if (DelayInMilliseconds > 0)
             await Task.Delay(DelayInMilliseconds, cancellationToken).ConfigureAwait(false);
 
+        var searchTerm = filters.SearchTerm;
         List<Analysis> result;
         if (searchTerm.IsNullOrWhiteSpace())
         {
@@ -64,6 +65,10 @@ public sealed class BogusAnalysesSession : IAnalysesSession
         cancellationToken.ThrowIfCancellationRequested();
         return result;
     }
+
+    public void Dispose() { }
+
+    public ValueTask DisposeAsync() => default;
 
     public async Task RemoveAnalysisAsync(Analysis analysis)
     {
