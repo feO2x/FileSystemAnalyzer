@@ -29,7 +29,7 @@ public sealed class RavenDbExplorerSession : AsyncReadOnlySession, IExplorerSess
         if (!searchTerm.IsNullOrWhiteSpace())
             query = query.Search(entry => entry.Name, searchTerm);
         
-        return query.OrderBy(entry => entry.Type)
+        return query.OrderByDescending(entry => entry.Type)
                     .ThenBy(entry => entry.Name)
                     .ToListAsync(cancellationToken);
     }
