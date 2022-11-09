@@ -1,3 +1,8 @@
-﻿namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
+﻿using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 
-public sealed record ProgressState(long NumberOfProcessedFolders, long NumberOfProcessedFiles, bool IsFinished = false);
+namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
+
+public sealed record ProgressState(long NumberOfProcessedFolders,
+                                   long NumberOfProcessedFiles,
+                                   FileSystemEntry? newFolder = null,
+                                   bool IsFinished = false);

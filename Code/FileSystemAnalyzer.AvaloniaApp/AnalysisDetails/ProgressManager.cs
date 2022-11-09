@@ -1,4 +1,5 @@
 ﻿using System;
+using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
@@ -7,27 +8,31 @@ public sealed class ProgressManager
     public ProgressManager(IProgress<ProgressState> progress) => Progress = progress;
 
     private IProgress<ProgressState> Progress { get; }
+    private int UpdatesSinceLastReport { get; set; }
     public long NumberOfProcessedFolders { get; set; }
     public long NumberOfProcessedFiles { get; set; }
 
     public void ReportNewFile()
     {
         NumberOfProcessedFiles++;
-        ReportStateIfNecessary();
+        UpdatesSinceLastReport++;
+        if (UpdatesSinceLastReport > 1_000)
+            SendState(new (NumberOfProcessedFolders, NumberOfProcessedFiles));
+
     }
 
-    public void ReportNewFolder()
+    public void ReportNewFolder(FileSystemEntry newFolder)
     {
         NumberOfProcessedFolders++;
-        ReportStateIfNecessary();
+        SendState(new (NumberOfProcessedFolders, NumberOfProcessedFiles, newFolder));
     }
 
     public void ReportFinish() =>
-        Progress.Report(new (NumberOfProcessedFolders, NumberOfProcessedFiles, true));
+        SendState(new (NumberOfProcessedFolders, NumberOfProcessedFiles, IsFinished: true));
 
-    private void ReportStateIfNecessary()
+    private void SendState(ProgressState state)
     {
-        if ((NumberOfProcessedFiles + NumberOfProcessedFolders) % 1000 == 0)
-            Progress.Report(new (NumberOfProcessedFolders, NumberOfProcessedFiles));
+        Progress.Report(state);
+        UpdatesSinceLastReport = 0;
     }
 }

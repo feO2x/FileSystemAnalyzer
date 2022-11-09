@@ -35,12 +35,23 @@ public sealed class FilesViewModel : BaseNotifyPropertyChanged,
         }
     }
 
+    private bool IsInitialized { get; set; }
+
     FileViewModel IConverter<FileSystemEntry, FileViewModel>.Convert(FileSystemEntry value) => new (value);
 
     IPagingViewModel IHasPagingViewModel.PagingViewModel => PagingViewModel;
 
+    public string Title => "Files";
+
+    public void Reload(bool isOptional = true)
+    {
+        if (isOptional && IsInitialized)
+            return;
+
+        PagingViewModel.ReloadAsync(true);
+        IsInitialized = true;
+    }
+
     private void OnDebouncedSearchTermChanged() =>
         PagingViewModel.Filters = PagingViewModel.Filters with { SearchTerm = DebouncedSearchTerm.CurrentValue };
-
-    public string Title => "Files";
 }

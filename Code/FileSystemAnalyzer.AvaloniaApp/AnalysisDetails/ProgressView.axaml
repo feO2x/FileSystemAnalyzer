@@ -15,11 +15,13 @@
                    Margin="0 0 0 20"
                    Text="We are currently analyzing the requested directory. The views will refresh during this operation." />
         <TextBlock Classes="Caption"
-                   Text="142 folders / 276 files processed..." />
+                   Text="{CompiledBinding CurrentProgressState}" />
         <ProgressBar IsIndeterminate="True"
                      Margin="0 0 0 12" />
         <Button Content="Cancel Analysis"
-                Command="{CompiledBinding CancelCommand}" />
+                Command="{CompiledBinding CancelCommand}"
+                HorizontalAlignment="Left"
+                Classes="Accent" />
 
     </StackPanel>
 </UserControl>

@@ -4,6 +4,7 @@ using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 
 namespace FileSystemAnalyzer.AvaloniaApp.Navigation;
 
+// ReSharper disable once ClassNeverInstantiated.Global -- instantiated by DI container
 public sealed class OpenExistingAnalysisNavigationCommand : IOpenExistingAnalysisNavigationCommand
 {
     public OpenExistingAnalysisNavigationCommand(AnalysisDetailViewFactory analysisDetailViewFactory,
@@ -16,9 +17,9 @@ public sealed class OpenExistingAnalysisNavigationCommand : IOpenExistingAnalysi
     private AnalysisDetailViewFactory AnalysisDetailViewFactory { get; }
     private INavigator Navigator { get; }
 
-    public void Navigate(Analysis analysis)
+    public async void Navigate(Analysis analysis)
     {
-        var view = AnalysisDetailViewFactory.CreateForExistingAnalysis(analysis);
+        var view = await AnalysisDetailViewFactory.CreateForExistingAnalysisAsync(analysis);
         Navigator.NavigateTo(view);
     }
 }

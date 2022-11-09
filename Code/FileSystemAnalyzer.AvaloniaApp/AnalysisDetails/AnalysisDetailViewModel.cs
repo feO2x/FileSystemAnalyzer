@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Threading.Tasks;
 using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Explorer;
 using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files;
 using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Folders;
@@ -24,23 +25,27 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
                                    ILogger logger)
     {
         Analysis = analysis;
-        TabItemViewModels = new ITabItemViewModel[] { filesViewModel, foldersViewModel, explorerViewModel };
+        ExplorerViewModel = explorerViewModel;
+        TabItemViewModels = new ITabItemViewModel[] { explorerViewModel, filesViewModel, foldersViewModel };
         _selectedTabItemViewModel = filesViewModel;
         Analyzer = analyzer;
         NavigateCommand = navigateCommand;
         Logger = logger;
         CancelCommand = new (CancelAnalysis, () => CancellationTokenSource is not null);
-        
-        PerformAnalysis();
     }
 
     public Analysis Analysis { get; }
+    private ExplorerViewModel ExplorerViewModel { get; }
     public ITabItemViewModel[] TabItemViewModels { get; }
 
     public ITabItemViewModel SelectedTabItemViewModel
     {
         get => _selectedTabItemViewModel;
-        set => SetIfDifferent(ref _selectedTabItemViewModel, value);
+        set
+        {
+            if (SetIfDifferent(ref _selectedTabItemViewModel, value) && Analyzer is null)
+                value.Reload();
+        }
     }
 
     private IFileSystemAnalyzer? Analyzer { get; }
@@ -56,7 +61,7 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
             CancelCommand.RaiseCanExecuteChanged();
         }
     }
-
+    
     public string? CurrentProgressState
     {
         get => _currentProgressState;
@@ -65,7 +70,7 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
 
     public DelegateCommand CancelCommand { get; }
 
-    private async void PerformAnalysis()
+    public async void StartAnalysis()
     {
         if (Analyzer is null)
             return;
@@ -74,7 +79,14 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
         try
         {
             var progress = new Progress<ProgressState>(HandleProgressUpdate);
-            await Analyzer.AnalyzeFileSystemOnBackgroundThreadAsync(Analysis, progress, cancellationTokenSource.Token);
+            var task = Analyzer.AnalyzeFileSystemOnBackgroundThreadAsync(Analysis, progress, cancellationTokenSource.Token);
+            PeriodicallyReload();
+            await task;
+
+            foreach (var tabItemViewModel in TabItemViewModels)
+            {
+                tabItemViewModel.Reload(isOptional: false);
+            }
         }
         catch (Exception exception)
         {
@@ -83,7 +95,17 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
         finally
         {
             cancellationTokenSource.Dispose();
-            CancellationTokenSource = null;
+            if (ReferenceEquals(cancellationTokenSource, CancellationTokenSource))
+                CancellationTokenSource = null;
+        }
+    }
+
+    private async void PeriodicallyReload()
+    {
+        while (CancellationTokenSource is not null)
+        {
+            await Task.Delay(TimeSpan.FromSeconds(6));
+            SelectedTabItemViewModel.Reload();
         }
     }
 
@@ -94,6 +116,9 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
         CurrentProgressState = progressState.IsFinished ?
             null :
             $"{progressState.NumberOfProcessedFolders} folders / {progressState.NumberOfProcessedFiles} files processed...";
+
+        if (progressState.newFolder is not null)
+            ExplorerViewModel.InsertFolder(progressState.newFolder);
     }
 
     public void NavigateBack() => NavigateCommand.Navigate();

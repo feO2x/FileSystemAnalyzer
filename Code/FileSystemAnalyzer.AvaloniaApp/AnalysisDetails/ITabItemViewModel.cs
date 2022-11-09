@@ -3,4 +3,5 @@
 public interface ITabItemViewModel
 {
     string Title { get; }
+    void Reload(bool isOptional = true);
 }

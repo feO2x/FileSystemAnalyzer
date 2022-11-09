@@ -23,6 +23,11 @@ public sealed class FileSystemAnalyzer : IFileSystemAnalyzer
     private IClock Clock { get; }
     private ILogger Logger { get; }
 
+    public Task AnalyzeFileSystemOnBackgroundThreadAsync(Analysis analysis,
+                                                         IProgress<ProgressState> progress,
+                                                         CancellationToken cancellationToken = default) =>
+        Task.Run(() => AnalyzeFileSystemAsync(analysis, progress, cancellationToken), cancellationToken);
+
     public async Task<Analysis> CreateAnalysisAsync(string directoryPath,
                                                     CancellationToken cancellationToken = default)
     {
@@ -34,11 +39,6 @@ public sealed class FileSystemAnalyzer : IFileSystemAnalyzer
         return analysis;
     }
 
-    public Task AnalyzeFileSystemOnBackgroundThreadAsync(Analysis analysis,
-                                                         IProgress<ProgressState> progress,
-                                                         CancellationToken cancellationToken = default) =>
-        Task.Run(() => AnalyzeFileSystemAsync(analysis, progress, cancellationToken), cancellationToken);
-
     public async Task AnalyzeFileSystemAsync(Analysis analysis,
                                              IProgress<ProgressState> progress,
                                              CancellationToken cancellationToken = default)
@@ -48,31 +48,33 @@ public sealed class FileSystemAnalyzer : IFileSystemAnalyzer
         Logger.Debug("Creating tree for {@Analysis}...", analysis);
         var currentDirectory = new DirectoryInfo(analysis.DirectoryPath);
 
-        // We use a non-recursive DFS approach here to avoid stack overflows in
+        // We use a non-recursive BFS approach here to avoid stack overflows in
         // scenarios where we have a high level of sub folder nesting.
-        var stack = new Stack<DirectoryStackEntry>();
-        stack.Push(new (currentDirectory, null));
+        var queue = new Queue<DirectoryQueueEntry>();
+        queue.Enqueue(new (currentDirectory, null));
 
         var progressManager = new ProgressManager(progress);
         try
         {
-            while (stack.Count > 0)
+            await using var session = CreateSession();
+            var inMemoryFileEntries = new List<FileSystemEntry>(1_000);
+            while (queue.Count > 0)
             {
-                var stackEntry = stack.Pop();
+                var stackEntry = queue.Dequeue();
 
                 // First, we create an entry for the current folder and append all files as child nodes at the same time
-                var newFolderEntry = await CreateEntriesForFolderAndFiles(stackEntry, analysis, progressManager, cancellationToken);
+                var newFolderEntry = await CreateEntriesForFolderAndFiles(stackEntry, analysis, session, inMemoryFileEntries, progressManager, cancellationToken);
 
-                // We then push all subdirectories to the stack to continue the DFS in the next loop run
-                PushAllSubDirectories(stackEntry.DirectoryInfo, newFolderEntry.Id, stack);
+                // We then enqueue all subdirectories to continue the BFS in the next loop run
+                EnqueueAllSubDirectories(stackEntry.DirectoryInfo, newFolderEntry.Id, queue);
 
                 // Afterwards, we add the new folder entry to its parent folder if necessary
                 // and update the size of all other parents until we reach the root of the tree
-                await UpdateParentFoldersAsync(newFolderEntry, cancellationToken);
+                await UpdateParentFoldersAsync(newFolderEntry, session, cancellationToken);
             }
 
-            // Once we ran through the whole tree, we will update the analysis with the complete size
-            await UpdateAnalysisAsync(analysis, progressManager.NumberOfProcessedFolders, progressManager.NumberOfProcessedFiles, cancellationToken);
+            // Once we ran through the whole tree, we will update the analysis entity with the complete size
+            await UpdateAnalysisAsync(analysis, progressManager.NumberOfProcessedFolders, progressManager.NumberOfProcessedFiles, session, cancellationToken);
         }
         catch (Exception exception)
         {
@@ -88,20 +90,19 @@ public sealed class FileSystemAnalyzer : IFileSystemAnalyzer
         }
     }
 
-    private async Task<FileSystemEntry> CreateEntriesForFolderAndFiles(DirectoryStackEntry stackEntry,
+    private async Task<FileSystemEntry> CreateEntriesForFolderAndFiles(DirectoryQueueEntry queueEntry,
                                                                        Analysis analysis,
+                                                                       IFileSystemAnalysisSession session,
+                                                                       List<FileSystemEntry> inMemoryFileEntries,
                                                                        ProgressManager progressManager,
                                                                        CancellationToken cancellationToken)
     {
-        await using var session = CreateSession();
-
         // First we create a folder entry from the current directory and store it in the database
-        var directoryInfo = stackEntry.DirectoryInfo;
+        var directoryInfo = queueEntry.DirectoryInfo;
         var folderEntry = FileSystemEntry.CreateFolderEntry(directoryInfo.FullName,
                                                             analysis.Id,
-                                                            stackEntry.ParentId);
+                                                            queueEntry.ParentId);
         await session.StoreAsync(folderEntry, cancellationToken);
-        progressManager.ReportNewFolder();
         Logger.Debug("Created entry for folder {@FolderEntry}", folderEntry);
 
         // We then check if this folder entry is the root -
@@ -119,35 +120,47 @@ public sealed class FileSystemAnalyzer : IFileSystemAnalyzer
             var fileEntry = FileSystemEntry.FromFileInfo(fileInfo, analysis.Id, folderEntry.Id);
             await session.StoreAsync(fileEntry, cancellationToken);
             folderEntry.AddChildAndUpdateSize(fileEntry);
+
+            inMemoryFileEntries.Add(fileEntry);
+            if (inMemoryFileEntries.Count == inMemoryFileEntries.Capacity)
+                await SaveChangesAndEvictFilesAsync(session, inMemoryFileEntries, cancellationToken);
+
             progressManager.ReportNewFile();
             Logger.Debug("Created file entry {@FileEntry} as child of {FolderEntryId}", fileEntry, folderEntry.Id);
         }
 
         // Once we are done, we will commit the transaction to store everything in the database.
-        await session.SaveChangesAsync(cancellationToken);
+        await SaveChangesAndEvictFilesAsync(session, inMemoryFileEntries, cancellationToken);
         Logger.Debug("Folder {FolderPath} has {NumberOfFiles} files with a total size of {SizeInBytes} Bytes",
                      folderEntry.FullPath,
                      folderEntry.ChildIds?.Count ?? 0,
                      folderEntry.SizeInBytes);
+        progressManager.ReportNewFolder(folderEntry);
         return folderEntry;
-    }
 
-    private static void PushAllSubDirectories(DirectoryInfo parentDirectory,
-                                              string parentId,
-                                              Stack<DirectoryStackEntry> stack)
-    {
-        foreach (var subDirectory in parentDirectory.EnumerateDirectories())
+        static async Task SaveChangesAndEvictFilesAsync(IFileSystemAnalysisSession session, List<FileSystemEntry> inMemoryFileEntries, CancellationToken cancellationToken)
         {
-            stack.Push(new (subDirectory, parentId));
+            await session.SaveChangesAsync(cancellationToken);
+            session.EvictFileSystemEntries(inMemoryFileEntries);
+            inMemoryFileEntries.Clear();
         }
     }
 
-    private async Task UpdateParentFoldersAsync(FileSystemEntry newFolderEntry, CancellationToken cancellationToken)
+    private static void EnqueueAllSubDirectories(DirectoryInfo parentDirectory,
+                                                 string parentId,
+                                                 Queue<DirectoryQueueEntry> queue)
+    {
+        foreach (var subDirectory in parentDirectory.EnumerateDirectories())
+        {
+            queue.Enqueue(new (subDirectory, parentId));
+        }
+    }
+
+    private async Task UpdateParentFoldersAsync(FileSystemEntry newFolderEntry, IFileSystemAnalysisSession session, CancellationToken cancellationToken)
     {
         if (newFolderEntry.ParentId is null)
             return;
 
-        await using var session = CreateSession();
         var currentParent = await session.GetFileSystemEntryAsync(newFolderEntry.ParentId, cancellationToken);
         currentParent.AddChildAndUpdateSize(newFolderEntry);
         Logger.Debug("Added folder {FolderId} as child to {ParentId} (new size {SizeInBytes} Bytes)", newFolderEntry.Id, currentParent.Id, currentParent.SizeInBytes);
@@ -165,9 +178,9 @@ public sealed class FileSystemAnalyzer : IFileSystemAnalyzer
     private async Task UpdateAnalysisAsync(Analysis analysis,
                                            long numberOfFolders,
                                            long numberOfFiles,
+                                           IFileSystemAnalysisSession session,
                                            CancellationToken cancellationToken)
     {
-        await using var session = CreateSession();
         var rootEntry = await session.GetFileSystemEntryAsync(analysis.RootEntryId, cancellationToken);
         analysis.SizeInBytes = rootEntry.SizeInBytes;
         analysis.NumberOfFolders = numberOfFolders;

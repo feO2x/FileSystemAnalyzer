@@ -15,10 +15,10 @@ public sealed class FolderNode : BaseNotifyPropertyChanged
     {
         if (folderEntry.Type != FileSystemEntryType.Folder)
             throw new ArgumentException("Only folders can be represented by a node");
-        
+
         FolderEntry = folderEntry;
     }
-    
+
     public FileSystemEntry FolderEntry { get; }
     public string Name => FolderEntry.Name;
     public string Size => FolderEntry.SizeInBytes.ConvertToDisplaySize();
@@ -33,7 +33,7 @@ public sealed class FolderNode : BaseNotifyPropertyChanged
         ConnectFolderNodes(rootNode, nodesLookup);
         return rootNode;
     }
-    
+
     private static (FolderNode rootNode, Dictionary<string, FolderNode> nodesLookup) CreateNodesFromEntries(List<FileSystemEntry> folderEntries)
     {
         folderEntries.MustNotBeNullOrEmpty();
@@ -57,7 +57,7 @@ public sealed class FolderNode : BaseNotifyPropertyChanged
 
         return (rootNode, lookup);
     }
-    
+
     private static void ConnectFolderNodes(FolderNode rootNode, Dictionary<string, FolderNode> nodesLookup)
     {
         var queue = new Queue<FolderNode>();
@@ -82,4 +82,6 @@ public sealed class FolderNode : BaseNotifyPropertyChanged
             }
         }
     }
+
+    public void RaiseSizeChanged() => OnPropertyChanged(nameof(Size));
 }

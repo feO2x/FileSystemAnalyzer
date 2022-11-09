@@ -34,12 +34,22 @@ public sealed class FoldersViewModel : BaseNotifyPropertyChanged,
                 OnPropertyChanged();
         }
     }
+    
+    private bool IsInitialized { get; set; }
 
     FolderViewModel IConverter<FileSystemEntry, FolderViewModel>.Convert(FileSystemEntry value) => new (value);
 
     IPagingViewModel IHasPagingViewModel.PagingViewModel => PagingViewModel;
 
     public string Title => "Folders";
+    public void Reload(bool isOptional = true)
+    {
+        if (isOptional && IsInitialized)
+            return;
+
+        PagingViewModel.ReloadAsync(true);
+        IsInitialized = true;
+    }
 
     private void OnDebouncedSearchTermChanged() =>
         PagingViewModel.Filters = PagingViewModel.Filters with { SearchTerm = DebouncedSearchTerm.CurrentValue };

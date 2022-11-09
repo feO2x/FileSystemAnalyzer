@@ -162,6 +162,8 @@ public sealed class FileSystemAnalyzerTests
 
             throw new ArgumentException($"Cannot find entry with ID \"{id}\".", nameof(id));
         }
+
+        public void EvictFileSystemEntries(List<FileSystemEntry> entries) { }
     }
 
     private sealed class ProgressSpy : IProgress<ProgressState>

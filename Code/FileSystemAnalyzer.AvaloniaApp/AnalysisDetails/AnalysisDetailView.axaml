@@ -14,7 +14,8 @@
     <Grid RowDefinitions="Auto, *">
 
         <analysisDetails:ProgressView Grid.Row="0"
-                                      IsVisible="{CompiledBinding !!CurrentProgressState}" />
+                                      IsVisible="{CompiledBinding !!CurrentProgressState}"
+                                      Margin="12 4" />
 
         <TabControl Grid.Row="1"
                     Items="{CompiledBinding TabItemViewModels}"

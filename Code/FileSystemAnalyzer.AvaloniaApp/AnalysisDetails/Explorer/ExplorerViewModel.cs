@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
@@ -14,6 +15,7 @@ public sealed class ExplorerViewModel : BaseNotifyPropertyChanged,
                                         IConverter<FileSystemEntry, FileSystemEntryViewModel>,
                                         ITabItemViewModel
 {
+    private Dictionary<string, FolderNode>? _nodeLookup;
     private FolderNode? _selectedFolderNode;
 
     public ExplorerViewModel(string analysisId,
@@ -37,7 +39,7 @@ public sealed class ExplorerViewModel : BaseNotifyPropertyChanged,
         set
         {
             if (SetIfDifferent(ref _selectedFolderNode, value) && value is not null)
-                PagingViewModel.Filters = PagingViewModel.Filters with { ParentFolderId = value.FolderEntry.Id};
+                PagingViewModel.Filters = PagingViewModel.Filters with { ParentFolderId = value.FolderEntry.Id };
         }
     }
 
@@ -55,10 +57,18 @@ public sealed class ExplorerViewModel : BaseNotifyPropertyChanged,
 
     public PagingViewModel<FileSystemEntryViewModel, FileSystemEntry, ExplorerFilters> PagingViewModel { get; }
 
+    private Dictionary<string, FolderNode> NodeLookup => _nodeLookup ??= new ();
+
     FileSystemEntryViewModel IConverter<FileSystemEntry, FileSystemEntryViewModel>.Convert(FileSystemEntry value) => new (value);
     IPagingViewModel IHasPagingViewModel.PagingViewModel => PagingViewModel;
 
     public string Title => "Explorer";
+
+    void ITabItemViewModel.Reload(bool isOptional)
+    {
+        if (!isOptional)
+            PagingViewModel.ReloadAsync(true);
+    }
 
     public async Task LoadFolderNodesAsync()
     {
@@ -71,4 +81,27 @@ public sealed class ExplorerViewModel : BaseNotifyPropertyChanged,
 
     private void OnDebouncedSearchTermChanged() =>
         PagingViewModel.Filters = PagingViewModel.Filters with { SearchTerm = DebouncedSearchTerm.CurrentValue };
+
+    public void InsertFolder(FileSystemEntry newFolder)
+    {
+        var nodeLookup = NodeLookup;
+        var node = new FolderNode(newFolder);
+        if (newFolder.ParentId is null)
+        {
+            Folders.Add(node);
+        }
+        else
+        {
+            var currentParentNode = nodeLookup[newFolder.ParentId];
+            currentParentNode.ChildNodes.Add(node);
+            currentParentNode.RaiseSizeChanged();
+            while (currentParentNode.FolderEntry.ParentId is not null)
+            {
+                currentParentNode = nodeLookup[currentParentNode.FolderEntry.ParentId];
+                currentParentNode.RaiseSizeChanged();
+            }
+        }
+
+        nodeLookup.Add(newFolder.Id, node);
+    }
 }

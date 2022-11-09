@@ -41,12 +41,12 @@ public sealed class AnalysisDetailViewFactory
     {
         var fileSystemAnalyzer = ResolveFileSystemAnalyzer();
         var analysis = await fileSystemAnalyzer.CreateAnalysisAsync(directoryPath);
-        return CreateView(analysis, fileSystemAnalyzer);
+        return await CreateViewAsync(analysis, fileSystemAnalyzer);
     }
 
-    public AnalysisDetailView CreateForExistingAnalysis(Analysis analysis) => CreateView(analysis);
+    public Task<AnalysisDetailView> CreateForExistingAnalysisAsync(Analysis analysis) => CreateViewAsync(analysis);
 
-    private AnalysisDetailView CreateView(Analysis analysis, FileSystemAnalyzer? fileSystemAnalyzer = null)
+    private async Task<AnalysisDetailView> CreateViewAsync(Analysis analysis, FileSystemAnalyzer? fileSystemAnalyzer = null)
     {
         var filesViewModel = new FilesViewModel(analysis.Id, CreateFilesSession, DebouncedValueFactory, Logger);
         var foldersViewModel = new FoldersViewModel(analysis.Id, CreateFoldersSession, DebouncedValueFactory, Logger);
@@ -54,7 +54,9 @@ public sealed class AnalysisDetailViewFactory
         var analysisViewModel = new AnalysisDetailViewModel(analysis, filesViewModel, foldersViewModel, explorerViewModel, fileSystemAnalyzer, NavigateCommand, Logger);
 
         if (fileSystemAnalyzer is null)
-            explorerViewModel.LoadFolderNodesAsync();
+            await explorerViewModel.LoadFolderNodesAsync();
+        else
+            analysisViewModel.StartAnalysis();
         
         return new () { DataContext = analysisViewModel };
     }
