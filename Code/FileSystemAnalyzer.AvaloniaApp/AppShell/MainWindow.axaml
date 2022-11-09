@@ -10,11 +10,22 @@
         x:DataType="appShell:MainWindowViewModel"
         Title="File System Analyzer"
         Icon="/Assets/favicon.ico"
-        ExtendClientAreaToDecorationsHint="True">
-    <Grid RowDefinitions="30, 56, *">
-        <appShell:TitleBar Grid.Row="0" />
-        <appShell:NavigationBar Grid.Row="1" />
-        <TransitioningContentControl Grid.Row="2"
-                                     Content="{CompiledBinding CurrentView}" />
-    </Grid>
+        ExtendClientAreaToDecorationsHint="True"
+        TransparencyLevelHint="AcrylicBlur">
+    <Panel>
+        <ExperimentalAcrylicBorder IsHitTestVisible="False">
+            <ExperimentalAcrylicBorder.Material>
+                <ExperimentalAcrylicMaterial BackgroundSource="Digger"
+                                             TintColor="Black"
+                                             TintOpacity="1"
+                                             MaterialOpacity="0.8" />
+            </ExperimentalAcrylicBorder.Material>
+        </ExperimentalAcrylicBorder>
+        <Grid RowDefinitions="30, 56, *">
+            <appShell:TitleBar Grid.Row="0" />
+            <appShell:NavigationBar Grid.Row="1" />
+            <TransitioningContentControl Grid.Row="2"
+                                         Content="{CompiledBinding CurrentView}" />
+        </Grid>
+    </Panel>
 </Window>
