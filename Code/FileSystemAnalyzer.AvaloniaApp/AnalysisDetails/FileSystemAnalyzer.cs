@@ -182,9 +182,10 @@ public sealed class FileSystemAnalyzer : IFileSystemAnalyzer
                                            CancellationToken cancellationToken)
     {
         var rootEntry = await session.GetFileSystemEntryAsync(analysis.RootEntryId, cancellationToken);
-        analysis.SizeInBytes = rootEntry.SizeInBytes;
+        analysis.SetRootEntry(rootEntry);
         analysis.NumberOfFolders = numberOfFolders;
         analysis.NumberOfFiles = numberOfFiles;
+        analysis.FinishedAtUtc = Clock.GetTime();
         await session.StoreAsync(analysis, cancellationToken);
         await session.SaveChangesAsync(cancellationToken);
         Logger.Information("{@Analysis} was completed successfully", analysis);

@@ -3,6 +3,7 @@
     {
       DirectoryPath: {CurrentDirectory}A,
       CreatedAtUtc: DateTime_1,
+      FinishedAtUtc: DateTime_2,
       RootEntryId: FileSystemEntry-1-A,
       SizeInBytes: 11334,
       NumberOfFolders: 4,

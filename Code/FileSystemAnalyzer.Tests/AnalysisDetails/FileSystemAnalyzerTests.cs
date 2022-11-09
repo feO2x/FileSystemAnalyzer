@@ -24,7 +24,8 @@ public sealed class FileSystemAnalyzerTests
     public FileSystemAnalyzerTests(ITestOutputHelper output)
     {
         Session = new ();
-        var clock = new TestClock(new DateTime(2022, 11, 6, 11, 43, 42, DateTimeKind.Utc));
+        
+        var clock = new TestClock(new DateTime(2022, 11, 6, 11, 43, 42, DateTimeKind.Utc), new DateTime(2022, 11, 6, 11, 43, 52));
         var logger = output.CreateTestLogger(levelSwitch: new (LogEventLevel.Debug));
         Progress = new (logger);
         Analyzer = new (() => Session, clock, logger);

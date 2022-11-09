@@ -10,6 +10,7 @@ public sealed class Analysis : StringEntity
     public string DirectoryPath { get; init; } = string.Empty;
     public string DirectoryPathForSearch { get; init; } = string.Empty;
     public DateTime CreatedAtUtc { get; init; }
+    public DateTime? FinishedAtUtc { get; set; }
     public string RootEntryId { get; set; } = string.Empty;
     public long SizeInBytes { get; set; }
     public long NumberOfFolders { get; set; }
@@ -33,5 +34,6 @@ public sealed class Analysis : StringEntity
         rootEntry.Id.MustNotBeNullOrWhiteSpace();
         Check.InvalidArgument(rootEntry.Type == FileSystemEntryType.File, "The root entry of an analysis can only be a folder entry");
         RootEntryId = rootEntry.Id;
+        SizeInBytes = rootEntry.SizeInBytes;
     }
 }
