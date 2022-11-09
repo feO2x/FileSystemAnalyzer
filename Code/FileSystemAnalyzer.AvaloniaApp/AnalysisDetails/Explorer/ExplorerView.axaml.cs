@@ -1,18 +1,13 @@
-﻿using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
+﻿using Avalonia.Controls;
+using FileSystemAnalyzer.AvaloniaApp.EndlessScrolling;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Explorer;
 
-public partial class ExplorerView : UserControl
+public sealed partial class ExplorerView : UserControl
 {
     public ExplorerView()
     {
         InitializeComponent();
-    }
-
-    private void InitializeComponent()
-    {
-        AvaloniaXamlLoader.Load(this);
+        ListBoxPager<ExplorerViewModel>.EnableEndlessScrolling(this, ListBox);
     }
 }

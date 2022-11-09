@@ -1,0 +1,29 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:explorer="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Explorer"
+             xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             mc:Ignorable="d"
+             d:DesignWidth="800"
+             d:DesignHeight="40"
+             x:Class="FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Explorer.ExplorerToolbar"
+             x:DataType="explorer:ExplorerViewModel">
+    <Panel>
+        <TextBox UseFloatingWatermark="false"
+                 Watermark="Search in selected folder"
+                 HorizontalAlignment="Right"
+                 Width="280"
+                 IsVisible="{CompiledBinding !PagingViewModel.HasNoItems}"
+                 Text="{CompiledBinding SearchTerm}"
+                 ToolTip.Tip="Wildcards can be used: ? for any single character, * for any substring.">
+            <TextBox.InnerLeftContent>
+                <avalonia:MaterialIcon HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Kind="Magnify"
+                                       Width="20"
+                                       Height="20" />
+            </TextBox.InnerLeftContent>
+        </TextBox>
+    </Panel>
+</UserControl>

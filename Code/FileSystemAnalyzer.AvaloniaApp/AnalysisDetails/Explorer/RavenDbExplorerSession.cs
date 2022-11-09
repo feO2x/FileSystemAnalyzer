@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
+using Light.GuardClauses;
 using Raven.Client.Documents;
 using Raven.Client.Documents.Session;
 using Synnotech.RavenDB;
@@ -19,10 +20,17 @@ public sealed class RavenDbExplorerSession : AsyncReadOnlySession, IExplorerSess
                                entry.AnalysisId == analysisId)
                .ToListAsync();
 
-    public Task<List<FileSystemEntry>> GetFolderContentsAsync(string folderId, CancellationToken cancellationToken) =>
-        Session.Query<FileSystemEntry>()
-               .Where(entry => entry.ParentId == folderId)
-               .OrderBy(entry => entry.Type)
-               .ThenBy(entry => entry.Name)
-               .ToListAsync(cancellationToken);
+    public Task<List<FileSystemEntry>> GetItemsAsync(ExplorerFilters filters, int skip, int take, CancellationToken cancellationToken)
+    {
+        var folderId = filters.ParentFolderId;
+        var searchTerm = filters.SearchTerm;
+        var query = Session.Query<FileSystemEntry>()
+                           .Where(entry => entry.ParentId == folderId);
+        if (!searchTerm.IsNullOrWhiteSpace())
+            query = query.Search(entry => entry.Name, searchTerm);
+        
+        return query.OrderBy(entry => entry.Type)
+                    .ThenBy(entry => entry.Name)
+                    .ToListAsync(cancellationToken);
+    }
 }

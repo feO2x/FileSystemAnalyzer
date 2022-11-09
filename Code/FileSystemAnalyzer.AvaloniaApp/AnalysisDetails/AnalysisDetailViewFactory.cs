@@ -50,7 +50,7 @@ public sealed class AnalysisDetailViewFactory
     {
         var filesViewModel = new FilesViewModel(analysis.Id, CreateFilesSession, DebouncedValueFactory, Logger);
         var foldersViewModel = new FoldersViewModel(analysis.Id, CreateFoldersSession, DebouncedValueFactory, Logger);
-        var explorerViewModel = new ExplorerViewModel(analysis.Id, CreateExplorerSession);
+        var explorerViewModel = new ExplorerViewModel(analysis.Id, CreateExplorerSession, DebouncedValueFactory, Logger);
         var analysisViewModel = new AnalysisDetailViewModel(analysis, filesViewModel, foldersViewModel, explorerViewModel, fileSystemAnalyzer, NavigateCommand, Logger);
 
         if (fileSystemAnalyzer is null)

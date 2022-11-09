@@ -9,8 +9,22 @@
              d:DesignHeight="450"
              x:Class="FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Explorer.ExplorerView"
              x:DataType="explorer:ExplorerViewModel">
-    <Grid ColumnDefinitions="*, 4, 2*">
+    <Grid ColumnDefinitions="*, 4, 2*"
+          RowDefinitions="Auto, 4, *">
+        
+        <explorer:ExplorerToolbar Grid.Column="0"
+                                  Grid.Row="0"
+                                  Grid.ColumnSpan="3"
+                                  Margin="12 4" />
+        
+        <ProgressBar Grid.Column="0"
+                     Grid.Row="1"
+                     Grid.ColumnSpan="3"
+                     IsIndeterminate="True"
+                     IsVisible="{CompiledBinding PagingViewModel.IsLoading}" />
+        
         <TreeView Grid.Column="0"
+                  Grid.Row="2"
                   Items="{CompiledBinding Folders}"
                   SelectedItem="{CompiledBinding SelectedFolderNode, Mode=TwoWay}">
             <TreeView.ItemTemplate>
@@ -30,6 +44,44 @@
         </TreeView>
 
         <GridSplitter Grid.Column="1"
+                      Grid.Row="2"
                       ResizeDirection="Columns" />
+        
+        <ListBox Grid.Column="2"
+                 Grid.Row="2"
+                 x:Name="ListBox"
+                 Items="{CompiledBinding PagingViewModel.Items}"
+                 Grid.IsSharedSizeScope="True">
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="explorer:FileSystemEntryViewModel">
+                    <Grid Height="50">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Name" />
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Size" />
+                        </Grid.ColumnDefinitions>
+
+                        <avalonia:MaterialIcon Grid.Column="0"
+                                               Kind="{CompiledBinding IconKind}"
+                                               Width="24"
+                                               Height="24"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center" />
+
+                        <TextBlock Grid.Column="1"
+                                   Classes="Body1"
+                                   FontWeight="Bold"
+                                   VerticalAlignment="Center"
+                                   Text="{CompiledBinding Name}" />
+
+                        <TextBlock Grid.Column="2"
+                                   Classes="Body2 Info GridText"
+                                   HorizontalAlignment="Right"
+                                   Text="{CompiledBinding Size}" />
+                        
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </UserControl>
