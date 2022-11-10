@@ -15,7 +15,6 @@ public sealed class ExplorerViewModel : BaseNotifyPropertyChanged,
                                         IConverter<FileSystemEntry, FileSystemEntryViewModel>,
                                         ITabItemViewModel
 {
-    private Dictionary<string, FolderNode>? _nodeLookup;
     private FolderNode? _selectedFolderNode;
 
     public ExplorerViewModel(string analysisId,
@@ -57,7 +56,7 @@ public sealed class ExplorerViewModel : BaseNotifyPropertyChanged,
 
     public PagingViewModel<FileSystemEntryViewModel, FileSystemEntry, ExplorerFilters> PagingViewModel { get; }
 
-    private Dictionary<string, FolderNode> NodeLookup => _nodeLookup ??= new ();
+    private Dictionary<string, FolderNode> NodeLookup { get; } = new ();
 
     FileSystemEntryViewModel IConverter<FileSystemEntry, FileSystemEntryViewModel>.Convert(FileSystemEntry value) => new (value);
     IPagingViewModel IHasPagingViewModel.PagingViewModel => PagingViewModel;
@@ -74,7 +73,7 @@ public sealed class ExplorerViewModel : BaseNotifyPropertyChanged,
     {
         await using var session = CreateSession();
         var allFolders = await session.GetAllFoldersAsync(AnalysisId);
-        var rootNode = FolderNode.CreateTreeFromFlatFolderEntries(allFolders);
+        var rootNode = FolderNode.CreateTreeFromFlatFolderEntries(allFolders, NodeLookup);
         Folders.Add(rootNode);
         SelectedFolderNode = rootNode;
     }
@@ -84,7 +83,6 @@ public sealed class ExplorerViewModel : BaseNotifyPropertyChanged,
 
     public void InsertFolder(FileSystemEntry newFolder)
     {
-        var nodeLookup = NodeLookup;
         var node = new FolderNode(newFolder);
         if (newFolder.ParentId is null)
         {
@@ -92,16 +90,30 @@ public sealed class ExplorerViewModel : BaseNotifyPropertyChanged,
         }
         else
         {
-            var currentParentNode = nodeLookup[newFolder.ParentId];
-            currentParentNode.ChildNodes.Add(node);
+            var currentParentNode = NodeLookup[newFolder.ParentId];
+            currentParentNode.AddChildNode(node);
             currentParentNode.RaiseSizeChanged();
             while (currentParentNode.FolderEntry.ParentId is not null)
             {
-                currentParentNode = nodeLookup[currentParentNode.FolderEntry.ParentId];
+                currentParentNode = NodeLookup[currentParentNode.FolderEntry.ParentId];
                 currentParentNode.RaiseSizeChanged();
             }
         }
 
-        nodeLookup.Add(newFolder.Id, node);
+        NodeLookup.Add(newFolder.Id, node);
+    }
+
+    public void SelectFolder(FileSystemEntry fileSystemEntry)
+    {
+        if (fileSystemEntry.Type != FileSystemEntryType.Folder)
+            throw new ArgumentException("The specified entry must be a folder entry", nameof(fileSystemEntry));
+
+        
+        var currentNode = SelectedFolderNode = NodeLookup[fileSystemEntry.Id];
+        while (currentNode.Parent is not null)
+        {
+            currentNode = currentNode.Parent;
+            currentNode.IsExpanded = true;
+        }
     }
 }

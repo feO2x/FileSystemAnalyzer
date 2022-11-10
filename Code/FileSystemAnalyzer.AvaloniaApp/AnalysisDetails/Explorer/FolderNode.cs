@@ -11,6 +11,8 @@ namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Explorer;
 
 public sealed class FolderNode : BaseNotifyPropertyChanged
 {
+    private bool _isExpanded;
+
     public FolderNode(FileSystemEntry folderEntry)
     {
         if (folderEntry.Type != FileSystemEntryType.Folder)
@@ -23,22 +25,34 @@ public sealed class FolderNode : BaseNotifyPropertyChanged
     public string Name => FolderEntry.Name;
     public string Size => FolderEntry.SizeInBytes.ConvertToDisplaySize();
 
-    public ObservableCollection<FolderNode> ChildNodes { get; } = new ();
-
-    public void RaiseSizeUpdated() => OnPropertyChanged(Size);
-
-    public static FolderNode CreateTreeFromFlatFolderEntries(List<FileSystemEntry> folderEntries)
+    public bool IsExpanded
     {
-        var (rootNode, nodesLookup) = CreateNodesFromEntries(folderEntries);
+        get => _isExpanded;
+        set => SetIfDifferent(ref _isExpanded, value);
+    }
+
+    public ObservableCollection<FolderNode> ChildNodes { get; } = new ();
+    public FolderNode? Parent { get; set; }
+
+    public void AddChildNode(FolderNode childNode)
+    {
+        childNode.Parent = this;
+        ChildNodes.Add(childNode);
+    }
+
+    public void RaiseSizeChanged() => OnPropertyChanged(nameof(Size));
+
+    public static FolderNode CreateTreeFromFlatFolderEntries(List<FileSystemEntry> folderEntries, Dictionary<string, FolderNode> nodesLookup)
+    {
+        var rootNode = CreateNodesFromEntries(folderEntries, nodesLookup);
         ConnectFolderNodes(rootNode, nodesLookup);
         return rootNode;
     }
 
-    private static (FolderNode rootNode, Dictionary<string, FolderNode> nodesLookup) CreateNodesFromEntries(List<FileSystemEntry> folderEntries)
+    private static FolderNode CreateNodesFromEntries(List<FileSystemEntry> folderEntries, Dictionary<string, FolderNode> nodesLookup)
     {
         folderEntries.MustNotBeNullOrEmpty();
 
-        var lookup = new Dictionary<string, FolderNode>();
         FolderNode? rootNode = null;
         var analysisId = folderEntries[0].AnalysisId;
 
@@ -49,13 +63,13 @@ public sealed class FolderNode : BaseNotifyPropertyChanged
             if (entry.ParentId is null)
                 rootNode = folderNode;
             else
-                lookup.Add(entry.Id, folderNode);
+                nodesLookup.Add(entry.Id, folderNode);
         }
 
         if (rootNode is null)
             throw new InvalidStateException($"The loaded folder entries do not contain the root node for analysis \"{analysisId}\"");
 
-        return (rootNode, lookup);
+        return rootNode;
     }
 
     private static void ConnectFolderNodes(FolderNode rootNode, Dictionary<string, FolderNode> nodesLookup)
@@ -77,11 +91,9 @@ public sealed class FolderNode : BaseNotifyPropertyChanged
                 if (!nodesLookup.TryGetValue(childId, out var childNode))
                     continue;
 
-                currentNode.ChildNodes.Add(childNode);
+                currentNode.AddChildNode(childNode);
                 queue.Enqueue(childNode);
             }
         }
     }
-
-    public void RaiseSizeChanged() => OnPropertyChanged(nameof(Size));
 }
