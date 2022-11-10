@@ -12,14 +12,6 @@
              x:Class="FileSystemAnalyzer.AvaloniaApp.AnalysesList.AnalysesListView"
              x:DataType="analysesList:AnalysesListViewModel">
     <UserControl.Styles>
-        <Style Selector="TextBlock.GridText">
-            <Setter Property="VerticalAlignment" Value="Center" />
-            <Setter Property="Margin" Value="16 0 0 0" />
-        </Style>
-        <Style Selector="TextBlock.Info">
-            <Setter Property="FontStyle" Value="Italic" />
-            <Setter Property="TextTrimming" Value="CharacterEllipsis" />
-        </Style>
         <Style Selector="TextBlock.Header">
             <Setter Property="Foreground" Value="{DynamicResource PrimaryHueMidBrush}" />
             <Setter Property="FontWeight" Value="Bold" />
@@ -52,11 +44,13 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="50" />
                             <ColumnDefinition Width="Auto" SharedSizeGroup="Name" />
-                            <ColumnDefinition Width="Auto" SharedSizeGroup="CreatedAt" />
                             <ColumnDefinition Width="Auto" SharedSizeGroup="Size" />
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="CreatedAt" />
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Duration" />
                             <ColumnDefinition Width="Auto" SharedSizeGroup="NumberOfFolders" />
                             <ColumnDefinition Width="Auto" SharedSizeGroup="NumberOfFiles" />
                             <ColumnDefinition Width="Auto" SharedSizeGroup="Path" />
+                            <ColumnDefinition />
                         </Grid.ColumnDefinitions>
 
                         <avalonia:MaterialIcon Grid.Column="0"
@@ -72,29 +66,41 @@
                                 Content="{CompiledBinding Name}"
                                 Command="{shared:Resolve Type=analysesList:OpenExistingAnalysisCommand}"
                                 CommandParameter="{CompiledBinding Analysis}" />
-
+                        
                         <TextBlock Grid.Column="2"
-                                   Classes="Body2 Info GridText"
-                                   Text="{CompiledBinding CreatedAt}" />
-
-                        <TextBlock Grid.Column="3"
                                    Classes="Body2 Info GridText"
                                    HorizontalAlignment="Right"
                                    Text="{CompiledBinding Size}" />
 
+                        <TextBlock Grid.Column="3"
+                                   Classes="Body2 Info GridText"
+                                   Text="{CompiledBinding CreatedAt}" />
+
                         <TextBlock Grid.Column="4"
                                    Classes="Body2 Info GridText"
-                                   HorizontalAlignment="Right"
-                                   Text="{CompiledBinding NumberOfFolders}" />
+                                   Text="{CompiledBinding Duration}" />
 
                         <TextBlock Grid.Column="5"
                                    Classes="Body2 Info GridText"
                                    HorizontalAlignment="Right"
-                                   Text="{CompiledBinding NumberOfFiles}" />
+                                   Text="{CompiledBinding NumberOfFolders}" />
 
                         <TextBlock Grid.Column="6"
                                    Classes="Body2 Info GridText"
+                                   HorizontalAlignment="Right"
+                                   Text="{CompiledBinding NumberOfFiles}" />
+
+                        <TextBlock Grid.Column="7"
+                                   Classes="Body2 Info GridText"
+                                   TextWrapping="NoWrap"
+                                   TextTrimming="CharacterEllipsis"
                                    Text="{CompiledBinding DirectoryPath}" />
+                        
+                        <TextBlock Grid.Column="8"
+                                   Classes="Body2 Error GridText"
+                                   TextWrapping="NoWrap"
+                                   TextTrimming="CharacterEllipsis"
+                                   Text="{CompiledBinding Error}" />
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>

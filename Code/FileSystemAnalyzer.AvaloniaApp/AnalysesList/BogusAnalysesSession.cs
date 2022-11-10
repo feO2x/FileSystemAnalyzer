@@ -97,6 +97,7 @@ public sealed class BogusAnalysesSession : IAnalysesSession
                                 .RuleFor(analysis => analysis.Id, _ => $"Analyses-{analysisIds++}-A")
                                 .RuleFor(analysis => analysis.DirectoryPath, f => f.System.DirectoryPath())
                                 .RuleFor(analysis => analysis.CreatedAtUtc, f => f.Date.Past(refDate: referenceDate).ToUniversalTime())
+                                .RuleFor(analysis => analysis.FinishedAtUtc, (f, a) => a.CreatedAtUtc.AddSeconds(f.Random.Double(0.4, 600.0)))
                                 .RuleFor(analysis => analysis.SizeInBytes, f => f.Random.Number(0, int.MaxValue))
                                 .RuleFor(analysis => analysis.DirectoryPathForSearch, (_, a) => a.DirectoryPath.ReplaceSlashesWithSpacesInPath())
                                 .RuleFor(analysis => analysis.NumberOfFiles, f => f.Random.Number(1, 1000))

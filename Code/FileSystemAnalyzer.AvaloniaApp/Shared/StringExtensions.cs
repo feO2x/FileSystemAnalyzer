@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using Humanizer;
 using Light.GuardClauses;
 
@@ -27,4 +28,17 @@ public static class StringExtensions
 
     public static string ConvertToDisplaySize(this long sizeInBytes) =>
         sizeInBytes.Bytes().Humanize("#.##");
+
+    public static string CalculateDuration(this DateTime begin, DateTime? optionalEnd) =>
+        optionalEnd.HasValue ?
+            (optionalEnd.Value - begin).Humanize() :
+            string.Empty;
+
+    public static string ConvertToLocalDisplayTime(this DateTime utcTimestamp)
+    {
+        var difference = DateTime.UtcNow - utcTimestamp;
+        return difference < TimeSpan.FromHours(8.0) ?
+            utcTimestamp.ToLocalTime().Humanize() :
+            utcTimestamp.ToLocalTime().ToString(CultureInfo.CurrentCulture);
+    }
 }

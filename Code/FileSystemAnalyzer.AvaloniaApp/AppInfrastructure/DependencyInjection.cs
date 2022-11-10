@@ -15,7 +15,9 @@ public static class DependencyInjection
     public static ServiceContainer CreateContainer() =>
         new (new ContainerOptions { EnablePropertyInjection = false });
 
-    public static void ConfigureServices(this ServiceContainer container) =>
+    public static void ConfigureServices(this ServiceContainer container)
+    {
+        HumanizerConfiguration.ConfigureHumanizer();
         container.RegisterConfiguration(out var configuration)
                  .RegisterLogger(configuration)
                  .RegisterRavenDb(configuration)
@@ -25,6 +27,7 @@ public static class DependencyInjection
                  .RegisterAnalysisList(configuration)
                  .RegisterAnalysisDetails()
                  .RegisterAppShell(configuration);
+    }
 
     private static IServiceRegistry RegisterCoreServices(this IServiceRegistry container) =>
         container.RegisterInstance(DebouncedValueFactory.DefaultFactory)

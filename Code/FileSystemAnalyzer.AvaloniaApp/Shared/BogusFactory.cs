@@ -1,6 +1,6 @@
 ﻿using Bogus;
 
-namespace FileSystemAnalyzer.AvaloniaApp.AppInfrastructure;
+namespace FileSystemAnalyzer.AvaloniaApp.Shared;
 
 public static class BogusFactory
 {
