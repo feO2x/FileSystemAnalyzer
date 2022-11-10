@@ -1,6 +1,6 @@
 # File System Analyzer
 
-*An app that analyses the disk usage of folders in your file system. Based on Avalonia and RavenDB.*
+*A cross-platform desktop app that analyzes the size of files and folders - written with Avalonia and RavenDB.*
 
 ![Light Libraries Logo](/Design/file-system-analyzer-icon-256x256.png)
 
@@ -8,7 +8,7 @@
 
 You need to have the .NET 6 SDK installed and an IDE of your choice that can handle `.sln` files. 
 
-Simply check out the repository and open `./Code/FileSystemAnalyzer.sln` in your favorite IDE. Build and run the `FileSystemAnalyzer.AvaloniaApp` project. You do not need to configure anything - the app will start up an embedded RavenDB server with the default settings.
+Simply check out the repository and open `./Code/FileSystemAnalyzer.sln` in your favorite IDE. Build and run the `FileSystemAnalyzer.AvaloniaApp` project. You do not need to configure anything - the app will start use an embedded RavenDB server with the default settings.
 
 Once the app is running, you are presented with a list view, showing all analyses that you already conducted. Click "Create new analysis..." on the top left and select a folder in your file system that you want to analyze.
 
@@ -16,7 +16,7 @@ Once the app is running, you are presented with a list view, showing all analyse
 
 File System Analyzer will create a snapshot of the file system entries in the selected folder and store it in the underlying RavenDB database. While the snapshot is created, you can already view the processed results. Depending on the folder you choose, the analysis can take several minutes (many small files and folders decrease performance - I'm looking at you, `node_modules`).
 
-If you inspect an analysis, you have three views that you can access via the tabs at the top: use the explorer to drill down into the target folder. Use the files and folders tabs to get flat access to all file system entries. The files tab also allows grouping over file extensions.
+When you inspect an analysis, you have three tabs at the top: use the explorer to drill down into the target folder. Use the files and folders tabs to get flat access to all file system entries. The files tab also allows grouping over file extensions.
 
 ![Light Libraries Logo](/Design/explorer.png)
 
@@ -28,7 +28,7 @@ If you want to inspect the database, you can open your browser and go to [http:/
 
 ![Light Libraries Logo](/Design/ravendb.png)
 
-You can use RavenDB for seven days without a license. Afterwards, just simply head over to [ravendb.net](https://ravendb.net/buy) and get a free license.
+You can use RavenDB for seven days without a license. Afterwards, just head over to [ravendb.net](https://ravendb.net/buy) and get a free license.
 
 You can customize the settings by creating a file called `appsettings.Development.json` next to the existing [appsettings.json](https://github.com/feO2x/FileSystemAnalyzer/blob/main/Code/FileSystemAnalyzer.AvaloniaApp/appsettings.json) file. This file is automatically ignored by git. Simply assign new values in this file with the same keys, they will override the contents of appsettings.json.
 
