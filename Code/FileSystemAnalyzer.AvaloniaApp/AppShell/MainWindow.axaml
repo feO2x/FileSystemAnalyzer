@@ -3,6 +3,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:appShell="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AppShell"
+        xmlns:analysesList="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysesList"
+        xmlns:analysisDetails="clr-namespace:FileSystemAnalyzer.AvaloniaApp.AnalysisDetails"
         mc:Ignorable="d"
         x:Class="FileSystemAnalyzer.AvaloniaApp.AppShell.MainWindow"
         MinWidth="800"
@@ -25,7 +27,16 @@
             <appShell:TitleBar Grid.Row="0" />
             <appShell:NavigationBar Grid.Row="1" />
             <ContentControl Grid.Row="2"
-                            Content="{CompiledBinding CurrentView}" />
+                            Content="{CompiledBinding CurrentView}">
+                <ContentControl.DataTemplates>
+                    <DataTemplate DataType="analysesList:AnalysesListViewModel">
+                        <analysesList:AnalysesListView />
+                    </DataTemplate>
+                    <DataTemplate DataType="analysisDetails:AnalysisDetailViewModel">
+                        <analysisDetails:AnalysisDetailView />
+                    </DataTemplate>
+                </ContentControl.DataTemplates>
+            </ContentControl>
         </Grid>
     </Panel>
 </Window>

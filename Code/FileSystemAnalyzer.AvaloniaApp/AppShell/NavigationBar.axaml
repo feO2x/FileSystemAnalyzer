@@ -25,11 +25,55 @@
                                        Command="{CompiledBinding NavigateBackCommand}">
                     <avalonia:MaterialIcon Kind="ArrowLeft" />
                 </styles:FloatingButton>
-                <TextBlock Classes="Headline6"
-                           Text="{CompiledBinding CurrentTitle}"
-                           VerticalAlignment="Center" />
+                <ContentControl Content="{CompiledBinding CurrentView.Title, FallbackValue=null}">
+                    <ContentControl.DataTemplates>
+                        <DataTemplate DataType="x:String">
+                            <TextBlock Classes="Headline6"
+                                       Text="{CompiledBinding}"
+                                       VerticalAlignment="Center" />
+                        </DataTemplate>
+                        <DataTemplate DataType="shared:AnalysisViewModel">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Classes="Headline6"
+                                           VerticalAlignment="Center"
+                                           Text="{CompiledBinding Name}" />
+                                
+                                <TextBlock Classes="Subtitle1"
+                                           VerticalAlignment="Center"
+                                           Margin="12 0 0 0"
+                                           Text="{CompiledBinding Size}" />
+                                
+                                <TextBlock Classes="Subtitle1"
+                                           VerticalAlignment="Center"
+                                           Margin="12 0 0 0"
+                                           Text="{CompiledBinding CreatedAt}" />
+                                
+                                <TextBlock Classes="Subtitle1"
+                                           VerticalAlignment="Center"
+                                           Margin="12 0 0 0"
+                                           Text="{CompiledBinding Duration}" />
+                                
+                                <TextBlock Classes="Subtitle1"
+                                           VerticalAlignment="Center"
+                                           Margin="12 0 0 0"
+                                           Text="{CompiledBinding NumberOfFolders}" />
+                                
+                                <TextBlock Classes="Subtitle1"
+                                           VerticalAlignment="Center"
+                                           Margin="12 0 0 0"
+                                           Text="{CompiledBinding NumberOfFiles}" />
+                                
+                                <TextBlock Classes="Subtitle1"
+                                           VerticalAlignment="Center"
+                                           Margin="12 0 0 0"
+                                           Text="{CompiledBinding DirectoryPath}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ContentControl.DataTemplates>
+                </ContentControl>
+
             </StackPanel>
-            
+
             <Menu HorizontalAlignment="Right"
                   VerticalAlignment="Center"
                   IsVisible="{CompiledBinding IsWindowsOperatingSystem}">

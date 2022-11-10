@@ -4,17 +4,20 @@ using System.Threading.Tasks;
 using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Explorer;
 using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files;
 using FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Folders;
+using FileSystemAnalyzer.AvaloniaApp.AppShell;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
+using FileSystemAnalyzer.AvaloniaApp.Shared;
 using Light.ViewModels;
 using Serilog;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
-public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
+public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged, IView, INavigateBack
 {
     private CancellationTokenSource? _cancellationTokenSource;
     private string? _currentProgressState;
     private ITabItemViewModel _selectedTabItemViewModel;
+    private object _title;
 
     public AnalysisDetailViewModel(Analysis analysis,
                                    FilesViewModel filesViewModel,
@@ -27,11 +30,12 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
         Analysis = analysis;
         ExplorerViewModel = explorerViewModel;
         TabItemViewModels = new ITabItemViewModel[] { explorerViewModel, filesViewModel, foldersViewModel };
-        _selectedTabItemViewModel = filesViewModel;
+        _selectedTabItemViewModel = explorerViewModel;
         Analyzer = analyzer;
         NavigateCommand = navigateCommand;
         Logger = logger;
         CancelCommand = new (CancelAnalysis, () => CancellationTokenSource is not null);
+        _title = new AnalysisViewModel(analysis);
     }
 
     public Analysis Analysis { get; }
@@ -61,7 +65,7 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
             CancelCommand.RaiseCanExecuteChanged();
         }
     }
-    
+
     public string? CurrentProgressState
     {
         get => _currentProgressState;
@@ -69,6 +73,18 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
     }
 
     public DelegateCommand CancelCommand { get; }
+
+    public void NavigateBack()
+    {
+        if (CancellationTokenSource is null)
+            NavigateCommand.Navigate();
+    }
+
+    public object Title
+    {
+        get => _title;
+        private set => Set(out _title, value);
+    }
 
     public async void StartAnalysis()
     {
@@ -97,6 +113,7 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
             cancellationTokenSource.Dispose();
             if (ReferenceEquals(cancellationTokenSource, CancellationTokenSource))
                 CancellationTokenSource = null;
+            Title = new AnalysisViewModel(Analysis);
         }
     }
 
@@ -120,6 +137,4 @@ public sealed class AnalysisDetailViewModel : BaseNotifyPropertyChanged
         if (progressState.newFolder is not null)
             ExplorerViewModel.InsertFolder(progressState.newFolder);
     }
-
-    public void NavigateBack() => NavigateCommand.Navigate();
 }

@@ -39,7 +39,7 @@
                  SelectedItem="{CompiledBinding SelectedAnalysis, Mode=TwoWay}"
                  Grid.IsSharedSizeScope="True">
             <ListBox.ItemTemplate>
-                <DataTemplate DataType="analysesList:AnalysisViewModel">
+                <DataTemplate DataType="shared:AnalysisViewModel">
                     <Grid Height="50">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="50" />

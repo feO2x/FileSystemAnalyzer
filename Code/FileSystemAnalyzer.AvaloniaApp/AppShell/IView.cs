@@ -2,5 +2,5 @@
 
 public interface IView
 {
-    string Title { get; }
+    object Title { get; }
 }

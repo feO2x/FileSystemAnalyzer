@@ -1,5 +1,4 @@
-﻿using FileSystemAnalyzer.AvaloniaApp.Shared;
-using LightInject;
+﻿using LightInject;
 using Microsoft.Extensions.Configuration;
 
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
@@ -8,7 +7,7 @@ public static class AnalysesListModule
 {
     public static IServiceRegistry RegisterAnalysisList(this IServiceRegistry container, IConfiguration configuration)
     {
-        container.RegisterViewAndViewModelWithTransientLifetimes<AnalysesListView, AnalysesListViewModel>()
+        container.RegisterTransient<AnalysesListViewModel>()
                  .RegisterSingleton<CreateNewAnalysisCommand>()
                  .RegisterSingleton<OpenExistingAnalysisCommand>();
 

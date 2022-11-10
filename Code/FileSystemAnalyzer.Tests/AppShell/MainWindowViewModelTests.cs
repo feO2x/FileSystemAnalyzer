@@ -66,6 +66,6 @@ public sealed class MainWindowViewModelTests
     
     private sealed class DummyView : IView
     {
-        public string Title => "Dummy View";
+        public object Title => "Dummy View";
     }
 }

@@ -1,11 +1,10 @@
 ﻿using System.IO;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
-using FileSystemAnalyzer.AvaloniaApp.Shared;
 using Humanizer;
 using Light.GuardClauses;
 using Material.Icons;
 
-namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
+namespace FileSystemAnalyzer.AvaloniaApp.Shared;
 
 public sealed class AnalysisViewModel
 {

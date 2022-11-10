@@ -8,7 +8,7 @@ namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 public static class AnalysisDetailsModule
 {
     public static IServiceRegistry RegisterAnalysisDetails(this IServiceRegistry container) =>
-        container.RegisterSingleton<AnalysisDetailViewFactory>()
+        container.RegisterSingleton<AnalysisDetailViewModelFactory>()
                  .RegisterTransient<FileSystemAnalyzer>()
                  .RegisterTransient<IFileSystemAnalysisSession, RavenDbFileSystemAnalysisSession>()
                  .RegisterFilesModule()

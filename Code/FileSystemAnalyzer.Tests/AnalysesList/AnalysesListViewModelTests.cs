@@ -19,6 +19,7 @@ public sealed class AnalysesListViewModelTests
     {
         VerifySettings = new ();
         VerifySettings.IgnoreMember<AnalysesListViewModel>(viewModel => viewModel.DeleteSelectedAnalysisCommand);
+        VerifySettings.IgnoreMember<AnalysesListViewModel>(viewModel => viewModel.Title);
     }
     
     public AnalysesListViewModelTests(ITestOutputHelper output)

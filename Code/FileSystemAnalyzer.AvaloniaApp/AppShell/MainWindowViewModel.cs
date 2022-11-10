@@ -23,12 +23,10 @@ public sealed class MainWindowViewModel : BaseNotifyPropertyChanged, INavigator
         private set
         {
             Set(out _currentView, value);
-            OnPropertyChanged(nameof(CurrentTitle));
             OnPropertyChanged(nameof(IsNavigateBackButtonVisible));
         }
     }
 
-    public string? CurrentTitle => CurrentView?.Title;
     public bool IsNavigateBackButtonVisible => CurrentView is INavigateBack;
     public DelegateCommand NavigateBackCommand { get; }
     public bool IsWindowsOperatingSystem => OperatingSystem.IsWindows();

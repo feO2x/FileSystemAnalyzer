@@ -10,15 +10,15 @@ using Serilog;
 namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails;
 
 // ReSharper disable once ClassNeverInstantiated.Global -- class is instantiated by DI container
-public sealed class AnalysisDetailViewFactory
+public sealed class AnalysisDetailViewModelFactory
 {
-    public AnalysisDetailViewFactory(Func<FileSystemAnalyzer> resolveFileSystemAnalyzer,
-                                     Func<IFilesSession> createFilesSession,
-                                     Func<IFoldersSession> createFoldersSession,
-                                     Func<IExplorerSession> createExplorerSession,
-                                     DebouncedValueFactory debouncedValueFactory,
-                                     INavigateToAnalysesListCommand navigateCommand,
-                                     ILogger logger)
+    public AnalysisDetailViewModelFactory(Func<FileSystemAnalyzer> resolveFileSystemAnalyzer,
+                                          Func<IFilesSession> createFilesSession,
+                                          Func<IFoldersSession> createFoldersSession,
+                                          Func<IExplorerSession> createExplorerSession,
+                                          DebouncedValueFactory debouncedValueFactory,
+                                          INavigateToAnalysesListCommand navigateCommand,
+                                          ILogger logger)
     {
         ResolveFileSystemAnalyzer = resolveFileSystemAnalyzer;
         CreateFilesSession = createFilesSession;
@@ -37,27 +37,27 @@ public sealed class AnalysisDetailViewFactory
     private INavigateToAnalysesListCommand NavigateCommand { get; }
     private ILogger Logger { get; }
 
-    public async Task<AnalysisDetailView> CreateForNewAnalysisAsync(string directoryPath)
+    public async Task<AnalysisDetailViewModel> CreateForNewAnalysisAsync(string directoryPath)
     {
         var fileSystemAnalyzer = ResolveFileSystemAnalyzer();
         var analysis = await fileSystemAnalyzer.CreateAnalysisAsync(directoryPath);
         return await CreateViewAsync(analysis, fileSystemAnalyzer);
     }
 
-    public Task<AnalysisDetailView> CreateForExistingAnalysisAsync(Analysis analysis) => CreateViewAsync(analysis);
+    public Task<AnalysisDetailViewModel> CreateForExistingAnalysisAsync(Analysis analysis) => CreateViewAsync(analysis);
 
-    private async Task<AnalysisDetailView> CreateViewAsync(Analysis analysis, FileSystemAnalyzer? fileSystemAnalyzer = null)
+    private async Task<AnalysisDetailViewModel> CreateViewAsync(Analysis analysis, FileSystemAnalyzer? fileSystemAnalyzer = null)
     {
         var filesViewModel = new FilesViewModel(analysis.Id, CreateFilesSession, DebouncedValueFactory, Logger);
         var foldersViewModel = new FoldersViewModel(analysis.Id, CreateFoldersSession, DebouncedValueFactory, Logger);
         var explorerViewModel = new ExplorerViewModel(analysis.Id, CreateExplorerSession, DebouncedValueFactory, Logger);
-        var analysisViewModel = new AnalysisDetailViewModel(analysis, filesViewModel, foldersViewModel, explorerViewModel, fileSystemAnalyzer, NavigateCommand, Logger);
+        var analysisDetailsViewModel = new AnalysisDetailViewModel(analysis, filesViewModel, foldersViewModel, explorerViewModel, fileSystemAnalyzer, NavigateCommand, Logger);
 
         if (fileSystemAnalyzer is null)
             await explorerViewModel.LoadFolderNodesAsync();
         else
-            analysisViewModel.StartAnalysis();
-        
-        return new () { DataContext = analysisViewModel };
+            analysisDetailsViewModel.StartAnalysis();
+
+        return analysisDetailsViewModel;
     }
 }

@@ -7,19 +7,19 @@ namespace FileSystemAnalyzer.AvaloniaApp.Navigation;
 // ReSharper disable once ClassNeverInstantiated.Global -- instantiated by DI container
 public sealed class OpenExistingAnalysisNavigationCommand : IOpenExistingAnalysisNavigationCommand
 {
-    public OpenExistingAnalysisNavigationCommand(AnalysisDetailViewFactory analysisDetailViewFactory,
+    public OpenExistingAnalysisNavigationCommand(AnalysisDetailViewModelFactory analysisDetailViewModelFactory,
                                                  INavigator navigator)
     {
-        AnalysisDetailViewFactory = analysisDetailViewFactory;
+        AnalysisDetailViewModelFactory = analysisDetailViewModelFactory;
         Navigator = navigator;
     }
 
-    private AnalysisDetailViewFactory AnalysisDetailViewFactory { get; }
+    private AnalysisDetailViewModelFactory AnalysisDetailViewModelFactory { get; }
     private INavigator Navigator { get; }
 
     public async void Navigate(Analysis analysis)
     {
-        var view = await AnalysisDetailViewFactory.CreateForExistingAnalysisAsync(analysis);
+        var view = await AnalysisDetailViewModelFactory.CreateForExistingAnalysisAsync(analysis);
         Navigator.NavigateTo(view);
     }
 }

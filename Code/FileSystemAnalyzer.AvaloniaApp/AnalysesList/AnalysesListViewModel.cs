@@ -1,4 +1,5 @@
 ﻿using System;
+using FileSystemAnalyzer.AvaloniaApp.AppShell;
 using FileSystemAnalyzer.AvaloniaApp.DataAccess.Model;
 using FileSystemAnalyzer.AvaloniaApp.EndlessScrolling;
 using FileSystemAnalyzer.AvaloniaApp.Shared;
@@ -9,7 +10,8 @@ namespace FileSystemAnalyzer.AvaloniaApp.AnalysesList;
 
 public sealed class AnalysesListViewModel : BaseNotifyPropertyChanged,
                                             IHasPagingViewModel,
-                                            IConverter<Analysis, AnalysisViewModel>
+                                            IConverter<Analysis, AnalysisViewModel>,
+                                            IView
 {
     private AnalysisViewModel? _selectedAnalysis;
 
@@ -52,9 +54,11 @@ public sealed class AnalysesListViewModel : BaseNotifyPropertyChanged,
 
     public DelegateCommand DeleteSelectedAnalysisCommand { get; }
 
+    AnalysisViewModel IConverter<Analysis, AnalysisViewModel>.Convert(Analysis model) => new (model);
+
     IPagingViewModel IHasPagingViewModel.PagingViewModel => PagingViewModel;
 
-    AnalysisViewModel IConverter<Analysis, AnalysisViewModel>.Convert(Analysis model) => new (model);
+    public object Title => "Analyses";
 
     private void OnDebouncedSearchTermChanged() =>
         PagingViewModel.Filters = new (DebouncedSearchTerm.CurrentValue);
