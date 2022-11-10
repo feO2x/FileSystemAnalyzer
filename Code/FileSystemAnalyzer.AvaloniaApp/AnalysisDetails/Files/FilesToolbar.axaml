@@ -12,6 +12,12 @@
     <Panel>
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Right">
+            
+            <ComboBox Items="{CompiledBinding AllGroupings}"
+                      SelectedItem="{CompiledBinding SelectedGrouping, Mode=TwoWay}"
+                      Width="280"
+                      Margin="0 0 20 0" />
+            
             <TextBox UseFloatingWatermark="False"
                      Watermark="Search"
                      HorizontalAlignment="Right"

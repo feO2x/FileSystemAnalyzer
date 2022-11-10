@@ -9,20 +9,24 @@ namespace FileSystemAnalyzer.AvaloniaApp.AnalysisDetails.Files;
 
 public sealed class FilesViewModel : BaseNotifyPropertyChanged,
                                      IHasPagingViewModel,
-                                     IConverter<FileSystemEntry, FileViewModel>,
+                                     IConverter<object, object>,
                                      ITabItemViewModel
 {
+    private string _selectedGrouping;
+
     public FilesViewModel(string analysisId,
                           Func<IFilesSession> createSession,
                           DebouncedValueFactory debouncedValueFactory,
                           ILogger logger)
     {
-        PagingViewModel = new (createSession, 100, new (analysisId), this, logger);
+        var filters = new FilesFilters(analysisId);
+        _selectedGrouping = filters.Grouping;
+        PagingViewModel = new (createSession, 100, filters, this, logger);
         DebouncedSearchTerm = debouncedValueFactory.CreateDebouncedValue(string.Empty, OnDebouncedSearchTermChanged);
         PagingViewModel.LoadFirstPage();
     }
 
-    public PagingViewModel<FileViewModel, FileSystemEntry, FilesFilters> PagingViewModel { get; }
+    public PagingViewModel<object, object, FilesFilters> PagingViewModel { get; }
     private DebouncedValue<string> DebouncedSearchTerm { get; }
 
     public string SearchTerm
@@ -35,9 +39,24 @@ public sealed class FilesViewModel : BaseNotifyPropertyChanged,
         }
     }
 
+    public string[] AllGroupings => Groupings.All;
+
+    public string SelectedGrouping
+    {
+        get => _selectedGrouping;
+        set
+        {
+            if (SetIfDifferent(ref _selectedGrouping, value))
+                PagingViewModel.Filters = PagingViewModel.Filters with { Grouping = value };
+        }
+    }
+
     private bool IsInitialized { get; set; }
 
-    FileViewModel IConverter<FileSystemEntry, FileViewModel>.Convert(FileSystemEntry value) => new (value);
+    object IConverter<object, object>.Convert(object value) =>
+        value is FileSystemEntry fileEntry ?
+            new FileViewModel(fileEntry) :
+            new GroupByFileExtensionViewModel((GroupByFileExtension) value);
 
     IPagingViewModel IHasPagingViewModel.PagingViewModel => PagingViewModel;
 

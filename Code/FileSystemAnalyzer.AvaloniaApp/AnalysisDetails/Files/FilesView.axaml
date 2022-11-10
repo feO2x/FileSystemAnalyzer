@@ -22,7 +22,7 @@
                  x:Name="ListBox"
                  Items="{CompiledBinding PagingViewModel.Items}"
                  Grid.IsSharedSizeScope="True">
-            <ListBox.ItemTemplate>
+            <ListBox.DataTemplates>
                 <DataTemplate DataType="files:FileViewModel">
                     <Grid Height="50">
                         <Grid.ColumnDefinitions>
@@ -56,7 +56,40 @@
                                    Text="{CompiledBinding FullPath}" />
                     </Grid>
                 </DataTemplate>
-            </ListBox.ItemTemplate>
+                <DataTemplate DataType="files:GroupByFileExtensionViewModel">
+                    <Grid Height="50">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="FileExtension" />
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="NumberOfFiles" />
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="TotalSize" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <avalonia:MaterialIcon Grid.Column="0"
+                                               Kind="FileMultiple"
+                                               Width="24"
+                                               Height="24"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center" />
+                        
+                        <TextBlock Grid.Column="1"
+                                   Classes="Body1"
+                                   FontWeight="Bold"
+                                   VerticalAlignment="Center"
+                                   Foreground="{DynamicResource PrimaryHueMidBrush}"
+                                   Text="{CompiledBinding FileExtension}" />
+                        
+                        <TextBlock Grid.Column="2"
+                                   Classes="Body2 Info GridText"
+                                   HorizontalAlignment="Right"
+                                   Text="{CompiledBinding TotalSize}" />
+                        
+                        <TextBlock Grid.Column="3"
+                                   Classes="Body2 Info GridText"
+                                   Text="{CompiledBinding NumberOfFiles}" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.DataTemplates>
         </ListBox>
     </Grid>
     
