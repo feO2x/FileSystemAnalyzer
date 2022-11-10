@@ -24,8 +24,8 @@
         <Grid RowDefinitions="30, 56, *">
             <appShell:TitleBar Grid.Row="0" />
             <appShell:NavigationBar Grid.Row="1" />
-            <TransitioningContentControl Grid.Row="2"
-                                         Content="{CompiledBinding CurrentView}" />
+            <ContentControl Grid.Row="2"
+                            Content="{CompiledBinding CurrentView}" />
         </Grid>
     </Panel>
 </Window>
