@@ -8,7 +8,7 @@
 
 You need to have the .NET 6 SDK installed and an IDE of your choice that can handle `.sln` files. 
 
-Simply check out the repository and open `./Code/FileSystemAnalyzer.sln` in your favorite IDE. Build and run the `FileSystemAnalyzer.AvaloniaApp` project. You do not need to configure anything - the app will start use an embedded RavenDB server with the default settings.
+Simply check out the repository and open `./Code/FileSystemAnalyzer.sln` in your favorite IDE. Build and run the `FileSystemAnalyzer.AvaloniaApp` project. You do not need to configure anything - the app will use an embedded RavenDB server by default.
 
 Once the app is running, you are presented with a list view, showing all analyses that you already conducted. Click "Create new analysis..." on the top left and select a folder in your file system that you want to analyze.
 
