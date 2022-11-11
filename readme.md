@@ -24,7 +24,7 @@ When you inspect an analysis, you have three tabs at the top: use the explorer t
 
 ![Light Libraries Logo](/Design/folders-view.png)
 
-If you want to inspect the database, you can open your browser and go to [http://localhost:10002](http://localhost:10002) by default to inspect the database (the app must be running while accessing the web frontend of the database server).
+If you want to inspect the database, you can open your browser and go to [http://localhost:10002](http://localhost:10002) (the app must be running while accessing the web frontend of the database server).
 
 ![Light Libraries Logo](/Design/ravendb.png)
 
